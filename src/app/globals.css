@@ -1,14 +1,11 @@
-<<<<<<< HEAD
-
-=======
 @font-face {
-	font-family: futura;
-	src: url(../../public/assets/fonts/FuturaPTBold.otf);
+  font-family: futura;
+  src: url(../../public/assets/fonts/FuturaPTBold.otf);
 }
 
 @font-face {
-	font-family: montserrat;
-	src: url(../../public/assets/fonts/Montserrat-VariableFont_wght.ttf);
+  font-family: montserrat;
+  src: url(../../public/assets/fonts/Montserrat-VariableFont_wght.ttf);
 }
 
 @tailwind base;
@@ -16,12 +13,11 @@
 @tailwind utilities;
 
 body {
-	margin: 0;
-	padding: 0;
-	font-family: montserrat, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: montserrat, sans-serif;
 }
 
 .futura {
-	font-family: futura, sans-serif !important;
+  font-family: futura, sans-serif !important;
 }
->>>>>>> bcf89b42214250c0d368e7383801c249a6a7d8da
