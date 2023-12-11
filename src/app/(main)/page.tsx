@@ -1,9 +1,6 @@
-import React from "react";
-// import "@/app/global.css";
-
 function page() {
   return (
-    <div className="futura">
+    <div className="">
       19
       <br />
       74

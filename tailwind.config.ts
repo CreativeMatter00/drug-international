@@ -8,16 +8,18 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
-      boxShadow: {
-        "1xl": "0px -1px 2px 0px rgba(0, 0, 0, 0.1) ",
+      colors: {
+        primary: "#C4161C",
+        hoverPrimary: "#6D0E16",
+        textPrimary: "#272727",
+        textSecondary: "#666666",
+        textLight: "#999999",
+        blue: "#2B3589",
+        bgPrimary: "#F6F6F6",
       },
     },
   },
   plugins: [],
 };
+
 export default config;

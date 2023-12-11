@@ -1,20 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
-
 @font-face {
-  font-family: oswald;
+  font-family: futura;
   src: url(../../public/assets/fonts/FuturaPTBold.otf);
 }
 
-.futura {
-  font-family: oswald, sans-serif !important;
-}
-
-html {
+body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
+}
+
+.futura {
+  font-family: futura, sans-serif !important;
 }
