@@ -1,20 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+@font-face {
+	font-family: futura;
+	src: url(../../public/assets/fonts/FuturaPTBold.otf);
+}
+
+@font-face {
+	font-family: montserrat;
+	src: url(../../public/assets/fonts/Montserrat-VariableFont_wght.ttf);
+}
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: futura;
-  src: url(../../public/assets/fonts/FuturaPTBold.otf);
-}
-
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "Montserrat", sans-serif;
+	margin: 0;
+	padding: 0;
+	font-family: montserrat, sans-serif;
 }
 
 .futura {
-  font-family: futura, sans-serif !important;
+	font-family: futura, sans-serif !important;
 }
