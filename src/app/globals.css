@@ -5,16 +5,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
 
 @font-face {
-	font-family: oswald;
-	src: url(../../public/assets/fonts/FuturaPTBold.otf);
+  font-family: oswald;
+  src: url(../../public/assets/fonts/FuturaPTBold.otf);
 }
 
-.oswald {
-	font-family: oswald, sans-serif !important;
+.futura {
+  font-family: oswald, sans-serif !important;
 }
 
 html {
-	margin: 0;
-	padding: 0;
-	font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
 }
