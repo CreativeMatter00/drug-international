@@ -1,8 +1,13 @@
-import React from "react";
-// import "@/app/global.css";
+import Hero from "@/components/home/Hero";
+import WhoWeAre from "@/components/home/WhoWeAre";
 
 function page() {
-	return <div className="oswald">page</div>;
+	return (
+		<div>
+			<Hero />
+			<WhoWeAre />
+		</div>
+	);
 }
 
 export default page;
