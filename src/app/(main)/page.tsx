@@ -1,13 +1,5 @@
-import Hero from "@/components/home/Hero";
-import WhoWeAre from "@/components/home/WhoWeAre";
-
 function page() {
-	return (
-		<div>
-			<Hero />
-			<WhoWeAre />
-		</div>
-	);
+	return <div>index</div>;
 }
 
 export default page;

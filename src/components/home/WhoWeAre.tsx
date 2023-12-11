@@ -1,6 +1,6 @@
 function WhoWeAre() {
 	return (
-		<div className="grid grid-cols-2">
+		<div className="grid grid-cols-2 mb-28">
 			<div className="bg-primary text-white text-right font-semibold py-28 px-24">
 				<h1 className="text-3xl underline mb-28"> WHO WE ARE </h1>
 				<p className="text-base">
