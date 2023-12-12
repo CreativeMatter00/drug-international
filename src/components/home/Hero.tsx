@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import Button from "../ui/Button";
+import ButtonPrimary from "../ui/ButtonPrimary";
 
 function Hero() {
 	return (
@@ -46,7 +46,7 @@ function Hero() {
 							solid dosage plant.
 						</p>
 
-						<Button> SEE OUR PRODUCTS </Button>
+						<ButtonPrimary> SEE OUR PRODUCTS </ButtonPrimary>
 					</motion.div>
 				</div>
 			</div>

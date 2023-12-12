@@ -17,7 +17,7 @@ function WhoWeAre() {
 			</div>
 			<div>
 				<div className="bg-bgPrimary text-textPrimary font-semibold py-28 px-24">
-					<h1 className="text-3xl underline mb-28"> WHO WE DO </h1>
+					<h1 className="text-3xl underline mb-28"> WHAT WE DO </h1>
 					<p className="text-base">
 						We formulate drugs for all age groups and genders in different
 						dosage forms including capsules, tablets, syrups, suspensions,
