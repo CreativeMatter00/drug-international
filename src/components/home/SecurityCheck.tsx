@@ -3,8 +3,8 @@ import ButtonSecondary from "../ui/ButtonSecondary";
 
 function SecurityCheck() {
 	return (
-		<div className={styles.background}>
-			<div className={`container z-10 relative m-auto text-white`}>
+		<div className={`${styles.background} mb-32`}>
+			<div className={`container px-4 z-10 relative m-auto text-white`}>
 				<div className="text-center font-semibold text-4xl py-10 uppercase">
 					Security Check
 				</div>
