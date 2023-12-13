@@ -6,10 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import Image from "next/image";
 import LatestProductsCard from "./LatestProductsCard";
-
-// import required modules
 
 function LatestProducts() {
 	return (
