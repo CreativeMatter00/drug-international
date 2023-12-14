@@ -1,8 +1,36 @@
+"use client";
+
 import Image from "next/image";
+import { useEffect, useState } from "react";
+import styles from "@/styles/NavSidebar.module.css";
 
 const Navbar = () => {
+  const [scrolling, setScrolling] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop1 = window.scrollY;
+      const shouldBeVisible1 = scrollTop1 > 200;
+      setScrolling(shouldBeVisible1);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  console.log("scrollbarTop", scrolling);
+
   return (
-    <nav className="top-0 border border-green-500 flex justify-center bg-white fixed w-full z-100">
+    <nav
+      className={`top-0  flex justify-center bg-white fixed w-full z-[100000] ${
+        scrolling
+          ? `bg-opacity-75 shadow-lg shadow-gray-500/50  ${styles.blurLg}`
+          : ``
+      }`}
+    >
       <div className="container h-20 w-full  px-1 py-2">
         <div className="flex  h-full w-full justify-between">
           <div className="flex items-center">
