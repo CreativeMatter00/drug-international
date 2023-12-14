@@ -1,8 +1,8 @@
 function WhoWeAre() {
 	return (
-		<div className="grid grid-cols-2 mb-28">
-			<div className="bg-primary text-white text-right font-semibold py-28 px-24">
-				<h1 className="text-3xl underline mb-28"> WHO WE ARE </h1>
+		<div className="grid grid-cols-1 mb-28 md:grid-cols-2">
+			<div className="bg-primary text-white font-semibold py-10 px-8 md:text-right md:py-28 md:px-24">
+				<h1 className="text-3xl underline mb-5 md:mb-28"> WHO WE ARE </h1>
 				<p className="text-base">
 					We were the first company in Bangladesh to formulate medicines in soft
 					capsule form for the purpose of maximizing absorption and retention
@@ -16,8 +16,8 @@ function WhoWeAre() {
 				</p>
 			</div>
 			<div>
-				<div className="bg-bgPrimary text-textPrimary font-semibold py-28 px-24">
-					<h1 className="text-3xl underline mb-28"> WHAT WE DO </h1>
+				<div className="bg-bgPrimary text-textPrimary font-semibold py-10 px-8 md:py-28 md:px-24">
+					<h1 className="text-3xl underline mb-5 md:mb-28"> WHAT WE DO </h1>
 					<p className="text-base">
 						We formulate drugs for all age groups and genders in different
 						dosage forms including capsules, tablets, syrups, suspensions,
