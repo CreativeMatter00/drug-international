@@ -9,24 +9,24 @@ type ILatestProductsCard = {
 
 function LatestProductsCard(props: ILatestProductsCard) {
 	return (
-		<div className="relative border border-red-500 group">
-			<div className="relative">
+		<div className="relative border border-red-500 cursor-pointer overflow-hidden group">
+			<div className="relative overflow-hidden">
 				<Image
 					// src={`/assets/images/home/latest/1.charm.png`}
 					src={props.src}
 					width={424}
 					height={378}
 					alt="latest products"
-					className="w-full h-auto object-cover"
+					className="w-full h-auto object-cover group-hover:scale-125 group-hover:transition-all"
 				/>
 				<div className="overlay hidden group-hover:flex items-center justify-center absolute inset-0 bg-black bg-opacity-50 text-white text-2xl font-medium">
 					View
 				</div>
 			</div>
-			<div className="w-full bg-primary text-white text-2xl font-medium text-center">
+			<div className="w-full bg-primary text-white text-2xl font-medium text-center uppercase">
 				{props.title}
 			</div>
-			<div className="hidden p-6 text-center group-hover:flex flex-col gap-2 transition-all delay-1000">
+			<div className="hidden p-6 text-center group-hover:flex flex-col gap-2 group-hover:transition-all delay-1000">
 				<div className="flex flex-col gap-1">
 					<p className="text-textLight text-base font-medium">Generic Name :</p>
 					<p className="text-textSecondary text-base font-medium uppercase">

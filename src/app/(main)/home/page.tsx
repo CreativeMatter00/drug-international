@@ -1,4 +1,5 @@
 import Achievements from "@/components/home/Achievements";
+import BAB from "@/components/home/BAB";
 import CSR from "@/components/home/CSR";
 import Hero from "@/components/home/Hero";
 import LatestProducts from "@/components/home/LatestProducts";
@@ -16,6 +17,7 @@ function page() {
 			<SpecializedProducts />
 			<CSR />
 			<Achievements />
+			<BAB />
 		</div>
 	);
 }
