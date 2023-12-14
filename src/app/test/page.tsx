@@ -1,12 +1,32 @@
+"use client";
+
 import CapsuleButton from "@/components/share/CapsuleButton";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 // import svgIcon from "/assets/icons/search.svg";
+import { TiArrowLeftThick, TiArrowRightThick } from "react-icons/ti";
 
 const Test = () => {
   const img = 'url("gif/ERxI.gif")';
 
+  const [isSidebarVisible, setSidebarVisible] = useState(
+    window.innerWidth > 767
+  );
+
+  const handleSidebarToggle = () => {
+    setSidebarVisible(!isSidebarVisible);
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setSidebarVisible(window.innerWidth > 767);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
-    <div className="bg-[#E4E4E6]">
+    <div className="bg-[#E4E4E6] h-screen ">
       <nav className="top-0 border border-green-500 flex justify-center bg-white">
         <div className="container h-20 w-full  px-1 py-2">
           <div className="flex  h-full w-full justify-between">
@@ -115,11 +135,65 @@ const Test = () => {
           </div>
         </div>
       </nav>
+
+      <div
+        className={`${
+          isSidebarVisible
+            ? "ease-in-out duration-700 left-0"
+            : "ease-in-out duration-700 -left-16"
+        } bg-head text-white h-screen fixed w-16 z-40 overflow-hidden`}
+      >
+        <div className="w-20 h-screen border border-red-700 bg-white relative">
+          <button
+            className={` left-0 top-[50vh] text-black rounded-r-md p-0.5 fixed z-50 bg-white
+            ${
+              isSidebarVisible
+                ? "max-md:ml-0 ease-in-out duration-700 left-16"
+                : "max-md:pl-0 ease-in-out duration-700 left-0"
+            }
+            `}
+            onClick={handleSidebarToggle}
+          >
+            {isSidebarVisible ? (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="22"
+                viewBox="0 0 21 22"
+                fill="none"
+              >
+                <path
+                  d="M13.012 5.75781L7.83154 10.9382L13.012 16.1187"
+                  stroke="#272727"
+                  stroke-width="1.29511"
+                  stroke-linecap="round"
+                />
+              </svg>
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="22"
+                viewBox="0 0 21 22"
+                fill="none"
+              >
+                <path
+                  d="M7.90258 16.1182L13.083 10.9377L7.90258 5.75731"
+                  stroke="#272727"
+                  stroke-width="1.29511"
+                  stroke-linecap="round"
+                />
+              </svg>
+            )}
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
 
 export default Test;
+
 // import CapsuleButton from "@/components/share/CapsuleButton";
 
 // const Test = () => {
