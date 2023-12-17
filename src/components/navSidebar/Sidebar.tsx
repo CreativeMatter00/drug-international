@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const Sidebar = () => {
@@ -27,9 +28,43 @@ const Sidebar = () => {
       } bg-head text-white h-screen fixed w-20 z-40 overflow-hidden`}
     >
       <div className="w-20 h-screen border bg-white relative">
-        <div className="flex h-full text-black justify-center items-end">
-          <div>1</div>
-          <div>2</div>
+        <div className="flex h-full text-black justify-center items-center flex-col -mt-16 gap-2">
+          <div className="group cursor-pointer flex items-center flex-col uppercase font-bold text-sm text-[#CC7A2D]">
+            <Image
+              src={`/assets/icons/sidebar/Herbals.svg`}
+              width={44}
+              height={44}
+              alt="Herbals"
+              className="h-auto group-hover:hidden"
+              // className="h-auto block hover:hidden"
+            />
+            <Image
+              src={`/assets/icons/sidebar/Herbal hovers.svg`}
+              width={44}
+              height={44}
+              alt="Herbal hovers"
+              className="h-auto hidden group-hover:block"
+            />
+            HERBAL
+          </div>
+
+          <div className="group cursor-pointer flex items-center flex-col uppercase font-bold text-sm text-[#159A48]">
+            <Image
+              src={`/assets/icons/sidebar/Unanis.svg`}
+              width={44}
+              height={44}
+              alt="Unanis"
+              className="h-auto group-hover:hidden"
+            />
+            <Image
+              src={`/assets/icons/sidebar/Unanis Hovers.svg`}
+              width={44}
+              height={44}
+              alt="Unanis Hovers"
+              className="h-auto hidden group-hover:block"
+            />
+            Unani
+          </div>
         </div>
 
         <button
