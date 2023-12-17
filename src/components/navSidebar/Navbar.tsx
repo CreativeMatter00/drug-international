@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import styles from "@/styles/NavSidebar.module.css";
+import Link from "next/link";
 
 const Navbar = () => {
   const [scrolling, setScrolling] = useState(false);
@@ -34,13 +35,15 @@ const Navbar = () => {
       <div className="container h-20 w-full  px-1 py-2">
         <div className="flex  h-full w-full justify-between">
           <div className="flex items-center">
-            <Image
-              src={`/assets/DRUG INT LOGO.png`}
-              width={170}
-              height={61}
-              alt="latest products"
-              className="h-auto"
-            />
+            <Link href="/home">
+              <Image
+                src={`/assets/DRUG INT LOGO.png`}
+                width={170}
+                height={61}
+                alt="latest products"
+                className="h-auto"
+              />
+            </Link>
           </div>
 
           <div className="flex justify-between gap-1 items-center text-[#272727] text-sm font-medium uppercase">
@@ -68,19 +71,19 @@ const Navbar = () => {
 
             <div className="group cursor-pointer flex justify-center items-center">
               <Image
-                src={`/assets/icons/Lan.svg`}
+                src={`/assets/icons/navbar/Language Icon.svg`}
                 // src={`/assets/icons/Language Hover.png`}
-                width={25}
-                height={25}
-                alt="latest products"
-                className="h-auto hidden group-hover:block group-hover:scale-125"
-              />
-              <Image
-                src={`/assets/icons/Language.png`}
-                width={25}
-                height={25}
+                width={32}
+                height={32}
                 alt="latest products"
                 className="h-auto  block group-hover:hidden"
+              />
+              <Image
+                src={`/assets/icons/navbar/Language Icon hover.svg`}
+                width={32}
+                height={32}
+                alt="latest products"
+                className=" h-auto hidden group-hover:block"
               />
             </div>
 
