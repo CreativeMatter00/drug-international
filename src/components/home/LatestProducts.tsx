@@ -9,6 +9,21 @@ import "swiper/css";
 import LatestProductsCard from "./LatestProductsCard";
 
 function LatestProducts() {
+
+	const breakpoints = {
+    // when window width is >= 768px (PC or laptop)
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
+    // when window width is < 768px (mobile)
+    0: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+  };
+
+
 	return (
 		<div className="min-h-[560px]">
 			<h1 className="text-3xl font-semibold text-textPrimary uppercase text-center mb-12">
@@ -16,7 +31,7 @@ function LatestProducts() {
 			</h1>
 
 			<Swiper
-				slidesPerView={4}
+				breakpoints={breakpoints}
 				spaceBetween={30}
 				centeredSlides={true}
 				pagination={{

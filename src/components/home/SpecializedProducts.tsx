@@ -8,6 +8,19 @@ import "swiper/css";
 import SpecializedProductCard from "./SpecializedProductCard";
 
 function SpecializedProducts() {
+	const breakpoints = {
+		// when window width is >= 768px (PC or laptop)
+		768: {
+			slidesPerView: 4,
+			spaceBetween: 30,
+		},
+		// when window width is < 768px (mobile)
+		0: {
+			slidesPerView: 2,
+			spaceBetween: 10,
+		},
+	};
+
 	return (
 		<div className="py-12">
 			<div className="text-center font-semibold text-4xl pb-12 uppercase">
@@ -15,7 +28,7 @@ function SpecializedProducts() {
 			</div>
 			<div className="bg-[#E4E4E6] py-8">
 				<Swiper
-					slidesPerView={4}
+					breakpoints={breakpoints}
 					spaceBetween={30}
 					centeredSlides={true}
 					pagination={{
