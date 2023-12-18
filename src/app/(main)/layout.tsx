@@ -1,6 +1,6 @@
-import Footer from "@/components/footer/Footer";
-import Navbar from "@/components/navSidebar/Navbar";
-import Sidebar from "@/components/navSidebar/Sidebar";
+import Footer from "@/components/ui/footer/Footer";
+import Navbar from "@/components/ui/navSidebar/Navbar";
+import Sidebar from "@/components/ui/navSidebar/Sidebar";
 import React, { ReactNode } from "react";
 
 function layout({ children }: { children: ReactNode }) {

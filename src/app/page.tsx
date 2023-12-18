@@ -35,7 +35,7 @@ const page = () => {
                     duration: 1,
                   }}
                 >
-                  <p className="text-[#C4161C] font-bold text-[5vh] leading-[4.5vh]">
+                  <p className="text-primary font-bold text-[5vh] leading-[4.5vh]">
                     First ever <br /> company <br />
                     to formulate <br />
                     medicines <br />
