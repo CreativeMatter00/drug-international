@@ -7,7 +7,7 @@ function CorporateResponsibility() {
 				Out of social and business obligation, the group established the
 				following institutes as "Corporate Social Responsibility (CSR) projects"
 			</div>
-			<div className="px-16">
+			<div className="px-4 md:px-16">
 				<ul className="flex flex-col gap-3">
 					<li>
 						Khwaja Yunus Ali Medical College & Hospital (KYAMCH); a 586 bed
