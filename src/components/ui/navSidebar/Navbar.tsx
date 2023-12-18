@@ -22,16 +22,25 @@ const Navbar = () => {
 		};
 	}, []);
 
+	console.log("scrollbarTop", scrolling);
+
 	return (
 		<nav
-			className={`top-0 flex justify-center bg-white fixed w-full z-[100000] ${
+			className={`top-0  flex justify-center bg-white fixed w-full z-[100000] ${
 				scrolling
-					? `bg-opacity-75 shadow-lg shadow-gray-500/50  ${styles.blurLg}`
+					? `bg-opacity-75 shadow-lg ${styles.navShadow}  ${styles.blurLg}`
 					: ``
 			}`}
 		>
-			<div className="container h-20 w-full px-1 py-2">
-				<div className="flex h-full w-full justify-between">
+			{/* <nav
+      className={`top-0  flex justify-center bg-white fixed w-full z-[100000] ${
+        scrolling
+          ? `bg-opacity-75 shadow-lg shadow-gray-500/50  ${styles.blurLg}`
+          : ``
+      }`}
+    > */}
+			<div className="container h-20 w-full  px-1 py-2">
+				<div className="flex  h-full w-full justify-between">
 					<div className="flex items-center">
 						<Link href="/home">
 							<Image
