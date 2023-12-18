@@ -3,9 +3,11 @@ import Banner from "@/components/ui/Banner";
 
 function Page() {
 	return (
-		<div className="relative">
-			<Banner src="/assets/images/aboutUs/banner.jpg" title="about us" />
-			<AboutUs />
+		<div>
+			<div className="relative">
+				<Banner src="/assets/images/aboutUs/banner.jpg" title="about us" />
+				<AboutUs />
+			</div>
 		</div>
 	);
 }

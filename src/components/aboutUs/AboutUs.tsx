@@ -2,6 +2,10 @@
 
 import { useState } from "react";
 import CompanyProfile from "./CompanyProfile";
+import FounderProfile from "./FounderProfile";
+import MdProfile from "./MdProfile";
+import QualityPolicy from "./QualityPolicy";
+import CorporateResponsibility from "./CorporateResponsibility";
 
 function AboutUs() {
 	const tabTitle = [
@@ -14,10 +18,10 @@ function AboutUs() {
 		"sister concerns",
 	];
 
-	const [selectedTab, setSelectedTab] = useState(0);
+	const [selectedTab, setSelectedTab] = useState(2);
 
 	return (
-		<div className="absolute mt-[-100px] w-full">
+		<div className="relative mt-[-100px] w-full mb-10">
 			<div className="container mx-auto bg-white py-14 px-12 rounded-2xl shadow-[0px_-2px_8px_0px_rgba(0,0,0,0.75)]">
 				<div className="flex items-center gap-4 text-center text-textPrimary overflow-x-auto mb-20">
 					{tabTitle.map((title: string, index: number) => (
@@ -40,6 +44,10 @@ function AboutUs() {
 				</div>
 
 				{selectedTab === 0 && <CompanyProfile />}
+				{selectedTab === 1 && <FounderProfile />}
+				{selectedTab === 2 && <MdProfile />}
+				{selectedTab === 4 && <QualityPolicy />}
+				{selectedTab === 5 && <CorporateResponsibility />}
 			</div>
 		</div>
 	);

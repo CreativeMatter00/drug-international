@@ -22,11 +22,9 @@ const Navbar = () => {
 		};
 	}, []);
 
-	console.log("scrollbarTop", scrolling);
-
 	return (
 		<nav
-			className={`top-0  flex justify-center bg-white fixed w-full z-[100000] ${
+			className={`top-0 flex justify-center bg-white fixed w-full z-[100000] ${
 				scrolling
 					? `bg-opacity-75 shadow-lg shadow-gray-500/50  ${styles.blurLg}`
 					: ``
@@ -47,7 +45,9 @@ const Navbar = () => {
 					</div>
 
 					<div className="flex justify-between gap-1 items-center text-[#272727] text-sm font-medium uppercase">
-						<div className="p-2.5 cursor-pointer">About Us</div>
+						<Link href="/about-us">
+							<div className="p-2.5 cursor-pointer">About Us</div>
+						</Link>
 						<div className="p-2.5 cursor-pointer">Our Legacy</div>
 						<div className="p-2.5 cursor-pointer">products</div>
 						<div className="p-2.5 cursor-pointer">facilities</div>
