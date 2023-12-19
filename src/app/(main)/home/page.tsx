@@ -8,18 +8,18 @@ import SpecializedProducts from "@/components/home/SpecializedProducts";
 import WhoWeAre from "@/components/home/WhoWeAre";
 
 function page() {
-	return (
-		<div>
-			<Hero />
-			<WhoWeAre />
-			<LatestProducts />
-			<SecurityCheck />
-			<SpecializedProducts />
-			<CSR />
-			<Achievements />
-			<BAB />
-		</div>
-	);
+  return (
+    <div>
+      <Hero />
+      <WhoWeAre />
+      <LatestProducts />
+      <SecurityCheck />
+      <SpecializedProducts />
+      <CSR />
+      <Achievements />
+      <BAB />
+    </div>
+  );
 }
 
 export default page;
