@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 
 function FounderProfile() {
 	return (
@@ -30,11 +29,11 @@ function FounderProfile() {
 					Dr. M. M. Amjad Hussain was born on October 1st 1925 in the village of
 					Enayetpur, District of Sirajganj. He had obtained his MBBS from
 					Calcutta Medical College, India in 1948. He was the Founding Managing
-					Director and Chairman of the following
-					industries/companies/organizations:
+					Director and Chairman of the following industries / companies /
+					organizations:
 				</p>
-				<div className="grid grid-cols-2 text-white font-medium text-base">
-					<ul className="flex flex-col gap-3">
+				<div className="grid grid-cols-1 md:grid-cols-2 text-white font-medium text-base">
+					<ul className="flex flex-col gap-3 mb-3 md:mb-0">
 						<li>Khwaja Yunus Ali(R) Medical College & Hospital</li>
 
 						<li>Khwaja Yunus Ali(R) University </li>
