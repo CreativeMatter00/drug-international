@@ -30,7 +30,7 @@ function LatestProducts() {
 
       <Swiper
         breakpoints={breakpoints}
-        spaceBetween={30}
+        spaceBetween={120}
         centeredSlides={true}
         pagination={{
           clickable: true,

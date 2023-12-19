@@ -9,7 +9,7 @@ type ILatestProductsCard = {
 
 function LatestProductsCard(props: ILatestProductsCard) {
   return (
-    <div className="relative rounded-lg  cursor-pointer overflow-hidden group h-[35rem] w-[26rem]">
+    <div className="relative rounded-lg  cursor-pointer overflow-hidden group h-[35rem] ">
       <div className={`h-20  block group-hover:h-0 duration-500`}></div>
 
       <div className="relative overflow-hidden p-2 ">
