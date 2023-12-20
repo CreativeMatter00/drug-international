@@ -57,7 +57,9 @@ const Navbar = () => {
 						<Link href="/about-us">
 							<div className="p-2.5 cursor-pointer">About Us</div>
 						</Link>
-						<div className="p-2.5 cursor-pointer">Our Legacy</div>
+						<Link href="/our-legacy">
+							<div className="p-2.5 cursor-pointer">Our Legacy</div>
+						</Link>
 						<div className="p-2.5 cursor-pointer">products</div>
 						<div className="p-2.5 cursor-pointer">facilities</div>
 						<div className="p-2.5 cursor-pointer">career</div>
