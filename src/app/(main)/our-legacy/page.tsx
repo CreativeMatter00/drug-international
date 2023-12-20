@@ -5,7 +5,7 @@ const Timeline = () => {
 	return (
 		<div>
 			<div className="relative">
-				<Banner src="/assets/images/aboutUs/banner.jpg" title="Our Legacy" />
+				<Banner src="/assets/images/ourLegacy/banner.png" title="Our Legacy" />
 				<OurLegacy />
 			</div>
 		</div>
