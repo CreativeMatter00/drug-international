@@ -1,6 +1,7 @@
 import Image from "next/image";
 import ButtonPrimary from "../ui/ButtonPrimary";
 import { BsDownload } from "react-icons/bs";
+import Link from "next/link";
 
 function Products() {
 	return (
@@ -18,53 +19,58 @@ function Products() {
 				</div>
 
 				<div className="px-4 grid grid-cols-1 md:grid-cols-3 gap-4">
-					<div className="border border-[#e4e4e6] p-3 flex items-center">
-						<div className="flex items-center gap-2 text-primary font-medium text-4xl uppercase">
-							<p className="">
-								{" "}
-								Latest <br /> Products{" "}
-							</p>
-							<Image
-								src={"/assets/images/products/1.png"}
-								width={158}
-								height={180}
-								alt="product"
-								className="w-[130px] h-auto"
-							/>
+					<Link href={"products/latest-products"}>
+						<div className="border border-[#e4e4e6] p-3 flex items-center">
+							<div className="flex items-center gap-2 text-primary font-medium text-4xl uppercase">
+								<p className="">
+									Latest <br /> Products
+								</p>
+								<Image
+									src={"/assets/images/products/1.png"}
+									width={158}
+									height={180}
+									alt="product"
+									className="w-[130px] h-auto"
+								/>
+							</div>
 						</div>
-					</div>
+					</Link>
 
-					<div className="border border-[#e4e4e6] p-3 flex items-center">
-						<div className="flex items-center gap-2 text-primary font-medium text-4xl uppercase">
-							<p className="">
-								{" "}
-								Upcoming <br /> Products{" "}
-							</p>
-							<Image
-								src={"/assets/images/products/1.png"}
-								width={158}
-								height={180}
-								alt="product"
-								className="w-[130px] h-auto"
-							/>
+					<Link href={"#"}>
+						<div className="border border-[#e4e4e6] p-3 flex items-center">
+							<div className="flex items-center gap-2 text-primary font-medium text-4xl uppercase">
+								<p className="">
+									{" "}
+									Upcoming <br /> Products{" "}
+								</p>
+								<Image
+									src={"/assets/images/products/1.png"}
+									width={158}
+									height={180}
+									alt="product"
+									className="w-[130px] h-auto"
+								/>
+							</div>
 						</div>
-					</div>
+					</Link>
 
-					<div className="border border-[#e4e4e6] p-3 flex items-center">
-						<div className="flex items-center gap-2 text-primary font-medium text-4xl uppercase">
-							<p className="">
-								{" "}
-								All <br /> Products{" "}
-							</p>
-							<Image
-								src={"/assets/images/products/1.png"}
-								width={158}
-								height={180}
-								alt="product"
-								className="w-[130px] h-auto"
-							/>
+					<Link href={"#"}>
+						<div className="border border-[#e4e4e6] p-3 flex items-center">
+							<div className="flex items-center gap-2 text-primary font-medium text-4xl uppercase">
+								<p className="">
+									{" "}
+									All <br /> Products{" "}
+								</p>
+								<Image
+									src={"/assets/images/products/1.png"}
+									width={158}
+									height={180}
+									alt="product"
+									className="w-[130px] h-auto"
+								/>
+							</div>
 						</div>
-					</div>
+					</Link>
 				</div>
 			</div>
 		</div>
