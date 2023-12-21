@@ -17,7 +17,7 @@ function Products() {
 					</div>
 				</div>
 
-				<div className="px-4 grid grid-cols-3 gap-4">
+				<div className="px-4 grid grid-cols-1 md:grid-cols-3 gap-4">
 					<div className="border border-[#e4e4e6] p-3 flex items-center">
 						<div className="flex items-center gap-2 text-primary font-medium text-4xl uppercase">
 							<p className="">
