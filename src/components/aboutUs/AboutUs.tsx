@@ -20,7 +20,7 @@ function AboutUs() {
 		"sister concerns",
 	];
 
-	const [selectedTab, setSelectedTab] = useState(3);
+	const [selectedTab, setSelectedTab] = useState(0);
 
 	return (
 		<div className="relative mt-[-100px] w-full mb-10">

@@ -45,8 +45,9 @@ function Hero() {
 							as a pioneer in Bangladesh for adding a state of the art oral
 							solid dosage plant.
 						</p>
-
-						<ButtonPrimary> SEE OUR PRODUCTS </ButtonPrimary>
+						<div className="ml-auto w-fit">
+							<ButtonPrimary> SEE OUR PRODUCTS </ButtonPrimary>
+						</div>
 					</motion.div>
 				</div>
 			</div>

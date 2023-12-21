@@ -31,6 +31,7 @@ function SpecializedProducts() {
 					breakpoints={breakpoints}
 					spaceBetween={30}
 					centeredSlides={true}
+					initialSlide={1}
 					pagination={{
 						clickable: true,
 					}}
