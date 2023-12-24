@@ -36,7 +36,7 @@ function Products() {
 						</div>
 					</Link>
 
-					<Link href={"#"}>
+					<Link href={"products/upcoming-products"}>
 						<div className="border border-[#e4e4e6] p-3 flex items-center">
 							<div className="flex items-center gap-2 text-primary font-medium text-4xl uppercase">
 								<p className="">
@@ -54,7 +54,7 @@ function Products() {
 						</div>
 					</Link>
 
-					<Link href={"#"}>
+					<Link href={"products/all-products"}>
 						<div className="border border-[#e4e4e6] p-3 flex items-center">
 							<div className="flex items-center gap-2 text-primary font-medium text-4xl uppercase">
 								<p className="">

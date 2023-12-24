@@ -33,3 +33,24 @@ ul {
 		0px 14px 5px 0px rgba(91, 91, 91, 0.01),
 		0px 21px 6px 0px rgba(91, 91, 91, 0);
 }
+
+.letterBtn {
+	font-size: 16px;
+	font-weight: 600;
+	color: #272727;
+	padding: 8px;
+	text-transform: uppercase;
+}
+
+.letterBtn:hover {
+	border-bottom: solid 2px #df343a;
+	color: 272727;
+	border-radius: 2px;
+}
+
+.btnActive {
+	border: solid 2px #df343a;
+	background-color: #df343a;
+	color: white;
+	border-radius: 2px;
+}
