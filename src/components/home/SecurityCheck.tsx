@@ -1,5 +1,5 @@
 import styles from "@/styles/Security.module.css";
-import ButtonSecondary from "../ui/ButtonSecondary";
+import ButtonSecondary from "../ui/button/ButtonSecondary";
 
 function SecurityCheck() {
 	return (

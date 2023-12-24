@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ButtonPrimary from "../ui/ButtonPrimary";
+import ButtonPrimary from "../ui/button/ButtonPrimary";
 import { BsDownload } from "react-icons/bs";
 import Link from "next/link";
 
