@@ -35,7 +35,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link href="/home">
               <Image
-                src={`/assets/DRUG INT LOGO.png`}
+                src={`/assets/logo/drug-logo.png`}
                 width={170}
                 height={61}
                 alt="Logo"

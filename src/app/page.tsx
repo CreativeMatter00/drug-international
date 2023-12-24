@@ -57,20 +57,32 @@ const page = () => {
       </div>
       <div className="absolute  inset-y-0 right-0 w-[14vh] h-screen overflow-hidden flex items-end">
         <div className="flex flex-col items-end  mb-[10vh] gap-[5vh] pl-[2vh]">
-          <SlSocialFacebook
-            className="h-[3vh] w-[3vh] hover:scale-150 duration-300 cursor-pointer"
-            color="#C4161C"
-          />
+          <Link href="https://www.facebook.com/drugintltd/" target="_blank">
+            <SlSocialFacebook
+              className="h-[3vh] w-[3vh] hover:scale-150 duration-300 cursor-pointer"
+              color="#C4161C"
+            />
+          </Link>
 
-          <SlSocialLinkedin
-            className="h-[3vh] w-[3vh] hover:scale-125 duration-300 cursor-pointer z-10 overflow-visible"
-            color="#C4161C"
-          />
+          <Link
+            href="https://bd.linkedin.com/company/drug-international-limited"
+            target="_blank"
+          >
+            <SlSocialLinkedin
+              className="h-[3vh] w-[3vh] hover:scale-125 duration-300 cursor-pointer z-10 overflow-visible"
+              color="#C4161C"
+            />
+          </Link>
 
-          <SlSocialYoutube
-            className="h-[3vh] w-[3vh] hover:scale-125 duration-300 cursor-pointer "
-            color="#C4161C"
-          />
+          <Link
+            href="https://www.youtube.com/@druginternationalltd.6126/featured"
+            target="_blank"
+          >
+            <SlSocialYoutube
+              className="h-[3vh] w-[3vh] hover:scale-125 duration-300 cursor-pointer "
+              color="#C4161C"
+            />
+          </Link>
         </div>
       </div>
 
