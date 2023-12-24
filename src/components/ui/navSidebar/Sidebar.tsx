@@ -5,21 +5,11 @@ import { useEffect, useState } from "react";
 import styles from "@/styles/NavSidebar.module.css";
 
 const Sidebar = () => {
-  const [isSidebarVisible, setSidebarVisible] = useState(
-    window.innerWidth > 767
-  );
+  const [isSidebarVisible, setSidebarVisible] = useState(true);
 
   const handleSidebarToggle = () => {
     setSidebarVisible(!isSidebarVisible);
   };
-
-  useEffect(() => {
-    const handleResize = () => {
-      setSidebarVisible(window.innerWidth > 767);
-    };
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   return (
     <div
@@ -40,7 +30,7 @@ const Sidebar = () => {
               className="h-auto group-hover:hidden"
             />
             <Image
-              src={`/assets/icons/sidebar/Herbal hovers.svg`}
+              src={`/assets/icons/sidebar/Herbal Hovers.svg`}
               width={44}
               height={44}
               alt="Herbal hovers"
@@ -89,8 +79,8 @@ const Sidebar = () => {
               <path
                 d="M13.012 5.75781L7.83154 10.9382L13.012 16.1187"
                 stroke="#272727"
-                stroke-width="1.29511"
-                stroke-linecap="round"
+                strokeWidth="1.29511"
+                strokeLinecap="round"
               />
             </svg>
           ) : (
@@ -104,8 +94,8 @@ const Sidebar = () => {
               <path
                 d="M7.90258 16.1182L13.083 10.9377L7.90258 5.75731"
                 stroke="#272727"
-                stroke-width="1.29511"
-                stroke-linecap="round"
+                strokeWidth="1.29511"
+                strokeLinecap="round"
               />
             </svg>
           )}
