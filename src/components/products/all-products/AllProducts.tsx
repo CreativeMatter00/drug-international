@@ -1,9 +1,14 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import { FaFilter } from "react-icons/fa";
 import { PiRadioButtonDuotone } from "react-icons/pi";
 import { PiRadioButtonFill } from "react-icons/pi";
+import Pharmaceuticals from "./Pharmaceuticals";
+import Oncology from "./Oncology";
+import Herbal from "./Herbal";
+import Unani from "./Unani";
 
 function AllProducts() {
 	const [medicineType, setMedicineType] = useState<number>(0);
@@ -18,7 +23,7 @@ function AllProducts() {
 
 	return (
 		<div className="container mx-auto">
-			<div className="flex items-center justify-around mb-9">
+			<div className="flex flex-col items-center justify-around gap-4 mb-9 md:flex-row">
 				<button
 					className={`font-medium text-2xl uppercase p-3 rounded-md ${
 						medicineType === 0
@@ -64,7 +69,7 @@ function AllProducts() {
 				</button>
 			</div>
 
-			<div className="flex items-center justify-around border-2 border-primaryShade p-3 rounded-md font-medium text-textPrimary mb-9">
+			<div className="flex flex-col items-center justify-around gap-4 border-2 border-primaryShade p-3 rounded-md font-medium text-textPrimary mb-9 mx-4 md:flex-row md:mx-auto">
 				<button
 					className={`text-base flex items-center uppercase gap-3 ${
 						nameType === 0 && "text-primary"
@@ -94,7 +99,7 @@ function AllProducts() {
 				</button>
 			</div>
 
-			<div className="flex items-center justify-around mb-10">
+			<div className="flex flex-wrap mx-4 items-center justify-around mb-10">
 				{alphabet.split("").map((char) => (
 					<button
 						key={char}
@@ -105,6 +110,11 @@ function AllProducts() {
 					</button>
 				))}
 			</div>
+
+			{medicineType === 0 && <Pharmaceuticals />}
+			{medicineType === 1 && <Oncology />}
+			{medicineType === 2 && <Herbal />}
+			{medicineType === 3 && <Unani />}
 		</div>
 	);
 }

@@ -51,8 +51,7 @@ function Products() {
 						<div className="border border-[#e4e4e6] p-3 flex items-center">
 							<div className="flex items-center gap-2 text-primary font-medium text-3xl uppercase">
 								<p className="">
-									{" "}
-									Upcoming <br /> Products{" "}
+									Upcoming <br /> Products
 								</p>
 								<Image
 									src={"/assets/images/products/1.png"}
