@@ -2,6 +2,7 @@ import Image from "next/image";
 import ButtonPrimary from "../ui/button/ButtonPrimary";
 import { BsDownload } from "react-icons/bs";
 import Link from "next/link";
+import styles from "@/styles/Products.module.css";
 
 function Products() {
 	return (
@@ -18,69 +19,93 @@ function Products() {
 					</div>
 				</div>
 
-				<div className="px-4 grid grid-cols-1 md:grid-cols-3 gap-4 ">
-					<Link href={"products/latest-products"}>
-						<div className="border-4 border-[#e4e4e6] py-2 px-4 flex items-center relative group overflow-hidden ">
-							<div className="flex items-center gap-2 text-primary font-medium text-3xl uppercase group-hover:text-white z-10">
-								<p className="">
-									Latest <br /> Products
-								</p>
-								<Image
-									src={"/assets/images/products/1.png"}
-									width={158}
-									height={180}
-									alt="product"
-									className="w-[130px] h-auto"
-								/>
-							</div>
+				<div className="px-4 flex items-center justify-center">
+					<div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+						{/* <div className="px-4 grid grid-cols-1 md:grid-cols-3 gap-4 items-center justify-center"> */}
+						{/* <div className="flex gap-4 items-center justify-center"> */}
+						<Link href={"products/latest-products"}>
+							<div
+								className={`border border-[#D9D9D9] py-3 px-2 flex items-center relative group overflow-hidden w-80 h-72 rounded-lg ${styles.productCardShadow}`}
+							>
+								<div className="flex items-center gap-1 text-primary font-medium text-3xl uppercase z-20 duration-500 transition-all">
+									<p className="mb-0 group-hover:mt-32 duration-500 group-hover:text-white">
+										<span className="font-semibold  ">Latest</span> <br />{" "}
+										Products
+									</p>
+									<Image
+										src={"/assets/images/products/1.png"}
+										width={158}
+										height={180}
+										alt="product"
+										className="w-[130px] h-auto group-hover:rotate-[15deg] mt-0 group-hover:-mt-28 duration-500 transition-all"
+									/>
+								</div>
 
-							{/* <div className="absolute top-1 right-0">
-                <div className="h-6 w-6 bg-primary rounded-full group-hover:h-40 group-hover:w-40 duration-700 z-0 transition-all"></div>
-              </div> */}
+								<div className="absolute -top-4 group-hover:-top-6 left-48 group-hover:left-32 z-10 duration-500 transition-all group-hover:ml-4 group-hover:mb-4">
+									<div className="h-40 w-40 group-hover:h-56 group-hover:w-56 bg-primaryShade rounded-full duration-500  transition-all"></div>
+								</div>
 
-							<div className="absolute top-1 left-0">
-								<div className="h-6 w-6 bg-primary rounded-full group-hover:h-40 group-hover:w-96 duration-700 z-0 transition-all"></div>
+								<div className="absolute top-[1px] group-hover:-top-20  left-36 group-hover:-left-20 z-0 duration-500 transition-all ">
+									<div className="h-16 w-16 bg-[#EE676C] rounded-full group-hover:h-[27rem] group-hover:w-[29rem] duration-500 "></div>
+								</div>
 							</div>
-							{/* <div className="absolute top-1 right-0">
-                <div className="h-6 w-6 bg-primary rounded-full group-hover:h-96 group-hover:w-96 duration-700 z-0"></div>
-              </div> */}
-						</div>
-					</Link>
+						</Link>
 
-					<Link href={"products/upcoming-products"}>
-						<div className="border border-[#e4e4e6] p-3 flex items-center">
-							<div className="flex items-center gap-2 text-primary font-medium text-3xl uppercase">
-								<p className="">
-									Upcoming <br /> Products
-								</p>
-								<Image
-									src={"/assets/images/products/1.png"}
-									width={158}
-									height={180}
-									alt="product"
-									className="w-[130px] h-auto"
-								/>
-							</div>
-						</div>
-					</Link>
+						<Link href={"products/upcoming-products"}>
+							<div
+								className={`border border-[#D9D9D9] py-3 px-2 flex items-center relative group overflow-hidden w-80 h-72 rounded-lg ${styles.productCardShadow}`}
+							>
+								<div className="flex items-center gap-1 text-primary font-medium text-3xl uppercase z-20 duration-500 transition-all">
+									<p className="mb-0 group-hover:mt-32 duration-500 group-hover:text-white">
+										<span className="font-semibold  "> Upcoming</span> <br />{" "}
+										Products
+									</p>
+									<Image
+										src={"/assets/images/products/2.png"}
+										width={158}
+										height={180}
+										alt="product"
+										className="w-[130px] h-auto group-hover:-rotate-[15deg] mt-0 group-hover:-mt-28 duration-500 transition-all"
+									/>
+								</div>
 
-					<Link href={"products/all-products"}>
-						<div className="border border-[#e4e4e6] p-3 flex items-center">
-							<div className="flex items-center gap-2 text-primary font-medium text-3xl uppercase">
-								<p className="">
-									{" "}
-									All <br /> Products{" "}
-								</p>
-								<Image
-									src={"/assets/images/products/1.png"}
-									width={158}
-									height={180}
-									alt="product"
-									className="w-[130px] h-auto"
-								/>
+								<div className="absolute top-28 group-hover:-top-6 left-56 group-hover:left-32 z-10 duration-500 transition-all group-hover:ml-4 group-hover:mb-4">
+									<div className="h-40 w-40 group-hover:h-56 group-hover:w-56 bg-primaryShade rounded-full duration-500  transition-all"></div>
+								</div>
+
+								<div className="absolute top-48 group-hover:-top-20  left-48 group-hover:-left-20 z-0 duration-500 transition-all ">
+									<div className="h-16 w-16 bg-[#EE676C] rounded-full group-hover:h-[27rem] group-hover:w-[29rem] duration-500 "></div>
+								</div>
 							</div>
-						</div>
-					</Link>
+						</Link>
+
+						<Link href={"products/all-products"}>
+							<div
+								className={`border border-[#D9D9D9] py-3 px-2 flex items-center relative group overflow-hidden w-80 h-72 rounded-lg ${styles.productCardShadow}`}
+							>
+								<div className="flex items-center gap-1 text-primary font-medium text-3xl uppercase z-20 duration-500 transition-all">
+									<p className="mb-0 group-hover:mt-32 duration-500 group-hover:text-white">
+										<span className="font-semibold  ">All</span> <br /> Products
+									</p>
+									<Image
+										src={"/assets/images/products/3.png"}
+										width={158}
+										height={180}
+										alt="product"
+										className="w-[130px] h-auto group-hover:-rotate-[20deg] mt-0 group-hover:-mt-28 duration-500 transition-all"
+									/>
+								</div>
+
+								<div className="absolute -top-5 group-hover:-top-6 left-40 group-hover:left-32 z-10 duration-500 transition-all group-hover:ml-4 group-hover:mb-4">
+									<div className="h-40 w-40 group-hover:h-56 group-hover:w-56 bg-primaryShade rounded-full duration-500  transition-all"></div>
+								</div>
+
+								<div className="absolute top-28 group-hover:-top-20 left-64 group-hover:-left-20 z-0 duration-500 transition-all ">
+									<div className="h-16 w-16 bg-[#EE676C] rounded-full group-hover:h-[27rem] group-hover:w-[29rem] duration-500 "></div>
+								</div>
+							</div>
+						</Link>
+					</div>
 				</div>
 			</div>
 		</div>
