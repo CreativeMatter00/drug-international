@@ -18,7 +18,7 @@ function Manufacturing() {
 				/>
 			</div>
 
-			<div className="font-medium text-base text-textPrimary">
+			<div className="font-medium text-base text-textSecondary">
 				<p className="">
 					Step into our state-of-the-art manufacturing facility, the heartbeat
 					of Drug International Limited's commitment to quality pharmaceuticals.

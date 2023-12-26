@@ -2,6 +2,9 @@
 
 import { useState } from "react";
 import Manufacturing from "./Manufacturing";
+import Research from "./Research";
+import Oncology from "./Oncology";
+import Warehouse from "./Warehouse";
 
 function Facilities() {
 	const [activeFacility, setActiveFacility] = useState<number>(0);
@@ -51,6 +54,9 @@ function Facilities() {
 
 					<div className="py-12">
 						{activeFacility === 0 && <Manufacturing />}
+						{activeFacility === 1 && <Research />}
+						{activeFacility === 2 && <Oncology />}
+						{activeFacility === 3 && <Warehouse />}
 					</div>
 				</div>
 			</div>
