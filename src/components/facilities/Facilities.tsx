@@ -6,6 +6,8 @@ import Research from "./Research";
 import Oncology from "./Oncology";
 import Warehouse from "./Warehouse";
 
+import styles from "@/styles/Facilities.module.css";
+
 function Facilities() {
 	const [activeFacility, setActiveFacility] = useState<number>(0);
 
@@ -13,9 +15,9 @@ function Facilities() {
 		<div className="relative mt-[-100px] w-full mb-10">
 			<div className="container mx-auto bg-white px-4 md:px-12 rounded-2xl shadow-[0px_-2px_8px_0px_rgba(0,0,0,0.75)]">
 				<div
-					className="px-12 grid gap-16"
-					style={{ gridTemplateColumns: "1fr 3fr" }}
-					// className="px-12 flex gap-16"
+					// className="px-12 grid gap-16"
+					// style={{ gridTemplateColumns: "1fr 3fr" }}
+					className={styles.facilitiesContainer}
 				>
 					<div className="bg-[#DF343A] py-24 rounded-b-md font-medium text-lg text-white h-fit uppercase">
 						<p

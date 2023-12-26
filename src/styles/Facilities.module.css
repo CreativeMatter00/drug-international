@@ -1,11 +1,11 @@
-.facilities-container {
+.facilitiesContainer {
 	display: grid;
 	grid-template-columns: 1fr 3fr;
 	column-gap: 64px;
 }
 
 @media screen and (max-width: 768px) {
-	.facilities-container {
+	.facilitiesContainer {
 		grid-template-columns: 1fr;
 	}
 }
