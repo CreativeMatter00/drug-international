@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import styles from "@/styles/NavSidebar.module.css";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
 	const [scrolling, setScrolling] = useState(false);
@@ -21,6 +22,8 @@ const Navbar = () => {
 			window.removeEventListener("scroll", handleScroll);
 		};
 	}, []);
+
+	const pathName = usePathname().toString();
 
 	return (
 		<nav
@@ -40,27 +43,67 @@ const Navbar = () => {
 								height={61}
 								alt="Logo"
 								className="h-auto"
-								priority // Add this line to set priority for the image
+								priority
 							/>
 						</Link>
 					</div>
 
 					<div className="flex justify-between gap-1 items-center text-[#272727] text-sm font-medium uppercase">
 						<Link href="/about-us">
-							<div className="p-2.5 cursor-pointer">About Us</div>
+							<div
+								className={`p-2.5 cursor-pointer hover:text-primary hover:underline hover:underline-offset-8 ${
+									pathName.includes("about-us")
+										? "underline underline-offset-8 font-bold text-primary"
+										: ""
+								}`}
+							>
+								About Us
+							</div>
 						</Link>
 						<Link href="/our-legacy">
-							<div className="p-2.5 cursor-pointer">Our Legacy</div>
+							<div
+								className={`p-2.5 cursor-pointer hover:text-primary hover:underline hover:underline-offset-8 ${
+									pathName.includes("our-legacy")
+										? "underline underline-offset-8 font-bold text-primary"
+										: ""
+								}`}
+							>
+								Our Legacy
+							</div>
 						</Link>
 						<Link href="/products">
-							<div className="p-2.5 cursor-pointer">products</div>
+							<div
+								className={`p-2.5 cursor-pointer hover:text-primary hover:underline hover:underline-offset-8 ${
+									pathName.includes("products")
+										? "underline underline-offset-8 font-bold text-primary"
+										: ""
+								}`}
+							>
+								products
+							</div>
 						</Link>
 						<Link href="/facilities">
-							<div className="p-2.5 cursor-pointer">facilities</div>
+							<div
+								className={`p-2.5 cursor-pointer hover:text-primary hover:underline hover:underline-offset-8 ${
+									pathName.includes("facilities")
+										? "underline underline-offset-8 font-bold text-primary"
+										: ""
+								}`}
+							>
+								facilities
+							</div>
 						</Link>
 						{/* <div className="p-2.5 cursor-pointer">career</div> */}
 						<Link href="/contact-us">
-							<div className="p-2.5 cursor-pointer">Contact</div>
+							<div
+								className={`p-2.5 cursor-pointer hover:text-primary hover:underline hover:underline-offset-8 ${
+									pathName.includes("contact-us")
+										? "underline underline-offset-8 font-bold text-primary"
+										: ""
+								}`}
+							>
+								Contact
+							</div>
 						</Link>
 					</div>
 
