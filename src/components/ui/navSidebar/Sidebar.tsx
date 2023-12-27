@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import styles from "@/styles/NavSidebar.module.css";
 
 const Sidebar = () => {
@@ -21,16 +21,34 @@ const Sidebar = () => {
     >
       <div className="w-20 h-screen border bg-white relative ">
         <div className="flex h-full text-black justify-center items-center flex-col -mt-16 gap-2">
-          <div className="group cursor-pointer flex items-center flex-col uppercase font-bold text-sm text-[#CC7A2D]">
+          <div className="group cursor-pointer flex items-center flex-col uppercase font-bold text-sm text-primary">
             <Image
-              src={`/assets/icons/sidebar/Herbals.svg`}
+              src={`/assets/icons/sidebar/Drug Icon.svg`}
               width={44}
               height={44}
               alt="Herbals"
               className="h-auto group-hover:hidden"
             />
             <Image
-              src={`/assets/icons/sidebar/Herbal Hovers.svg`}
+              src={`/assets/icons/sidebar/Drug Icon Hover.svg`}
+              width={44}
+              height={44}
+              alt="Herbal hovers"
+              className="h-auto hidden group-hover:block"
+            />
+            DRUG
+          </div>
+
+          <div className="group cursor-pointer flex items-center flex-col uppercase font-bold text-sm text-[#CC7A2D]">
+            <Image
+              src={`/assets/icons/sidebar/Herbal Icon.svg`}
+              width={44}
+              height={44}
+              alt="Herbals"
+              className="h-auto group-hover:hidden"
+            />
+            <Image
+              src={`/assets/icons/sidebar/Herbal Icon Hover.svg`}
               width={44}
               height={44}
               alt="Herbal hovers"
@@ -41,14 +59,14 @@ const Sidebar = () => {
 
           <div className="group cursor-pointer flex items-center flex-col uppercase font-bold text-sm text-[#159A48]">
             <Image
-              src={`/assets/icons/sidebar/Unanis.svg`}
+              src={`/assets/icons/sidebar/Unani Icon.svg`}
               width={44}
               height={44}
               alt="Unanis"
               className="h-auto group-hover:hidden"
             />
             <Image
-              src={`/assets/icons/sidebar/Unanis Hovers.svg`}
+              src={`/assets/icons/sidebar/Unani Icon Hover.svg`}
               width={44}
               height={44}
               alt="Unanis Hovers"
@@ -106,6 +124,7 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
+
 // "use client";
 
 // import Image from "next/image";
