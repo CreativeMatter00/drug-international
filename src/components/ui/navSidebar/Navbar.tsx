@@ -59,7 +59,9 @@ const Navbar = () => {
 							<div className="p-2.5 cursor-pointer">facilities</div>
 						</Link>
 						{/* <div className="p-2.5 cursor-pointer">career</div> */}
-						<div className="p-2.5 cursor-pointer">Contact</div>
+						<Link href="/contact-us">
+							<div className="p-2.5 cursor-pointer">Contact</div>
+						</Link>
 					</div>
 
 					<div className="flex gap-4 items-center ">

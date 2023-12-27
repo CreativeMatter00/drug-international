@@ -4,7 +4,7 @@ function Warehouse() {
 	return (
 		<div>
 			<p className="font-medium text-3xl uppercase text-primary mb-10">
-				Oncology
+				Warehouse
 			</p>
 
 			<div className="mb-8 flex flex-wrap">
