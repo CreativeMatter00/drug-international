@@ -9,3 +9,11 @@
     0px 14px 5px 0px rgba(91, 91, 91, 0.01),
     0px 21px 6px 0px rgba(91, 91, 91, 0);
 }
+
+.allProductShadow {
+  box-shadow: -1px 0px 2px 0px rgba(39, 39, 39, 0.06),
+    -4px 0px 4px 0px rgba(39, 39, 39, 0.05),
+    -8px 0px 5px 0px rgba(39, 39, 39, 0.03),
+    -15px 0px 6px 0px rgba(39, 39, 39, 0.01),
+    -23px 0px 6px 0px rgba(39, 39, 39, 0);
+}

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import AllProducts from "@/components/products/all-products/AllProducts";
 import BreadCrumb from "@/components/ui/breadcrumb/BreadCrumb";
-import AllProductSidebar from "@/components/ui/navSidebar/AllProductSidebar";
+import AllProductSidebar from "@/components/ui/navSidebar/AllProductSidebar/AllProductSidebar";
 
 function Page() {
   const [isAllSidebarVisible, setIsAllSidebarVisible] = useState<boolean>(true);
@@ -12,7 +12,10 @@ function Page() {
     <div>
       <BreadCrumb title="all products" />
 
-      <AllProductSidebar isAllSidebarVisible={isAllSidebarVisible} />
+      <AllProductSidebar
+        isAllSidebarVisible={isAllSidebarVisible}
+        setIsAllSidebarVisible={setIsAllSidebarVisible}
+      />
 
       <AllProducts
         setIsAllSidebarVisible={setIsAllSidebarVisible}
