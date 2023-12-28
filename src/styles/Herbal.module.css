@@ -1,0 +1,7 @@
+.background {
+	position: relative;
+	background: url("/assets/images/herbal/heroBG.png") repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}

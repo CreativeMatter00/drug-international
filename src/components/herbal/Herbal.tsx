@@ -1,20 +1,13 @@
-import React from "react";
+import Botanical from "./Botanical";
+import Hero from "./Hero";
+import Natural from "./Natural";
 
 function Herbal() {
 	return (
 		<div>
-			Herbal
-			<br />
-			Herbal
-			<br />
-			Herbal
-			<br />
-			Herbal
-			<br />
-			Herbal
-			<br />
-			Herbal
-			<br />
+			<Hero />
+			<Natural />
+			<Botanical />
 		</div>
 	);
 }
