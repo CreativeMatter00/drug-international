@@ -25,6 +25,16 @@ const Navbar = () => {
 
 	const pathName = usePathname().toString();
 
+	let logoSrc = "/assets/logo/drug-logo.png";
+
+	if (pathName.includes("unani")) {
+		logoSrc = "/assets/unani.png";
+	}
+
+	if (pathName.includes("herbal")) {
+		logoSrc = "/assets/herbal.png";
+	}
+
 	return (
 		<nav
 			className={`top-0  flex justify-center bg-white fixed w-full z-[100000] ${
@@ -33,12 +43,12 @@ const Navbar = () => {
 					: ``
 			}`}
 		>
-			<div className="container h-20 w-full  px-1 py-2">
-				<div className="flex  h-full w-full justify-between">
+			<div className="container h-20 w-full px-1 py-2">
+				<div className="flex h-full w-full justify-between">
 					<div className="flex items-center">
 						<Link href="/home">
 							<Image
-								src={`/assets/logo/drug-logo.png`}
+								src={logoSrc}
 								width={170}
 								height={61}
 								alt="Logo"

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function QualityPolicy() {
 	return (
-		<div className="py-24">
+		<div className="py-8">
 			<div className="max-w-xl h-auto mx-auto">
 				<Image
 					src={"/assets/images/aboutUs/Quality Policy.jpg"}
