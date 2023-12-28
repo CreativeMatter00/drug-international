@@ -160,10 +160,19 @@ const AllProductSidebar: React.FC<visibleProps> = ({
 
         <div className="items-center justify-center pb-16 flex">
           <button
-            className="rounded-lg px-4 py-2  text-white flex gap-2 justify-center items-center uppercase bg-primary"
+            className={`rounded-lg px-4 py-2 text-white flex gap-2 justify-center items-center uppercase ${
+              selectedItem === null
+                ? "bg-gray-400 cursor-not-allowed"
+                : "bg-primary hover:bg-primary-dark cursor-pointer"
+            }`}
             onClick={handleSearch}
             disabled={selectedItem === null}
           >
+            {/* <button
+            className="rounded-lg px-4 py-2  text-white flex gap-2 justify-center items-center uppercase bg-primary"
+            onClick={handleSearch}
+            disabled={selectedItem === null}
+          > */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
