@@ -1,5 +1,6 @@
 import Footer from "@/components/ui/footer/Footer";
-import Navbar from "@/components/ui/navSidebar/Navbar";
+import NavSidebar from "@/components/ui/navSidebar/AllProductSidebar/Navbar/NavSidebar";
+import Navbar from "@/components/ui/navSidebar/AllProductSidebar/Navbar/Navbar";
 import Sidebar from "@/components/ui/navSidebar/Sidebar";
 import React, { ReactNode } from "react";
 
@@ -7,7 +8,10 @@ function layout({ children }: { children: ReactNode }) {
   return (
     <div>
       <Navbar />
-      <Sidebar />
+      <div className="max-lg:hidden">
+        <Sidebar />
+      </div>
+
       <div className="mt-16">{children}</div>
       <Footer />
     </div>

@@ -168,11 +168,6 @@ const AllProductSidebar: React.FC<visibleProps> = ({
             onClick={handleSearch}
             disabled={selectedItem === null}
           >
-            {/* <button
-            className="rounded-lg px-4 py-2  text-white flex gap-2 justify-center items-center uppercase bg-primary"
-            onClick={handleSearch}
-            disabled={selectedItem === null}
-          > */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
