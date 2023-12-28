@@ -2,19 +2,21 @@
 
 import { useState } from "react";
 import SearchOption from "./SearchOption";
-
 import styles from "@/styles/NavSidebar.module.css";
 
 interface visibleProps {
   setIsAllSidebarVisible: Function;
   isAllSidebarVisible: boolean;
+  isOverlayVisible: boolean;
+  setIsOverlayVisible: Function;
 }
 
 const AllProductSidebar: React.FC<visibleProps> = ({
   isAllSidebarVisible,
   setIsAllSidebarVisible,
+  isOverlayVisible,
+  setIsOverlayVisible,
 }) => {
-  // const [selectedItem, setSelectedItem] = useState<string | null>(null);
   const [selectedItem, setSelectedItem] = useState<string | null>(null);
 
   const handleItemClick = (item: string) => {
@@ -23,6 +25,12 @@ const AllProductSidebar: React.FC<visibleProps> = ({
 
   const handleAllSideToggle = () => {
     setIsAllSidebarVisible(!isAllSidebarVisible);
+    setIsOverlayVisible(!isOverlayVisible);
+  };
+
+  const handleSearch = () => {
+    setIsAllSidebarVisible(!isAllSidebarVisible);
+    setIsOverlayVisible(!isOverlayVisible);
   };
 
   return (
@@ -150,8 +158,12 @@ const AllProductSidebar: React.FC<visibleProps> = ({
           </div>
         </div>
 
-        <div className="items-center justify-center pb-16">
-          <button className="rounded-lg px-4 py-2  text-white flex gap-2 justify-center items-center uppercase">
+        <div className="items-center justify-center pb-16 flex">
+          <button
+            className="rounded-lg px-4 py-2  text-white flex gap-2 justify-center items-center uppercase bg-primary"
+            onClick={handleSearch}
+            disabled={selectedItem === null}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"

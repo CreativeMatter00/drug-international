@@ -9,19 +9,29 @@ import Pharmaceuticals from "./Pharmaceuticals";
 import Oncology from "./Oncology";
 import Herbal from "./Herbal";
 import Unani from "./Unani";
+import styles from "@/styles/NavSidebar.module.css";
 
 interface visibleProps {
   setIsAllSidebarVisible: Function;
   isAllSidebarVisible: boolean;
+  isOverlayVisible: boolean;
+  setIsOverlayVisible: Function;
 }
 
 const AllProducts: React.FC<visibleProps> = ({
   setIsAllSidebarVisible,
   isAllSidebarVisible,
+  isOverlayVisible,
+  setIsOverlayVisible,
 }) => {
   const [medicineType, setMedicineType] = useState<number>(0);
   const [nameType, setNameType] = useState<number>(0);
   const [letter, setLetter] = useState<string>("a");
+
+  const toggleOverlay = () => {
+    setIsOverlayVisible(!isOverlayVisible);
+    setIsAllSidebarVisible(!isAllSidebarVisible);
+  };
 
   const alphabet = "abcdefghijklmnopqrstuvwxyz";
 
@@ -31,10 +41,17 @@ const AllProducts: React.FC<visibleProps> = ({
 
   const handleAllSidebarToggle = () => {
     setIsAllSidebarVisible(!isAllSidebarVisible);
+    setIsOverlayVisible(true);
   };
 
   return (
     <div className="container mx-auto">
+      {isOverlayVisible && (
+        <div
+          className={`${styles.overlay} cursor-pointer`}
+          onClick={toggleOverlay}
+        ></div>
+      )}
       <div className="flex flex-col items-center justify-around gap-4 mb-9 md:flex-row">
         <button
           className={`font-medium text-2xl uppercase p-3 rounded-md ${
