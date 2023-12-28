@@ -1,7 +1,11 @@
-import React from "react";
+import Herbal from "@/components/herbal/Herbal";
 
 function page() {
-	return <div>page</div>;
+	return (
+		<div>
+			<Herbal />
+		</div>
+	);
 }
 
 export default page;

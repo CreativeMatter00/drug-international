@@ -8,18 +8,18 @@ function ContactUs() {
 	return (
 		<div className="relative mt-[-100px] w-full mb-10">
 			<div className="container mx-auto bg-white rounded-2xl shadow-[0px_-2px_8px_0px_rgba(0,0,0,0.75)]">
-				<p className="p-12 font-medium text-2xl text-textPrimary mb-16">
+				<p className="p-12  font-medium text-2xl text-textPrimary mb-0 md:mb-16">
 					Our Office Address
 				</p>
 
 				<div className="mb-24">
-					<div className="grid grid-cols-3">
+					<div className="grid grid-cols-1 min-[1028px]:grid-cols-3">
 						<div className="bg-[#F6F6F6] rounded-tr-2xl"></div>
 						<div className="px-9 py-12 flex items-center gap-4 border-b-2 border-[#E4E4E6]">
 							<div className="border border-primary text-4xl text-primary p-4 rounded-full">
 								<MdOutlineFax />
 							</div>
-							<div>
+							<div className="w-full">
 								<p className="font-medium text-xs uppercase text-textLight text-center mb-2">
 									Fax
 								</p>
@@ -28,11 +28,11 @@ function ContactUs() {
 								</p>
 							</div>
 						</div>
-						<div className="px-9 py-12 flex items-center gap-4 border-b-2 border-[#E4E4E6]">
+						<div className="px-9 py-12 flex items-center gap-4 border-0 md:border-b-2 md:border-[#E4E4E6]">
 							<div className="border border-primary text-4xl text-primary p-4 rounded-full">
 								<TfiEmail />
 							</div>
-							<div>
+							<div className="w-full">
 								<p className="font-medium text-xs uppercase text-textLight text-center mb-2">
 									Email
 								</p>
@@ -43,8 +43,8 @@ function ContactUs() {
 						</div>
 					</div>
 
-					<div className="grid grid-cols-3 font-medium">
-						<div className="bg-primaryShade flex flex-col items-center justify-center text-white gap-2">
+					<div className="grid grid-cols-1 md:grid-cols-3">
+						<div className="bg-primaryShade flex flex-col items-center justify-center px-9 py-10 text-white gap-2">
 							<div className="text-4xl">
 								<ImOffice />
 							</div>
@@ -58,7 +58,7 @@ function ContactUs() {
 							</p>
 						</div>
 
-						<div className="px-9 py-10 border-b-2 border-[#E4E4E6]">
+						<div className="px-9 py-10 border-0 md:border-b-2 md:border-[#E4E4E6]">
 							<p className="text-textLight uppercase mb-2 text-xs">Tel</p>
 							<p className="text-textSecondary text-sm">
 								(+880) 2 223362613-4, (+880) 2 223362621, <br /> (+880) 2
@@ -67,8 +67,8 @@ function ContactUs() {
 						</div>
 					</div>
 
-					<div className="grid grid-cols-3 font-medium">
-						<div className="bg-primaryShade flex flex-col items-center justify-center text-white gap-2">
+					<div className="grid grid-cols-1 md:grid-cols-3">
+						<div className="bg-primaryShade flex flex-col items-center justify-center px-9 py-10 text-white gap-2">
 							<div className="text-4xl uppercase">
 								<GiFactory />
 							</div>
@@ -83,14 +83,14 @@ function ContactUs() {
 							</p>
 						</div>
 
-						<div className="px-9 py-10 border-b-2 border-[#E4E4E6]">
+						<div className="px-9 py-10 border-0 md:border-b-2 md:border-[#E4E4E6]">
 							<p className="text-textLight uppercase mb-2 text-xs"> Tel </p>
 							<p className="text-textSecondary text-sm">(+880) 2 9810659</p>
 						</div>
 					</div>
 
-					<div className="grid grid-cols-3 font-medium">
-						<div className="bg-primaryShade flex flex-col items-center justify-center text-white gap-2">
+					<div className="grid grid-cols-1 md:grid-cols-3">
+						<div className="bg-primaryShade flex flex-col items-center justify-center px-9 py-10 text-white gap-2">
 							<div className="text-4xl uppercase">
 								<GiFactory />
 							</div>
@@ -105,14 +105,14 @@ function ContactUs() {
 							</p>
 						</div>
 
-						<div className="px-9 py-10 border-b-2 border-[#E4E4E6]">
+						<div className="px-9 py-10 border-0 md:border-b-2 md:border-[#E4E4E6]">
 							<p className="text-textLight uppercase mb-2 text-xs"> Tel </p>
 							<p className="text-textSecondary text-sm">(+880) 2 9801884</p>
 						</div>
 					</div>
 
-					<div className="grid grid-cols-3 font-medium">
-						<div className="bg-primaryShade flex flex-col items-center justify-center text-white gap-2">
+					<div className="grid grid-cols-1 md:grid-cols-3">
+						<div className="bg-primaryShade flex flex-col items-center justify-center px-9 py-10 text-white gap-2">
 							<div className="text-4xl uppercase">
 								<GiFactory />
 							</div>
@@ -120,7 +120,7 @@ function ContactUs() {
 								Factory (Unit - 3)
 							</p>
 						</div>
-						<div className="px-9 py-10 border-b-2 border-[#E4E4E6]">
+						<div className="px-9 py-10 border-0 md:border-b-2 md:border-[#E4E4E6]">
 							<p className="text-textLight uppercase mb-2 text-xs">Address</p>
 							<p className="text-textSecondary text-sm">
 								31/1, Satrong Road, Gopalpur, Tongi Industrial Area, Gazipur,
@@ -128,11 +128,11 @@ function ContactUs() {
 							</p>
 						</div>
 
-						<div className="border-b-2 border-[#E4E4E6]"></div>
+						<div className="border-0 md:border-b-2 md:border-[#E4E4E6]"></div>
 					</div>
 
-					<div className="grid grid-cols-3 font-medium">
-						<div className="bg-primaryShade flex flex-col items-center justify-center text-white gap-2">
+					<div className="grid grid-cols-1 md:grid-cols-3">
+						<div className="bg-primaryShade rounded-br-xl flex flex-col items-center justify-center px-9 py-10 text-white gap-2">
 							<div className="text-4xl uppercase">
 								<GiFactory />
 							</div>
@@ -140,10 +140,10 @@ function ContactUs() {
 								Factory (HERBAL & UNANI)
 							</p>
 						</div>
-						<div className="px-9 py-10">
+						<div className="px-9 py-10 border-b-2 border-[#E4E4E6] md:border-0">
 							<p className="text-textLight uppercase mb-2 text-xs">Address</p>
 							<p className="text-textSecondary text-sm">
-								Monipur Bazar, Bokran MonipurGazipur, Bangladesh
+								Monipur Bazar, Bokran Monipur, Gazipur, Bangladesh
 							</p>
 						</div>
 
@@ -156,8 +156,8 @@ function ContactUs() {
 					products and services by filling and sending the following form
 				</div>
 
-				<div className="flex gap-4 font-medium px-4">
-					<div className="w-1/3 flex flex-col items-center gap-4">
+				<div className="flex flex-col md:flex-row gap-4 font-medium px-4">
+					<div className="w-full md:w-1/3 flex flex-col items-center gap-4">
 						<p className="text-textLight text-xs">
 							You must have to select contact first
 						</p>
@@ -168,7 +168,7 @@ function ContactUs() {
 								id="cars"
 								className="w-full border border-textPrimary rounded-md p-2"
 							>
-								<option value="volvo" disabled>
+								<option value="volvo" selected disabled>
 									Select Contact
 								</option>
 								<option value="general">General Query</option>
@@ -176,12 +176,12 @@ function ContactUs() {
 								<option value="career">Career Information</option>
 								<option value="export">Export Query</option>
 								<option value="safety">
-									Drug Safety (ADES) & <br /> Product Complaints
+									Drug Safety (ADES) & Product Complaints
 								</option>
 							</select>
 						</div>
 					</div>
-					<div className="w-2/3">
+					<div className="w-full md:w-2/3">
 						<input
 							type="text"
 							placeholder="FULL NAME"
