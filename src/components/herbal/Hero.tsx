@@ -13,10 +13,10 @@ import { FaArrowRightLong } from "react-icons/fa6";
 function Hero() {
 	return (
 		<div
-			className={`h-screen flex items-center justify-center ${styles.background}`}
+			className={`min-h-screen flex items-center justify-center ${styles.background1}`}
 		>
-			<div className="container mx-auto flex gap-8">
-				<div className="w-1/2">
+			<div className="container mx-auto flex flex-col md:flex-row gap-8">
+				<div className="w-full md:w-1/2 px-4 md:px-0">
 					<Swiper
 						spaceBetween={30}
 						centeredSlides={true}
@@ -58,13 +58,13 @@ function Hero() {
 					</Swiper>
 				</div>
 
-				<div className="w-1/2 text-white">
-					<p className="font-semibold text-5xl leading-[60px] uppercase mb-4">
+				<div className="w-full px-4 pb-4 md:w-1/2 md:px-0 text-white">
+					<p className="font-medium text-3xl md:font-semibold md:text-5xl md:leading-[60px] uppercase mb-4">
 						Discover Nature&apos;s
 						<br />
 						Healing Touch
 					</p>
-					<p className="text-lg mb-16">
+					<p className="text-base md:text-lg mb-16">
 						Herbal Innovations for a healthier tomorrow with <br /> Drug
 						International Herbal Ltd
 					</p>

@@ -12,7 +12,7 @@ function Botanical() {
 				</p>
 			</div>
 
-			<div className="py-9">
+			<div className="pt-10 pb-16">
 				<Marquee>
 					<div className="flex flex-col gap-8 items-center mr-8">
 						<Image
