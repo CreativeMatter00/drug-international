@@ -1,6 +1,14 @@
-.background {
+.background1 {
 	position: relative;
 	background: url("/assets/images/herbal/heroBG.png") repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.background2 {
+	position: relative;
+	background: url("/assets/images/herbal/productsBG.png") repeat;
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
