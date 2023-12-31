@@ -28,11 +28,11 @@ const Navbar = () => {
 	let logoSrc = "/assets/logo/drug-logo.png";
 
 	if (pathName.includes("unani")) {
-		logoSrc = "/assets/unani.png";
+		logoSrc = "/assets/logo/unani.png";
 	}
 
 	if (pathName.includes("herbal")) {
-		logoSrc = "/assets/herbal.png";
+		logoSrc = "/assets/logo/herbal.png";
 	}
 
 	return (

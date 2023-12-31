@@ -1,0 +1,18 @@
+.background1 {
+	position: relative;
+	background: url("/assets/images/herbal/heroBG.png") repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.video {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+	object-fit: cover;
+	max-height: 1080px;
+	min-height: 700px;
+	width: 100vw;
+}
