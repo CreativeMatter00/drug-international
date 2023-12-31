@@ -28,11 +28,11 @@ const Navbar = () => {
 	let logoSrc = "/assets/logo/drug-logo.png";
 
 	if (pathName.includes("unani")) {
-		logoSrc = "/assets/logo/unani.png";
+		logoSrc = "/assets/unani.png";
 	}
 
 	if (pathName.includes("herbal")) {
-		logoSrc = "/assets/logo/herbal.png";
+		logoSrc = "/assets/herbal.png";
 	}
 
 	return (
@@ -147,59 +147,61 @@ const Navbar = () => {
 							/>
 						</div>
 
-						<div className="border border-primary rounded-lg py-0.5 px-1 flex justify-center items-center gap-2 text-sm font-bold bg-primary text-white hover:text-primary hover:bg-white group cursor-pointer uppercase">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="23"
-								height="23"
-								viewBox="0 0 25 25"
-								fill="none"
-								className="stroke-[#5B5B5B] hover:stroke-primary group-hover:animate-spin"
-							>
-								<path
-									d="M12.7734 24.5467C19.2756 24.5467 24.5467 19.2756 24.5467 12.7734C24.5467 6.27111 19.2756 1 12.7734 1C6.27111 1 1 6.27111 1 12.7734C1 19.2756 6.27111 24.5467 12.7734 24.5467Z"
-									className="stroke-[#FFFFFF] group-hover:stroke-primary"
-									//   stroke-width="0.85"
-									strokeWidth="0.85" // Change stroke-width to strokeWidth
-									strokeMiterlimit="10"
-									strokeLinecap="round"
-									strokeLinejoin="round"
-								/>
-								<path
-									d="M12.7733 1V24.5467M12.7733 1C9.1738 1 6.25586 6.2711 6.25586 12.7734C6.25586 19.2756 9.1738 24.5467 12.7733 24.5467M12.7733 1C16.3727 1 19.2907 6.2711 19.2907 12.7734C19.2907 19.2756 16.3727 24.5467 12.7733 24.5467"
-									className="stroke-[#FFFFFF] group-hover:stroke-primary"
-									strokeWidth="0.85"
-									strokeMiterlimit="10"
-									strokeLinecap="round"
-									strokeLinejoin="round"
-								/>
-								<path
-									d="M24.5467 12.7734H1"
-									className="stroke-[#FFFFFF] group-hover:stroke-primary"
-									strokeWidth="0.85"
-									strokeMiterlimit="10"
-									strokeLinecap="round"
-									strokeLinejoin="round"
-								/>
-								<path
-									d="M22.865 6.88672H2.68213"
-									className="stroke-[#FFFFFF] group-hover:stroke-primary"
-									strokeWidth="0.85"
-									strokeMiterlimit="10"
-									strokeLinecap="round"
-									strokeLinejoin="round"
-								/>
-								<path
-									d="M22.865 18.66H2.68213"
-									className="stroke-[#FFFFFF] group-hover:stroke-primary"
-									strokeWidth="0.85"
-									strokeMiterlimit="10"
-									strokeLinecap="round"
-									strokeLinejoin="round"
-								/>
-							</svg>
-							Global
-						</div>
+						<Link href="/global">
+							<div className="border border-primary rounded-lg py-0.5 px-1 flex justify-center items-center gap-2 text-sm font-bold bg-primary text-white hover:text-primary hover:bg-white group cursor-pointer uppercase">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="23"
+									height="23"
+									viewBox="0 0 25 25"
+									fill="none"
+									className="stroke-[#5B5B5B] hover:stroke-primary group-hover:animate-spin"
+								>
+									<path
+										d="M12.7734 24.5467C19.2756 24.5467 24.5467 19.2756 24.5467 12.7734C24.5467 6.27111 19.2756 1 12.7734 1C6.27111 1 1 6.27111 1 12.7734C1 19.2756 6.27111 24.5467 12.7734 24.5467Z"
+										className="stroke-[#FFFFFF] group-hover:stroke-primary"
+										//   stroke-width="0.85"
+										strokeWidth="0.85" // Change stroke-width to strokeWidth
+										strokeMiterlimit="10"
+										strokeLinecap="round"
+										strokeLinejoin="round"
+									/>
+									<path
+										d="M12.7733 1V24.5467M12.7733 1C9.1738 1 6.25586 6.2711 6.25586 12.7734C6.25586 19.2756 9.1738 24.5467 12.7733 24.5467M12.7733 1C16.3727 1 19.2907 6.2711 19.2907 12.7734C19.2907 19.2756 16.3727 24.5467 12.7733 24.5467"
+										className="stroke-[#FFFFFF] group-hover:stroke-primary"
+										strokeWidth="0.85"
+										strokeMiterlimit="10"
+										strokeLinecap="round"
+										strokeLinejoin="round"
+									/>
+									<path
+										d="M24.5467 12.7734H1"
+										className="stroke-[#FFFFFF] group-hover:stroke-primary"
+										strokeWidth="0.85"
+										strokeMiterlimit="10"
+										strokeLinecap="round"
+										strokeLinejoin="round"
+									/>
+									<path
+										d="M22.865 6.88672H2.68213"
+										className="stroke-[#FFFFFF] group-hover:stroke-primary"
+										strokeWidth="0.85"
+										strokeMiterlimit="10"
+										strokeLinecap="round"
+										strokeLinejoin="round"
+									/>
+									<path
+										d="M22.865 18.66H2.68213"
+										className="stroke-[#FFFFFF] group-hover:stroke-primary"
+										strokeWidth="0.85"
+										strokeMiterlimit="10"
+										strokeLinecap="round"
+										strokeLinejoin="round"
+									/>
+								</svg>
+								Global
+							</div>
+						</Link>
 					</div>
 				</div>
 			</div>
