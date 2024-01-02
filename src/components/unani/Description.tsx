@@ -1,10 +1,19 @@
+import Image from "next/image";
 import React from "react";
 
 function Description() {
 	return (
 		<div className="py-16 container mx-auto">
-			<div className="grid grid-cols-2 text-medium gap-y-36">
-				<div className="w-2/3">
+			<div className="grid grid-cols-1 md:grid-cols-2 text-medium gap-y-16 md:gap-y-36 relative px-4">
+				<div className="absolute inset-0 items-center justify-center hidden md:flex">
+					<Image
+						src="/assets/images/unani/natural.png"
+						width={392}
+						height={316}
+						alt="Nature's Wisdom Unveiled"
+					/>
+				</div>
+				<div className="w-full md:w-2/3">
 					<p className="uppercase text-2xl text-textPrimary pb-6">
 						Traditional Formulations
 					</p>
@@ -15,7 +24,8 @@ function Description() {
 						holistic well-being.
 					</p>
 				</div>
-				<div className="w-2/3 text-right ml-auto">
+
+				<div className="w-full md:w-2/3 text-right ml-auto">
 					<p className="uppercase text-2xl text-textPrimary pb-6">
 						Balancing Body and Mind
 					</p>
@@ -26,7 +36,17 @@ function Description() {
 					</p>
 				</div>
 
-				<div className="w-2/3">
+				<div className="flex items-center justify-center md:hidden">
+					<Image
+						src="/assets/images/unani/natural.png"
+						width={392}
+						height={316}
+						alt="Nature's Wisdom Unveiled"
+						className=""
+					/>
+				</div>
+
+				<div className="w-full md:w-2/3">
 					<p className="uppercase text-2xl text-textPrimary pb-6">
 						Time-Tested Efficacy
 					</p>
@@ -37,7 +57,7 @@ function Description() {
 						backed by centuries of use.
 					</p>
 				</div>
-				<div className="w-2/3 text-right ml-auto">
+				<div className="w-full md:w-2/3 text-right ml-auto">
 					<p className="uppercase text-2xl text-textPrimary pb-6">
 						Holistic Wellness Solutions
 					</p>

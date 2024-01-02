@@ -1,6 +1,7 @@
 import Description from "./Description";
 import Hero from "./Hero";
 import Nature from "./Nature";
+import OurProducts from "./OurProducts";
 
 function Unani() {
 	return (
@@ -8,6 +9,7 @@ function Unani() {
 			<Hero />
 			<Description />
 			<Nature />
+			<OurProducts />
 		</>
 	);
 }

@@ -6,6 +6,14 @@
 	background-attachment: fixed;
 }
 
+.background2 {
+	position: relative;
+	background: url("/assets/images/unani/ourProductsBG.png") repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
 .video {
 	position: absolute;
 	left: 0;
