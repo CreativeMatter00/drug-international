@@ -5,7 +5,7 @@ import MapPart from "@/components/global/MapPart";
 function Page() {
   return (
     <div className="w-full">
-      <MapPart />
+      {/* <MapPart /> */}
       <FlagPart />
       <GlobalPresence />
     </div>
