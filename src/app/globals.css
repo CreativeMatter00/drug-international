@@ -54,3 +54,7 @@ ul {
 	color: white;
 	border-radius: 2px;
 }
+
+.swiper-pagination-bullet {
+	background-color: pink;
+}

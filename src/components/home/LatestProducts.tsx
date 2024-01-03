@@ -10,6 +10,10 @@ import LatestProductsCard from "./LatestProductsCard";
 
 function LatestProducts() {
 	const breakpoints = {
+		1200: {
+			slidesPerView: 6,
+			spaceBetween: 30,
+		},
 		// when window width is >= 768px (PC or laptop)
 		768: {
 			slidesPerView: 4,
