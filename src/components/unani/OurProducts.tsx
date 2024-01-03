@@ -10,16 +10,16 @@ function OurProducts() {
 			<p className="bg-[#159A48] text-white py-12 text-3xl text-center uppercase">
 				Our Products
 			</p>
-			<div className={`${styles.background1} py-32`}>
+			<div className={`${styles.background2} py-32`}>
 				<div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 md:gap-y-12">
-					<div className="flex flex-col justify-center items-center mx-auto px-4">
+					<div className="flex flex-col justify-center items-center mx-auto group">
 						<div className="bg-[#BDE9CE] rounded-md mb-4 h-[300px] w-[300px]">
 							<Image
 								src="/assets/images/unani/products/1.png"
 								width={300}
 								height={300}
 								alt="D-Aloevera"
-								className="mx-auto"
+								className="mx-auto group-hover:scale-105 transition-all"
 							/>
 						</div>
 						<div className="mb-6 text-center">
@@ -33,14 +33,14 @@ function OurProducts() {
 						</button>
 					</div>
 
-					<div className="flex flex-col justify-center items-center mx-auto">
+					<div className="flex flex-col justify-center items-center mx-auto group">
 						<div className="bg-[#BDE9CE] rounded-md mb-4 h-[300px] w-[300px]">
 							<Image
 								src="/assets/images/unani/products/2.png"
 								width={300}
 								height={300}
 								alt="Amlabery"
-								className="mx-auto"
+								className="mx-auto group-hover:scale-105 transition-all"
 							/>
 						</div>
 						<div className="mb-6 text-center">
@@ -53,14 +53,14 @@ function OurProducts() {
 							View Product
 						</button>
 					</div>
-					<div className="flex flex-col justify-center items-center mx-auto">
+					<div className="flex flex-col justify-center items-center mx-auto group">
 						<div className="bg-[#BDE9CE] rounded-md mb-4 h-[300px] w-[300px]">
 							<Image
 								src="/assets/images/unani/products/3.png"
 								width={300}
 								height={300}
 								alt="Naturovit"
-								className="mx-auto"
+								className="mx-auto group-hover:scale-105 transition-all"
 							/>
 						</div>
 						<div className="mb-6 text-center">
@@ -73,14 +73,14 @@ function OurProducts() {
 							View Product
 						</button>
 					</div>
-					<div className="flex flex-col justify-center items-center mx-auto">
+					<div className="flex flex-col justify-center items-center mx-auto group">
 						<div className="bg-[#BDE9CE] rounded-md mb-4 h-[300px] w-[300px]">
 							<Image
 								src="/assets/images/unani/products/4.png"
 								width={300}
 								height={300}
 								alt="Livro"
-								className="mx-auto"
+								className="mx-auto group-hover:scale-105 transition-all"
 							/>
 						</div>
 						<div className="mb-6 text-center">
@@ -93,14 +93,14 @@ function OurProducts() {
 							View Product
 						</button>
 					</div>
-					<div className="flex flex-col justify-center items-center mx-auto">
+					<div className="flex flex-col justify-center items-center mx-auto group">
 						<div className="bg-[#BDE9CE] rounded-md mb-4 h-[300px] w-[300px]">
 							<Image
 								src="/assets/images/unani/products/5.png"
 								width={300}
 								height={300}
 								alt="Hemosaf"
-								className="mx-auto"
+								className="mx-auto group-hover:scale-105 transition-all"
 							/>
 						</div>
 						<div className="mb-6 text-center">
@@ -113,14 +113,14 @@ function OurProducts() {
 							View Product
 						</button>
 					</div>
-					<div className="flex flex-col justify-center items-center mx-auto">
+					<div className="flex flex-col justify-center items-center mx-auto group">
 						<div className="bg-[#BDE9CE] rounded-md mb-4 h-[300px] w-[300px]">
 							<Image
 								src="/assets/images/unani/products/6.png"
 								width={300}
 								height={300}
 								alt="Jarira"
-								className="mx-auto"
+								className="mx-auto group-hover:scale-105 transition-all"
 							/>
 						</div>
 						<div className="mb-6 text-center">
@@ -133,14 +133,14 @@ function OurProducts() {
 							View Product
 						</button>
 					</div>
-					<div className="flex flex-col justify-center items-center mx-auto">
+					<div className="flex flex-col justify-center items-center mx-auto group">
 						<div className="bg-[#BDE9CE] rounded-md mb-4 h-[300px] w-[300px]">
 							<Image
 								src="/assets/images/unani/products/7.png"
 								width={300}
 								height={300}
 								alt="D-Sefa"
-								className="mx-auto"
+								className="mx-auto group-hover:scale-105 transition-all"
 							/>
 						</div>
 						<div className="mb-6 text-center">
@@ -153,14 +153,14 @@ function OurProducts() {
 							View Product
 						</button>
 					</div>
-					<div className="flex flex-col justify-center items-center mx-auto">
+					<div className="flex flex-col justify-center items-center mx-auto group">
 						<div className="bg-[#BDE9CE] rounded-md mb-4 h-[300px] w-[300px]">
 							<Image
 								src="/assets/images/unani/products/8.png"
 								width={300}
 								height={300}
 								alt="Ridex"
-								className="mx-auto"
+								className="mx-auto group-hover:scale-105 transition-all"
 							/>
 						</div>
 						<div className="mb-6 text-center">
@@ -173,14 +173,14 @@ function OurProducts() {
 							View Product
 						</button>
 					</div>
-					<div className="flex flex-col justify-center items-center mx-auto">
+					<div className="flex flex-col justify-center items-center mx-auto group">
 						<div className="bg-[#BDE9CE] rounded-md mb-4 h-[300px] w-[300px]">
 							<Image
 								src="/assets/images/unani/products/9.png"
 								width={300}
 								height={300}
 								alt="Zurid"
-								className="mx-auto"
+								className="mx-auto group-hover:scale-105 transition-all"
 							/>
 						</div>
 						<div className="mb-6 text-center">

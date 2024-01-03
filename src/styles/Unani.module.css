@@ -1,7 +1,8 @@
 .background1 {
 	position: relative;
 	background: url("/assets/images/unani/heroBG.png") repeat;
-	background-size: cover;
+	background-color: #015120e6;
+	background-size: fill;
 	background-position: center;
 	background-attachment: fixed;
 }
@@ -20,7 +21,6 @@
 	top: 0;
 	z-index: -1;
 	object-fit: cover;
-	max-height: 1080px;
-	min-height: 700px;
+	height: 800px;
 	width: 100vw;
 }
