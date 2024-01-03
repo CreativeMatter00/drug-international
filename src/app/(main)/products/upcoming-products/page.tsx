@@ -1,4 +1,4 @@
-import UpcomingProducts from "@/components/products/upcoming-products/UpcomingProducts";
+import UpcomingProducts from "@/components/products/upcomingProducts/UpcomingProducts";
 import BreadCrumb from "@/components/ui/breadcrumb/BreadCrumb";
 
 function page() {
