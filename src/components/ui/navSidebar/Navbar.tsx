@@ -39,7 +39,7 @@ const Navbar = () => {
 		<nav
 			className={`top-0  flex justify-center bg-white fixed w-full z-[100000] ${
 				scrolling
-					? `bg-opacity-75 shadow-lg ${styles.navShadow}  ${styles.blurLg}`
+					? `bg-opacity-75 shadow-lg ${styles.navShadow} ${styles.blurLg}`
 					: ``
 			}`}
 		>

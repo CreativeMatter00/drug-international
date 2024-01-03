@@ -1,10 +1,11 @@
 import Unani from "@/components/unani/Unani";
-import React from "react";
 
 function page() {
 	return (
 		<div>
-			<Unani />
+			<div className="relative">
+				<Unani />
+			</div>
 		</div>
 	);
 }
