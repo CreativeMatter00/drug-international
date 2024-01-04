@@ -255,8 +255,32 @@ const FlagPart = () => {
           </div>
           <div className="h-[550px] w-[1000px] max-lg:h-[360px] max-md:h-[200px] relative">
             {loading && (
-              <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-gray-300 bg-opacity-70">
-                Loading...
+              <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-gray-300 bg-opacity-70 border-8 border-red-600">
+                Loading... Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit. Distinctio corporis, deleniti illum iusto quibusdam
+                possimus quae quas ullam mollitia dolor perspiciatis non quaerat
+                officiis consectetur explicabo exercitationem molestiae tempora
+                accusantium! Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit. Distinctio corporis, deleniti illum iusto quibusdam
+                possimus quae quas ullam mollitia dolor perspiciatis non quaerat
+                officiis consectetur explicabo exercitationem molestiae tempora
+                accusantium! Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit. Distinctio corporis, deleniti illum iusto quibusdam
+                possimus quae quas ullam mollitia dolor perspiciatis non quaerat
+                officiis consectetur explicabo exercitationem molestiae tempora
+                accusantium! Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit. Distinctio corporis, deleniti illum iusto quibusdam
+                possimus quae quas ullam mollitia dolor perspiciatis non quaerat
+                officiis consectetur explicabo exercitationem molestiae tempora
+                accusantium! Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit. Distinctio corporis, deleniti illum iusto quibusdam
+                possimus quae quas ullam mollitia dolor perspiciatis non quaerat
+                officiis consectetur explicabo exercitationem molestiae tempora
+                accusantium! Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit. Distinctio corporis, deleniti illum iusto quibusdam
+                possimus quae quas ullam mollitia dolor perspiciatis non quaerat
+                officiis consectetur explicabo exercitationem molestiae tempora
+                accusantium!
               </div>
             )}
             <Image
