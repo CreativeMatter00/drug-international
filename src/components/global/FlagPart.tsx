@@ -289,6 +289,7 @@ const FlagPart = () => {
               height={621}
               alt="map"
               className={`m-auto h-auto w-[1074px] max-lg:w-[650px] max-md:w-[390px] max-lg:h-[360px] max-md:h-[200px] cursor-pointer  p-2`}
+              onLoad={handleImageLoad}
             />
             <div
               className={`animate-ping absolute inline-flex h-1.5 w-1.5 top-0 right-0 rounded-full bg-[#6CFE13] opacity-75 border border-[#FFFFFF] max-lg:hidden ${
