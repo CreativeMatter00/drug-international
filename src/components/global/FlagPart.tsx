@@ -21,7 +21,7 @@ const FlagPart = () => {
     {
       slNo: 2,
       name: "USA",
-      path: "/assets/images/global/Flags/usa.png",
+      path: "/assets/images/global/Flags/USA.png",
       mapImage: "/assets/images/global/Map/usa.png",
     },
     {
@@ -238,6 +238,7 @@ const FlagPart = () => {
   ];
 
   const handleImageClick = (name: string, mapImage: string) => {
+    setLoading(true);
     setSelectedImage(name);
     setCountryMap(mapImage);
   };
@@ -250,48 +251,26 @@ const FlagPart = () => {
 
   return (
     <div>
-      <div
-        className={`flex justify-center items-center  ${
-          loading ? " bg-red-600" : "bg-[#014F70]"
-        }`}
-      >
+      <div className={`flex justify-center items-center bg-[#014F70] `}>
         <div className="container p-8 flex justify-center items-center flex-col">
           <div className="uppercase text-2xl flex justify-center text-white font-medium w-full items-center">
             Global Operation
           </div>
-          <div>loading</div>
+          {/* <div>loading</div> */}
           <div className="h-[550px] w-[1000px] max-lg:h-[360px] max-md:h-[200px] relative">
-            {loading && (
-              <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-gray-300 bg-opacity-70 border-8 border-red-600 text-6xl">
-                Loading... Lorem ipsum dolor sit, amet consectetur adipisicing
-                elit. Distinctio corporis, deleniti illum iusto quibusdam
-                possimus quae quas ullam mollitia dolor perspiciatis non quaerat
-                officiis consectetur explicabo exercitationem molestiae tempora
-                accusantium! Lorem ipsum dolor sit, amet consectetur adipisicing
-                elit. Distinctio corporis, deleniti illum iusto quibusdam
-                possimus quae quas ullam mollitia dolor perspiciatis non quaerat
-                officiis consectetur explicabo exercitationem molestiae tempora
-                accusantium! Lorem ipsum dolor sit, amet consectetur adipisicing
-                elit. Distinctio corporis, deleniti illum iusto quibusdam
-                possimus quae quas ullam mollitia dolor perspiciatis non quaerat
-                officiis consectetur explicabo exercitationem molestiae tempora
-                accusantium! Lorem ipsum dolor sit, amet consectetur adipisicing
-                elit. Distinctio corporis, deleniti illum iusto quibusdam
-                possimus quae quas ullam mollitia dolor perspiciatis non quaerat
-                officiis consectetur explicabo exercitationem molestiae tempora
-                accusantium! Lorem ipsum dolor sit, amet consectetur adipisicing
-                elit. Distinctio corporis, deleniti illum iusto quibusdam
-                possimus quae quas ullam mollitia dolor perspiciatis non quaerat
-                officiis consectetur explicabo exercitationem molestiae tempora
-                accusantium! Lorem ipsum dolor sit, amet consectetur adipisicing
-                elit. Distinctio corporis, deleniti illum iusto quibusdam
-                possimus quae quas ullam mollitia dolor perspiciatis non quaerat
-                officiis consectetur explicabo exercitationem molestiae tempora
-                accusantium!
-              </div>
-            )}
+            {/* {loading && (
+              <Image
+                src="/assets/images/global/Map/world-map.png"
+                width={1074}
+                height={621}
+                alt="map"
+                className={`m-auto h-auto w-[1074px] max-lg:w-[650px] max-md:w-[390px] max-lg:h-[360px] max-md:h-[200px] cursor-pointer  p-2`}
+              />
+            )} */}
             <Image
-              src={countryMap}
+              src={
+                loading ? "/assets/images/global/Map/world-map.png" : countryMap
+              }
               width={1074}
               height={621}
               alt="map"
