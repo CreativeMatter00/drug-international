@@ -227,7 +227,7 @@ const FlagPart = () => {
       slNo: 36,
       name: "nigeria",
       path: "/assets/images/global/Flags/nigeria.png",
-      mapImage: "/assets/images/global/Map/nigeria.png",
+      mapImage: "/assets/images/global/Map/Nicaragua.png",
     },
     {
       slNo: 37,
