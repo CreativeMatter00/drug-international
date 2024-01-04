@@ -60,12 +60,6 @@ function SpecializedProducts() {
 					</SwiperSlide>
 					<SwiperSlide>
 						<SpecializedProductCard
-							src="/assets/images/home/specialized/capsule.png"
-							title="Soft Capsule"
-						/>
-					</SwiperSlide>
-					<SwiperSlide>
-						<SpecializedProductCard
 							src="/assets/images/home/specialized/syringe.png"
 							title="Prefilled Syringe"
 						/>
