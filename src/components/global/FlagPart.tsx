@@ -9,6 +9,7 @@ const FlagPart = () => {
   const [countryMap, setCountryMap] = useState<string>(
     "/assets/images/global/Map/bd.png"
   );
+  const [loading, setLoading] = useState<boolean>(false);
 
   const imageArray = [
     {
@@ -241,6 +242,10 @@ const FlagPart = () => {
     setCountryMap(mapImage);
   };
 
+  const handleImageLoad = () => {
+    setLoading(false);
+  };
+
   return (
     <div>
       <div className="flex justify-center items-center bg-[#014F70]">
@@ -248,16 +253,21 @@ const FlagPart = () => {
           <div className="uppercase text-2xl flex justify-center text-white font-medium w-full items-center">
             Global Operation
           </div>
-          <div className="h-[550px] w-[1000px] relative">
+          <div className="h-[550px] w-[1000px] max-lg:h-[360px] max-md:h-[200px] relative">
+            {loading && (
+              <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-gray-300 bg-opacity-70">
+                Loading...
+              </div>
+            )}
             <Image
               src={countryMap}
               width={1074}
               height={621}
               alt="map"
-              className={`m-auto h-auto w-[1074px] cursor-pointer  p-2 `}
+              className={`m-auto h-auto w-[1074px] max-lg:w-[650px] max-md:w-[390px] max-lg:h-[360px] max-md:h-[200px] cursor-pointer  p-2`}
             />
             <div
-              className={`animate-ping absolute inline-flex h-1.5 w-1.5 top-0 right-0 rounded-full bg-[#6CFE13] opacity-75 border border-[#FFFFFF] ${
+              className={`animate-ping absolute inline-flex h-1.5 w-1.5 top-0 right-0 rounded-full bg-[#6CFE13] opacity-75 border border-[#FFFFFF] max-lg:hidden ${
                 selectedImage === "Bangladesh" && "top-[294px] right-[297px]"
               }
               ${selectedImage === "USA" && "top-64 left-64"}
@@ -320,9 +330,9 @@ const FlagPart = () => {
             <div className="border border-t-primaryShade w-[20%]" />
           </div>
 
-          <div className="px-16">
+          <div className="px-16 max-md:px-4">
             <div
-              className={`${styles.mapShadow} border border-[#E4E4E6] rounded-lg py-6 px-12 2xl:px-28`}
+              className={`${styles.mapShadow} border border-[#E4E4E6] rounded-lg py-6 px-12 2xl:px-28 max-md:py-4 max-md:px-2`}
             >
               <div className="flex flex-wrap gap-4">
                 {imageArray.map(({ name, path, mapImage }, index) => (
