@@ -246,16 +246,23 @@ const FlagPart = () => {
     setLoading(false);
   };
 
+  console.log("loading", loading);
+
   return (
     <div>
-      <div className="flex justify-center items-center bg-[#014F70]">
+      <div
+        className={`flex justify-center items-center  ${
+          loading ? " bg-red-600" : "bg-[#014F70]"
+        }`}
+      >
         <div className="container p-8 flex justify-center items-center flex-col">
           <div className="uppercase text-2xl flex justify-center text-white font-medium w-full items-center">
             Global Operation
           </div>
+          <div>loading</div>
           <div className="h-[550px] w-[1000px] max-lg:h-[360px] max-md:h-[200px] relative">
             {loading && (
-              <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-gray-300 bg-opacity-70 border-8 border-red-600">
+              <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-gray-300 bg-opacity-70 border-8 border-red-600 text-6xl">
                 Loading... Lorem ipsum dolor sit, amet consectetur adipisicing
                 elit. Distinctio corporis, deleniti illum iusto quibusdam
                 possimus quae quas ullam mollitia dolor perspiciatis non quaerat
