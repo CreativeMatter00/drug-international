@@ -34,7 +34,7 @@ const FlagPart = () => {
       slNo: 4,
       name: "Venezuela",
       path: "/assets/images/global/Flags/Venezuela.png",
-      mapImage: "/assets/images/global/Map/Venezuela.png",
+      mapImage: "/assets/images/global/Map/venezuela.png",
     },
     {
       slNo: 5,
@@ -160,7 +160,7 @@ const FlagPart = () => {
       slNo: 25,
       name: "Bahamas",
       path: "/assets/images/global/Flags/Bahamas.png",
-      mapImage: "/assets/images/global/Map/Bahamas.png",
+      mapImage: "/assets/images/global/Map/bahamas.png",
     },
     {
       slNo: 26,
@@ -221,13 +221,13 @@ const FlagPart = () => {
       slNo: 35,
       name: "Nicaragua",
       path: "/assets/images/global/Flags/Nicaragua.png",
-      mapImage: "/assets/images/global/Map/Nicaragua.png",
+      mapImage: "/assets/images/global/Map/nicaragua.png",
     },
     {
       slNo: 36,
       name: "nigeria",
       path: "/assets/images/global/Flags/nigeria.png",
-      mapImage: "/assets/images/global/Map/Nicaragua.png",
+      mapImage: "/assets/images/global/Map/nigeria.png",
     },
     {
       slNo: 37,
