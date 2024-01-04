@@ -241,19 +241,6 @@ const FlagPart = () => {
     setCountryMap(mapImage);
   };
 
-  // const bg1 = {
-  //   backgroundImage: "url(map.png)",
-  //   height: "572px",
-  //   width: "1221px",
-  //   transition: "transform 0.75s ease-in-out",
-  // };
-
-  // if (selectedCountry === "Bangladesh") {
-  //   bg1.transform = "translateY(-0.25rem) translateX(-10rem)";
-  // } else if (selectedCountry === "USA") {
-  //   bg1.transform = "translateY(-2.25rem) translateX(-47.5rem)";
-  // }
-
   return (
     <div>
       <div className="flex justify-center items-center bg-[#014F70]">
@@ -261,19 +248,60 @@ const FlagPart = () => {
           <div className="uppercase text-2xl flex justify-center text-white font-medium w-full items-center">
             Global Operation
           </div>
-          <div className="h-[550px] w-[1000px] relative border-4 border-red-600">
+          <div className="h-[550px] w-[1000px] relative">
             <Image
               src={countryMap}
-              width={1000}
+              width={1074}
               height={621}
               alt="map"
-              className={`m-auto h-auto w-[1000px] cursor-pointer  p-2 `}
+              className={`m-auto h-auto w-[1074px] cursor-pointer  p-2 `}
             />
             <div
-              className={`animate-ping absolute inline-flex h-3 w-3 top-0 right-0 rounded-full bg-[#6CFE13] opacity-75 border-2 border-red-500 ${
-                selectedImage === "Bangladesh" && "top-72 right-[290px]"
+              className={`animate-ping absolute inline-flex h-1.5 w-1.5 top-0 right-0 rounded-full bg-[#6CFE13] opacity-75 border border-[#FFFFFF] ${
+                selectedImage === "Bangladesh" && "top-[294px] right-[297px]"
               }
               ${selectedImage === "USA" && "top-64 left-64"}
+              ${
+                selectedImage === "United kingdom" && "top-[212px] left-[475px]"
+              }
+              ${selectedImage === "Venezuela" && "top-[337px] left-[322px]"}
+              ${selectedImage === "Yemen" && "top-[315px] left-[595px]"}
+              ${selectedImage === "Sierra-Leone" && "top-[334px] left-[450px]"}
+              ${selectedImage === "Vietnam" && "top-[324px] left-[741px]"}
+              ${selectedImage === "Ukraine" && "top-[225px] left-[550px]"}
+              ${selectedImage === "Uganda" && "top-[350px] left-[560px]"}
+              ${selectedImage === "srilanka" && "top-[337px] left-[676px]"}
+              ${selectedImage === "phillipine" && "top-[328px] left-[780px]"}
+              ${selectedImage === "thailand" && "top-[318px] left-[725px]"}
+              ${selectedImage === "Togo" && "top-[335px] left-[482px]"}
+              ${selectedImage === "Moldova" && "top-[230px] left-[542px]"}
+              ${selectedImage === "Myanmar" && "top-[300px] left-[712px]"}
+              ${selectedImage === "nepal" && "top-[283px] left-[680px]"}
+              ${selectedImage === "somalia" && "top-[345px] left-[590px]"}
+              ${selectedImage === "Somaliland" && "top-[332px] left-[592px]"}
+              ${selectedImage === "South-africa" && "top-[430px] left-[533px]"}
+              ${selectedImage === "ghana" && "top-[335px] left-[476px]"}
+              ${selectedImage === "Georgia" && "top-[244px] left-[578px]"}
+              ${selectedImage === "El_salvador" && "top-[321px] left-[264px]"}
+              ${selectedImage === "Kenya" && "top-[353px] left-[570px]"}
+              ${selectedImage === "Colombia" && "top-[345px] left-[305px]"}
+              ${selectedImage === "Bahamas" && "top-[290px] left-[300px]"}
+              ${selectedImage === "Belarus" && "top-[208px] left-[540px]"}
+              ${selectedImage === "Bhutan" && "top-[284px] left-[695px]"}
+              ${selectedImage === "Botswana" && "top-[410px] left-[535px]"}
+              ${selectedImage === "afghanistan" && "top-[267px] left-[635px]"}
+              ${selectedImage === "combodia" && "top-[324px] left-[735px]"}
+              ${
+                selectedImage === "Dominican-republic" &&
+                "top-[308px] left-[310px]"
+              }
+              ${selectedImage === "honduras" && "top-[318px] left-[270px]"}
+              ${selectedImage === "Hungary" && "top-[230px] left-[522px]"}
+              ${selectedImage === "malawi" && "top-[390px] left-[562px]"}
+              ${selectedImage === "Nicaragua" && "top-[324px] left-[274px]"}
+
+              ${selectedImage === "nigeria" && "top-[332px] left-[499px]"}
+              ${selectedImage === "Oman" && "top-[305px] left-[614px]"}
               `}
             ></div>
           </div>
