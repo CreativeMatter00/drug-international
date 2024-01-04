@@ -1,7 +1,5 @@
-import ProductCard from "@/components/products/ProductCard";
-import LatestProducts from "@/components/products/latest-products/LatestProducts";
+import LatestProducts from "@/components/products/latestProducts/LatestProducts";
 import BreadCrumb from "@/components/ui/breadcrumb/BreadCrumb";
-import ButtonInverted from "@/components/ui/button/ButtonInverted";
 
 function page() {
 	return (
