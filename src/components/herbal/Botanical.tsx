@@ -6,9 +6,9 @@ function Botanical() {
 	return (
 		<div className="font-medium">
 			<div className="text-center uppercase mb-8">
-				<p className="text-herbalPrimary text-2xl mb-6"> Botanical Bliss </p>
+				<p className="text-herbalPrimary text-2xl mb-6"> Botanical Relief </p>
 				<p className="text-herbalSecondary text-lg">
-					Unveiling the Natural Wonders in Our Herbal Products
+					Step Into the Natural Wonders in Our Herbal Products
 				</p>
 			</div>
 

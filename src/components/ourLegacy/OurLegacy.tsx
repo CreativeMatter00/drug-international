@@ -9,18 +9,17 @@ function OurLegacy() {
 						A Timeless Odyssey:
 					</p>
 					<p className="text-textPrimary uppercase text-lg">
-						Nurturing Excellence Through Decades
+						We Are Cultivating Excellence Over the Decades
 					</p>
 				</div>
 				<p className="text-textLight text-base">
-					Embarking on a journey steeped in legacy, our narrative unfolds with a
-					commitment to unwavering excellence and continuous progress. From
-					modest origins to significant milestones, our company's chronicle is a
-					testament to tradition and a catalyst for future aspirations. With a
-					rich tapestry of achievements, we honor our past while looking ahead,
-					ready to transcend boundaries and shape the trajectory of what lies
-					beyond. Our legacy is not just a reflection; it's a living testament
-					to the enduring spirit that propels us forward.
+					Starting a journey tied to our history, our story is all about
+					sticking to being excellent and always moving forward. We began small
+					but achieved big things, blending old ways with new dreams. With lots
+					of successes, we respect where we came from and look forward to
+					breaking limits and creating what's next. Our story isn't just a look
+					back; it's proof that we keep going strong. Get ready for a story
+					that's both classic and looking ahead!
 				</p>
 
 				<div className="container mx-auto w-full h-full font-medium">

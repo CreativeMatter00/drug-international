@@ -25,7 +25,7 @@ function Hero() {
 									Modern Wellness
 								</p>
 								<p className="text-lg uppercase mb-16">
-									Discover Healing Traditions with
+									Experience the healing journey with
 									<br />
 									Drug International Unani Ltd
 								</p>
