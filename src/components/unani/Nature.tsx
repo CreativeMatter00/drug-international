@@ -5,7 +5,7 @@ import Image from "next/image";
 function Nature() {
 	return (
 		<div className="bg-black font-medium text-white pt-10">
-			<p className="text-center mb-2 text-3xl"> Nature's Wisdom Unveiled </p>
+			<p className="text-center mb-2 text-3xl"> Nature's Wisdom Displayed </p>
 			<p className="text-center mb-16 text-sm">
 				Key ingredients in Our Unani ingredients/Wellness Solutions
 			</p>

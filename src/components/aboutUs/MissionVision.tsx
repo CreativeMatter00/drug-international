@@ -36,18 +36,20 @@ function MissionVision() {
 					Strategies
 				</p>
 				<p>
-					Drug International Limited since its inception adopted and established
-					strong quality management systems, from procuring raw material to
-					delivery. The management of the company has always emphasized on
-					procurement of the raw material from the best source with appropriate
-					quality. The managements’ top priority was to establish robust SOP in
-					order to detect and investigate product quality and maintaining
-					reliability by testing in its laboratory for any quality deviations.
+					Drug International Limited prioritizes and implements robust quality
+					management systems since its inception, ensuring excellence from raw
+					material procurement to product delivery. The management places a
+					strong emphasis on sourcing raw materials from reputable suppliers to
+					guarantee quality. A top priority is the establishment of rigorous
+					Standard Operating Procedures (SOPs) to promptly detect and
+					investigate any product quality deviations, maintaining reliability
+					through thorough laboratory testing.
 					<br />
-					For continuous improvement, the company had been vigilant and
-					proactive in adopting modern technologies, scientifically sound
-					design, processing methods, and testing procedures in order to achieve
-					higher quality.
+					The company remains committed to continuous improvement, embracing
+					modern technologies, scientifically sound design, advanced processing
+					methods, and rigorous testing procedures. This proactive approach aims
+					to achieve and sustain higher standards of quality in every aspect of
+					its operations.
 				</p>
 			</div>
 			<div className="px-16 mx-auto mb-12">
@@ -55,14 +57,22 @@ function MissionVision() {
 					Marketing Strategies of Drug International Limited
 				</p>
 				<ul className="flex flex-col gap-3">
-					<li> Identifying effective products for local markets </li>
-					<li> Development of the product and service portfolio </li>
+					<li> Scouting impactful products for local markets </li>
 					<li>
-						Ensuring timely and targeted communication by using modern
-						information technology
+						Expanding our product and service portfolio through continuous
+						development.
 					</li>
 					<li>
-						Providing quality medicine to the remotest corners of the country
+						Utilizing modern information technology for timely and targeted
+						communication.
+					</li>
+					<li>
+						Supplying quality medicine to even the remotest corners of the
+						country.
+					</li>
+					<li>
+						Creating full-time employment opportunities for diverse
+						professionals.
 					</li>
 				</ul>
 			</div>
@@ -71,9 +81,9 @@ function MissionVision() {
 				Chemists, Pharmacists, Engineers, Technicians and others professionals.
 				<br />
 				<br />
-				Drug International Limited is committed to bring together qualified
-				personnel to build an effective organization for delivering quality
-				service and products to its customers and patients.
+				Our commitment to assembling skilled personnel shapes an effective
+				organization dedicated to delivering unparalleled service and top-notch
+				products to our cherished customers and patients.
 			</div>
 		</div>
 	);

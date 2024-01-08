@@ -18,7 +18,7 @@ function LatestProductsCard(props: ILatestProductsCard) {
 					width={408}
 					height={362}
 					alt="latest products"
-					className="w-full h-auto object-cover group-hover:scale-110 group-hover:transition-all duration-500"
+					className="w-full h-auto object-cover group-hover:transition-all duration-500"
 				/>
 				<div className="overlay flex group-hover:flex items-center justify-center absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 text-white text-2xl font-medium ">
 					<p className="mt-40 group-hover:mt-0 duration-500 opacity-0 group-hover:opacity-100">

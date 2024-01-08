@@ -18,10 +18,9 @@ function Description() {
 						Traditional Formulations
 					</p>
 					<p className="text-textSecondary text-base">
-						Immerse yourself in the richness of centuries-old healing
-						traditions. Our Unani products are crafted with authentic
-						formulations, blending herbs and natural ingredients to promote
-						holistic well-being.
+						Dive into centuries-old healing traditions with our Unani products.
+						Our Unani formulations, crafted from a blend of herbs and natural
+						ingredients, are designed to promote overall well-being.
 					</p>
 				</div>
 
@@ -30,9 +29,9 @@ function Description() {
 						Balancing Body and Mind
 					</p>
 					<p className="text-textSecondary text-base">
-						Experience the harmonious balance of body and mind with our Unani
-						offerings. Rooted in ancient wisdom, these products aim to restore
-						equilibrium, addressing health concerns through natural remedies.
+						Disclose the balance of body and mind with our Unani products.
+						Inspired by ancient wisdom, these remedies aim to restore health
+						naturally.
 					</p>
 				</div>
 
@@ -48,24 +47,24 @@ function Description() {
 
 				<div className="w-full md:w-2/3">
 					<p className="uppercase text-2xl text-textPrimary pb-6">
-						Time-Tested Efficacy
+						Proven Effectiveness Over Time
 					</p>
 					<p className="text-textSecondary text-base">
-						Embrace the proven efficacy of time-tested ingredients. Our Unani
-						products draw from a heritage of healing, utilizing botanicals and
-						herbs renowned for their therapeutic properties, delivering results
-						backed by centuries of use.
+						Our Unani products, rooted in a rich heritage of healing, harness
+						the power of botanicals and herbs known for their therapeutic
+						properties. Experience results that stand the test of centuries of
+						traditional use.
 					</p>
 				</div>
 				<div className="w-full md:w-2/3 text-right ml-auto">
 					<p className="uppercase text-2xl text-textPrimary pb-6">
-						Holistic Wellness Solutions
+						Well-Being with Holistic Solutions
 					</p>
 					<p className="text-textSecondary text-base">
-						Elevate your wellness journey with holistic solutions. Our Unani
-						range goes beyond symptom relief, focusing on addressing the root
-						causes of health issues, offering comprehensive wellness for a
-						healthier, more balanced life.
+						Enrich your wellness journey with our holistic Unani solutions.
+						Beyond relieving symptoms, our range addresses the root causes of
+						health issues, ensuring comprehensive well-being for a healthier,
+						more balanced life.
 					</p>
 				</div>
 			</div>

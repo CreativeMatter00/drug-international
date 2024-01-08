@@ -39,21 +39,21 @@ const Footer = () => {
 									src={`/assets/icons/footer/facebook.svg`}
 									width={24}
 									height={24}
-									alt="Herbal hovers"
+									alt="social links"
 									className="h-auto w-auto hover:scale-110 cursor-pointer duration-300"
 								/>
 								<Image
 									src={`/assets/icons/footer/linkedin.svg`}
 									width={24}
 									height={24}
-									alt="Herbal hovers"
+									alt="social links"
 									className="h-auto w-auto hover:scale-110 cursor-pointer duration-300"
 								/>
 								<Image
 									src={`/assets/icons/footer/youtube.svg`}
 									width={24}
 									height={24}
-									alt="Herbal hovers"
+									alt="social links"
 									className="h-auto w-auto hover:scale-110 cursor-pointer duration-300"
 								/>
 							</div>
@@ -70,9 +70,11 @@ const Footer = () => {
 									News & insights
 								</p>
 							</Link>
-							<p className="cursor-pointer hover:ml-0.5 duration-200">
-								security check
-							</p>
+							<Link href="/security-check">
+								<p className="cursor-pointer hover:ml-0.5 duration-200">
+									security check
+								</p>
+							</Link>
 							{/* <p className="cursor-pointer hover:ml-0.5 duration-200">
 								terms & conditions
 							</p> */}

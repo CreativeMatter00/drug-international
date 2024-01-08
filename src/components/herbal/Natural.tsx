@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 
 function Natural() {
@@ -19,18 +20,19 @@ function Natural() {
 					</p>
 
 					<p className="font-medium text-lg text-herbalSecondary uppercase mb-8">
-						Unveiling the Power of Herbal Elegance with Drug International
-						Herbal Ltd
+						Living in sync with the power of perfect balance of herbal with Drug
+						International Herbal Limited.
 					</p>
 
 					<p className="font-medium text-base text-textSecondary mb-8">
-						Embrace the purity of nature with Drug International Herbal Ltd. Our
-						herbal products harness the essence of botanical wonders to promote
-						wellness naturally. From time-honored remedies to modern herbal
-						innovations, our offerings are crafted with precision to support a
-						holistic approach to health. Explore a world of herbal excellence
-						where tradition meets cutting-edge science, delivering the best in
-						natural well-being for you.
+						Experience the essence of nature's goodness with Drug International
+						Herbal Ltd. Our herbal products are like nature's gifts, promoting
+						wellness in the most relaxed way. From trusted remedies to
+						contemporary herbal innovations, we've got your health covered. Our
+						medicines are carefully crafted to support a comprehensive approach
+						to health. Join us on this well-being journey, where herbs make
+						feeling good super easy and natural. Your wellness adventure begins
+						here!
 					</p>
 				</div>
 			</div>
