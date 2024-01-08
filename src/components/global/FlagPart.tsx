@@ -40,7 +40,7 @@ const FlagPart = () => {
       slNo: 5,
       name: "Yemen",
       path: "/assets/images/global/Flags/Yemen.png",
-      mapImage: "/assets/images/global/Map/Yemen.png",
+      mapImage: "/assets/images/global/Map/5.yemen.png",
     },
     {
       slNo: 6,
@@ -256,17 +256,7 @@ const FlagPart = () => {
           <div className="uppercase text-2xl flex justify-center text-white font-medium w-full items-center">
             Global Operation
           </div>
-          {/* <div>loading</div> */}
           <div className="h-[550px] w-[1000px] max-lg:h-[360px] max-md:h-[200px] relative">
-            {/* {loading && (
-              <Image
-                src="/assets/images/global/Map/world-map.png"
-                width={1074}
-                height={621}
-                alt="map"
-                className={`m-auto h-auto w-[1074px] max-lg:w-[650px] max-md:w-[390px] max-lg:h-[360px] max-md:h-[200px] cursor-pointer  p-2`}
-              />
-            )} */}
             <Image
               src={
                 loading ? "/assets/images/global/Map/world-map.png" : countryMap
