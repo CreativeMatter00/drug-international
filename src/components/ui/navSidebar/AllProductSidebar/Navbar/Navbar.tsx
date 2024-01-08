@@ -6,10 +6,13 @@ import styles from "@/styles/NavSidebar.module.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import NavSidebar from "./NavSidebar";
+import Modal from "@/components/share/Modal/Modal";
+import Language from "@/components/language/Language";
 
 const Navbar = () => {
   const [scrolling, setScrolling] = useState<boolean>(false);
   const [mobileNav, setMobileNav] = useState<boolean>(false);
+  const [languageModalOpen, setLanguageOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -125,7 +128,10 @@ const Navbar = () => {
               </svg>
             </div>
 
-            <div className="group cursor-pointer flex justify-center items-center max-lg:hidden">
+            <div
+              className="group cursor-pointer flex justify-center items-center max-lg:hidden"
+              onClick={() => setLanguageOpen(true)}
+            >
               <Image
                 src={`/assets/icons/navbar/Language Icon.svg`}
                 width={32}
@@ -280,6 +286,14 @@ const Navbar = () => {
       >
         <NavSidebar />
       </div>
+
+      <Modal
+        modalHead="Select your preferred language"
+        setModalOpen={setLanguageOpen}
+        addModalOpen={languageModalOpen}
+      >
+        <Language />
+      </Modal>
     </nav>
   );
 };

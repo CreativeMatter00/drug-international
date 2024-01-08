@@ -13,7 +13,7 @@ const SearchOption: React.FC<optionProps> = ({
 }) => {
   return (
     <div
-      className={`flex gap-2 text-lg font-medium items-center cursor-pointer ${
+      className={`flex gap-2 p-2 text-lg font-medium items-center cursor-pointer ${
         isSelected ? "selected" : ""
       }`}
       onClick={() => onItemClick(optionName)}

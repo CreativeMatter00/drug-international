@@ -40,7 +40,7 @@ const FlagPart = () => {
       slNo: 5,
       name: "Yemen",
       path: "/assets/images/global/Flags/Yemen.png",
-      mapImage: "/assets/images/global/Map/5.yemen.png",
+      mapImage: "/assets/images/global/Map/Yemen.png",
     },
     {
       slNo: 6,
@@ -281,7 +281,6 @@ const FlagPart = () => {
               className={`animate-ping absolute inline-flex h-1.5 w-1.5 top-0 right-0 rounded-full bg-[#6CFE13] opacity-75 border border-[#FFFFFF] max-lg:hidden ${
                 selectedImage === "Bangladesh" && "top-[294px] right-[297px]"
               }
-
               ${selectedImage === "USA" && "top-64 left-64"}
               ${
                 selectedImage === "United kingdom" && "top-[212px] left-[475px]"
@@ -354,10 +353,10 @@ const FlagPart = () => {
                     width={52}
                     height={30}
                     alt={name}
-                    className={`m-auto h-11 w-16 cursor-pointer ${
+                    className={`m-auto h-11 w-16 cursor-pointer   ${
                       selectedImage !== name &&
                       "scale-100 hover:scale-125 duration-300 p-2"
-                    } ${
+                    }   ${
                       selectedImage === name &&
                       "border-2 border-[#DF343A] rounded scale-125 p-1"
                     }`}
