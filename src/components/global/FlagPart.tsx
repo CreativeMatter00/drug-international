@@ -247,8 +247,6 @@ const FlagPart = () => {
     setLoading(false);
   };
 
-  console.log("loading", loading);
-
   return (
     <div>
       <div className={`flex justify-center items-center bg-[#014F70] `}>

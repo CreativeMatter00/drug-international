@@ -18,8 +18,6 @@ const CapsuleButton: React.FC<CapsuleButtonProps> = ({ buttonName }) => {
     return () => clearTimeout(timer);
   }, []);
 
-  console.log("showCapsule", showCapsule);
-
   return (
     <button
       className={`flex group rounded-full text-center justify-center items-center relative z-30 ${styles.boxShadow}`}
