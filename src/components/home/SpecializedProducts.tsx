@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import SpecializedProductCard from "./SpecializedProductCard";
+import Link from "next/link";
 
 function SpecializedProducts() {
 	const breakpoints = {
@@ -41,10 +42,12 @@ function SpecializedProducts() {
 					}}
 				>
 					<SwiperSlide>
-						<SpecializedProductCard
-							src="/assets/images/home/specialized/capsule.png"
-							title="Soft Capsule"
-						/>
+						<Link href="/product-category/soft-capsule">
+							<SpecializedProductCard
+								src="/assets/images/home/specialized/capsule.png"
+								title="Soft Capsule"
+							/>
+						</Link>
 					</SwiperSlide>
 					<SwiperSlide>
 						<SpecializedProductCard
