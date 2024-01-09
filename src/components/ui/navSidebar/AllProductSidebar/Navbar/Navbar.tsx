@@ -10,14 +10,9 @@ import Modal from "@/components/share/Modal/Modal";
 import Language from "@/components/language/Language";
 
 const Navbar = () => {
-<<<<<<< HEAD
-  const [scrolling, setScrolling] = useState<boolean>(false);
-  const [mobileNav, setMobileNav] = useState<boolean>(false);
-  const [languageModalOpen, setLanguageOpen] = useState(false);
-=======
 	const [scrolling, setScrolling] = useState<boolean>(false);
 	const [mobileNav, setMobileNav] = useState<boolean>(false);
->>>>>>> 53cee088a4dd37ca8bd2a78a3b8a6f005250d86a
+	const [languageModalOpen, setLanguageOpen] = useState(false);
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -133,28 +128,10 @@ const Navbar = () => {
 							</svg>
 						</div>
 
-<<<<<<< HEAD
-            <div
-              className="group cursor-pointer flex justify-center items-center max-lg:hidden"
-              onClick={() => setLanguageOpen(true)}
-            >
-              <Image
-                src={`/assets/icons/navbar/Language Icon.svg`}
-                width={32}
-                height={32}
-                alt="latest products"
-                className="h-auto  block group-hover:hidden"
-              />
-              <Image
-                src={`/assets/icons/navbar/Language Icon hover.svg`}
-                width={32}
-                height={32}
-                alt="latest products"
-                className=" h-auto hidden group-hover:block"
-              />
-            </div>
-=======
-						<div className="group cursor-pointer flex justify-center items-center max-lg:hidden">
+						<div
+							className="group cursor-pointer flex justify-center items-center max-lg:hidden"
+							onClick={() => setLanguageOpen(true)}
+						>
 							<Image
 								src={`/assets/icons/navbar/Language Icon.svg`}
 								width={32}
@@ -170,7 +147,6 @@ const Navbar = () => {
 								className=" h-auto hidden group-hover:block"
 							/>
 						</div>
->>>>>>> 53cee088a4dd37ca8bd2a78a3b8a6f005250d86a
 
 						<Link href="/global">
 							<div className="border border-primary rounded-lg py-0.5 px-1 flex justify-center items-center gap-2 text-sm font-bold bg-primary text-white hover:text-primary hover:bg-white group cursor-pointer uppercase max-lg:hidden">
@@ -303,25 +279,6 @@ const Navbar = () => {
 				</div>
 			</div>
 
-<<<<<<< HEAD
-      <div
-        className={`absolute top-0  w-full h-screen bg-white lg:hidden z-[99999] ${
-          mobileNav ? "block" : "hidden"
-        }`}
-      >
-        <NavSidebar />
-      </div>
-
-      <Modal
-        modalHead="Select your preferred language"
-        setModalOpen={setLanguageOpen}
-        addModalOpen={languageModalOpen}
-      >
-        <Language />
-      </Modal>
-    </nav>
-  );
-=======
 			<div
 				className={`absolute top-0  w-full h-screen bg-white lg:hidden z-[99999] ${
 					mobileNav ? "block" : "hidden"
@@ -329,9 +286,16 @@ const Navbar = () => {
 			>
 				<NavSidebar />
 			</div>
+
+			<Modal
+				modalHead="Select your preferred language"
+				setModalOpen={setLanguageOpen}
+				addModalOpen={languageModalOpen}
+			>
+				<Language />
+			</Modal>
 		</nav>
 	);
->>>>>>> 53cee088a4dd37ca8bd2a78a3b8a6f005250d86a
 };
 
 export default Navbar;

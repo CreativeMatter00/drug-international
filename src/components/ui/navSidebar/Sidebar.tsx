@@ -95,13 +95,13 @@ const Sidebar = () => {
 								alt="Drug International"
 								className="h-auto hidden group-hover:block"
 							/>
-							Unani
+							UNANI
 						</div>
 					</Link>
 				</div>
 
 				<button
-					className={`left-0 top-[49vh]  text-black rounded-r-md p-0.5 fixed z-50 bg-white
+					className={`left-0 top-[49vh] text-black rounded-r-md p-0.5 fixed z-50 bg-white
             ${
 							isSidebarVisible
 								? "max-md:ml-0 ease-in-out duration-700 left-20"
