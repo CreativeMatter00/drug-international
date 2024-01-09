@@ -15,10 +15,14 @@ export const MainSlice = createSlice({
     handleInitialSearch: (state) => {
       state.search = true;
     },
+    handleInitialSearchStop: (state) => {
+      state.search = false;
+    },
   },
 });
 
-export const { handleInitialSearch } = MainSlice.actions;
+export const { handleInitialSearch, handleInitialSearchStop } =
+  MainSlice.actions;
 
 export default MainSlice.reducer;
 

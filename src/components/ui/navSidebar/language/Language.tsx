@@ -1,5 +1,5 @@
 import { useState } from "react";
-import SearchOption from "../ui/navSidebar/AllProductSidebar/SearchOption";
+import SearchOption from "../AllProductSidebar/SearchOption";
 
 const Language = () => {
   const [selectedItem, setSelectedItem] = useState<string | null>(null);
