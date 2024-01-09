@@ -18,7 +18,7 @@ function page() {
 					</div>
 				</div>
 
-				<div className="container mx-auto font-medium">
+				<div className="container mx-auto font-medium px-4">
 					<p className="pt-20 pb-12 text-4xl text-primaryShade uppercase">
 						Nano Particulate Tablet
 					</p>
