@@ -7,9 +7,11 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import NavSidebar from "./NavSidebar";
 import Modal from "@/components/share/Modal/Modal";
-import Language from "@/components/language/Language";
+import Language from "@/components/ui/navSidebar/language/Language";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState, handleInitialSearch } from "@/redux/Reducer/MainSlice";
+import Search from "../../search/Search";
+import SearchModal from "@/components/share/Modal/SearchModal";
 
 const Navbar = () => {
   const [scrolling, setScrolling] = useState<boolean>(false);
@@ -306,6 +308,9 @@ const Navbar = () => {
       >
         <Language />
       </Modal>
+      <SearchModal modalHead="">
+        <Search />
+      </SearchModal>
     </nav>
   );
 };
