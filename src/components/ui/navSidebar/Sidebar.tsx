@@ -20,7 +20,7 @@ const Sidebar = () => {
 			className={`${
 				isSidebarVisible
 					? `ease-in-out duration-700 left-0 ${styles.navShadow}`
-					: "ease-in-out duration-700 -left-20"
+					: "ease-in-out duration-700 -left-20 "
 			} text-white h-screen fixed w-20 z-40 overflow-hidden top-0`}
 		>
 			<div className="w-20 h-screen border bg-white relative ">

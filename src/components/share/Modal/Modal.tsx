@@ -13,9 +13,6 @@ const Modal: React.FC<ModalProps> = ({
   addModalOpen,
   setModalOpen,
 }) => {
-  console.log(" modalHead", modalHead);
-  console.log(" addModalOpen", addModalOpen);
-
   return (
     <div className="z-[10000000000]">
       <input

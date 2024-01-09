@@ -63,15 +63,15 @@ const AllProductSidebar: React.FC<visibleProps> = ({
               <path
                 d="M3.33789 3.33325L16.6712 16.6666"
                 stroke="#5B5B5B"
-                stroke-width="1.66667"
-                stroke-linecap="round"
+                strokeWidth="1.66667"
+                strokeLinecap="round"
                 stroke-linejoin="round"
               />
               <path
                 d="M3.33789 16.6666L16.6712 3.33325"
                 stroke="#5B5B5B"
-                stroke-width="1.66667"
-                stroke-linecap="round"
+                strokeWidth="1.66667"
+                strokeLinecap="round"
                 stroke-linejoin="round"
               />
             </svg>
