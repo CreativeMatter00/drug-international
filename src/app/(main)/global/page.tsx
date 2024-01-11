@@ -1,15 +1,15 @@
-import FlagPart from "@/components/global/FlagPart";
-import GlobalPresence from "@/components/global/GlobalPresence";
-import MapPart from "@/components/global/MapPart";
+import Loader from "@/components/ui/loader/Loader";
+import dynamic from "next/dynamic";
 
 function Page() {
-  return (
-    <div className="w-full">
-      {/* <MapPart /> */}
-      <FlagPart />
-      <GlobalPresence />
-    </div>
-  );
+	const DynamicGlobal = dynamic(() => import("@/components/global/Global"), {
+		loading: () => <Loader />,
+	});
+	return (
+		<div>
+			<DynamicGlobal />
+		</div>
+	);
 }
 
 export default Page;

@@ -1,25 +1,15 @@
-import Achievements from "@/components/home/Achievements";
-import BAB from "@/components/home/BAB";
-import CSR from "@/components/home/CSR";
-import Hero from "@/components/home/Hero";
-import LatestProducts from "@/components/home/LatestProducts";
-import SecurityCheck from "@/components/home/SecurityCheck";
-import SpecializedProducts from "@/components/home/SpecializedProducts";
-import WhoWeAre from "@/components/home/WhoWeAre";
+import Loader from "@/components/ui/loader/Loader";
+import dynamic from "next/dynamic";
 
 function page() {
-  return (
-    <div>
-      <Hero />
-      <WhoWeAre />
-      <LatestProducts />
-      <SecurityCheck />
-      <SpecializedProducts />
-      <CSR />
-      <Achievements />
-      <BAB />
-    </div>
-  );
+	const DynamicHome = dynamic(() => import("@/components/home/Home"), {
+		loading: () => <Loader />,
+	});
+	return (
+		<div>
+			<DynamicHome />
+		</div>
+	);
 }
 
 export default page;
