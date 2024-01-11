@@ -1,13 +1,14 @@
-import AboutUs from "@/components/aboutUs/AboutUs";
-import Banner from "@/components/ui/Banner";
+import Loader from "@/components/ui/loader/Loader";
+import dynamic from "next/dynamic";
 
 function Page() {
+	const DynamicAboutUs = dynamic(() => import("@/components/aboutUs/AboutUs"), {
+		loading: () => <Loader />,
+	});
+
 	return (
 		<div>
-			<div className="relative">
-				<Banner src="/assets/images/aboutUs/banner.jpg" title="about us" />
-				<AboutUs />
-			</div>
+			<DynamicAboutUs />
 		</div>
 	);
 }

@@ -1,14 +1,18 @@
-import Products from "@/components/products/Products";
-import Banner from "@/components/ui/Banner";
+import Loader from "@/components/ui/loader/Loader";
+import dynamic from "next/dynamic";
 import React from "react";
 
 function page() {
+	const DynamicProducts = dynamic(
+		() => import("@/components/products/Products"),
+		{
+			loading: () => <Loader />,
+		}
+	);
+
 	return (
 		<div>
-			<div className="relative">
-				<Banner src="/assets/images/products/banner.jpg" title="products" />
-				<Products />
-			</div>
+			<DynamicProducts />
 		</div>
 	);
 }

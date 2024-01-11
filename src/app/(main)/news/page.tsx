@@ -1,11 +1,17 @@
-import NewsAndInsights from "@/components/news/NewsAndInsights";
-import React from "react";
+import Loader from "@/components/ui/loader/Loader";
+import dynamic from "next/dynamic";
 
 function page() {
+	const DynamicNews = dynamic(
+		() => import("@/components/contactUs/ContactUs"),
+		{
+			loading: () => <Loader />,
+		}
+	);
+
 	return (
 		<div>
-			<div className="w-full h-[180px] bg-[#C4161C]"> </div>
-			<NewsAndInsights />
+			<DynamicNews />
 		</div>
 	);
 }

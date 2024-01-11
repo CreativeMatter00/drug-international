@@ -1,13 +1,17 @@
-import OurLegacy from "@/components/ourLegacy/OurLegacy";
-import Banner from "@/components/ui/Banner";
+import Loader from "@/components/ui/loader/Loader";
+import dynamic from "next/dynamic";
 
 const Timeline = () => {
+	const DynamicLegacy = dynamic(
+		() => import("@/components/ourLegacy/OurLegacy"),
+		{
+			loading: () => <Loader />,
+		}
+	);
+
 	return (
 		<div>
-			<div className="relative">
-				<Banner src="/assets/images/ourLegacy/banner.png" title="Our Legacy" />
-				<OurLegacy />
-			</div>
+			<DynamicLegacy />
 		</div>
 	);
 };

@@ -5,12 +5,14 @@ import OurProducts from "./OurProducts";
 
 function Unani() {
 	return (
-		<>
-			<Hero />
-			<Description />
-			<Nature />
-			<OurProducts />
-		</>
+		<div>
+			<div className="relative">
+				<Hero />
+				<Description />
+				<Nature />
+				<OurProducts />
+			</div>
+		</div>
 	);
 }
 

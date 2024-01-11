@@ -1,14 +1,16 @@
-import Facilities from "@/components/facilities/Facilities";
-import Banner from "@/components/ui/Banner";
-import React from "react";
+import Loader from "@/components/ui/loader/Loader";
+import dynamic from "next/dynamic";
 
 function page() {
+	const DynamicFacilities = dynamic(
+		() => import("@/components/facilities/Facilities"),
+		{
+			loading: () => <Loader />,
+		}
+	);
 	return (
 		<div>
-			<div className="relative">
-				<Banner src="/assets/images/facilities/banner.jpg" title="facilities" />
-				<Facilities />
-			</div>
+			<DynamicFacilities />
 		</div>
 	);
 }

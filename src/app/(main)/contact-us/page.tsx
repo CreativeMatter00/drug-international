@@ -1,14 +1,16 @@
-import ContactUs from "@/components/contactUs/ContactUs";
-import Banner from "@/components/ui/Banner";
-import React from "react";
+import Loader from "@/components/ui/loader/Loader";
+import dynamic from "next/dynamic";
 
 function page() {
+	const DynamicContactUs = dynamic(
+		() => import("@/components/contactUs/ContactUs"),
+		{
+			loading: () => <Loader />,
+		}
+	);
 	return (
 		<div>
-			<div className="relative">
-				<Banner src="/assets/images/contactUs/banner.jpg" title="Contact Us" />
-				<ContactUs />
-			</div>
+			<DynamicContactUs />
 		</div>
 	);
 }
