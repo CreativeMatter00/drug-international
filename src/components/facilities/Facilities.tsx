@@ -5,8 +5,12 @@ import Manufacturing from "./Manufacturing";
 import Research from "./Research";
 import Oncology from "./Oncology";
 import Warehouse from "./Warehouse";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 import styles from "@/styles/Facilities.module.css";
+import Unit1 from "./Unit1";
+import Unit2 from "./Unit2";
+import Unit3 from "./Unit3";
 
 function Facilities() {
 	const [activeFacility, setActiveFacility] = useState<number>(0);
@@ -26,29 +30,62 @@ function Facilities() {
 							}`}
 							onClick={() => setActiveFacility(0)}
 						>
-							Manufacturing Facility
+							Facilities
 						</p>
 						<p
-							className={`p-3 cursor-pointer hover:bg-white hover:text-primary ${
+							className={`p-3 cursor-pointer flex items-center gap-2 hover:bg-white hover:text-primary ${
 								activeFacility === 1 && "bg-white text-primary"
 							}`}
 							onClick={() => setActiveFacility(1)}
+						>
+							<span className="text-2xl">
+								<MdOutlineKeyboardArrowRight />{" "}
+							</span>
+							Unit - 1
+						</p>
+						<p
+							className={`p-3 cursor-pointer flex items-center gap-2 hover:bg-white hover:text-primary ${
+								activeFacility === 2 && "bg-white text-primary"
+							}`}
+							onClick={() => setActiveFacility(2)}
+						>
+							<span className="text-2xl">
+								<MdOutlineKeyboardArrowRight />
+							</span>
+							Unit - 2
+						</p>
+						<p
+							className={`p-3 cursor-pointer flex items-center gap-2 hover:bg-white hover:text-primary ${
+								activeFacility === 3 && "bg-white text-primary"
+							}`}
+							onClick={() => setActiveFacility(3)}
+						>
+							<span className="text-2xl">
+								<MdOutlineKeyboardArrowRight />
+							</span>
+							Unit - 3
+						</p>
+						<p
+							className={`p-3 cursor-pointer hover:bg-white hover:text-primary ${
+								activeFacility === 4 && "bg-white text-primary"
+							}`}
+							onClick={() => setActiveFacility(4)}
 						>
 							Research & Development
 						</p>
 						<p
 							className={`p-3 cursor-pointer hover:bg-white hover:text-primary ${
-								activeFacility === 2 && "bg-white text-primary"
+								activeFacility === 5 && "bg-white text-primary"
 							}`}
-							onClick={() => setActiveFacility(2)}
+							onClick={() => setActiveFacility(5)}
 						>
 							Oncology
 						</p>
 						<p
 							className={`p-3 cursor-pointer hover:bg-white hover:text-primary ${
-								activeFacility === 3 && "bg-white text-primary"
+								activeFacility === 6 && "bg-white text-primary"
 							}`}
-							onClick={() => setActiveFacility(3)}
+							onClick={() => setActiveFacility(6)}
 						>
 							Warehouse
 						</p>
@@ -56,9 +93,12 @@ function Facilities() {
 
 					<div className="py-12">
 						{activeFacility === 0 && <Manufacturing />}
-						{activeFacility === 1 && <Research />}
-						{activeFacility === 2 && <Oncology />}
-						{activeFacility === 3 && <Warehouse />}
+						{activeFacility === 1 && <Unit1 />}
+						{activeFacility === 2 && <Unit2 />}
+						{activeFacility === 3 && <Unit3 />}
+						{activeFacility === 4 && <Research />}
+						{activeFacility === 5 && <Oncology />}
+						{activeFacility === 6 && <Warehouse />}
 					</div>
 				</div>
 			</div>

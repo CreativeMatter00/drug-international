@@ -9,7 +9,7 @@ function Warehouse() {
 
 			<div className="mb-8 flex flex-wrap">
 				<div className="w-1/3 p-2">
-					<div className="h-[500px]">
+					<div className="h-[200px]">
 						<Image
 							src="/assets/images/facilities/warehouse1.jpg"
 							width={500}
@@ -20,7 +20,7 @@ function Warehouse() {
 					</div>
 				</div>
 				<div className="w-1/3 p-2">
-					<div className="h-[500px]">
+					<div className="h-[200px]">
 						<Image
 							src="/assets/images/facilities/warehouse2.jpg"
 							width={500}
@@ -31,7 +31,7 @@ function Warehouse() {
 					</div>
 				</div>
 				<div className="w-1/3 p-2">
-					<div className="h-[500px]">
+					<div className="h-[200px]">
 						<Image
 							src="/assets/images/facilities/warehouse3.jpg"
 							width={500}
