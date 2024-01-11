@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FiLock, FiMail } from "react-icons/fi";
 
 const logoIn = () => {
@@ -60,12 +61,14 @@ const LoginForm = () => {
         </div>
         <div className="flex -mx-3">
           <div className="w-full px-3 mb-5">
-            <button
-              className="block w-full max-w-xs mx-auto bg-primary hover:bg-[#DF343A] focus:bg-[#6D0E16] text-white rounded-lg px-3 py-3 font-semibold"
-              onClick={logoIn}
-            >
-              LOGIN NOW
-            </button>
+            <Link href="/admin/dashboard">
+              <button
+                className="block w-full max-w-xs mx-auto bg-primary hover:bg-[#DF343A] focus:bg-[#6D0E16] text-white rounded-lg px-3 py-3 font-semibold"
+                onClick={logoIn}
+              >
+                LOGIN NOW
+              </button>
+            </Link>
           </div>
         </div>
       </div>
