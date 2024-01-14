@@ -44,7 +44,7 @@ const AllProductSidebar: React.FC<visibleProps> = ({
       }`}
     >
       <div className="w-[529px] h-screen p-4 bg-[#FFFFFF] flex flex-col justify-between  max-md:w-full">
-        <div className="flex justify-between uppercase font-medium ">
+        <div className="flex justify-between uppercase font-medium max-md:pb-2">
           <p className="text-base">Filter And Sort</p>
 
           <div
@@ -158,9 +158,9 @@ const AllProductSidebar: React.FC<visibleProps> = ({
           </div>
         </div>
 
-        <div className="items-center justify-center pb-16 max-md:pb-4 flex">
+        <div className="items-center justify-center py-8 max-md:py-4 flex">
           <button
-            className={`rounded-lg px-4 py-2 text-white flex gap-2 justify-center items-center uppercase ${
+            className={`rounded-lg px-4 py-2 text-white flex gap-2 justify-center items-center uppercase  ${
               selectedItem === null
                 ? "bg-gray-400 cursor-not-allowed"
                 : "bg-primary hover:bg-primary-dark cursor-pointer"
