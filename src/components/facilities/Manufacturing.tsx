@@ -22,12 +22,12 @@ function Manufacturing() {
 				<p className="">
 					Drug International Limited stands as a leading pharmaceutical
 					manufacturer in Bangladesh, boasting a state-of-the-art facility
-					designed, built, and validated in alignment with the WHO-cGMP Concept
+					designed, built, and validated in alignment with the WHO-cGMP concept
 					and local Drug Administration Regulations. Our expansive plant
 					includes two independent production buildings connected via a covered
 					corridor, providing a secure environment shielded from environmental
-					hazards. Prioritizing cleanliness, we've eliminated potential sources
-					of dust and smoke in the surrounding areas, with constructions
+					hazards. Prioritizing cleanliness, we have eliminated potential
+					sources of dust and smoke in the surrounding areas, with constructions
 					following approved layout plans and meeting regulatory building codes.
 					The facility features advanced materials such as sandwich panels
 					covering walls and ceilings, while a uniform 5mm layer of epoxy paint
@@ -38,8 +38,8 @@ function Manufacturing() {
 					and a Conference Room. To ensure uninterrupted operations, a generator
 					is in place, and our water treatment plant guarantees the purity and
 					distribution of water throughout the facility. The Effluent Water
-					Treatment Plant (ETP) underscores our dedication to responsible waste
-					water management. Drug International Limited remains steadfast in
+					Treatment Plant (ETP) underscores our dedication to responsible
+					wastewater management. Drug International Limited remains steadfast in
 					formulating medicines with strict compliance to WHO cGMP guidelines,
 					emphasizing a controlled environment with separate departments and
 					standardized facilities to uphold the highest standards of quality and

@@ -57,7 +57,7 @@ function MissionVision() {
 					Marketing Strategies of Drug International Limited
 				</p>
 				<ul className="flex flex-col gap-3">
-					<li> Scouting impactful products for local markets </li>
+					<li> Scouting impactful products for local markets. </li>
 					<li>
 						Expanding our product and service portfolio through continuous
 						development.
@@ -77,10 +77,8 @@ function MissionVision() {
 				</ul>
 			</div>
 			<div className="font-medium text-base text-textPrimary">
-				Drug International Limited has created full time employment for Doctors,
-				Chemists, Pharmacists, Engineers, Technicians and others professionals.
-				<br />
-				<br />
+				Drug International Limited has created full-time employment for doctors,
+				chemists, pharmacists, engineers, technicians, and other professionals.
 				Our commitment to assembling skilled personnel shapes an effective
 				organization dedicated to delivering unparalleled service and top-notch
 				products to our cherished customers and patients.
