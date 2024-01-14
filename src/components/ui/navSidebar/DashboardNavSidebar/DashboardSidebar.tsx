@@ -59,6 +59,25 @@ const DashboardSidebar: React.FC<DashboardSidebarProps> = ({
           </p>
         </div>
       </Link>
+      <Link href="/admin/medicine-setup">
+        <div
+          className={`hover:bg-[#F3F4F6]  cursor-pointer pl-4 py-2 pr-2 rounded-2xl mb-3 flex justify-between w-full hover:text-red-700 ${
+            expandedButtonIndex === 0
+              ? "bg-[#F3F4F6] text-indigo-700"
+              : "text-[#0B181C]"
+          } ${
+            pathName === "/admin/medicine-setup"
+              ? "bg-[#F3F4F6] text-red-700"
+              : "bg-white"
+          }`}
+          onClick={() => handleToggle(1)}
+        >
+          <p className="flex items-center text-sm font-semibold ">
+            <FaChartBar className="h-5 w-5 mr-2" />
+            Medicine setup
+          </p>
+        </div>
+      </Link>
     </div>
   );
 };
