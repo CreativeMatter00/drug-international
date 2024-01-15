@@ -1,3 +1,9 @@
+"use client";
+
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+
 import Image from "next/image";
 import ButtonPrimary from "../ui/button/ButtonPrimary";
 import { BsDownload } from "react-icons/bs";
@@ -6,13 +12,22 @@ import styles from "@/styles/Products.module.css";
 import Banner from "../ui/Banner";
 
 function Products() {
+	const revealAnimation = {
+		hidden: { scale: 0 },
+		visible: { scale: 1, transition: { duration: 0.5 } },
+	};
+
 	return (
-		<div>
-			<div className="relative">
-				<Banner src="/assets/images/products/banner.jpg" title="products" />
-				<div className="relative mt-[-100px] w-full mb-10 ">
-					<div className="container mx-auto bg-white py-8 md:py-14  px-4 rounded-2xl shadow-[0px_-2px_8px_0px_rgba(0,0,0,0.75)]">
-						<div className="mt-36 mb-24 ">
+		<div className="relative">
+			<Banner src="/assets/images/products/banner.jpg" title="products" />
+			<div className="relative mt-[-100px] w-full mb-10 ">
+				<div className="container mx-auto bg-white py-8 md:py-14 px-4 rounded-2xl shadow-[0px_-2px_8px_0px_rgba(0,0,0,0.75)]">
+					<motion.div
+						initial="hidden"
+						animate="visible"
+						variants={revealAnimation}
+					>
+						<div className="mt-8 mb-24 ">
 							<div className="flex flex-col items-center gap-6 w-fit mx-auto">
 								<p className="font-medium text-base text-textSecondary">
 									Download all product list
@@ -111,7 +126,7 @@ function Products() {
 								</Link>
 							</div>
 						</div>
-					</div>
+					</motion.div>
 				</div>
 			</div>
 		</div>

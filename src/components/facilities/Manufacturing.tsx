@@ -1,9 +1,20 @@
 /* eslint-disable react/no-unescaped-entities */
+"use client";
+
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 function Manufacturing() {
+	const slideInAnimationTop = {
+		hidden: { opacity: 0, y: 400 },
+		visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+	};
 	return (
-		<div>
+		<motion.div
+			initial="hidden"
+			animate="visible"
+			variants={slideInAnimationTop}
+		>
 			<p className="font-medium text-3xl uppercase text-primary mb-10">
 				Manufacturing Facility
 			</p>
@@ -46,7 +57,7 @@ function Manufacturing() {
 					regulatory compliance.
 				</p>
 			</div>
-		</div>
+		</motion.div>
 	);
 }
 

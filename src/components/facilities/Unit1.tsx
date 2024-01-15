@@ -1,9 +1,19 @@
+"use client";
+
 import Image from "next/image";
-import React from "react";
+import { motion } from "framer-motion";
 
 function Unit1() {
+	const slideInAnimationTop = {
+		hidden: { opacity: 0, y: 400 },
+		visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+	};
 	return (
-		<div>
+		<motion.div
+			initial="hidden"
+			animate="visible"
+			variants={slideInAnimationTop}
+		>
 			<p className="font-medium text-3xl uppercase text-primary mb-10">
 				Unit - 1
 			</p>
@@ -32,7 +42,7 @@ function Unit1() {
 					drugs.
 				</p>
 			</div>
-		</div>
+		</motion.div>
 	);
 }
 

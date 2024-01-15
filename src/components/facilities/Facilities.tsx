@@ -21,7 +21,7 @@ function Facilities() {
 			<div className="relative">
 				<Banner src="/assets/images/facilities/banner.jpg" title="facilities" />
 				<div className="relative mt-[-100px] w-full mb-10">
-					<div className="container mx-auto bg-white px-4 md:px-12 rounded-2xl shadow-[0px_-2px_8px_0px_rgba(0,0,0,0.75)]">
+					<div className="container mx-auto bg-white px-4 md:px-12 rounded-2xl shadow-[0px_-2px_8px_0px_rgba(0,0,0,0.75)] overflow-hidden">
 						<div
 							// className="px-12 grid gap-16"
 							// style={{ gridTemplateColumns: "1fr 3fr" }}

@@ -1,5 +1,9 @@
 "use client";
 
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -9,6 +13,20 @@ import SpecializedProductCard from "./SpecializedProductCard";
 import Link from "next/link";
 
 function SpecializedProducts() {
+	const slideInAnimationRight = {
+		hidden: { opacity: 0, x: -400 },
+		visible: { opacity: 1, x: 0, transition: { duration: 1 } },
+	};
+
+	const controls = useAnimation();
+	const [ref, inView] = useInView({ triggerOnce: true });
+
+	useEffect(() => {
+		if (inView) {
+			controls.start("visible");
+		}
+	}, [controls, inView]);
+
 	const breakpoints = {
 		1200: {
 			slidesPerView: 6,
@@ -32,78 +50,85 @@ function SpecializedProducts() {
 				Specialized Products
 			</div>
 			<div className="bg-[#E4E4E6] py-8">
-				<Swiper
-					breakpoints={breakpoints}
-					spaceBetween={30}
-					centeredSlides={true}
-					initialSlide={1}
-					pagination={{
-						clickable: true,
-					}}
+				<motion.div
+					ref={ref}
+					initial="hidden"
+					animate={controls}
+					variants={slideInAnimationRight}
 				>
-					<SwiperSlide>
-						<Link href="/product-category/soft-capsule">
+					<Swiper
+						breakpoints={breakpoints}
+						spaceBetween={30}
+						centeredSlides={true}
+						initialSlide={1}
+						pagination={{
+							clickable: true,
+						}}
+					>
+						<SwiperSlide>
+							<Link href="/product-category/soft-capsule">
+								<SpecializedProductCard
+									src="/assets/images/home/specialized/capsule.png"
+									title="Soft Capsule"
+								/>
+							</Link>
+						</SwiperSlide>
+						<SwiperSlide>
 							<SpecializedProductCard
-								src="/assets/images/home/specialized/capsule.png"
-								title="Soft Capsule"
+								src="/assets/images/home/specialized/mdi.png"
+								title="MDI"
 							/>
-						</Link>
-					</SwiperSlide>
-					<SwiperSlide>
-						<SpecializedProductCard
-							src="/assets/images/home/specialized/mdi.png"
-							title="MDI"
-						/>
-					</SwiperSlide>
-					<SwiperSlide>
-						<SpecializedProductCard
-							src="/assets/images/home/specialized/nasal.png"
-							title="Nasal Spray"
-						/>
-					</SwiperSlide>
-					<SwiperSlide>
-						<SpecializedProductCard
-							src="/assets/images/home/specialized/syringe.png"
-							title="Prefilled Syringe"
-						/>
-					</SwiperSlide>
-					<SwiperSlide>
-						<SpecializedProductCard
-							src="/assets/images/home/specialized/eyedrop.png"
-							title="Eye Drops"
-						/>
-					</SwiperSlide>
-					<SwiperSlide>
-						<SpecializedProductCard
-							src="/assets/images/home/specialized/oncology.png"
-							title="Oncology"
-						/>
-					</SwiperSlide>
-					<SwiperSlide>
-						<SpecializedProductCard
-							src="/assets/images/home/specialized/oral.png"
-							title="Oral Spray"
-						/>
-					</SwiperSlide>
-					<SwiperSlide>
-						<SpecializedProductCard
-							src="/assets/images/home/specialized/nano.png"
-							title="Nano Particulate Tablet"
-						/>
-					</SwiperSlide>
-					<SwiperSlide>
-						<SpecializedProductCard
-							src="/assets/images/home/specialized/dpi.png"
-							title="DPI"
-						/>
-					</SwiperSlide>
-					<SwiperSlide>
-						<SpecializedProductCard
-							src="/assets/images/home/specialized/biotech.png"
-							title="Biotech"
-						/>
-					</SwiperSlide>
-				</Swiper>
+						</SwiperSlide>
+						<SwiperSlide>
+							<SpecializedProductCard
+								src="/assets/images/home/specialized/nasal.png"
+								title="Nasal Spray"
+							/>
+						</SwiperSlide>
+						<SwiperSlide>
+							<SpecializedProductCard
+								src="/assets/images/home/specialized/syringe.png"
+								title="Prefilled Syringe"
+							/>
+						</SwiperSlide>
+						<SwiperSlide>
+							<SpecializedProductCard
+								src="/assets/images/home/specialized/eyedrop.png"
+								title="Eye Drops"
+							/>
+						</SwiperSlide>
+						<SwiperSlide>
+							<SpecializedProductCard
+								src="/assets/images/home/specialized/oncology.png"
+								title="Oncology"
+							/>
+						</SwiperSlide>
+						<SwiperSlide>
+							<SpecializedProductCard
+								src="/assets/images/home/specialized/oral.png"
+								title="Oral Spray"
+							/>
+						</SwiperSlide>
+						<SwiperSlide>
+							<SpecializedProductCard
+								src="/assets/images/home/specialized/nano.png"
+								title="Nano Particulate Tablet"
+							/>
+						</SwiperSlide>
+						<SwiperSlide>
+							<SpecializedProductCard
+								src="/assets/images/home/specialized/dpi.png"
+								title="DPI"
+							/>
+						</SwiperSlide>
+						<SwiperSlide>
+							<SpecializedProductCard
+								src="/assets/images/home/specialized/biotech.png"
+								title="Biotech"
+							/>
+						</SwiperSlide>
+					</Swiper>
+				</motion.div>
 			</div>
 		</div>
 	);
