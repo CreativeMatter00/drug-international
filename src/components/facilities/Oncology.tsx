@@ -1,15 +1,27 @@
+"use client";
+
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 function Oncology() {
+	const slideInAnimationTop = {
+		hidden: { opacity: 0, y: 400 },
+		visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+	};
+
 	return (
-		<div>
+		<motion.div
+			initial="hidden"
+			animate="visible"
+			variants={slideInAnimationTop}
+		>
 			<p className="font-medium text-3xl uppercase text-primary mb-10">
 				Oncology
 			</p>
 
 			<div className="mb-8 flex flex-wrap">
-				<div className="w-1/2 p-2">
-					<div className="h-[500px]">
+				<div className="w-full md:w-1/2 p-2">
+					<div className="h-[240px] md:h-[440px]">
 						<Image
 							src="/assets/images/facilities/oncology1.jpg"
 							width={500}
@@ -19,8 +31,8 @@ function Oncology() {
 						/>
 					</div>
 				</div>
-				<div className="w-1/2 p-2">
-					<div className="h-[500px]">
+				<div className="w-full md:w-1/2 p-2">
+					<div className="h-[240px] md:h-[440px]">
 						<Image
 							src="/assets/images/facilities/oncology2.jpg"
 							width={500}
@@ -41,7 +53,7 @@ function Oncology() {
 					improving the lives of those affected by cancer.
 				</p>
 			</div>
-		</div>
+		</motion.div>
 	);
 }
 

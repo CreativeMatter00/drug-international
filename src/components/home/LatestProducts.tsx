@@ -1,6 +1,9 @@
 "use client";
 
-import React from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -9,6 +12,20 @@ import "swiper/css";
 import LatestProductsCard from "./LatestProductsCard";
 
 function LatestProducts() {
+	const slideInAnimationRight = {
+		hidden: { opacity: 0, x: -400 },
+		visible: { opacity: 1, x: 0, transition: { duration: 1 } },
+	};
+
+	const controls = useAnimation();
+	const [ref, inView] = useInView({ triggerOnce: true });
+
+	useEffect(() => {
+		if (inView) {
+			controls.start("visible");
+		}
+	}, [controls, inView]);
+
 	const breakpoints = {
 		1200: {
 			slidesPerView: 6,
@@ -32,96 +49,103 @@ function LatestProducts() {
 				Latest Products
 			</h1>
 
-			<Swiper
-				breakpoints={breakpoints}
-				spaceBetween={120}
-				centeredSlides={true}
-				initialSlide={1}
-				pagination={{
-					clickable: true,
-				}}
+			<motion.div
+				ref={ref}
+				initial="hidden"
+				animate={controls}
+				variants={slideInAnimationRight}
 			>
-				<SwiperSlide>
-					<LatestProductsCard
-						src="/assets/images/home/latest/1.solina.png"
-						title="solina"
-						genericName="solifenacin"
-						theraputicName="Urology preparation"
-					/>
-				</SwiperSlide>
-				<SwiperSlide>
-					<LatestProductsCard
-						src="/assets/images/home/latest/2.geludrox.png"
-						title="geludrox"
-						genericName="solifenacin"
-						theraputicName="Urology preparation"
-					/>
-				</SwiperSlide>
-				<SwiperSlide>
-					<LatestProductsCard
-						src="/assets/images/home/latest/3.ivtin.png"
-						title="ivtin"
-						genericName="solifenacin"
-						theraputicName="Urology preparation"
-					/>
-				</SwiperSlide>
-				<SwiperSlide>
-					<LatestProductsCard
-						src="/assets/images/home/latest/4.famotid.png"
-						title="famotid"
-						genericName="solifenacin"
-						theraputicName="Urology preparation"
-					/>
-				</SwiperSlide>
-				<SwiperSlide>
-					<LatestProductsCard
-						src="/assets/images/home/latest/5.mypart.png"
-						title="mypart"
-						genericName="solifenacin"
-						theraputicName="Urology preparation"
-					/>
-				</SwiperSlide>
-				<SwiperSlide>
-					<LatestProductsCard
-						src="/assets/images/home/latest/6.ocuberry.png"
-						title="ocuberry"
-						genericName="solifenacin"
-						theraputicName="Urology preparation"
-					/>
-				</SwiperSlide>
-				<SwiperSlide>
-					<LatestProductsCard
-						src="/assets/images/home/latest/7.menoherb.png"
-						title="menoherb"
-						genericName="solifenacin"
-						theraputicName="Urology preparation"
-					/>
-				</SwiperSlide>
-				<SwiperSlide>
-					<LatestProductsCard
-						src="/assets/images/home/latest/8.dilavir.png"
-						title="dilavir"
-						genericName="solifenacin"
-						theraputicName="Urology preparation"
-					/>
-				</SwiperSlide>
-				<SwiperSlide>
-					<LatestProductsCard
-						src="/assets/images/home/latest/9.favira.png"
-						title="favira"
-						genericName="solifenacin"
-						theraputicName="Urology preparation"
-					/>
-				</SwiperSlide>
-				<SwiperSlide>
-					<LatestProductsCard
-						src="/assets/images/home/latest/10.charm.png"
-						title="charm"
-						genericName="solifenacin"
-						theraputicName="Urology preparation"
-					/>
-				</SwiperSlide>
-			</Swiper>
+				<Swiper
+					breakpoints={breakpoints}
+					spaceBetween={120}
+					centeredSlides={true}
+					initialSlide={1}
+					pagination={{
+						clickable: true,
+					}}
+				>
+					<SwiperSlide>
+						<LatestProductsCard
+							src="/assets/images/home/latest/1.solina.png"
+							title="solina"
+							genericName="solifenacin"
+							theraputicName="Urology preparation"
+						/>
+					</SwiperSlide>
+					<SwiperSlide>
+						<LatestProductsCard
+							src="/assets/images/home/latest/2.geludrox.png"
+							title="geludrox"
+							genericName="solifenacin"
+							theraputicName="Urology preparation"
+						/>
+					</SwiperSlide>
+					<SwiperSlide>
+						<LatestProductsCard
+							src="/assets/images/home/latest/3.ivtin.png"
+							title="ivtin"
+							genericName="solifenacin"
+							theraputicName="Urology preparation"
+						/>
+					</SwiperSlide>
+					<SwiperSlide>
+						<LatestProductsCard
+							src="/assets/images/home/latest/4.famotid.png"
+							title="famotid"
+							genericName="solifenacin"
+							theraputicName="Urology preparation"
+						/>
+					</SwiperSlide>
+					<SwiperSlide>
+						<LatestProductsCard
+							src="/assets/images/home/latest/5.mypart.png"
+							title="mypart"
+							genericName="solifenacin"
+							theraputicName="Urology preparation"
+						/>
+					</SwiperSlide>
+					<SwiperSlide>
+						<LatestProductsCard
+							src="/assets/images/home/latest/6.ocuberry.png"
+							title="ocuberry"
+							genericName="solifenacin"
+							theraputicName="Urology preparation"
+						/>
+					</SwiperSlide>
+					<SwiperSlide>
+						<LatestProductsCard
+							src="/assets/images/home/latest/7.menoherb.png"
+							title="menoherb"
+							genericName="solifenacin"
+							theraputicName="Urology preparation"
+						/>
+					</SwiperSlide>
+					<SwiperSlide>
+						<LatestProductsCard
+							src="/assets/images/home/latest/8.dilavir.png"
+							title="dilavir"
+							genericName="solifenacin"
+							theraputicName="Urology preparation"
+						/>
+					</SwiperSlide>
+					<SwiperSlide>
+						<LatestProductsCard
+							src="/assets/images/home/latest/9.favira.png"
+							title="favira"
+							genericName="solifenacin"
+							theraputicName="Urology preparation"
+						/>
+					</SwiperSlide>
+					<SwiperSlide>
+						<LatestProductsCard
+							src="/assets/images/home/latest/10.charm.png"
+							title="charm"
+							genericName="solifenacin"
+							theraputicName="Urology preparation"
+						/>
+					</SwiperSlide>
+				</Swiper>
+			</motion.div>
 		</div>
 	);
 }

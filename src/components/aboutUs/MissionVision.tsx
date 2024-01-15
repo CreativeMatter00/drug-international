@@ -1,8 +1,19 @@
-import React from "react";
+"use client";
+
+import { motion } from "framer-motion";
 
 function MissionVision() {
+	const slideInAnimationTop = {
+		hidden: { opacity: 0, y: 400 },
+		visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+	};
+
 	return (
-		<div>
+		<motion.div
+			initial="hidden"
+			animate="visible"
+			variants={slideInAnimationTop}
+		>
 			<div className="bg-mission bg-cover pt-14 pb-32 px-4 rounded-md text-white">
 				<p className="mb-16 font-medium text-lg">
 					Drug International Limited believes their mission is to ensure better
@@ -83,7 +94,7 @@ function MissionVision() {
 				organization dedicated to delivering unparalleled service and top-notch
 				products to our cherished customers and patients.
 			</div>
-		</div>
+		</motion.div>
 	);
 }
 

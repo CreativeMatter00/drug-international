@@ -1,9 +1,19 @@
+"use client";
+
+import { motion } from "framer-motion";
 import Image from "next/image";
-import React from "react";
 
 function Unit3() {
+	const slideInAnimationTop = {
+		hidden: { opacity: 0, y: 400 },
+		visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+	};
 	return (
-		<div>
+		<motion.div
+			initial="hidden"
+			animate="visible"
+			variants={slideInAnimationTop}
+		>
 			<p className="font-medium text-3xl uppercase text-primary mb-10">
 				Unit - 3
 			</p>
@@ -21,7 +31,7 @@ function Unit3() {
 			<div className="font-medium text-base text-textSecondary">
 				<p className=""></p>
 			</div>
-		</div>
+		</motion.div>
 	);
 }
 

@@ -1,9 +1,20 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 import Image from "next/image";
-import React from "react";
 
 function Unit2() {
+	const slideInAnimationTop = {
+		hidden: { opacity: 0, y: 400 },
+		visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+	};
 	return (
-		<div>
+		<motion.div
+			initial="hidden"
+			animate="visible"
+			variants={slideInAnimationTop}
+		>
 			<p className="font-medium text-3xl uppercase text-primary mb-10">
 				Unit - 2
 			</p>
@@ -38,7 +49,7 @@ function Unit2() {
 					solid, liquid, injectable, and semi-solid dosage forms.
 				</p>
 			</div>
-		</div>
+		</motion.div>
 	);
 }
 
