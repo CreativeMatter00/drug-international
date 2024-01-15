@@ -308,6 +308,7 @@ const Navbar = () => {
       >
         <Language />
       </Modal>
+
       <SearchModal modalHead="">
         <Search />
       </SearchModal>

@@ -1,21 +1,19 @@
 import {
   RootState,
-  handleInitialSearch,
-  handleInitialSearchStop,
+  handleAddModalClose,
+  handleAddModalOpen,
 } from "@/redux/Reducer/MainSlice";
 import { ReactNode } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
-interface ModalProps {
+interface AddModalProps {
   children: ReactNode;
   modalHead: string;
 }
 
-const SearchModal: React.FC<ModalProps> = ({ children, modalHead }) => {
+const AddModal: React.FC<AddModalProps> = ({ children, modalHead }) => {
   const dispatch = useDispatch();
-  const searchModalOpen = useSelector(
-    (state: RootState) => state.Initial.search
-  );
+  const addModalOpen = useSelector((state: RootState) => state.Initial.add);
 
   return (
     <div className="z-[10000000000]">
@@ -23,13 +21,13 @@ const SearchModal: React.FC<ModalProps> = ({ children, modalHead }) => {
         type="checkbox"
         id="my_modal_7"
         className="modal-toggle"
-        checked={searchModalOpen}
-        onChange={() => dispatch(handleInitialSearch())}
+        checked={addModalOpen}
+        onChange={() => dispatch(handleAddModalOpen())}
       />
       <div className="modal">
         <div className="modal-box w-10/12 max-w-4xl">
           <button
-            onClick={() => dispatch(handleInitialSearchStop())}
+            onClick={() => dispatch(handleAddModalClose())}
             className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
           >
             ✕
@@ -40,7 +38,7 @@ const SearchModal: React.FC<ModalProps> = ({ children, modalHead }) => {
         <label
           className="modal-backdrop"
           htmlFor="my_modal_7"
-          onClick={() => dispatch(handleInitialSearchStop())}
+          onClick={() => dispatch(handleAddModalClose())}
         >
           Close
         </label>
@@ -49,4 +47,4 @@ const SearchModal: React.FC<ModalProps> = ({ children, modalHead }) => {
   );
 };
 
-export default SearchModal;
+export default AddModal;

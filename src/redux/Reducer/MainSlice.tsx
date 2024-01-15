@@ -2,10 +2,12 @@ import { createSlice } from "@reduxjs/toolkit";
 
 interface MainState {
   search: boolean;
+  add: boolean;
 }
 
 const initialState: MainState = {
   search: false,
+  add: false,
 };
 
 export const MainSlice = createSlice({
@@ -18,11 +20,21 @@ export const MainSlice = createSlice({
     handleInitialSearchStop: (state) => {
       state.search = false;
     },
+    handleAddModalOpen: (state) => {
+      state.add = true;
+    },
+    handleAddModalClose: (state) => {
+      state.add = false;
+    },
   },
 });
 
-export const { handleInitialSearch, handleInitialSearchStop } =
-  MainSlice.actions;
+export const {
+  handleInitialSearch,
+  handleInitialSearchStop,
+  handleAddModalOpen,
+  handleAddModalClose,
+} = MainSlice.actions;
 
 export default MainSlice.reducer;
 
