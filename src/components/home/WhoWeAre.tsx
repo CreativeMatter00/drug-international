@@ -6,11 +6,11 @@ import { useEffect } from "react";
 
 function WhoWeAre() {
 	const slideInAnimationLeft = {
-		hidden: { opacity: 0, x: -400 },
+		hidden: { opacity: 0, x: -300 },
 		visible: { opacity: 1, x: 0 },
 	};
 	const slideInAnimationRight = {
-		hidden: { opacity: 0, x: 400 },
+		hidden: { opacity: 0, x: 300 },
 		visible: { opacity: 1, x: 0 },
 	};
 
