@@ -13,7 +13,7 @@ import LatestProductsCard from "./LatestProductsCard";
 
 function LatestProducts() {
 	const slideInAnimationRight = {
-		hidden: { opacity: 0, x: -400 },
+		hidden: { opacity: 0, x: -300 },
 		visible: { opacity: 1, x: 0, transition: { duration: 1 } },
 	};
 

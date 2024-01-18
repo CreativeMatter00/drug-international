@@ -1,5 +1,9 @@
 "use client";
 
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+
 import Image from "next/image";
 import styles from "@/styles/Herbal.module.css";
 
@@ -11,6 +15,20 @@ import "swiper/css";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 function Hero() {
+	const slideInAnimationRight = {
+		hidden: { opacity: 0, x: 300 },
+		visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
+	};
+
+	const controls = useAnimation();
+	const [ref, inView] = useInView({ triggerOnce: true });
+
+	useEffect(() => {
+		if (inView) {
+			controls.start("visible");
+		}
+	}, [controls, inView]);
+
 	return (
 		<div
 			className={`min-h-screen flex items-center justify-center ${styles.background1}`}
@@ -59,19 +77,26 @@ function Hero() {
 				</div>
 
 				<div className="w-full px-4 pb-4 md:w-1/2 md:px-0 text-white">
-					<p className="font-medium text-3xl md:font-semibold md:text-5xl md:leading-[60px] uppercase mb-4">
-						Discover Nature&apos;s
-						<br />
-						Healing Touch
-					</p>
-					<p className="text-base md:text-lg mb-16">
-						Herbal Innovations for a healthier tomorrow with <br /> Drug
-						International Herbal Ltd
-					</p>
+					<motion.div
+						ref={ref}
+						initial="hidden"
+						animate={controls}
+						variants={slideInAnimationRight}
+					>
+						<p className="font-medium text-3xl md:font-semibold md:text-5xl md:leading-[60px] uppercase mb-4">
+							Discover Nature&apos;s
+							<br />
+							Healing Touch
+						</p>
+						<p className="text-base md:text-lg mb-16">
+							Herbal Innovations for a healthier tomorrow with <br /> Drug
+							International Herbal Ltd
+						</p>
 
-					<button className="bg-[#FBEEE2] text-herbalPrimary font-medium px-5 py-3 rounded-md text-sm flex items-center gap-2 uppercase transition-all hover:scale-110">
-						See Our Products <FaArrowRightLong />
-					</button>
+						<button className="bg-[#FBEEE2] text-herbalPrimary font-medium px-5 py-3 rounded-md text-sm flex items-center gap-2 uppercase transition-all hover:scale-110">
+							See Our Products <FaArrowRightLong />
+						</button>
+					</motion.div>
 				</div>
 			</div>
 		</div>
