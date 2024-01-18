@@ -31,7 +31,7 @@ function Hero() {
 
 	return (
 		<div
-			className={`min-h-screen flex items-center justify-center ${styles.background1}`}
+			className={`relative min-h-screen flex items-center justify-center ${styles.background1}`}
 		>
 			<div className="container mx-auto flex flex-col md:flex-row gap-8">
 				<div className="w-full md:w-1/2 px-4 md:px-0">
@@ -75,6 +75,22 @@ function Hero() {
 						</SwiperSlide>
 					</Swiper>
 				</div>
+				{/* <video
+					autoPlay={true}
+					loop={true}
+					muted={true}
+					playsInline={true}
+					className="absolute top-0 right-0"
+				>
+					<source src="/assets/videoes/honeycomb.mp4" type="video/mp4" />
+				</video> */}
+				{/* <Image
+					src="/assets/videoes/honeycomb-2.gif"
+					width={200}
+					height={200}
+					alt="honeycomb"
+					className="absolute top-0 right-0"
+				/> */}
 
 				<div className="w-full px-4 pb-4 md:w-1/2 md:px-0 text-white">
 					<motion.div
