@@ -1,9 +1,18 @@
 "use client";
 
-import { useState } from "react";
+import {
+  JSXElementConstructor,
+  Key,
+  PromiseLikeOfReactNode,
+  ReactElement,
+  ReactNode,
+  ReactPortal,
+  useState,
+} from "react";
 import { FaRegFilePdf } from "react-icons/fa6";
 import { TbSearch } from "react-icons/tb";
 import { SiMicrosoftexcel } from "react-icons/si";
+import { MdVisibility } from "react-icons/md";
 import * as XLSX from "xlsx";
 import { saveAs } from "file-saver";
 
@@ -11,16 +20,16 @@ interface FilterDivProps {
   filtering: string;
   setFiltering: React.Dispatch<React.SetStateAction<string>>;
   table: any;
+  data: any;
 }
 
 const FilterDiv: React.FC<FilterDivProps> = ({
   filtering,
   setFiltering,
   table,
+  data,
 }) => {
   const [showOptions, setShowOptions] = useState(false);
-
-  console.log("table", table);
 
   const handleButtonClick = () => {
     setShowOptions(!showOptions);
@@ -32,19 +41,26 @@ const FilterDiv: React.FC<FilterDivProps> = ({
     console.log("Exporting as PDF");
   };
 
+  console.log("table", table);
+
+  const title = "title";
+
   const handleExportExcel = () => {
-    // const worksheet = XLSX.utils.json_to_sheet(page.map((row) => row.original));
-    // const workbook = XLSX.utils.book_new();
-    // XLSX.utils.book_append_sheet(workbook, worksheet, "Sheet1");
-    // const excelBuffer = XLSX.write(workbook, {
-    //   bookType: "xlsx",
-    //   type: "array",
-    // });
-    // const excelBlob = new Blob([excelBuffer], {
-    //   type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-    // });
-    // saveAs(excelBlob, "table_data.xlsx");
-    // setShowOptions(!showOptions);
+    const worksheet = XLSX.utils.json_to_sheet(
+      table
+        .getPaginationRowModel()
+        .flatRows.map((row: { original: any }) => row.original)
+    );
+    const workbook = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(workbook, worksheet, "Sheet1");
+    const excelBuffer = XLSX.write(workbook, {
+      bookType: "xlsx",
+      type: "array",
+    });
+    const excelBlob = new Blob([excelBuffer], {
+      type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    });
+    saveAs(excelBlob, `${title}.xlsx`);
   };
 
   return (
@@ -68,47 +84,103 @@ const FilterDiv: React.FC<FilterDivProps> = ({
       </div>
 
       <div className="flex justify-center items-center max-lg:w-full gap-2">
-        <div className="relative inline-block">
-          <button
-            onClick={handleButtonClick}
-            className="btn btn-sm bg-white border-indigo-300 text-[#0B181C]  hover:bg-indigo-100 hover:text-indigo-600 flex w-32 gap-2 font-medium"
+        <div className="dropdown">
+          <label
+            tabIndex={0}
+            className="btn btn-sm bg-white border border-gray-300"
           >
             Export
-            <svg className="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
-              <path
-                fillRule="evenodd"
-                d="M2 6a2 2 0 012-2h12a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zm4 3a1 1 0 100 2h4a1 1 0 100-2H6zm0 4a1 1 0 100 2h2a1 1 0 100-2H6z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </button>
+          </label>
+          <ul
+            tabIndex={0}
+            className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li onClick={() => window.print()}>
+              <a>PDF</a>
+            </li>
+            <li onClick={() => handleExportExcel()}>
+              <a>Excel</a>
+            </li>
+          </ul>
+        </div>
 
-          {showOptions && (
-            <div className="absolute mt-1 bg-white border py-2 rounded-lg  right-0 top-8 w-48 animation">
-              <div className="divide-y divide-blue-200 flex flex-col ">
-                <button
-                  onClick={handleExportPDF}
-                  className={`hover:bg-[#F3F4F6]  cursor-pointer flex justify-between w-full hover:text-indigo-700 py-2 px-4 `}
-                >
-                  <p className="flex items-center text-sm font-semibold ">
-                    <FaRegFilePdf className="h-5 w-5 mr-2" />
-                    Export as PDF
-                  </p>
-                </button>
-
-                <button
-                  //   onClick={handleExportExcel}
-                  className={`hover:bg-[#F3F4F6]  cursor-pointer flex justify-between w-full hover:text-indigo-700 py-2 px-4 `}
-                >
-                  <p className="flex items-center text-sm font-semibold ">
-                    <SiMicrosoftexcel className="h-5 w-5 mr-2" />
-                    Export as Excel
-                  </p>
-                </button>
+        <div className="dropdown">
+          <label
+            tabIndex={0}
+            className="btn btn-sm bg-white border-indigo-300 text-[#0B181C]  hover:bg-indigo-100 hover:text-indigo-600 flex gap-2 font-medium "
+          >
+            <MdVisibility /> Column Visibility
+          </label>
+          <div
+            tabIndex={0}
+            className="dropdown-content z-[1] card card-compact w-64 p-2 shadow bg-white"
+          >
+            <div className="card-body">
+              <div className="inline-block">
+                <div className="px-1 ">
+                  <label>
+                    <input
+                      className="mr-2"
+                      {...{
+                        type: "checkbox",
+                        checked: table.getIsAllColumnsVisible(),
+                        onChange: table.getToggleAllColumnsVisibilityHandler(),
+                      }}
+                    />
+                    Toggle All
+                  </label>
+                </div>
+                {table.getAllLeafColumns().map((column: any) => {
+                  return (
+                    <div key={column.id} className="px-1">
+                      <label>
+                        <input
+                          className="mr-2"
+                          {...{
+                            type: "checkbox",
+                            checked: column.getIsVisible(),
+                            onChange: column.getToggleVisibilityHandler(),
+                          }}
+                        />
+                        {column.columnDef.header}
+                      </label>
+                    </div>
+                  );
+                })}
               </div>
             </div>
-          )}
+          </div>
         </div>
+      </div>
+
+      <div className="flex justify-center items-center">
+        <select
+          className=" placeholder:text-slate-400 block bg-white w-full border border-indigo-300 rounded-md py-1 px-2 shadow-sm focus:outline-none focus:border-indigo-500 focus:ring-indigo-500 focus:ring-1 sm:text-sm hover:bg-indigo-100 cursor-pointer hover:text-indigo-700"
+          // className="btn btn-sm bg-white border-indigo-300 text-[#0B181C]  hover:bg-indigo-100 hover:text-indigo-600 flex w-32 gap-2 font-medium"
+          value={table.setPageSize.length}
+          // value={pageSize}
+          onChange={(e) => {
+            const value =
+              e.target.value === "all" ? data.length : Number(e.target.value);
+            // setPageSize(value);
+          }}
+        >
+          {[10, 20, 30, 40, 50].map((pageSize) => (
+            <option
+              className="mr-4 cursor-pointer bg-white"
+              key={pageSize}
+              value={pageSize}
+            >
+              Show {pageSize}
+            </option>
+          ))}
+          <option
+            className="mr-4 cursor-pointer animation bg-white"
+            value={data?.length}
+          >
+            Show All
+          </option>
+        </select>
       </div>
     </div>
   );

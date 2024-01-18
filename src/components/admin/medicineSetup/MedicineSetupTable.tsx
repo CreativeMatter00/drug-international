@@ -64,6 +64,8 @@ const MedicineSetupTable = () => {
     // },
   ];
 
+  const dataVisibility = true;
+
   const {
     isLoading,
     isError,
@@ -84,6 +86,7 @@ const MedicineSetupTable = () => {
   const table = useReactTable({
     data,
     columns,
+    // allColumns,
     getCoreRowModel: getCoreRowModel(),
     getPaginationRowModel: getPaginationRowModel(),
     getSortedRowModel: getSortedRowModel(),
@@ -98,6 +101,8 @@ const MedicineSetupTable = () => {
     onColumnVisibilityChange: setColumnVisibility,
   });
 
+  console.log("data", data);
+
   return (
     <div className="border bg-white p-4 mt-4 rounded-lg print:p-0">
       <TableHeading
@@ -109,6 +114,7 @@ const MedicineSetupTable = () => {
         filtering={filtering}
         setFiltering={setFiltering}
         table={table}
+        data={data}
       />
 
       {!isLoading && <TableModel table={table} />}
