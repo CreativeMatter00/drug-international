@@ -13,7 +13,7 @@ const CapsuleButton: React.FC<CapsuleButtonProps> = ({ buttonName }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowCapsule(true);
-    }, 3500);
+    }, 2100);
 
     return () => clearTimeout(timer);
   }, []);
