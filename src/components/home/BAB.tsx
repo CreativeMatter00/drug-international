@@ -34,13 +34,22 @@ function BAB() {
 				variants={revealAnimation}
 			>
 				<div className="px-4">
-					<Image
-						src={"/assets/images/home/bab.png"}
-						height={266}
-						width={588}
-						alt="BAB Certificate"
-						className="mx-auto mb-10"
-					/>
+					<div className="flex flex-col md:flex-row items-center justify-center max-w-screen mb-12">
+						<Image
+							src={"/assets/images/home/achievement.jpg"}
+							height={1024}
+							width={1552}
+							alt="BAB Certificate"
+							className="max-h-[400px] w-auto"
+						/>
+						<Image
+							src={"/assets/images/home/certificate.jpg"}
+							height={1024}
+							width={725}
+							alt="BAB Certificate"
+							className="max-h-[400px] w-auto"
+						/>
+					</div>
 					<div className="container mx-auto text-center">
 						<p className="text-textSecondary text-base font-medium">
 							At Khwaja Yunus Ali Medical College & Hospital, we take immense

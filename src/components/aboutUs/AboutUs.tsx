@@ -28,7 +28,7 @@ function AboutUs() {
 			<div className="relative">
 				<Banner src="/assets/images/aboutUs/banner.jpg" title="about us" />
 				<div className="relative mt-[-100px] w-full mb-10">
-					<div className="container mx-auto bg-white py-8 md:py-14 px-4 md:px-12 rounded-2xl shadow-[0px_-2px_8px_0px_rgba(0,0,0,0.75)]">
+					<div className="container mx-auto bg-white py-8 md:py-14 px-4 md:px-12 rounded-2xl shadow-[0px_-2px_8px_0px_rgba(0,0,0,0.75)] overflow-y-hidden">
 						<div className="flex items-center gap-4 text-center text-textPrimary overflow-x-auto mb-20">
 							{tabTitle.map((title: string, index: number) => (
 								<div

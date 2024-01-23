@@ -4,11 +4,15 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
+import Lottie from "lottie-react";
+import animation from "../../../public/assets/animation/beehive-2.json";
+
 import Image from "next/image";
 import styles from "@/styles/Herbal.module.css";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
@@ -31,8 +35,11 @@ function Hero() {
 
 	return (
 		<div
-			className={`min-h-screen flex items-center justify-center ${styles.background1}`}
+			className={`relative min-h-screen flex items-center justify-center ${styles.background1}`}
 		>
+			<div className="absolute w-[300px] top-0 right-0">
+				<Lottie animationData={animation} loop={true} />
+			</div>
 			<div className="container mx-auto flex flex-col md:flex-row gap-8">
 				<div className="w-full md:w-1/2 px-4 md:px-0">
 					<Swiper
@@ -40,9 +47,10 @@ function Hero() {
 						centeredSlides={true}
 						loop={true}
 						autoplay={{
-							delay: 2500,
+							delay: 4000,
 							disableOnInteraction: false,
 						}}
+						modules={[Autoplay]}
 					>
 						<SwiperSlide>
 							<Image
@@ -75,6 +83,22 @@ function Hero() {
 						</SwiperSlide>
 					</Swiper>
 				</div>
+				{/* <video
+					autoPlay={true}
+					loop={true}
+					muted={true}
+					playsInline={true}
+					className="absolute top-0 right-0"
+				>
+					<source src="/assets/videoes/honeycomb.mp4" type="video/mp4" />
+				</video> */}
+				{/* <Image
+					src="/assets/videoes/honeycomb-2.gif"
+					width={200}
+					height={200}
+					alt="honeycomb"
+					className="absolute top-0 right-0"
+				/> */}
 
 				<div className="w-full px-4 pb-4 md:w-1/2 md:px-0 text-white">
 					<motion.div
