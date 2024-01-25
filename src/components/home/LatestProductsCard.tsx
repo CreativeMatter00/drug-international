@@ -13,13 +13,16 @@ function LatestProductsCard(props: ILatestProductsCard) {
 			<div className={`h-20  block group-hover:h-0 duration-500`}></div>
 
 			<div className="relative overflow-hidden p-2 ">
-				<Image
-					src={props.src}
-					width={408}
-					height={362}
-					alt="latest products"
-					className="w-full h-auto object-cover group-hover:transition-all duration-500"
-				/>
+				<div className="flex items-center justify-center min-h-[300px]">
+					<Image
+						src={props.src}
+						width={408}
+						height={362}
+						alt="latest products"
+						className="w-auto group-hover:transition-all duration-500"
+						placeholder="blur"
+					/>
+				</div>
 				<div className="overlay flex group-hover:flex items-center justify-center absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 text-white text-2xl font-medium ">
 					<p className="mt-40 group-hover:mt-0 duration-500 opacity-0 group-hover:opacity-100">
 						View
