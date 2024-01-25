@@ -66,7 +66,7 @@ function Nature() {
 
               <div>
                 <Image
-                  src="/assets/images/unani/ingredients/fennel.png"
+                  src="/assets/images/unani/ingredients/fennel-1.png"
                   width={300}
                   height={300}
                   alt="Ingredient-fennel"
@@ -80,7 +80,7 @@ function Nature() {
               </div>
               <div>
                 <Image
-                  src="/assets/images/unani/ingredients/neem.png"
+                  src="/assets/images/unani/ingredients/neem-1.png"
                   width={300}
                   height={300}
                   alt="Ingredient-neem"
@@ -94,7 +94,7 @@ function Nature() {
 
               <div>
                 <Image
-                  src="/assets/images/unani/ingredients/myrrh.png"
+                  src="/assets/images/unani/ingredients/myrrh-1.png"
                   width={300}
                   height={300}
                   alt="Ingredient-myrrh"
@@ -109,7 +109,7 @@ function Nature() {
 
               <div>
                 <Image
-                  src="/assets/images/unani/ingredients/saffron.png"
+                  src="/assets/images/unani/ingredients/saffron-1.png"
                   width={300}
                   height={300}
                   alt="Ingredient-saffron"
@@ -123,7 +123,7 @@ function Nature() {
 
               <div>
                 <Image
-                  src="/assets/images/unani/ingredients/frankincense.png"
+                  src="/assets/images/unani/ingredients/frankincense-1.png"
                   width={300}
                   height={300}
                   alt="Ingredient-frankincense"
@@ -140,7 +140,7 @@ function Nature() {
 
               <div>
                 <Image
-                  src="/assets/images/unani/ingredients/licorice.png"
+                  src="/assets/images/unani/ingredients/licorice-1.png"
                   width={300}
                   height={300}
                   alt="Ingredient-licorice"
@@ -155,7 +155,7 @@ function Nature() {
 
               <div>
                 <Image
-                  src="/assets/images/unani/ingredients/guggul.png"
+                  src="/assets/images/unani/ingredients/guggul-1.png"
                   width={300}
                   height={300}
                   alt="Ingredient-guggul"
