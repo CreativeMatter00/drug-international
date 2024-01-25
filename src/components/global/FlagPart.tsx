@@ -7,7 +7,7 @@ import { useState } from "react";
 const FlagPart = () => {
   const [selectedImage, setSelectedImage] = useState<string>("Bangladesh");
   const [countryMap, setCountryMap] = useState<string>(
-    "/assets/images/global/Map/bd.png"
+    "/assets/images/global/Map/bd-1.png"
   );
   const [loading, setLoading] = useState<boolean>(false);
 
