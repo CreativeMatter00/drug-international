@@ -358,13 +358,7 @@ const FlagPart = () => {
                       selectedImage === name &&
                       "border-2 border-[#DF343A] rounded scale-125 p-1"
                     }`}
-                    onClick={() => {
-                      if (!loading) {
-                        handleImageClick(name, mapImage);
-                      }
-                    }}
-
-                    // onClick={() => handleImageClick(name, mapImage)}
+                    onClick={() => handleImageClick(name, mapImage)}
                   />
                 ))}
               </div>
