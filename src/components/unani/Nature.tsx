@@ -52,7 +52,7 @@ function Nature() {
                   src="/assets/images/unani/ingredients/aloeVera.png"
                   width={300}
                   height={300}
-                  alt="Ingredient"
+                  alt="Ingredient-aloeVera"
                   className="mx-auto mb-4 w-[200px] h-auto"
                 />
                 <p className="text-center mb-2 text-2xl uppercase">
@@ -69,7 +69,7 @@ function Nature() {
                   src="/assets/images/unani/ingredients/fennel.png"
                   width={300}
                   height={300}
-                  alt="Ingredient"
+                  alt="Ingredient-fennel"
                   className="mx-auto mb-4 w-[200px] h-auto"
                 />
                 <p className="text-center mb-2 text-2xl uppercase"> Fennel </p>
@@ -78,13 +78,12 @@ function Nature() {
                   Foeniculum vulgare{" "}
                 </p>
               </div>
-
               <div>
                 <Image
                   src="/assets/images/unani/ingredients/neem.png"
                   width={300}
                   height={300}
-                  alt="Ingredient"
+                  alt="Ingredient-neem"
                   className="mx-auto mb-4 w-[200px] h-auto"
                 />
                 <p className="text-center mb-2 text-2xl uppercase"> Neem </p>
@@ -98,7 +97,7 @@ function Nature() {
                   src="/assets/images/unani/ingredients/myrrh.png"
                   width={300}
                   height={300}
-                  alt="Ingredient"
+                  alt="Ingredient-myrrh"
                   className="mx-auto mb-4 w-[200px] h-auto"
                 />
                 <p className="text-center mb-2 text-2xl uppercase"> Myrrh </p>
@@ -113,7 +112,7 @@ function Nature() {
                   src="/assets/images/unani/ingredients/saffron.png"
                   width={300}
                   height={300}
-                  alt="Ingredient"
+                  alt="Ingredient-saffron"
                   className="mx-auto mb-4 w-[200px] h-auto"
                 />
                 <p className="text-center mb-2 text-2xl uppercase"> Saffron </p>
@@ -127,7 +126,7 @@ function Nature() {
                   src="/assets/images/unani/ingredients/frankincense.png"
                   width={300}
                   height={300}
-                  alt="Ingredient"
+                  alt="Ingredient-frankincense"
                   className="mx-auto mb-4 w-[200px] h-auto"
                 />
                 <p className="text-center mb-2 text-2xl uppercase">
@@ -144,7 +143,7 @@ function Nature() {
                   src="/assets/images/unani/ingredients/licorice.png"
                   width={300}
                   height={300}
-                  alt="Ingredient"
+                  alt="Ingredient-licorice"
                   className="mx-auto mb-4 w-[200px] h-auto"
                 />
                 <p className="text-center mb-2 text-2xl uppercase">licorice</p>
@@ -159,7 +158,7 @@ function Nature() {
                   src="/assets/images/unani/ingredients/guggul.png"
                   width={300}
                   height={300}
-                  alt="Ingredient"
+                  alt="Ingredient-guggul"
                   className="mx-auto mb-4 w-[200px] h-auto"
                 />
                 <p className="text-center mb-2 text-2xl uppercase">Guggul</p>
