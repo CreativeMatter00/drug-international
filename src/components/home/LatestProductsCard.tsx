@@ -13,7 +13,7 @@ function LatestProductsCard(props: ILatestProductsCard) {
 			<div className={`h-20  block group-hover:h-0 duration-500`}></div>
 
 			<div className="relative overflow-hidden p-2 ">
-				<div className="flex items-center justify-center min-h-[300px]">
+				<div className="flex items-center justify-center h-[300px]">
 					<Image
 						src={props.src}
 						width={408}
@@ -21,6 +21,7 @@ function LatestProductsCard(props: ILatestProductsCard) {
 						alt="latest products"
 						className="w-auto group-hover:transition-all duration-500"
 						placeholder="blur"
+						blurDataURL="/assets/loading.png"
 					/>
 				</div>
 				<div className="overlay flex group-hover:flex items-center justify-center absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 text-white text-2xl font-medium ">
