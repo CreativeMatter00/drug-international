@@ -9,7 +9,7 @@ const FlagPart = () => {
   const [countryMap, setCountryMap] = useState<string>(
     "/assets/images/global/Map/bd-1.png"
   );
-  const [loading, setLoading] = useState<boolean>(false);
+  const [loading, setLoading] = useState<boolean>(true);
 
   const imageArray = [
     {
@@ -238,14 +238,16 @@ const FlagPart = () => {
   ];
 
   const handleImageClick = (name: string, mapImage: string) => {
-    setLoading(true);
+    // setLoading(true);
     setSelectedImage(name);
     setCountryMap(mapImage);
   };
 
   const handleImageLoad = () => {
-    setLoading(false);
+    // setLoading(false);
   };
+
+  console.log("loading", loading);
 
   return (
     <div>
@@ -343,7 +345,7 @@ const FlagPart = () => {
             <div
               className={`${styles.mapShadow} border border-[#E4E4E6] rounded-lg py-6 px-12 2xl:px-28 max-md:py-4 max-md:px-2`}
             >
-              <button className="flex flex-wrap gap-4" disabled={loading}>
+              {/* <button className="flex flex-wrap gap-4" disabled={loading}>
                 {imageArray.map(({ name, path, mapImage }, index) => (
                   <Image
                     key={index}
@@ -361,7 +363,54 @@ const FlagPart = () => {
                     onClick={() => handleImageClick(name, mapImage)}
                   />
                 ))}
-              </button>
+              </button> */}
+
+              {/* <button className="flex flex-wrap gap-4" disabled={loading}>
+                {imageArray.map(({ name, path, mapImage }, index) => (
+                  <Image
+                    key={index}
+                    src={path}
+                    width={52}
+                    height={30}
+                    alt={name}
+                    className={`m-auto h-11 w-16 cursor-pointer ${
+                      selectedImage !== name &&
+                      "scale-100 hover:scale-125 duration-300 p-2"
+                    } ${
+                      selectedImage === name &&
+                      "border-2 border-[#DF343A] rounded scale-125 p-1"
+                    }`}
+                    onClick={() => handleImageClick(name, mapImage)}
+                    // disabled={loading}
+                  />
+                ))}
+              </button> */}
+              <div className="flex flex-wrap gap-4">
+                {imageArray.map(({ name, path, mapImage }, index) => (
+                  <button
+                    key={index}
+                    className={` ${loading ? "cursor-not-allowed" : ""}`}
+                    onClick={() => handleImageClick(name, mapImage)}
+                    disabled={loading === true}
+                  >
+                    <Image
+                      // disabled={loading}
+
+                      src={path}
+                      width={52}
+                      height={30}
+                      alt={name}
+                      className={`m-auto h-11 w-16 ${
+                        selectedImage !== name &&
+                        "scale-100 hover:scale-125 duration-300 p-2"
+                      } ${
+                        selectedImage === name &&
+                        "border-2 border-[#DF343A] rounded scale-125 p-1"
+                      }`}
+                    />
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
         </div>
