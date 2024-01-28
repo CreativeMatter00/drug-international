@@ -343,7 +343,7 @@ const FlagPart = () => {
             <div
               className={`${styles.mapShadow} border border-[#E4E4E6] rounded-lg py-6 px-12 2xl:px-28 max-md:py-4 max-md:px-2`}
             >
-              <div className="flex flex-wrap gap-4">
+              <button className="flex flex-wrap gap-4" disabled={loading}>
                 {imageArray.map(({ name, path, mapImage }, index) => (
                   <Image
                     key={index}
@@ -361,7 +361,7 @@ const FlagPart = () => {
                     onClick={() => handleImageClick(name, mapImage)}
                   />
                 ))}
-              </div>
+              </button>
             </div>
           </div>
         </div>
