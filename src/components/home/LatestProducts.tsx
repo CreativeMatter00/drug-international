@@ -46,7 +46,7 @@ function LatestProducts() {
 	return (
 		<div className="min-h-[560px] mb-12">
 			<h1 className="text-3xl font-semibold text-textPrimary uppercase text-center mb-12 ">
-				Latest Products aaaa
+				Latest Products
 			</h1>
 
 			<motion.div
