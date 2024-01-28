@@ -2,15 +2,16 @@
 
 import styles from "@/styles/Global.module.css";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const FlagPart = () => {
   const [selectedImage, setSelectedImage] = useState<string>("Bangladesh");
   const [countryMap, setCountryMap] = useState<string>(
     "/assets/images/global/Map/bd-1.png"
   );
-  const [loading, setLoading] = useState<boolean>(false);
-  const [loading1, setLoading1] = useState<boolean>();
+  const [loading, setLoading] = useState<boolean>(true);
+  const [loading1, setLoading1] = useState<boolean>(false);
+  const [loadTime, setLoadTime] = useState<number>(0);
 
   const imageArray = [
     {
@@ -238,23 +239,37 @@ const FlagPart = () => {
     },
   ];
 
-  console.log("loading", loading);
-  console.log("loading1", loading1);
-  console.log("countryMap", countryMap);
-  console.log("selectedImage", selectedImage);
+  // console.log("loading", loading);
+  // console.log("loading1", loading1);
+  // console.log("countryMap", countryMap);
+  // console.log("selectedImage", selectedImage);
 
   const handleImageClick = (name: string, mapImage: string) => {
-    setLoading(true);
     setSelectedImage(name);
     setCountryMap(mapImage);
-    setLoading(false);
   };
+
+  console.log("Image has loaded at:", loadTime, "milliseconds");
 
   const handleImageLoad = () => {
-    setLoading(true);
+    const loadEndTime = performance.now();
+    setLoadTime(loadEndTime);
   };
 
-  console.log("loading222", loading);
+  // console.log("loading222", loading);
+
+  // useEffect(() => {
+  //   setLoading1(true);
+  // }, [loadTime]);
+
+  useEffect(() => {
+    setLoading1(true);
+    setTimeout(() => {
+      setLoading1(false);
+    }, 1000);
+  }, [loadTime]);
+
+  console.log("loading1", loading1);
 
   return (
     <div>
