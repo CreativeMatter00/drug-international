@@ -10,7 +10,7 @@ function Achievements() {
 					Achievements
 				</div>
 				<Marquee pauseOnHover={true}>
-					<div className="h-[400px] w-auto mr-4 overflow-hidden">
+					<div className="h-auto w-auto mr-4 overflow-hidden">
 						<Image
 							src={"/assets/images/home/achievements/1.png"}
 							width={290}
