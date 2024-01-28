@@ -10,6 +10,7 @@ const FlagPart = () => {
     "/assets/images/global/Map/bd-1.png"
   );
   const [loading, setLoading] = useState<boolean>(false);
+  const [loading1, setLoading1] = useState<boolean>();
 
   const imageArray = [
     {
@@ -237,20 +238,23 @@ const FlagPart = () => {
     },
   ];
 
+  console.log("loading", loading);
+  console.log("loading1", loading1);
+  console.log("countryMap", countryMap);
+  console.log("selectedImage", selectedImage);
+
   const handleImageClick = (name: string, mapImage: string) => {
-    if (!loading) {
-      setLoading(true);
-      setSelectedImage(name);
-      setCountryMap(mapImage);
-    }
-    // setLoading(true);
-    // setSelectedImage(name);
-    // setCountryMap(mapImage);
+    setLoading(true);
+    setSelectedImage(name);
+    setCountryMap(mapImage);
+    setLoading(false);
   };
 
   const handleImageLoad = () => {
-    setLoading(false);
+    setLoading(true);
   };
+
+  console.log("loading222", loading);
 
   return (
     <div>
@@ -262,7 +266,9 @@ const FlagPart = () => {
           <div className="h-[550px] w-[1000px] max-lg:h-[360px] max-md:h-[200px] relative">
             <Image
               src={
-                loading ? "/assets/images/global/Map/world-map.png" : countryMap
+                !loading
+                  ? "/assets/images/global/Map/world-map.png"
+                  : countryMap
               }
               width={1074}
               height={621}
@@ -366,6 +372,7 @@ const FlagPart = () => {
 };
 
 export default FlagPart;
+
 // "use client";
 
 // import styles from "@/styles/Global.module.css";
