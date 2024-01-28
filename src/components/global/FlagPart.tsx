@@ -238,9 +238,9 @@ const FlagPart = () => {
   ];
 
   const handleImageClick = (name: string, mapImage: string) => {
-    setLoading(true);
     setSelectedImage(name);
     setCountryMap(mapImage);
+    setLoading(true);
   };
 
   const handleImageLoad = () => {
