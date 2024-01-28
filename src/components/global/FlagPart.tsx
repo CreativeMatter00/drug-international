@@ -9,7 +9,7 @@ const FlagPart = () => {
   const [countryMap, setCountryMap] = useState<string>(
     "/assets/images/global/Map/bd-1.png"
   );
-  const [loading, setLoading] = useState<boolean>(true);
+  const [loading, setLoading] = useState<boolean>(false);
 
   const imageArray = [
     {
@@ -238,13 +238,13 @@ const FlagPart = () => {
   ];
 
   const handleImageClick = (name: string, mapImage: string) => {
-    // setLoading(true);
+    setLoading(true);
     setSelectedImage(name);
     setCountryMap(mapImage);
   };
 
   const handleImageLoad = () => {
-    // setLoading(false);
+    setLoading(false);
   };
 
   console.log("loading", loading);
