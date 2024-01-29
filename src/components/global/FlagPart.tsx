@@ -251,7 +251,7 @@ const FlagPart = () => {
 
   const handleImageLoad = () => {
     const loadEndTime = performance.now();
-    const loadTimeInMilliseconds = loadEndTime / 1000;
+    const loadTimeInMilliseconds = Math.ceil(loadEndTime / 1000);
     setLoadTime(loadTimeInMilliseconds);
   };
 
@@ -261,6 +261,9 @@ const FlagPart = () => {
       setLoadStatus(false);
     }, loadTime);
   }, [loadTime]);
+
+  console.log("loadStatus", loadStatus);
+  console.log("loadTime", loadTime);
 
   return (
     <div>
