@@ -11,6 +11,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import SpecializedProductCard from "./SpecializedProductCard";
 import Link from "next/link";
+import { useQuery } from "@tanstack/react-query";
+import { getSpecializedProducts } from "@/api/api";
+import { DNA } from "react-loader-spinner";
 
 function SpecializedProducts() {
 	const slideInAnimationRight = {
@@ -44,91 +47,68 @@ function SpecializedProducts() {
 		},
 	};
 
+	const { isLoading, error, data } = useQuery({
+		queryKey: ["specializedProducts"],
+		queryFn: getSpecializedProducts,
+	});
+
+	console.log(process.env.NEXT_PUBLIC_TWITTER_URL);
+
 	return (
 		<div className="py-12">
 			<div className="text-center font-semibold text-4xl pb-12 uppercase">
 				Specialized Products
 			</div>
-			<div className="bg-[#E4E4E6] py-8">
-				<motion.div
-					ref={ref}
-					initial="hidden"
-					animate={controls}
-					variants={slideInAnimationRight}
-				>
-					<Swiper
-						breakpoints={breakpoints}
-						spaceBetween={30}
-						centeredSlides={true}
-						initialSlide={1}
-						pagination={{
-							clickable: true,
-						}}
+			<div className="bg-[#E4E4E6] py-8 min-h-[300px]">
+				{isLoading ? (
+					<div className="flex items-center justify-center">
+						<DNA
+							visible={true}
+							height="400"
+							width="400"
+							ariaLabel="dna-loading"
+							wrapperStyle={{}}
+							wrapperClass="dna-wrapper"
+						/>
+					</div>
+				) : (
+					<motion.div
+						ref={ref}
+						initial="hidden"
+						animate={controls}
+						variants={slideInAnimationRight}
 					>
-						<SwiperSlide>
-							<Link href="/product-category/soft-capsule">
-								<SpecializedProductCard
-									src="/assets/images/home/specialized/capsule.png"
-									title="Soft Capsule"
-								/>
-							</Link>
-						</SwiperSlide>
-						<SwiperSlide>
-							<SpecializedProductCard
-								src="/assets/images/home/specialized/mdi.png"
-								title="MDI"
-							/>
-						</SwiperSlide>
-						<SwiperSlide>
-							<SpecializedProductCard
-								src="/assets/images/home/specialized/nasal.png"
-								title="Nasal Spray"
-							/>
-						</SwiperSlide>
-						<SwiperSlide>
-							<SpecializedProductCard
-								src="/assets/images/home/specialized/syringe.png"
-								title="Prefilled Syringe"
-							/>
-						</SwiperSlide>
-						<SwiperSlide>
-							<SpecializedProductCard
-								src="/assets/images/home/specialized/eyedrop.png"
-								title="Eye Drops"
-							/>
-						</SwiperSlide>
-						<SwiperSlide>
-							<SpecializedProductCard
-								src="/assets/images/home/specialized/oncology.png"
-								title="Oncology"
-							/>
-						</SwiperSlide>
-						<SwiperSlide>
-							<SpecializedProductCard
-								src="/assets/images/home/specialized/oral.png"
-								title="Oral Spray"
-							/>
-						</SwiperSlide>
-						<SwiperSlide>
-							<SpecializedProductCard
-								src="/assets/images/home/specialized/nano.png"
-								title="Nano Particulate Tablet"
-							/>
-						</SwiperSlide>
-						<SwiperSlide>
-							<SpecializedProductCard
-								src="/assets/images/home/specialized/dpi.png"
-								title="DPI"
-							/>
-						</SwiperSlide>
-						<SwiperSlide>
-							<SpecializedProductCard
-								src="/assets/images/home/specialized/biotech.png"
-								title="Biotech"
-							/>
-						</SwiperSlide>
-					</Swiper>
-				</motion.div>
+						<Swiper
+							breakpoints={breakpoints}
+							spaceBetween={30}
+							centeredSlides={true}
+							initialSlide={1}
+							pagination={{
+								clickable: true,
+							}}
+						>
+							{data?.map((product: any) => (
+								<SwiperSlide key={product.id}>
+									<SpecializedProductCard
+										src={product.INSERT_FILES}
+										title={product.SPECIAL_NAME}
+										// description={product.description}
+										// link={product.link}
+									/>
+								</SwiperSlide>
+							))}
+							{/* <SwiperSlide>
+								<Link href="/product-category/soft-capsule">
+									<SpecializedProductCard
+										src="/assets/images/home/specialized/capsule.png"
+										title="Soft Capsule"
+									/>
+								</Link>
+							</SwiperSlide>
+							 */}
+						</Swiper>
+					</motion.div>
+				)}
 			</div>
 		</div>
 	);
