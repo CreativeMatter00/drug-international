@@ -47,8 +47,9 @@ function Hero() {
 						<SwiperSlide>
 							<Image
 								src="/assets/images/home/hero/1.jpeg"
-								width={500}
-								height={500}
+								width={600}
+								height={450}
+								sizes="(min-width: 1300px) 600px, (min-width: 1040px) 496px, (min-width: 780px) 368px, (min-width: 680px) 576px, calc(94.44vw - 47px)"
 								alt="herbal"
 								className="mx-auto"
 							/>
@@ -56,8 +57,9 @@ function Hero() {
 						<SwiperSlide>
 							<Image
 								src="/assets/images/home/hero/2.jpeg"
-								width={500}
-								height={500}
+								width={600}
+								height={450}
+								sizes="(min-width: 1300px) 600px, (min-width: 1040px) 496px, (min-width: 780px) 368px, (min-width: 680px) 576px, calc(94.44vw - 47px)"
 								alt="herbal"
 								className="mx-auto"
 							/>
@@ -65,8 +67,9 @@ function Hero() {
 						<SwiperSlide>
 							<Image
 								src="/assets/images/home/hero/3.jpeg"
-								width={500}
-								height={500}
+								width={600}
+								height={450}
+								sizes="(min-width: 1300px) 600px, (min-width: 1040px) 496px, (min-width: 780px) 368px, (min-width: 680px) 576px, calc(94.44vw - 47px)"
 								alt="herbal"
 								className="mx-auto"
 							/>
@@ -74,8 +77,9 @@ function Hero() {
 						<SwiperSlide>
 							<Image
 								src="/assets/images/home/hero/4.jpeg"
-								width={500}
-								height={500}
+								width={600}
+								height={450}
+								sizes="(min-width: 1300px) 600px, (min-width: 1040px) 496px, (min-width: 780px) 368px, (min-width: 680px) 576px, calc(94.44vw - 47px)"
 								alt="herbal"
 								className="mx-auto"
 							/>
@@ -83,8 +87,9 @@ function Hero() {
 						<SwiperSlide>
 							<Image
 								src="/assets/images/home/hero/5.jpeg"
-								width={500}
-								height={500}
+								width={600}
+								height={450}
+								sizes="(min-width: 1300px) 600px, (min-width: 1040px) 496px, (min-width: 780px) 368px, (min-width: 680px) 576px, calc(94.44vw - 47px)"
 								alt="herbal"
 								className="mx-auto"
 							/>
