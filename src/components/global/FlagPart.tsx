@@ -262,8 +262,8 @@ const FlagPart = () => {
     }, loadTime);
   }, [loadTime]);
 
-  console.log("loadStatus", loadStatus);
-  console.log("loadTime", loadTime);
+  // console.log("loadStatus", loadStatus);
+  // console.log("loadTime", loadTime);
 
   return (
     <div>
