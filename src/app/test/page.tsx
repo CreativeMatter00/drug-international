@@ -13,19 +13,24 @@ const Test = () => {
     //   <div className="absolute inset-0 bg-black opacity-50">gggggggggg</div>
     // </div>
 
-    <div className="relative overflow-hidden">
-      <div className="w-full h-full rounded-full overflow-hidden">
+    <div className="relative">
+      <div className="absolute inset-0 z-0">
         <video
-          className="w-48 h-48 object-cover rounded-full"
+          className="w-full h-full object-cover"
           autoPlay
           loop
           muted
+          poster="your-poster-image.jpg"
         >
-          74
           <source src="/assets/videoes/capsule.mp4" type="video/mp4" />
+          {/* Add other video sources for different formats if needed */}
         </video>
       </div>
-      {/* <div className="absolute inset-0 bg-black opacity-0 rounded-full"></div> */}
+      <div className="relative z-10 p-6 bg-white opacity-80">
+        {/* Your content goes here */}
+        <h1 className="text-4xl font-bold">Your Title</h1>
+        <p className="mt-2">Your text content here.</p>
+      </div>
     </div>
   );
 };
