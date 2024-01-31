@@ -1,6 +1,6 @@
 interface ButtonSecondaryProps {
 	children: React.ReactNode;
-	onClick?: () => void; // Optional function for onClick
+	onClick?: () => void;
 }
 
 function ButtonSecondary({ children, onClick }: ButtonSecondaryProps) {
