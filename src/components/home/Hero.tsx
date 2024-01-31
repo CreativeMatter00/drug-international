@@ -14,7 +14,7 @@ import "swiper/css/effect-fade";
 
 function Hero() {
 	return (
-		<div className="relative container px-4 -mt-4 mx-auto mb-8 overflow-hidden min-h-screen">
+		<div className="relative container px-4 lg:-mt-4 mx-auto mb-8 overflow-hidden min-h-screen">
 			<div className="flex flex-col min-h-screen md:flex-row">
 				{/* <div className="flex items-center justify-center">
           <motion.div

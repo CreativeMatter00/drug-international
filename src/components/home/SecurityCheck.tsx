@@ -9,7 +9,6 @@ import ButtonSecondary from "../ui/button/ButtonSecondary";
 import AddModal from "../share/Modal/AddModal";
 import { useDispatch } from "react-redux";
 import { handleAddModalOpen } from "@/redux/Reducer/MainSlice";
-import axios from "axios";
 import Image from "next/image";
 import { DNA } from "react-loader-spinner";
 import { securityCheck } from "@/api/api";
@@ -30,9 +29,10 @@ function SecurityCheck() {
 		}
 	}, [controls, inView]);
 
+	//? API call
+
 	const [code, setCode] = useState<string>("");
 	const [data, setData] = useState<any>(null);
-	console.log("🚀 ~ SecurityCheck ~ data:", data);
 	const [isLoading, setIsLoading] = useState<boolean>(false);
 	const [isError, setIsError] = useState<boolean>(false);
 
@@ -48,13 +48,20 @@ function SecurityCheck() {
 			setIsLoading(true);
 			const response = await securityCheck(code);
 			setData(response.data[0]);
-			console.log(response);
 		} catch (error) {
 			setIsError(true);
 		} finally {
 			setIsLoading(false);
 		}
 	};
+
+	if (isError) {
+		return (
+			<p className="text-center text-lg font-medium">
+				Something went wrong. Please reload the page.
+			</p>
+		);
+	}
 
 	return (
 		<div className={`${styles.background} mb-8 md:mb-32`}>
