@@ -111,6 +111,7 @@ const AllProducts: React.FC<visibleProps> = ({
           {nameType === 0 ? <PiRadioButtonFill /> : <PiRadioButtonDuotone />}
           Product by brand name
         </button>
+
         <button
           className={`text-base flex items-center uppercase gap-3 ${
             nameType === 1 && "text-primary"

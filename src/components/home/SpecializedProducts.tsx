@@ -16,88 +16,88 @@ import { getSpecializedProducts } from "@/api/api";
 import { DNA } from "react-loader-spinner";
 
 function SpecializedProducts() {
-	const slideInAnimationRight = {
-		hidden: { opacity: 0, x: -300 },
-		visible: { opacity: 1, x: 0, transition: { duration: 1 } },
-	};
+  const slideInAnimationRight = {
+    hidden: { opacity: 0, x: -300 },
+    visible: { opacity: 1, x: 0, transition: { duration: 1 } },
+  };
 
-	const controls = useAnimation();
-	const [ref, inView] = useInView({ triggerOnce: true });
+  const controls = useAnimation();
+  const [ref, inView] = useInView({ triggerOnce: true });
 
-	useEffect(() => {
-		if (inView) {
-			controls.start("visible");
-		}
-	}, [controls, inView]);
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
 
-	const breakpoints = {
-		1200: {
-			slidesPerView: 6,
-			spaceBetween: 30,
-		},
-		// when window width is >= 768px (PC or laptop)
-		768: {
-			slidesPerView: 4,
-			spaceBetween: 30,
-		},
-		// when window width is < 768px (mobile)
-		0: {
-			slidesPerView: 2,
-			spaceBetween: 10,
-		},
-	};
+  const breakpoints = {
+    1200: {
+      slidesPerView: 6,
+      spaceBetween: 30,
+    },
+    // when window width is >= 768px (PC or laptop)
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
+    // when window width is < 768px (mobile)
+    0: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+  };
 
-	const { isLoading, error, data } = useQuery({
-		queryKey: ["specializedProducts"],
-		queryFn: getSpecializedProducts,
-	});
+  const { isLoading, error, data } = useQuery({
+    queryKey: ["specializedProducts"],
+    queryFn: getSpecializedProducts,
+  });
 
-	console.log(process.env.NEXT_PUBLIC_TWITTER_URL);
+  console.log(process.env.NEXT_PUBLIC_TWITTER_URL);
 
-	return (
-		<div className="py-12">
-			<div className="text-center font-semibold text-4xl pb-12 uppercase">
-				Specialized Products
-			</div>
-			<div className="bg-[#E4E4E6] py-8 min-h-[300px]">
-				{isLoading ? (
-					<div className="flex items-center justify-center">
-						<DNA
-							visible={true}
-							height="400"
-							width="400"
-							ariaLabel="dna-loading"
-							wrapperStyle={{}}
-							wrapperClass="dna-wrapper"
-						/>
-					</div>
-				) : (
-					<motion.div
-						ref={ref}
-						initial="hidden"
-						animate={controls}
-						variants={slideInAnimationRight}
-					>
-						<Swiper
-							breakpoints={breakpoints}
-							spaceBetween={30}
-							centeredSlides={true}
-							initialSlide={1}
-							pagination={{
-								clickable: true,
-							}}
-						>
-							{data?.map((product: any) => (
-								<SwiperSlide key={product.id}>
-									<SpecializedProductCard
-										src={product.INSERT_FILES}
-										title={product.SPECIAL_NAME}
-										// description={product.description}
-										// link={product.link}
-									/>
-								</SwiperSlide>
-							))}
-							{/* <SwiperSlide>
+  return (
+    <div className="py-12">
+      <div className="text-center font-semibold text-4xl pb-12 uppercase">
+        Specialized Products
+      </div>
+      <div className="bg-[#E4E4E6] py-8 min-h-[300px]">
+        {isLoading ? (
+          <div className="flex items-center justify-center">
+            <DNA
+              visible={true}
+              height="400"
+              width="400"
+              ariaLabel="dna-loading"
+              wrapperStyle={{}}
+              wrapperClass="dna-wrapper"
+            />
+          </div>
+        ) : (
+          <motion.div
+            ref={ref}
+            initial="hidden"
+            animate={controls}
+            variants={slideInAnimationRight}
+          >
+            <Swiper
+              breakpoints={breakpoints}
+              spaceBetween={30}
+              centeredSlides={true}
+              initialSlide={1}
+              pagination={{
+                clickable: true,
+              }}
+            >
+              {data?.map((product: any) => (
+                <SwiperSlide key={product.id}>
+                  <SpecializedProductCard
+                    src={product.INSERT_FILES}
+                    title={product.SPECIAL_NAME}
+                    // description={product.description}
+                    // link={product.link}
+                  />
+                </SwiperSlide>
+              ))}
+              {/* <SwiperSlide>
 								<Link href="/product-category/soft-capsule">
 									<SpecializedProductCard
 										src="/assets/images/home/specialized/capsule.png"
@@ -106,12 +106,12 @@ function SpecializedProducts() {
 								</Link>
 							</SwiperSlide>
 							 */}
-						</Swiper>
-					</motion.div>
-				)}
-			</div>
-		</div>
-	);
+            </Swiper>
+          </motion.div>
+        )}
+      </div>
+    </div>
+  );
 }
 
 export default SpecializedProducts;

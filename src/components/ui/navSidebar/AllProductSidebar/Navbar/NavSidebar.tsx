@@ -8,7 +8,7 @@ import { usePathname } from "next/navigation";
 const NavSidebar = () => {
   const pathName = usePathname().toString();
   return (
-    <div className="flex justify-center items-center mt-20">
+    <div className="flex justify-center items-center mt-20 ">
       <div className="h-screen p-4 bg-[#FFFFFF] flex flex-col justify-between border-t w-full">
         <div className=" h-full overflow-auto p-4 uppercase ">
           <div className="flex flex-col gap-3 text-base font-medium justify-center items-center">
