@@ -14,6 +14,7 @@ function LatestProductsCard(props: ILatestProductsCard) {
 	// 	return `${src}&q=${30}`;
 	// };
 
+<<<<<<< HEAD
 	return (
 		<div className="relative rounded-lg  cursor-pointer overflow-hidden group h-[35.25rem] ">
 			<div className={`h-20  block group-hover:h-0 duration-500`}></div>
@@ -35,6 +36,29 @@ function LatestProductsCard(props: ILatestProductsCard) {
 					</p>
 				</div>
 			</div>
+=======
+  return (
+    <div className="relative rounded-lg  cursor-pointer overflow-hidden group h-[35.25rem] ">
+      <div className={`h-20  block group-hover:h-0 duration-500`}></div>
+      <div className="relative overflow-hidden p-2">
+        <div className="flex items-center justify-center h-[300px]">
+          <Image
+            src={src}
+            width={408}
+            height={362}
+            alt={src}
+            className="w-auto group-hover:transition-all duration-500"
+            priority
+            // loader={myLoader}
+          />
+        </div>
+        <div className="overlay flex group-hover:flex items-center justify-center absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 text-white text-2xl font-medium ">
+          <p className="mt-40 group-hover:mt-0 duration-500 opacity-0 group-hover:opacity-100">
+            View
+          </p>
+        </div>
+      </div>
+>>>>>>> 46700c7002ac33a5c09deed9e93ffe3f20c85f31
 
 			<div className="w-full bg-primary text-white text-lg md:text-2xl font-medium text-center uppercase">
 				{title}
