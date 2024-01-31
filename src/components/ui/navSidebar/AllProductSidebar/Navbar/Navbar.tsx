@@ -293,10 +293,10 @@ const Navbar = () => {
         </div>
 
         <div
-          className={`absolute top-0  h-screen bg-white lg:hidden z-[99999] duration-700 ${
+          className={`absolute top-0  h-screen bg-white lg:hidden z-[99999] duration-500 ${
             mobileNav
-              ? "max-md:ml-[780px] max-lg:ml-[1024px] w-0"
-              : "ml-0 w-full"
+              ? "ml-0 w-full"
+              : "max-md:ml-[780px] max-lg:ml-[1024px] w-0"
           }`}
         >
           <NavSidebar />
