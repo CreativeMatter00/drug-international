@@ -2,13 +2,13 @@ import axios from "axios";
 
 //? Environment Check
 
-let url = "";
+let url = "http://103.219.160.253:5454/drug-website";
 
-if (process.env.NODE_ENV === "development") {
-	url = "http://103.219.160.253:5454/drug-website";
-} else {
-	url = "https://www.drug-international.com/";
-}
+// if (process.env.NODE_ENV === "development") {
+// 	url = "http://103.219.160.253:5454/drug-website";
+// } else {
+// 	url = "https://www.drug-international.com/";
+// }
 
 //? Security Check
 

@@ -32,7 +32,9 @@ const AddModal: React.FC<AddModalProps> = ({ children, modalHead }) => {
 					>
 						✕
 					</button>
-					<h3 className="font-bold text-lg">{modalHead}</h3>
+					<h3 className="font-bold text-xl underline text-center">
+						{modalHead}
+					</h3>
 					<div className="py-4">{children}</div>
 				</div>
 				<label

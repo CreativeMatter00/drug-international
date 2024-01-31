@@ -40,7 +40,7 @@ function Hero() {
 			<div className="absolute w-[300px] top-0 right-0 hidden lg:block">
 				<Lottie animationData={animation} loop={true} />
 			</div>
-			<div className="container mx-auto flex flex-col md:flex-row gap-8 z-10">
+			<div className="container mx-auto flex flex-col md:flex-row md:items-center gap-8 z-10">
 				<div className="w-full md:w-1/2 px-4 md:px-0">
 					<Swiper
 						spaceBetween={30}
