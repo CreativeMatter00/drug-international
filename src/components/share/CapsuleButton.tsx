@@ -23,7 +23,7 @@ const CapsuleButton: React.FC<CapsuleButtonProps> = ({ buttonName }) => {
       className={`flex group rounded-full text-center justify-center items-center relative z-30 ${styles.boxShadow}`}
     >
       <div
-        className={`bg-[#FF0000]  rounded-l-full  z-30 w-[7vh] h-[5vh] `}
+        className={`bg-primary  rounded-l-full  z-30 w-[7vh] h-[5vh] `}
       ></div>
 
       <div
