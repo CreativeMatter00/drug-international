@@ -58,3 +58,7 @@ ul {
 .swiper-pagination-bullet {
 	background-color: pink;
 }
+
+.text-shadow {
+	text-shadow: 0 2px 2px #000;
+}
