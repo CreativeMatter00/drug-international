@@ -37,6 +37,10 @@ const Navbar = () => {
 
   const pathName = usePathname().toString();
 
+  useEffect(() => {
+    setMobileNav(false);
+  }, [pathName]);
+
   const handleMobileSidebar = () => {
     setMobileNav(!mobileNav);
   };
@@ -302,6 +306,7 @@ const Navbar = () => {
           <NavSidebar />
         </div>
       </nav>
+
       <Modal
         modalHead="Select your preferred language"
         setModalOpen={setLanguageOpen}

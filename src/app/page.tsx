@@ -41,7 +41,7 @@ const page = () => {
                     duration: 1,
                   }}
                 >
-                  <p className="text-white font-bold text-[5vh] leading-[4.5vh] mt-[0.5vh] text-shadow lg:text-primary">
+                  <p className="text-white font-bold text-[5vh] leading-[4.5vh] mt-[0.5vh]  text-shadow lg:text-primary">
                     First ever <br /> company <br />
                     to formulate <br />
                     medicines <br />
@@ -64,7 +64,7 @@ const page = () => {
 
       <div className="absolute inset-y-0 right-0 w-[14vh] h-screen overflow-hidden flex items-end">
         <div className="flex flex-col items-end mb-[10vh] gap-[5vh] pl-[2vh]">
-          <Link href="https://www.facebook.com/drugintltd/" target="_blank">
+          <Link href="https://www.facebook.com/drugintltd" target="_blank">
             <SlSocialFacebook
               className="h-[3vh] w-[3vh] hover:scale-150 duration-300 cursor-pointer text-primary max-lg:text-white text-shadow max-lg:h-[5vh] max-lg:w-[5vh]"
               // color="#C4161C"
@@ -82,7 +82,7 @@ const page = () => {
           </Link>
 
           <Link
-            href="https://www.youtube.com/@druginternationalltd.6126/featured"
+            href="https://www.youtube.com/@druginternationalltd.6126"
             target="_blank"
           >
             <SlSocialYoutube
