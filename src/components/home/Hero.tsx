@@ -15,7 +15,7 @@ import "swiper/css/effect-fade";
 function Hero() {
 	return (
 		<div className="relative container px-4 lg:-mt-4 mx-auto mb-8 overflow-hidden min-h-screen">
-			<div className="flex flex-col min-h-screen md:flex-row">
+			<div className="flex flex-col min-h-screen gap-4 md:flex-row">
 				{/* <div className="flex items-center justify-center">
           <motion.div
             initial={{ scale: 0 }}
@@ -46,7 +46,7 @@ function Hero() {
 					>
 						<SwiperSlide>
 							<Image
-								src="/assets/images/home/hero/1.jpeg"
+								src="/assets/images/home/hero/1.jpg"
 								width={600}
 								height={450}
 								sizes="(min-width: 1300px) 600px, (min-width: 1040px) 496px, (min-width: 780px) 368px, (min-width: 680px) 576px, calc(94.44vw - 47px)"
@@ -56,7 +56,7 @@ function Hero() {
 						</SwiperSlide>
 						<SwiperSlide>
 							<Image
-								src="/assets/images/home/hero/2.jpeg"
+								src="/assets/images/home/hero/2.jpg"
 								width={600}
 								height={450}
 								sizes="(min-width: 1300px) 600px, (min-width: 1040px) 496px, (min-width: 780px) 368px, (min-width: 680px) 576px, calc(94.44vw - 47px)"
@@ -66,7 +66,7 @@ function Hero() {
 						</SwiperSlide>
 						<SwiperSlide>
 							<Image
-								src="/assets/images/home/hero/3.jpeg"
+								src="/assets/images/home/hero/3.jpg"
 								width={600}
 								height={450}
 								sizes="(min-width: 1300px) 600px, (min-width: 1040px) 496px, (min-width: 780px) 368px, (min-width: 680px) 576px, calc(94.44vw - 47px)"
@@ -76,7 +76,7 @@ function Hero() {
 						</SwiperSlide>
 						<SwiperSlide>
 							<Image
-								src="/assets/images/home/hero/4.jpeg"
+								src="/assets/images/home/hero/4.jpg"
 								width={600}
 								height={450}
 								sizes="(min-width: 1300px) 600px, (min-width: 1040px) 496px, (min-width: 780px) 368px, (min-width: 680px) 576px, calc(94.44vw - 47px)"
@@ -86,7 +86,17 @@ function Hero() {
 						</SwiperSlide>
 						<SwiperSlide>
 							<Image
-								src="/assets/images/home/hero/5.jpeg"
+								src="/assets/images/home/hero/5.jpg"
+								width={600}
+								height={450}
+								sizes="(min-width: 1300px) 600px, (min-width: 1040px) 496px, (min-width: 780px) 368px, (min-width: 680px) 576px, calc(94.44vw - 47px)"
+								alt="herbal"
+								className="mx-auto"
+							/>
+						</SwiperSlide>
+						<SwiperSlide>
+							<Image
+								src="/assets/images/home/hero/6.jpg"
 								width={600}
 								height={450}
 								sizes="(min-width: 1300px) 600px, (min-width: 1040px) 496px, (min-width: 780px) 368px, (min-width: 680px) 576px, calc(94.44vw - 47px)"
@@ -102,7 +112,6 @@ function Hero() {
 						animate={{ x: 0 }}
 						transition={{
 							duration: 1,
-							delay: 1,
 						}}
 					>
 						<h1 className="text-5xl uppercase text-textPrimary mb-10">
