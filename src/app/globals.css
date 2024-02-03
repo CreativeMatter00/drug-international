@@ -1,11 +1,11 @@
 @font-face {
-	font-family: futura;
-	src: url(../../public/assets/fonts/FuturaPTBold.otf);
+  font-family: futura;
+  src: url(../../public/assets/fonts/FuturaPTBold.otf);
 }
 
 @font-face {
-	font-family: montserrat;
-	src: url(../../public/assets/fonts/Montserrat-VariableFont_wght.ttf);
+  font-family: montserrat;
+  src: url(../../public/assets/fonts/Montserrat-VariableFont_wght.ttf);
 }
 
 @tailwind base;
@@ -13,52 +13,52 @@
 @tailwind utilities;
 
 body {
-	margin: 0;
-	padding: 0;
-	font-family: montserrat, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: montserrat, sans-serif;
 }
 
 .futura {
-	font-family: futura, sans-serif !important;
+  font-family: futura, sans-serif !important;
 }
 
 ul {
-	list-style-type: disc;
+  list-style-type: disc;
 }
 
 .primaryShadow {
-	box-shadow: 0px 1px 2px 0px rgba(91, 91, 91, 0.06),
-		0px 3px 3px 0px rgba(91, 91, 91, 0.05),
-		0px 8px 5px 0px rgba(91, 91, 91, 0.03),
-		0px 14px 5px 0px rgba(91, 91, 91, 0.01),
-		0px 21px 6px 0px rgba(91, 91, 91, 0);
+  box-shadow: 0px 1px 2px 0px rgba(91, 91, 91, 0.06),
+    0px 3px 3px 0px rgba(91, 91, 91, 0.05),
+    0px 8px 5px 0px rgba(91, 91, 91, 0.03),
+    0px 14px 5px 0px rgba(91, 91, 91, 0.01),
+    0px 21px 6px 0px rgba(91, 91, 91, 0);
 }
 
 .letterBtn {
-	font-size: 16px;
-	font-weight: 600;
-	color: #272727;
-	padding: 8px;
-	text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  color: #272727;
+  padding: 8px;
+  text-transform: uppercase;
 }
 
 .letterBtn:hover {
-	border-bottom: solid 2px #df343a;
-	color: 272727;
-	border-radius: 2px;
+  border-bottom: solid 2px #df343a;
+  color: 272727;
+  border-radius: 2px;
 }
 
 .btnActive {
-	border: solid 2px #df343a;
-	background-color: #df343a;
-	color: white;
-	border-radius: 2px;
+  border: solid 2px #df343a;
+  background-color: #df343a;
+  color: white;
+  border-radius: 2px;
 }
 
 .swiper-pagination-bullet {
-	background-color: pink;
+  background-color: pink;
 }
 
 .text-shadow {
-	text-shadow: 0 2px 2px #000;
+  text-shadow: 0 2px 2px #000;
 }
