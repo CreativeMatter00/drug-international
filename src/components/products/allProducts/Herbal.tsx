@@ -9,9 +9,13 @@ function Herbal() {
     queryFn: getHerbalProducts,
   });
 
+  console.log(data);
+
+  console.log("dataHerbal", data);
+
   return (
     <div className="px-5 py-10 mb-10">
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-3 gap-y-5">
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-x-3 gap-y-5">
         {data?.map((pharmaceutical: any) => (
           <div
             className="border border-[#e4e4e6] primaryShadow rounded-md w-full transition-all cursor-pointer hover:border-primary hover:scale-90 flex items-center justify-center"
@@ -31,97 +35,31 @@ function Herbal() {
 					<Loader />
 				) : (
 					data?.map((product: any) => (
-						// <div
-						// 	key={product.MEDICINE_ID}
-						// 	className="border border-[#e4e4e6] primaryShadow rounded-md w-full transition-all cursor-pointer hover:border-primary hover:scale-90"
-						// >
-						<Image
+						<div
 							key={product.MEDICINE_ID}
-							src={`https://www.drug-international.com/${product?.PRODUCT_FET_PHOTO}`}
-							// src="https://www.drug-international.com/uploads/IMG/1519295580Alocap.jpg"
-							width={245}
-							height={165}
-							alt="product"
-							className="mx-auto"
-						/>
-						// </div>
+							className="tooltip flex items-center justify-center border border-[#e4e4e6] primaryShadow rounded-md w-full transition-all cursor-pointer hover:border-primary hover:scale-90"
+							data-tip={product.MEDICINE_NAME}
+						>
+							{product.PRODUCT_FET_PHOTO ? (
+								<Image
+									// src="https://www.drug-international.com/uploads/IMG/1519295580Alocap.jpg"
+									src={`https://www.drug-international.com/${product?.PRODUCT_FET_PHOTO}`}
+									width={245}
+									height={165}
+									alt={product.MEDICINE_NAME}
+									className="mx-auto"
+								/>
+							) : (
+								<div key={product.MEDICINE_ID} className="">
+									Image not availble
+								</div>
+							)}
+						</div>
 					))
-				)} */}
-        {/* 
-				<div className="border border-[#e4e4e6] primaryShadow rounded-md w-full transition-all cursor-pointer hover:border-primary hover:scale-90">
-					<Image
-						src="/assets/images/products/all/herbal/1.png"
-						width={245}
-						height={165}
-						alt="product"
-						className="mx-auto"
-					/>
-				</div>
-				<div className="border border-[#e4e4e6] primaryShadow rounded-md w-full transition-all cursor-pointer hover:border-primary hover:scale-90">
-					<Image
-						src="/assets/images/products/all/herbal/2.png"
-						width={245}
-						height={165}
-						alt="product"
-						className="mx-auto"
-					/>
-				</div>
-				<div className="border border-[#e4e4e6] primaryShadow rounded-md w-full transition-all cursor-pointer hover:border-primary hover:scale-90 ">
-					<Image
-						src="/assets/images/products/all/herbal/3.png"
-						width={245}
-						height={165}
-						alt="product"
-						className="mx-auto"
-					/>
-				</div>
-				<div className="border border-[#e4e4e6] primaryShadow rounded-md w-full transition-all cursor-pointer hover:border-primary hover:scale-90 ">
-					<Image
-						src="/assets/images/products/all/herbal/4.png"
-						width={245}
-						height={165}
-						alt="product"
-						className="mx-auto"
-					/>
-				</div>
-				<div className="border border-[#e4e4e6] primaryShadow rounded-md w-full transition-all cursor-pointer hover:border-primary hover:scale-90 ">
-					<Image
-						src="/assets/images/products/all/herbal/5.png"
-						width={245}
-						height={165}
-						alt="product"
-						className="mx-auto"
-					/>
-				</div>
+				)}
 
-				<div className="border border-[#e4e4e6] primaryShadow rounded-md w-full transition-all cursor-pointer hover:border-primary hover:scale-90 ">
-					<Image
-						src="/assets/images/products/all/herbal/6.png"
-						width={245}
-						height={165}
-						alt="product"
-						className="mx-auto"
-					/>
-				</div>
-				<div className="border border-[#e4e4e6] primaryShadow rounded-md w-full transition-all cursor-pointer hover:border-primary hover:scale-90 ">
-					<Image
-						src="/assets/images/products/all/herbal/7.png"
-						width={245}
-						height={165}
-						alt="product"
-						className="mx-auto"
-					/>
-				</div>
-				<div className="border border-[#e4e4e6] primaryShadow rounded-md w-full transition-all cursor-pointer hover:border-primary hover:scale-90 ">
-					<Image
-						src="/assets/images/products/all/herbal/8.png"
-						width={245}
-						height={165}
-						alt="product"
-						className="mx-auto"
-					/>
-				</div>
-				<div className="border border-[#e4e4e6] primaryShadow rounded-md w-full transition-all cursor-pointer hover:border-primary hover:scale-90 ">
+				{/* 
+				<div className="border border-[#e4e4e6] primaryShadow rounded-md w-full transition-all cursor-pointer hover:border-primary hover:scale-90">
 					<Image
 						src="/assets/images/products/all/herbal/1.png"
 						width={245}
@@ -130,15 +68,7 @@ function Herbal() {
 						className="mx-auto"
 					/>
 				</div>
-				<div className="border border-[#e4e4e6] primaryShadow rounded-md w-full transition-all cursor-pointer hover:border-primary hover:scale-90 ">
-					<Image
-						src="/assets/images/products/all/herbal/2.png"
-						width={245}
-						height={165}
-						alt="product"
-						className="mx-auto"
-					/>
-				</div> */}
+			 */}
       </div>
     </div>
   );
