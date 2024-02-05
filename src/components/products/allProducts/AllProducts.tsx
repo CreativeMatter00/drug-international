@@ -188,7 +188,7 @@ const AllProducts: React.FC<visibleProps> = ({
       {medicineType === 0 && (
         <div>
           {isLoading ? (
-            <div className="flex justify-center items-center p-12 h-96">
+            <div className="flex justify-center items-center p-12 h-[400px]">
               <Image
                 src="/assets/images/loader/loader.png"
                 height={200}
@@ -198,7 +198,7 @@ const AllProducts: React.FC<visibleProps> = ({
               />
             </div>
           ) : (
-            <Pharmaceuticals isLoading={isLoading} pharmaceuticalData={data} />
+            <Pharmaceuticals error={error} pharmaceuticalData={data} />
           )}
         </div>
       )}
