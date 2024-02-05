@@ -97,6 +97,7 @@ function SpecializedProducts() {
 									<SpecializedProductCard
 										src={product.INSERT_FILES}
 										title={product.SPECIAL_NAME}
+										id={product.SPECIAL_ID}
 										// description={product.description}
 										// link={product.link}
 									/>
