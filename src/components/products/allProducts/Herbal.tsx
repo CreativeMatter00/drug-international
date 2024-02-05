@@ -4,17 +4,34 @@ import { useQuery } from "@tanstack/react-query";
 import Image from "next/image";
 
 function Herbal() {
-	const { isLoading, error, data } = useQuery({
-		queryKey: ["getHerbalProducts"],
-		queryFn: getHerbalProducts,
-	});
+  const { isLoading, error, data } = useQuery({
+    queryKey: ["getHerbalProducts"],
+    queryFn: getHerbalProducts,
+  });
 
-	console.log(data);
+  console.log(data);
 
-	return (
-		<div className="px-5 py-10 mb-10">
-			<div className="grid grid-cols-2 md:grid-cols-5 gap-x-3 gap-y-5">
-				{/* {isLoading ? (
+  console.log("dataHerbal", data);
+
+  return (
+    <div className="px-5 py-10 mb-10">
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-x-3 gap-y-5">
+        {data?.map((pharmaceutical: any) => (
+          <div
+            className="border border-[#e4e4e6] primaryShadow rounded-md w-full transition-all cursor-pointer hover:border-primary hover:scale-90 flex items-center justify-center"
+            key={pharmaceutical?.MEDICINE_ID}
+          >
+            <Image
+              src={`https://www.drug-international.com/${pharmaceutical?.PRODUCT_FET_PHOTO}`}
+              width={245}
+              height={165}
+              alt="product"
+              className="mx-auto"
+            />
+          </div>
+        ))}
+
+        {/* {isLoading ? (
 					<Loader />
 				) : (
 					data?.map((product: any) => (
@@ -34,7 +51,7 @@ function Herbal() {
 						// </div>
 					))
 				)} */}
-				{/* 
+        {/* 
 				<div className="border border-[#e4e4e6] primaryShadow rounded-md w-full transition-all cursor-pointer hover:border-primary hover:scale-90">
 					<Image
 						src="/assets/images/products/all/herbal/1.png"
@@ -126,9 +143,9 @@ function Herbal() {
 						className="mx-auto"
 					/>
 				</div> */}
-			</div>
-		</div>
-	);
+      </div>
+    </div>
+  );
 }
 
 export default Herbal;
