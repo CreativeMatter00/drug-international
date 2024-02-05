@@ -56,11 +56,33 @@ export const getProductDetails = async () => {
 	}
 };
 
-//? Get product details
+//? Get product letter
+
+export const getProductByLetter = async (letter: any) => {
+	try {
+		const response = await axios.get(`${url}/api/GetProductByTrade/${letter}`);
+		return response.data;
+	} catch (error) {
+		console.log(error);
+	}
+};
+
+//? Get herbal product
 
 export const getHerbalProducts = async () => {
 	try {
 		const response = await axios.get(`${url}/api/GetProductHerbal`);
+		return response.data;
+	} catch (error) {
+		console.log(error);
+	}
+};
+
+//? Get unani product
+
+export const getUnaniProducts = async () => {
+	try {
+		const response = await axios.get(`${url}/api/GetProductUnani`);
 		return response.data;
 	} catch (error) {
 		console.log(error);

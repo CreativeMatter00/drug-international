@@ -9,6 +9,7 @@ const nextConfig = {
 				pathname: "/uploads/**",
 			},
 		],
+		domains: ['www.drug-international.com'],
 	},
 };
 
