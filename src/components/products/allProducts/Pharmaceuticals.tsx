@@ -20,13 +20,25 @@ function Pharmaceuticals(pharmaceuticalData: any) {
             key={pharmaceutical?.MEDICINE_ID}
             data-tip={pharmaceutical.MEDICINE_NAME}
           >
-            <Image
-              src={`https://www.drug-international.com/${pharmaceutical?.PRODUCT_FET_PHOTO}`}
-              width={245}
-              height={165}
-              alt="product"
-              className="mx-auto"
-            />
+            {pharmaceutical.PRODUCT_FET_PHOTO ? (
+              <Image
+                src={`https://www.drug-international.com/${pharmaceutical?.PRODUCT_FET_PHOTO}`}
+                width={245}
+                height={165}
+                alt="product"
+                className="mx-auto"
+              />
+            ) : (
+              <div key={pharmaceutical.MEDICINE_ID} className="">
+                <Image
+                  src="/assets/images/imageNotFound.jpg"
+                  width={245}
+                  height={165}
+                  alt="imageNotFound"
+                  className="mx-auto"
+                />
+              </div>
+            )}
           </div>
         ))}
       </div>
