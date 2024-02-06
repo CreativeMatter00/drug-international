@@ -14,8 +14,7 @@ function SpecializedProductCard(props: ISpecializedProductCard) {
 				<div className="relative flex items-center justify-center overflow-hidden">
 					<Image
 						// src={`/assets/images/home/specialized/capsule.png`}
-						// src={`https://www.drug-international.com/${props.src}`}
-						src="https://www.drug-international.com/uploads/IMG/1519295580Alocap.jpg"
+						src={`https://www.drug-international.com/${props.src}`}
 						width={320}
 						height={334}
 						alt="Specialized products"
