@@ -108,3 +108,27 @@ export const getGenericProducts = async (letter: any) => {
     console.log(error);
   }
 };
+
+//? Get therapeutic class list
+
+export const getProductNameByClass = async () => {
+  try {
+    const response = await axios.get(`${url}/api/GetProductNameByClass`);
+    return response.data;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+//? Get Generic product
+
+export const getTherapeuticProducts = async (therapeuticId: string) => {
+  try {
+    const response = await axios.get(
+      `${url}/api/GetProductByTherapeuticClasses/${therapeuticId}`
+    );
+    return response.data;
+  } catch (error) {
+    console.log(error);
+  }
+};

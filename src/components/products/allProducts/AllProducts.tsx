@@ -9,16 +9,22 @@ import Herbal from "./Herbal";
 import Unani from "./Unani";
 import styles from "@/styles/NavSidebar.module.css";
 import { useQuery } from "@tanstack/react-query";
-import { getGenericProducts, getProductByLetter } from "@/api/api";
+import {
+  getGenericProducts,
+  getProductByLetter,
+  getTherapeuticProducts,
+} from "@/api/api";
 import Loader from "@/components/ui/loader/Loader";
 import Image from "next/image";
 import GenericProducts from "./GenericProducts";
+import TherapeuticDataProducts from "./TherapeuticDataProducts";
 
 interface visibleProps {
   setIsAllSidebarVisible: Function;
   isAllSidebarVisible: boolean;
   isOverlayVisible: boolean;
   setIsOverlayVisible: Function;
+  therapeuticId: string;
 }
 
 const AllProducts: React.FC<visibleProps> = ({
@@ -26,6 +32,7 @@ const AllProducts: React.FC<visibleProps> = ({
   isAllSidebarVisible,
   isOverlayVisible,
   setIsOverlayVisible,
+  therapeuticId,
 }) => {
   const [medicineType, setMedicineType] = useState<number>(0);
   const [nameType, setNameType] = useState<number>(0);
@@ -72,6 +79,15 @@ const AllProducts: React.FC<visibleProps> = ({
   } = useQuery({
     queryKey: ["productByLetterGeneric", letterGeneric],
     queryFn: ({ queryKey }) => getGenericProducts(queryKey[1]),
+  });
+
+  const {
+    isLoading: therapeuticIsLoading,
+    error: therapeuticError,
+    data: therapeuticData,
+  } = useQuery({
+    queryKey: ["therapeuticProducts", therapeuticId],
+    queryFn: ({ queryKey }) => getTherapeuticProducts(queryKey[1]),
   });
 
   return (
@@ -239,6 +255,26 @@ const AllProducts: React.FC<visibleProps> = ({
                 <GenericProducts
                   error={genericError}
                   genericData={genericData}
+                />
+              )}
+            </div>
+          )}
+          {nameType === 2 && (
+            <div>
+              {therapeuticIsLoading ? (
+                <div className="flex justify-center items-center p-12 h-[400px]">
+                  <Image
+                    src="/assets/images/loader/loader.png"
+                    height={200}
+                    width={200}
+                    alt="loader"
+                    className="animate-ping"
+                  />
+                </div>
+              ) : (
+                <TherapeuticDataProducts
+                  error={therapeuticError}
+                  therapeuticData={therapeuticData}
                 />
               )}
             </div>

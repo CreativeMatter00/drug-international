@@ -1,14 +1,17 @@
 "use client";
 
-import { useState } from "react";
 import SearchOption from "./SearchOption";
 import styles from "@/styles/NavSidebar.module.css";
+import { useQuery } from "@tanstack/react-query";
+import { getProductNameByClass } from "@/api/api";
+import { useState } from "react";
 
 interface visibleProps {
   setIsAllSidebarVisible: Function;
   isAllSidebarVisible: boolean;
   isOverlayVisible: boolean;
   setIsOverlayVisible: Function;
+  setTherapeuticId: Function;
 }
 
 const AllProductSidebar: React.FC<visibleProps> = ({
@@ -16,11 +19,12 @@ const AllProductSidebar: React.FC<visibleProps> = ({
   setIsAllSidebarVisible,
   isOverlayVisible,
   setIsOverlayVisible,
+  setTherapeuticId,
 }) => {
-  const [selectedItem, setSelectedItem] = useState<string | null>(null);
+  const [selectedItem, setSelectedItem] = useState<any | null>(null);
 
-  const handleItemClick = (item: string) => {
-    setSelectedItem(item);
+  const handleItemClick = (therapeutic: string) => {
+    setSelectedItem(therapeutic);
   };
 
   const handleAllSideToggle = () => {
@@ -29,9 +33,15 @@ const AllProductSidebar: React.FC<visibleProps> = ({
   };
 
   const handleSearch = () => {
+    setTherapeuticId(selectedItem?.TH_GRP_ID);
     setIsAllSidebarVisible(!isAllSidebarVisible);
     setIsOverlayVisible(!isOverlayVisible);
   };
+
+  const { isLoading, error, data } = useQuery({
+    queryKey: ["ProductNameByClass"],
+    queryFn: getProductNameByClass,
+  });
 
   return (
     <div
@@ -80,81 +90,14 @@ const AllProductSidebar: React.FC<visibleProps> = ({
 
         <div className=" h-full overflow-auto p-4 uppercase">
           <div className="flex flex-col gap-1">
-            <SearchOption
-              optionName="Eye Drops"
-              isSelected={selectedItem === "Eye Drops"}
-              onItemClick={handleItemClick}
-            />
-            <SearchOption
-              optionName="Cancer Medications"
-              isSelected={selectedItem === "Cancer Medications"}
-              onItemClick={handleItemClick}
-            />
-            <SearchOption
-              optionName="Herbal Heart Health Supplements"
-              isSelected={selectedItem === "Herbal Heart Health Supplements"}
-              onItemClick={handleItemClick}
-            />
-            <SearchOption
-              optionName="Pain Relief Balms and Oils"
-              isSelected={selectedItem === "Pain Relief Balms and Oils"}
-              onItemClick={handleItemClick}
-            />
-            <SearchOption
-              optionName="Immune Support Formulas"
-              isSelected={selectedItem === "Immune Support Formulas"}
-              onItemClick={handleItemClick}
-            />
-            <SearchOption
-              optionName="Cardiovascular Medications"
-              isSelected={selectedItem === "Cardiovascular Medications"}
-              onItemClick={handleItemClick}
-            />
-            <SearchOption
-              optionName="Women's Health Products"
-              isSelected={selectedItem === "Women's Health Products"}
-              onItemClick={handleItemClick}
-            />
-            <SearchOption
-              optionName="Men's Health Formulations"
-              isSelected={selectedItem === "Men's Health Formulations"}
-              onItemClick={handleItemClick}
-            />
-            <SearchOption
-              optionName="Digestive Medications"
-              isSelected={selectedItem === "Digestive Medications"}
-              onItemClick={handleItemClick}
-            />
-            <SearchOption
-              optionName="Respiratory Inhalers"
-              isSelected={selectedItem === "Respiratory Inhalers"}
-              onItemClick={handleItemClick}
-            />
-            <SearchOption
-              optionName="Herbal Digestive Aids"
-              isSelected={selectedItem === "Herbal Digestive Aids"}
-              onItemClick={handleItemClick}
-            />
-            <SearchOption
-              optionName="Unani Pain Management Solutions"
-              isSelected={selectedItem === "Unani Pain Management Solutions"}
-              onItemClick={handleItemClick}
-            />
-            <SearchOption
-              optionName="Herbal Immunity Boosters"
-              isSelected={selectedItem === "Herbal Immunity Boosters"}
-              onItemClick={handleItemClick}
-            />
-            <SearchOption
-              optionName="Skin Care Ointments"
-              isSelected={selectedItem === "Skin Care Ointments"}
-              onItemClick={handleItemClick}
-            />
-            <SearchOption
-              optionName="Unani Digestive Formulations"
-              isSelected={selectedItem === "Unani Digestive Formulations"}
-              onItemClick={handleItemClick}
-            />
+            {data?.therapiticGroupProduct?.map((therapeutic: any) => (
+              <SearchOption
+                key={therapeutic?.TH_GRP_ID}
+                optionName={therapeutic?.TH_GRP_NAME}
+                isSelected={selectedItem?.TH_GRP_ID === therapeutic?.TH_GRP_ID}
+                onItemClick={() => handleItemClick(therapeutic)}
+              />
+            ))}
           </div>
         </div>
 

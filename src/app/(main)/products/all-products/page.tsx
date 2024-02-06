@@ -10,6 +10,7 @@ function Page() {
   const [isAllSidebarVisible, setIsAllSidebarVisible] =
     useState<boolean>(false);
   const [isOverlayVisible, setIsOverlayVisible] = useState<boolean>(false);
+  const [therapeuticId, setTherapeuticId] = useState<any | null>(null);
 
   return (
     <div>
@@ -20,6 +21,7 @@ function Page() {
         setIsOverlayVisible={setIsOverlayVisible}
         isAllSidebarVisible={isAllSidebarVisible}
         setIsAllSidebarVisible={setIsAllSidebarVisible}
+        setTherapeuticId={setTherapeuticId}
       />
 
       <AllProducts
@@ -27,6 +29,7 @@ function Page() {
         setIsOverlayVisible={setIsOverlayVisible}
         setIsAllSidebarVisible={setIsAllSidebarVisible}
         isAllSidebarVisible={isAllSidebarVisible}
+        therapeuticId={therapeuticId}
       />
     </div>
   );

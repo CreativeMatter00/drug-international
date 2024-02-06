@@ -11,7 +11,7 @@ function Unani() {
 
   if (error)
     return (
-      <div className="text-center"> Something went wrong. Please Reload </div>
+      <div className="text-center"> Something went wrong. Please Reload</div>
     );
 
   return (
@@ -28,7 +28,6 @@ function Unani() {
             >
               {product.PRODUCT_FET_PHOTO ? (
                 <Image
-                  // src="https://www.drug-international.com/uploads/IMG/1519295580Alocap.jpg"
                   src={`https://www.drug-international.com/${product?.PRODUCT_FET_PHOTO}`}
                   width={245}
                   height={165}
@@ -49,18 +48,6 @@ function Unani() {
             </div>
           ))
         )}
-
-        {/* 
-				<div className="border border-[#e4e4e6] primaryShadow rounded-md w-full transition-all cursor-pointer hover:border-primary hover:scale-90">
-					<Image
-						src="/assets/images/products/all/herbal/1.png"
-						width={245}
-						height={165}
-						alt="product"
-						className="mx-auto"
-					/>
-				</div>
-			 */}
       </div>
     </div>
   );
