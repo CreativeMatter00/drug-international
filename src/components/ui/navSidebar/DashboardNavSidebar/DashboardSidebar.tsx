@@ -27,8 +27,6 @@ const DashboardSidebar: React.FC<DashboardSidebarProps> = ({
 
   const pathName = usePathname().toString();
 
-  console.log("pathName", pathName);
-
   return (
     <div
       className={`${
