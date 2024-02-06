@@ -9,8 +9,6 @@ function Oncology() {
     queryFn: getOncologyProducts,
   });
 
-  console.log("data333333333333333", data);
-
   if (error)
     return (
       <div className="text-center"> Something went wrong. Please Reload </div>

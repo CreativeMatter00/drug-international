@@ -98,3 +98,13 @@ export const getOncologyProducts = async () => {
     console.log(error);
   }
 };
+//? Get Generic product
+
+export const getGenericProducts = async (letter: any) => {
+  try {
+    const response = await axios.get(`${url}/api/GetGenericProducts/${letter}`);
+    return response.data;
+  } catch (error) {
+    console.log(error);
+  }
+};
