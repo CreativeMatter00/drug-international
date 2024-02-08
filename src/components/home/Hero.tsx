@@ -11,6 +11,7 @@ import { Autoplay, EffectFade } from "swiper/modules";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-fade";
+import Link from "next/link";
 
 function Hero() {
 	return (
@@ -127,7 +128,9 @@ function Hero() {
 							solid dosage plant.
 						</p>
 						<div className="ml-auto w-fit">
-							<ButtonPrimary> SEE OUR PRODUCTS </ButtonPrimary>
+							<Link href="/products">
+								<ButtonPrimary> SEE OUR PRODUCTS </ButtonPrimary>
+							</Link>
 						</div>
 					</motion.div>
 				</div>

@@ -19,7 +19,7 @@ function Page() {
 
 	if (error)
 		return (
-			<div className="text-center text-xl font-md">
+			<div className="text-center text-xl font-md py-8">
 				Something went wrong. Please reload
 			</div>
 		);

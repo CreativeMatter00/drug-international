@@ -57,9 +57,9 @@ function SecurityCheck() {
 
 	if (isError) {
 		return (
-			<p className="text-center text-lg font-medium">
-				Something went wrong. Please reload the page.
-			</p>
+			<div className="text-center text-xl font-md py-8">
+				Something went wrong. Please reload
+			</div>
 		);
 	}
 
