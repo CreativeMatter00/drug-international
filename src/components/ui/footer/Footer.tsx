@@ -35,27 +35,44 @@ const Footer = () => {
                 Social networks
               </p>
               <div className="flex gap-4">
-                <Image
-                  src={`/assets/icons/footer/facebook.svg`}
-                  width={24}
-                  height={24}
-                  alt="social links"
-                  className="h-auto w-auto hover:scale-110 cursor-pointer duration-300"
-                />
-                <Image
-                  src={`/assets/icons/footer/linkedin.svg`}
-                  width={24}
-                  height={24}
-                  alt="social links"
-                  className="h-auto w-auto hover:scale-110 cursor-pointer duration-300"
-                />
-                <Image
-                  src={`/assets/icons/footer/youtube.svg`}
-                  width={24}
-                  height={24}
-                  alt="social links"
-                  className="h-auto w-auto hover:scale-110 cursor-pointer duration-300"
-                />
+                <Link
+                  href="https://www.facebook.com/drugintltd"
+                  target="_blank"
+                >
+                  <Image
+                    src={`/assets/icons/footer/facebook.svg`}
+                    width={24}
+                    height={24}
+                    alt="social links"
+                    className="h-auto w-auto hover:scale-110 cursor-pointer duration-300"
+                  />
+                </Link>
+
+                <Link
+                  href="https://bd.linkedin.com/company/drug-international-limited"
+                  target="_blank"
+                >
+                  <Image
+                    src={`/assets/icons/footer/linkedin.svg`}
+                    width={24}
+                    height={24}
+                    alt="social links"
+                    className="h-auto w-auto hover:scale-110 cursor-pointer duration-300"
+                  />
+                </Link>
+
+                <Link
+                  href="https://www.youtube.com/@druginternationalltd.6126"
+                  target="_blank"
+                >
+                  <Image
+                    src={`/assets/icons/footer/youtube.svg`}
+                    width={24}
+                    height={24}
+                    alt="social links"
+                    className="h-auto w-auto hover:scale-110 cursor-pointer duration-300"
+                  />
+                </Link>
               </div>
             </div>
           </div>
