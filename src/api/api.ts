@@ -49,9 +49,9 @@ export const getSpecializedProductDetail = async (id: string) => {
 
 //? Get product details
 
-export const getProductDetails = async () => {
+export const getProductDetails = async (id: string) => {
 	try {
-		const response = await axios.get(`${url}/api/SpecilizedProducts`);
+		const response = await axios.get(`${url}/api/GetLatestProductById/${id}`);
 		return response.data;
 	} catch (error) {
 		console.log(error);
@@ -103,34 +103,34 @@ export const getOncologyProducts = async () => {
 //? Get Generic product
 
 export const getGenericProducts = async (letter: any) => {
-  try {
-    const response = await axios.get(`${url}/api/GetGenericProducts/${letter}`);
-    return response.data;
-  } catch (error) {
-    console.log(error);
-  }
+	try {
+		const response = await axios.get(`${url}/api/GetGenericProducts/${letter}`);
+		return response.data;
+	} catch (error) {
+		console.log(error);
+	}
 };
 
 //? Get therapeutic class list
 
 export const getProductNameByClass = async () => {
-  try {
-    const response = await axios.get(`${url}/api/GetProductNameByClass`);
-    return response.data;
-  } catch (error) {
-    console.log(error);
-  }
+	try {
+		const response = await axios.get(`${url}/api/GetProductNameByClass`);
+		return response.data;
+	} catch (error) {
+		console.log(error);
+	}
 };
 
 //? Get Generic product
 
 export const getTherapeuticProducts = async (therapeuticId: string) => {
-  try {
-    const response = await axios.get(
-      `${url}/api/GetProductByTherapeuticClasses/${therapeuticId}`
-    );
-    return response.data;
-  } catch (error) {
-    console.log(error);
-  }
+	try {
+		const response = await axios.get(
+			`${url}/api/GetProductByTherapeuticClasses/${therapeuticId}`
+		);
+		return response.data;
+	} catch (error) {
+		console.log(error);
+	}
 };

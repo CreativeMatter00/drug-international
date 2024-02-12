@@ -4,14 +4,12 @@ import { useState } from "react";
 import Marquee from "react-fast-marquee";
 
 function Achievements() {
-	const [active, setActive] = useState(false);
-
 	return (
 		<div className={` mb-8 py-12`}>
 			<div className={`px-4 z-10 relative m-auto`}>
-				<div className="text-center font-semibold text-4xl pb-20 uppercase">
+				<p className="text-center font-semibold text-4xl pb-8 uppercase">
 					Achievements
-				</div>
+				</p>
 				{/* <Marquee pauseOnHover={true}>
 					<div className="h-auto w-auto mr-4 overflow-hidden">
 						<Image
@@ -118,11 +116,12 @@ function Achievements() {
 						/>
 					</div>
 				</Marquee> */}
+				<p className="text-center font-semibold text-xl pb-20 uppercase">
+					Drug International has earned certificates for outstanding medicine
+					quality
+				</p>
 				<div className="container mx-auto flex flex-wrap justify-center gap-y-8">
-					<div
-						className="flex items-center justify-center w-1/2 md:w-1/5 h-[200px] transition-all duration-300 hover:shadow-xl"
-						onClick={() => setActive(true)}
-					>
+					<div className="flex items-center justify-center w-1/2 md:w-1/5 h-[200px] transition-all duration-300 hover:shadow-xl">
 						<Image
 							src={"/assets/images/home/achievements/certificate-01.jpg"}
 							width={365}

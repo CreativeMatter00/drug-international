@@ -14,7 +14,7 @@ const Footer = () => {
 			<div className="container mx-auto flex items-center justify-center h-full flex-col text-white px-2 max-w-[1024px]">
 				<div className="">
 					<Image
-						src={`/assets/logo/Drug-Logo-vertical.png`}
+						src={`/assets/logo/drug-logo.png`}
 						width={166}
 						height={130}
 						alt="Herbal hovers"
