@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 function Pharmaceuticals(pharmaceuticalData: any) {
 	if (pharmaceuticalData?.error)
@@ -16,32 +17,35 @@ function Pharmaceuticals(pharmaceuticalData: any) {
 				</div>
 			)}
 			<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-3 gap-y-5">
-				{pharmaceuticalData?.pharmaceuticalData?.map((pharmaceutical: any) => (
-					<div
+				{pharmaceuticalData?.pharmaceuticalData?.map((product: any) => (
+					<Link
+						href={`/products/${product.MEDICINE_ID}`}
 						className="tooltip border border-[#e4e4e6] primaryShadow rounded-md w-full transition-all cursor-pointer hover:border-primary hover:scale-90 flex items-center justify-center"
-						key={pharmaceutical?.MEDICINE_ID}
-						data-tip={pharmaceutical.MEDICINE_NAME}
+						key={product?.MEDICINE_ID}
+						data-tip={product.MEDICINE_NAME}
 					>
-						{pharmaceutical.PRODUCT_FET_PHOTO ? (
-							<Image
-								src={`https://www.drug-international.com/${pharmaceutical?.PRODUCT_FET_PHOTO}`}
-								width={245}
-								height={165}
-								alt="product"
-								className="mx-auto"
-							/>
-						) : (
-							<div key={pharmaceutical.MEDICINE_ID} className="">
+						<div>
+							{product.PRODUCT_FET_PHOTO ? (
 								<Image
-									src="/assets/images/imageNotFound.jpg"
+									src={`https://www.drug-international.com/${product?.PRODUCT_FET_PHOTO}`}
 									width={245}
 									height={165}
-									alt="imageNotFound"
+									alt="product"
 									className="mx-auto"
 								/>
-							</div>
-						)}
-					</div>
+							) : (
+								<div key={product.MEDICINE_ID} className="">
+									<Image
+										src="/assets/images/imageNotFound.jpg"
+										width={245}
+										height={165}
+										alt="imageNotFound"
+										className="mx-auto"
+									/>
+								</div>
+							)}
+						</div>
+					</Link>
 				))}
 			</div>
 		</div>

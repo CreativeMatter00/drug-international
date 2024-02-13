@@ -4,6 +4,7 @@ import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
 function Achievements() {
+<<<<<<< HEAD
   // const [active, setActive] = useState(false);
 
   return (
@@ -13,6 +14,15 @@ function Achievements() {
           Achievements
         </div>
         {/* <Marquee pauseOnHover={true}>
+=======
+	return (
+		<div className={` mb-8 py-12`}>
+			<div className={`px-4 z-10 relative m-auto`}>
+				<p className="text-center font-semibold text-4xl pb-8 uppercase">
+					Achievements
+				</p>
+				{/* <Marquee pauseOnHover={true}>
+>>>>>>> c1c21476bbd05b14c52f5564caebc977aca0c6df
 					<div className="h-auto w-auto mr-4 overflow-hidden">
 						<Image
 							src={"/assets/images/home/achievements/1.png"}
@@ -118,6 +128,7 @@ function Achievements() {
 						/>
 					</div>
 				</Marquee> */}
+<<<<<<< HEAD
         <div className="container mx-auto flex flex-wrap justify-center gap-y-8">
           <div
             className="flex items-center justify-center w-1/2 md:w-1/5 h-[200px] transition-all duration-300 hover:shadow-xl"
@@ -140,6 +151,31 @@ function Achievements() {
               className="h-[200px] w-auto"
             />
           </div>
+=======
+				<p className="text-center font-semibold text-xl pb-20 uppercase">
+					Drug International has earned certificates for outstanding medicine
+					quality
+				</p>
+				<div className="container mx-auto flex flex-wrap justify-center gap-y-8">
+					<div className="flex items-center justify-center w-1/2 md:w-1/5 h-[200px] transition-all duration-300 hover:shadow-xl">
+						<Image
+							src={"/assets/images/home/achievements/certificate-01.jpg"}
+							width={365}
+							height={365}
+							alt="achievement"
+							className="h-[200px] w-auto"
+						/>
+					</div>
+					<div className="flex items-center justify-center w-1/2 md:w-1/5 h-[200px] transition-all duration-300 hover:shadow-xl">
+						<Image
+							src={"/assets/images/home/achievements/certificate-02.jpg"}
+							width={365}
+							height={365}
+							alt="achievement"
+							className="h-[200px] w-auto"
+						/>
+					</div>
+>>>>>>> c1c21476bbd05b14c52f5564caebc977aca0c6df
 
           <div className="flex items-center justify-center w-1/2 md:w-1/5 h-[200px] transition-all duration-300 hover:shadow-xl">
             <Image

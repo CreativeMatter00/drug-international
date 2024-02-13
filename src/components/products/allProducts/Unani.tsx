@@ -2,6 +2,7 @@ import { getUnaniProducts } from "@/api/api";
 import Loader from "@/components/ui/loader/Loader";
 import { useQuery } from "@tanstack/react-query";
 import Image from "next/image";
+import Link from "next/link";
 
 function Unani() {
 	const { isLoading, error, data } = useQuery({
@@ -23,9 +24,10 @@ function Unani() {
 					<Loader />
 				) : (
 					data?.map((product: any) => (
-						<div
-							key={product.MEDICINE_ID}
-							className="tooltip flex items-center justify-center border border-[#e4e4e6] primaryShadow rounded-md w-full transition-all cursor-pointer hover:border-primary hover:scale-90"
+						<Link
+							href={`/products/${product.MEDICINE_ID}`}
+							className="tooltip border border-[#e4e4e6] primaryShadow rounded-md w-full transition-all cursor-pointer hover:border-primary hover:scale-90 flex items-center justify-center"
+							key={product?.MEDICINE_ID}
 							data-tip={product.MEDICINE_NAME}
 						>
 							{product.PRODUCT_FET_PHOTO ? (
@@ -47,7 +49,7 @@ function Unani() {
 									/>
 								</div>
 							)}
-						</div>
+						</Link>
 					))
 				)}
 			</div>

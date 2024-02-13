@@ -51,7 +51,8 @@ function Page() {
 
 						<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-3 gap-y-5 mb-10 md:mb-20">
 							{data.specializedP.map((product: any) => (
-								<div
+								<Link
+									href={`/products/${product.MEDICINE_ID}`}
 									key={product.MEDICINE_ID}
 									className="flex items-center justify-center border border-[#e4e4e6] primaryShadow rounded-md w-full transition-all cursor-pointer hover:border-primary hover:scale-90"
 								>
@@ -62,7 +63,7 @@ function Page() {
 										alt="product"
 										className="mx-auto"
 									/>
-								</div>
+								</Link>
 							))}
 						</div>
 					</div>
