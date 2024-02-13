@@ -18,7 +18,7 @@ const Footer = () => {
 						width={166}
 						height={130}
 						alt="Herbal hovers"
-						className="h-auto"
+						className="h-auto w-auto"
 					/>
 				</div>
 

@@ -61,7 +61,7 @@ function Page() {
 										width={245}
 										height={165}
 										alt="product"
-										className="mx-auto"
+										className="mx-auto h-auto w-auto"
 									/>
 								</Link>
 							))}

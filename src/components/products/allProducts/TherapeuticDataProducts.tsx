@@ -27,7 +27,7 @@ function TherapeuticDataProducts(therapeuticData: any) {
 									width={245}
 									height={165}
 									alt="product"
-									className="mx-auto"
+									className="mx-auto h-auto w-auto"
 								/>
 							) : (
 								<div key={pharmaceutical.MEDICINE_ID} className="">
@@ -36,7 +36,7 @@ function TherapeuticDataProducts(therapeuticData: any) {
 										width={245}
 										height={165}
 										alt="imageNotFound"
-										className="mx-auto"
+										className="mx-auto h-auto w-auto"
 									/>
 								</div>
 							)}

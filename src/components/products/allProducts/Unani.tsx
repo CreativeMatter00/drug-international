@@ -36,7 +36,7 @@ function Unani() {
 									width={245}
 									height={165}
 									alt={product.MEDICINE_NAME}
-									className="mx-auto"
+									className="mx-auto h-auto w-auto"
 								/>
 							) : (
 								<div key={product.MEDICINE_ID} className="">
@@ -45,7 +45,7 @@ function Unani() {
 										width={245}
 										height={165}
 										alt="imageNotFound"
-										className="mx-auto"
+										className="mx-auto h-auto w-auto"
 									/>
 								</div>
 							)}
