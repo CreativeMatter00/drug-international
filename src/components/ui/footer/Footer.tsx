@@ -82,28 +82,19 @@ const Footer = () => {
 							quick Links
 						</p>
 						<div className="flex flex-col uppercase text-base font-medium gap-2">
-							<Link href="/news">
-								<p className="cursor-pointer hover:ml-0.5 duration-200">
-									News & insights
-								</p>
-							</Link>
 							<Link href="/security-check">
 								<p className="cursor-pointer hover:ml-0.5 duration-200">
 									security check
 								</p>
 							</Link>
-							{/* <p className="cursor-pointer hover:ml-0.5 duration-200">
-								terms & conditions
-							</p> */}
 							<Link href="/faq">
 								<p className="cursor-pointer hover:ml-0.5 duration-200">faq</p>
 							</Link>
-							{/* <p className="cursor-pointer hover:ml-0.5 duration-200">
-								cookie policy
-							</p> */}
-							{/* <p className="cursor-pointer hover:ml-0.5 duration-200">
-								sitemap
-							</p> */}
+							<Link href="/privacy-policy">
+								<p className="cursor-pointer hover:ml-0.5 duration-200">
+									Privacy Policy
+								</p>
+							</Link>
 						</div>
 					</div>
 
