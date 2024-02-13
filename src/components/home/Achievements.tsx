@@ -1,139 +1,127 @@
 import styles from "@/styles/Achievements.module.css";
 import Image from "next/image";
-// import { useState } from "react";
+import { useState } from "react";
 import Marquee from "react-fast-marquee";
 
 function Achievements() {
-<<<<<<< HEAD
-  // const [active, setActive] = useState(false);
-
   return (
     <div className={` mb-8 py-12`}>
       <div className={`px-4 z-10 relative m-auto`}>
-        <div className="text-center font-semibold text-4xl pb-20 uppercase">
+        <p className="text-center font-semibold text-4xl pb-8 uppercase">
           Achievements
-        </div>
+        </p>
         {/* <Marquee pauseOnHover={true}>
-=======
-	return (
-		<div className={` mb-8 py-12`}>
-			<div className={`px-4 z-10 relative m-auto`}>
-				<p className="text-center font-semibold text-4xl pb-8 uppercase">
-					Achievements
-				</p>
-				{/* <Marquee pauseOnHover={true}>
->>>>>>> c1c21476bbd05b14c52f5564caebc977aca0c6df
-					<div className="h-auto w-auto mr-4 overflow-hidden">
-						<Image
-							src={"/assets/images/home/achievements/1.png"}
-							width={290}
-							height={400}
-							alt="achievement"
-						/>
-					</div>
-					<div className="h-[400px] w-auto mr-4 overflow-hidden">
-						<Image
-							src={"/assets/images/home/achievements/2.png"}
-							width={290}
-							height={400}
-							alt="achievement"
-						/>
-					</div>
-					<div className="h-[400px] w-auto mr-4 overflow-hidden">
-						<Image
-							src={"/assets/images/home/achievements/3.png"}
-							width={290}
-							height={400}
-							alt="achievement"
-						/>
-					</div>
-					<div className="h-[400px] w-auto mr-4 overflow-hidden">
-						<Image
-							src={"/assets/images/home/achievements/4.png"}
-							width={290}
-							height={400}
-							alt="achievement"
-						/>
-					</div>
-					<div className="h-[400px] w-auto mr-4 overflow-hidden">
-						<Image
-							src={"/assets/images/home/achievements/5.png"}
-							width={290}
-							height={400}
-							alt="achievement"
-						/>
-					</div>
-					<div className="h-[400px] w-auto mr-4 overflow-hidden">
-						<Image
-							src={"/assets/images/home/achievements/6.png"}
-							width={290}
-							height={400}
-							alt="achievement"
-						/>
-					</div>
-					<div className="h-[400px] w-auto mr-4 overflow-hidden">
-						<Image
-							src={"/assets/images/home/achievements/7.png"}
-							width={290}
-							height={400}
-							alt="achievement"
-						/>
-					</div>
-					<div className="h-[400px] w-auto mr-4 overflow-hidden">
-						<Image
-							src={"/assets/images/home/achievements/8.png"}
-							width={290}
-							height={400}
-							alt="achievement"
-						/>
-					</div>
-					<div className="h-[400px] w-auto mr-4 overflow-hidden">
-						<Image
-							src={"/assets/images/home/achievements/9.png"}
-							width={290}
-							height={400}
-							alt="achievement"
-						/>
-					</div>
-					<div className="h-[400px] w-auto mr-4 overflow-hidden">
-						<Image
-							src={"/assets/images/home/achievements/10.png"}
-							width={290}
-							height={400}
-							alt="achievement"
-						/>
-					</div>
-					<div className="h-[400px] w-auto mr-4 overflow-hidden">
-						<Image
-							src={"/assets/images/home/achievements/11.png"}
-							width={290}
-							height={400}
-							alt="achievement"
-						/>
-					</div>
-					<div className="h-[400px] w-auto mr-4 overflow-hidden">
-						<Image
-							src={"/assets/images/home/achievements/12.png"}
-							width={290}
-							height={400}
-							alt="achievement"
-						/>
-					</div>
-					<div className="h-[400px] w-auto mr-4 overflow-hidden">
-						<Image
-							src={"/assets/images/home/achievements/13.png"}
-							width={290}
-							height={400}
-							alt="achievement"
-						/>
-					</div>
-				</Marquee> */}
-<<<<<<< HEAD
+<div className="h-auto w-auto mr-4 overflow-hidden">
+<Image
+src={"/assets/images/home/achievements/1.png"}
+width={290}
+height={400}
+alt="achievement"
+/>
+</div>
+<div className="h-[400px] w-auto mr-4 overflow-hidden">
+<Image
+src={"/assets/images/home/achievements/2.png"}
+width={290}
+height={400}
+alt="achievement"
+/>
+</div>
+<div className="h-[400px] w-auto mr-4 overflow-hidden">
+<Image
+src={"/assets/images/home/achievements/3.png"}
+width={290}
+height={400}
+alt="achievement"
+/>
+</div>
+<div className="h-[400px] w-auto mr-4 overflow-hidden">
+<Image
+src={"/assets/images/home/achievements/4.png"}
+width={290}
+height={400}
+alt="achievement"
+/>
+</div>
+<div className="h-[400px] w-auto mr-4 overflow-hidden">
+<Image
+src={"/assets/images/home/achievements/5.png"}
+width={290}
+height={400}
+alt="achievement"
+/>
+</div>
+<div className="h-[400px] w-auto mr-4 overflow-hidden">
+<Image
+src={"/assets/images/home/achievements/6.png"}
+width={290}
+height={400}
+alt="achievement"
+/>
+</div>
+<div className="h-[400px] w-auto mr-4 overflow-hidden">
+<Image
+src={"/assets/images/home/achievements/7.png"}
+width={290}
+height={400}
+alt="achievement"
+/>
+</div>
+<div className="h-[400px] w-auto mr-4 overflow-hidden">
+<Image
+src={"/assets/images/home/achievements/8.png"}
+width={290}
+height={400}
+alt="achievement"
+/>
+</div>
+<div className="h-[400px] w-auto mr-4 overflow-hidden">
+<Image
+src={"/assets/images/home/achievements/9.png"}
+width={290}
+height={400}
+alt="achievement"
+/>
+</div>
+<div className="h-[400px] w-auto mr-4 overflow-hidden">
+<Image
+src={"/assets/images/home/achievements/10.png"}
+width={290}
+height={400}
+alt="achievement"
+/>
+</div>
+<div className="h-[400px] w-auto mr-4 overflow-hidden">
+<Image
+src={"/assets/images/home/achievements/11.png"}
+width={290}
+height={400}
+alt="achievement"
+/>
+</div>
+<div className="h-[400px] w-auto mr-4 overflow-hidden">
+<Image
+src={"/assets/images/home/achievements/12.png"}
+width={290}
+height={400}
+alt="achievement"
+/>
+</div>
+<div className="h-[400px] w-auto mr-4 overflow-hidden">
+<Image
+src={"/assets/images/home/achievements/13.png"}
+width={290}
+height={400}
+alt="achievement"
+/>
+</div>
+</Marquee> */}
+        <p className="text-center font-semibold text-xl pb-20 uppercase">
+          Drug International has earned certificates for outstanding medicine
+          quality
+        </p>
         <div className="container mx-auto flex flex-wrap justify-center gap-y-8">
-          <div
-            className="flex items-center justify-center w-1/2 md:w-1/5 h-[200px] transition-all duration-300 hover:shadow-xl"
-            // onClick={() => setActive(true)}
-          >
+          <div className="flex items-center justify-center w-1/2 md:w-1/5 h-[200px] transition-all duration-300 hover￼hadow-xl">
             <Image
               src={"/assets/images/home/achievements/certificate-01.jpg"}
               width={365}
@@ -142,7 +130,7 @@ function Achievements() {
               className="h-[200px] w-auto"
             />
           </div>
-          <div className="flex items-center justify-center w-1/2 md:w-1/5 h-[200px] transition-all duration-300 hover:shadow-xl">
+          <div className="flex items-center justify-center w-1/2 md:w-1/5 h-[200px] transition-all duration-300 hover￼hadow-xl">
             <Image
               src={"/assets/images/home/achievements/certificate-02.jpg"}
               width={365}
@@ -151,33 +139,8 @@ function Achievements() {
               className="h-[200px] w-auto"
             />
           </div>
-=======
-				<p className="text-center font-semibold text-xl pb-20 uppercase">
-					Drug International has earned certificates for outstanding medicine
-					quality
-				</p>
-				<div className="container mx-auto flex flex-wrap justify-center gap-y-8">
-					<div className="flex items-center justify-center w-1/2 md:w-1/5 h-[200px] transition-all duration-300 hover:shadow-xl">
-						<Image
-							src={"/assets/images/home/achievements/certificate-01.jpg"}
-							width={365}
-							height={365}
-							alt="achievement"
-							className="h-[200px] w-auto"
-						/>
-					</div>
-					<div className="flex items-center justify-center w-1/2 md:w-1/5 h-[200px] transition-all duration-300 hover:shadow-xl">
-						<Image
-							src={"/assets/images/home/achievements/certificate-02.jpg"}
-							width={365}
-							height={365}
-							alt="achievement"
-							className="h-[200px] w-auto"
-						/>
-					</div>
->>>>>>> c1c21476bbd05b14c52f5564caebc977aca0c6df
 
-          <div className="flex items-center justify-center w-1/2 md:w-1/5 h-[200px] transition-all duration-300 hover:shadow-xl">
+          <div className="flex items-center justify-center w-1/2 md:w-1/5 h-[200px] transition-all duration-300 hover￼hadow-xl">
             <Image
               src={"/assets/images/home/achievements/certificate-04.jpg"}
               width={365}
@@ -186,7 +149,7 @@ function Achievements() {
               className="h-[200px] w-auto"
             />
           </div>
-          <div className="flex items-center justify-center w-1/2 md:w-1/5 h-[200px] transition-all duration-300 hover:shadow-xl">
+          <div className="flex items-center justify-center w-1/2 md:w-1/5 h-[200px] transition-all duration-300 hover￼hadow-xl">
             <Image
               src={"/assets/images/home/achievements/certificate-05.jpg"}
               width={365}
@@ -195,7 +158,7 @@ function Achievements() {
               className="h-[200px] w-auto"
             />
           </div>
-          <div className="flex items-center justify-center w-1/2 md:w-1/5 h-[200px] transition-all duration-300 hover:shadow-xl">
+          <div className="flex items-center justify-center w-1/2 md:w-1/5 h-[200px] transition-all duration-300 hover￼hadow-xl">
             <Image
               src={"/assets/images/home/achievements/certificate-06.jpg"}
               width={365}
@@ -204,7 +167,7 @@ function Achievements() {
               className="h-[200px] w-auto"
             />
           </div>
-          <div className="flex items-center justify-center w-1/2 md:w-1/5 h-[200px] transition-all duration-300 hover:shadow-xl">
+          <div className="flex items-center justify-center w-1/2 md:w-1/5 h-[200px] transition-all duration-300 hover￼hadow-xl">
             <Image
               src={"/assets/images/home/achievements/certificate-07.jpg"}
               width={365}
@@ -213,7 +176,7 @@ function Achievements() {
               className="h-[200px] w-auto"
             />
           </div>
-          <div className="flex items-center justify-center w-1/2 md:w-1/5 h-[200px] transition-all duration-300 hover:shadow-xl">
+          <div className="flex items-center justify-center w-1/2 md:w-1/5 h-[200px] transition-all duration-300 hover￼hadow-xl">
             <Image
               src={"/assets/images/home/achievements/certificate-08.jpg"}
               width={365}
@@ -222,7 +185,7 @@ function Achievements() {
               className="h-[200px] w-auto"
             />
           </div>
-          <div className="flex items-center justify-center w-1/2 md:w-1/5 h-[200px] transition-all duration-300 hover:shadow-xl">
+          <div className="flex items-center justify-center w-1/2 md:w-1/5 h-[200px] transition-all duration-300 hover￼hadow-xl">
             <Image
               src={"/assets/images/home/achievements/certificate-09.jpg"}
               width={365}
@@ -231,7 +194,7 @@ function Achievements() {
               className="h-[200px] w-auto"
             />
           </div>
-          <div className="flex items-center justify-center w-1/2 md:w-1/5 h-[200px] transition-all duration-300 hover:shadow-xl">
+          <div className="flex items-center justify-center w-1/2 md:w-1/5 h-[200px] transition-all duration-300 hover￼hadow-xl">
             <Image
               src={"/assets/images/home/achievements/certificate-10.jpg"}
               width={365}
