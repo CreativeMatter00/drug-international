@@ -1,7 +1,9 @@
 "use client";
 
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const images = [
 	{
@@ -72,6 +74,20 @@ function Achievements() {
 		setModalOpen(true);
 	};
 
+	const revealAnimation = {
+		hidden: { scale: 0 },
+		visible: { scale: 1, transition: { duration: 0.5 } },
+	};
+
+	const controls = useAnimation();
+	const [ref, inView] = useInView({ triggerOnce: true });
+
+	useEffect(() => {
+		if (inView) {
+			controls.start("visible");
+		}
+	}, [controls, inView]);
+
 	return (
 		<div className={` mb-8 py-12`}>
 			<div className={`px-4 z-10 relative m-auto`}>
@@ -82,23 +98,30 @@ function Achievements() {
 					Drug International has earned certificates for outstanding medicine
 					quality
 				</p>
-				<div className="container mx-auto flex flex-wrap justify-center gap-y-8">
-					{images.map((image) => (
-						<div
-							className="flex items-center justify-center w-1/2 rounded-md md:w-1/5 h-[200px] transition-all duration-300 cursor-pointer hover:shadow-xl"
-							onClick={() => handleImageClick(image.name, image.certificate)}
-							key={image.sl}
-						>
-							<Image
-								src={image.logo}
-								width={365}
-								height={365}
-								alt="achievement"
-								className="h-[200px] w-auto"
-							/>
-						</div>
-					))}
-				</div>
+				<motion.div
+					ref={ref}
+					initial="hidden"
+					animate={controls}
+					variants={revealAnimation}
+				>
+					<div className="container mx-auto flex flex-wrap justify-center gap-y-8">
+						{images.map((image) => (
+							<div
+								className="flex items-center justify-center w-1/2 rounded-md md:w-1/5 h-[200px] transition-all duration-300 cursor-pointer hover:shadow-xl"
+								onClick={() => handleImageClick(image.name, image.certificate)}
+								key={image.sl}
+							>
+								<Image
+									src={image.logo}
+									width={365}
+									height={365}
+									alt="achievement"
+									className="h-[200px] w-auto"
+								/>
+							</div>
+						))}
+					</div>
+				</motion.div>
 			</div>
 
 			<div className="z-[10000000000]">
