@@ -85,9 +85,9 @@ function OurLegacy() {
 										<div className="order-1 w-5/12 text-left text-primary text-4xl">
 											1980
 										</div>
-										<div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-4 h-4 rounded-full">
-											<div className="z-20 flex items-center order-1 bg-primary shadow-xl w-4 h-4 rounded-full"></div>
-										</div>
+
+										<div className="z-20 flex items-center order-1 bg-primary shadow-xl w-4 h-4 rounded-full"></div>
+
 										<div className="order-1 bg-white rounded-lg border border-[#E4E4E6] primaryShadow w-5/12 px-6 py-4 group hover:bg-primary hover:transition-all hover:duration-300">
 											<h3 className="mb-4 text-textPrimary text-2xl uppercase group-hover:text-white group-hover:transition-all group-hover:duration-300">
 												Formulation Initiation
@@ -123,9 +123,9 @@ function OurLegacy() {
 										<div className="order-1 w-5/12 text-left text-primary text-4xl">
 											1990
 										</div>
-										<div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-4 h-4 rounded-full">
-											<div className="z-20 flex items-center order-1 bg-primary shadow-xl w-4 h-4 rounded-full"></div>
-										</div>
+
+										<div className="z-20 flex items-center order-1 bg-primary shadow-xl w-4 h-4 rounded-full"></div>
+
 										<div className="order-1 bg-white rounded-lg border border-[#E4E4E6] primaryShadow w-5/12 px-6 py-4 group hover:bg-primary hover:transition-all hover:duration-300">
 											<h3 className="mb-4 text-textPrimary text-2xl uppercase group-hover:text-white group-hover:transition-all group-hover:duration-300">
 												Soft Gelatin Cap Innovation
@@ -161,9 +161,9 @@ function OurLegacy() {
 										<div className="order-1 w-5/12 text-left text-primary text-4xl">
 											2000
 										</div>
-										<div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-4 h-4 rounded-full">
-											<div className="z-20 flex items-center order-1 bg-primary shadow-xl w-4 h-4 rounded-full"></div>
-										</div>
+
+										<div className="z-20 flex items-center order-1 bg-primary shadow-xl w-4 h-4 rounded-full"></div>
+
 										<div className="order-1 bg-white rounded-lg border border-[#E4E4E6] primaryShadow w-5/12 px-6 py-4 group hover:bg-primary hover:transition-all hover:duration-300">
 											<h3 className="mb-4 text-textPrimary text-2xl uppercase group-hover:text-white group-hover:transition-all group-hover:duration-300">
 												Formulation Initiation
@@ -199,9 +199,9 @@ function OurLegacy() {
 										<div className="order-1 w-5/12 text-left text-primary text-4xl">
 											2010
 										</div>
-										<div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-4 h-4 rounded-full">
-											<div className="z-20 flex items-center order-1 bg-primary shadow-xl w-4 h-4 rounded-full"></div>
-										</div>
+
+										<div className="z-20 flex items-center order-1 bg-primary shadow-xl w-4 h-4 rounded-full"></div>
+
 										<div className="order-1 bg-white rounded-lg border border-[#E4E4E6] primaryShadow w-5/12 px-6 py-4 group hover:bg-primary hover:transition-all hover:duration-300">
 											<h3 className="mb-4 text-textPrimary text-2xl uppercase group-hover:text-white group-hover:transition-all group-hover:duration-300">
 												Supply Chain Management
@@ -237,9 +237,9 @@ function OurLegacy() {
 										<div className="order-1 w-5/12 text-left text-primary text-4xl">
 											2024
 										</div>
-										<div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-4 h-4 rounded-full">
-											<div className="z-20 flex items-center order-1 bg-primary shadow-xl w-4 h-4 rounded-full"></div>
-										</div>
+
+										<div className="z-20 flex items-center order-1 bg-primary shadow-xl w-4 h-4 rounded-full"></div>
+
 										<div className="order-1 bg-white rounded-lg border border-[#E4E4E6] primaryShadow w-5/12 px-6 py-4 group hover:bg-primary hover:transition-all hover:duration-300">
 											<h3 className="mb-4 text-textPrimary text-2xl uppercase group-hover:text-white group-hover:transition-all group-hover:duration-300">
 												Continued Excellence

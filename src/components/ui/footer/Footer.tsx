@@ -5,19 +5,14 @@ import Link from "next/link";
 const Footer = () => {
 	const currentYear = new Date().getFullYear();
 	return (
-		<footer
-			className="rounded-t-xl w-full py-16 max-lg:py-8 flex justify-center bottom-0 bg-[#272727]"
-			// style={{
-			//   background: "linear-gradient(115deg, #272727 60%, #5B5B5B 40%)",
-			// }}
-		>
+		<footer className="rounded-t-xl w-full py-16 max-lg:py-8 flex justify-center bottom-0 bg-[#272727]">
 			<div className="container mx-auto flex items-center justify-center h-full flex-col text-white px-2 max-w-[1024px]">
 				<div className="">
 					<Image
 						src={`/assets/logo/drug-logo.png`}
 						width={166}
 						height={130}
-						alt="Herbal hovers"
+						alt="Drug Logo"
 						className="h-auto w-auto"
 					/>
 				</div>
@@ -117,7 +112,7 @@ const Footer = () => {
 
 							<div className="flex flex-col uppercase text-base font-medium gap-1">
 								<p>(+880) 2 223362613-4</p>
-								<p>(+880)2 223362621</p>
+								<p>(+880) 2 223362621</p>
 								<p>(+880) 2 223370257</p>
 							</div>
 						</div>
