@@ -1,4 +1,14 @@
 {
+	"Navbar": {
+		"aboutUs": "ABOUT US",
+		"ourLegacy": "OUR LEGACY",
+		"products": "PRODUCTS",
+		"facilities": "FACILITIES",
+		"contact": "CONTACT",
+		"global": "GLOBAL",
+		"herbal": "HERBAL",
+		"unani": "UNANI"
+	},
 	"Home": {
 		"heroTitle": "BETTER LIFE THROUGH BETTER MEDICINE",
 		"heroSubtitle": "Drug International Limited was incorporated under the Registrar of Joint Stock Companies in 1974 as a Private Limited Company. The company commenced formulation and production in 1983 and emerged as a pioneer in Bangladesh for adding a state of the art oral solid dosage plant.",
@@ -8,10 +18,22 @@
 		"whatWeDoTitle": "WHAT WE DO",
 		"whatWeDoDescription": "We formulate drugs for all age groups and genders in different dosage forms including capsules, tablets, syrups, suspensions, injectables, soft gelatin capsules, suppositories, creams, and ointments. We maintain two principles of unique supply chain management: formulating optimized versions of medicines for specific patient groups and adopting policies for market release immediately after production. These policies benefit both the patients and the pharmacies as the medicine delivery system extends the product’s lifecycle. Our formulating principles have always revolved around the health and welfare of patients. We constantly strive to improve the quality of life of our patients and customers.",
 		"latestProductTitle": "LATEST PRODUCTS",
+		"securityCheckTitle": "Security Check",
+		"securityCheckSubTitle": "Verify Medicine Security Code",
+		"verifyButton": "Verify",
 		"specializedProductsTitle": "SPECIALIZED PRODUCTS",
 		"achievementTitle": "ACHIEVEMENTS",
 		"achievementSubTitle": "DRUG INTERNATIONAL HAS EARNED CERTIFICATES FOR OUTSTANDING MEDICINE QUALITY",
 		"BABCertificateTitle": "BAB Certificate",
 		"BABCertificateSubTitle": "At Khwaja Yunus Ali Medical College & Hospital, we take immense pride in our latest accomplishment - the prestigious BAB (Bangladesh Accreditation Board) Certificate. This recognition signifies our unwavering commitment to maintaining the highest standards of excellence in healthcare and medical education."
+	},
+	"Footer": {
+		"description": "Drug International Limited, founded in 1974, is a prominent pharmaceutical company in Bangladesh. They're known for innovative soft gel capsules and diverse products. They excel in supply chain management and have diversified into multiple industries",
+		"socialNetworks": "SOCIAL NETWORKS",
+		"quickLinks": "Quick Links",
+		"securityCheck": "Security check",
+		"faq": "FAQ",
+		"privacyPolicy": "Privacy Policy",
+		"contact": "CONTACT"
 	}
 }
