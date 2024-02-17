@@ -1,4 +1,14 @@
 {
+	"Navbar": {
+		"aboutUs": "关于我们",
+		"ourLegacy": "我们的传承",
+		"products": "产品",
+		"facilities": "设施",
+		"contact": "联系方式",
+		"global": "全球的",
+		"herbal": "草药的",
+		"unani": "尤纳尼"
+	},
 	"Home": {
 		"heroTitle": "更好的医学让生活更美好",
 		"heroSubtitle": "Drug International Limited 于 1974 年在股份公司注册处注册成立，是一家私人有限公司。该公司于 1983 年开始配制和生产，并成为孟加拉国添加最先进的口服固体制剂工厂的先驱",
@@ -8,10 +18,22 @@
 		"whatWeDoTitle": "我们的工作",
 		"whatWeDoDescription": "我们为所有年龄组和性别制定不同剂型的药物，包括胶囊、片剂、糖浆、混悬剂、注射剂、软胶囊、栓剂、乳膏和软膏。我们坚持独特的供应链管理的两个原则：针对特定患者群体制定优化版本的药品，以及采取生产后立即上市的政策。这些政策使患者和药店都受益，因为药物输送系统延长了产品的生命周期。我们的制定原则始终围绕患者的健康和福利。我们不断努力提高患者和客户的生活质量。",
 		"latestProductTitle": "最新产品",
+		"securityCheckTitle": "Security Check",
+		"securityCheckSubTitle": "Verify Medicine Security Code",
+		"verifyButton": "Verify",
 		"specializedProductsTitle": "专业产品",
 		"achievementTitle": "成就",
 		"achievementSubTitle": "DRUG International 荣获杰出药品质量证书",
 		"BABCertificateTitle": "BAB证书",
 		"BABCertificateSubTitle": "在Khwaja Yunus Ali医学院和医院，我们为我们的最新成就-享有盛誉的BAB（孟加拉国认证委员会）证书感到无比自豪。这一认可标志着我们坚定不移地致力于保持医疗保健和医学教育的最高卓越标准。"
+	},
+	"Footer": {
+		"description": "Drug International Limited, founded in 1974, is a prominent pharmaceutical company in Bangladesh. They're known for innovative soft gel capsules and diverse products. They excel in supply chain management and have diversified into multiple industries",
+		"socialNetworks": "SOCIAL NETWORKS",
+		"quickLinks": "Quick Links",
+		"securityCheck": "Security check",
+		"faq": "FAQ",
+		"privacyPolicy": "Privacy Policy",
+		"contact": "CONTACT"
 	}
 }

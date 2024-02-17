@@ -13,8 +13,12 @@ import { RootState, handleInitialSearch } from "@/redux/Reducer/MainSlice";
 import Search from "../../search/Search";
 import SearchModal from "@/components/share/Modal/SearchModal";
 import LocalSwitcher from "./LocalSwitcher";
+import { useLocale, useTranslations } from "next-intl";
 
 const Navbar = () => {
+	const t = useTranslations("Navbar");
+	const locale = useLocale();
+
 	const [scrolling, setScrolling] = useState<boolean>(false);
 	const [mobileNav, setMobileNav] = useState<boolean>(false);
 	const [languageModalOpen, setLanguageOpen] = useState(false);
@@ -62,7 +66,7 @@ const Navbar = () => {
 				<div className="container h-20 w-full  px-1 py-2 relative z-[100000]">
 					<div className="flex  h-full w-full justify-between">
 						<div className="flex items-center">
-							<Link href="/home">
+							<Link href={`/${locale}/home`}>
 								<Image
 									src={`/assets/logo/drug-logo.png`}
 									width={170}
@@ -75,7 +79,7 @@ const Navbar = () => {
 						</div>
 
 						<div className="flex justify-between gap-1 items-center text-[#272727] text-sm font-medium uppercase max-lg:hidden">
-							<Link href="/about-us">
+							<Link href={`/${locale}/about-us`}>
 								<div
 									className={`p-2.5 cursor-pointer hover:text-primary hover:underline hover:underline-offset-8 ${
 										pathName.includes("about-us")
@@ -83,10 +87,10 @@ const Navbar = () => {
 											: ""
 									}`}
 								>
-									About Us
+									{t("aboutUs")}
 								</div>
 							</Link>
-							<Link href="/our-legacy">
+							<Link href={`/${locale}/our-legacy`}>
 								<div
 									className={`p-2.5 cursor-pointer hover:text-primary hover:underline hover:underline-offset-8 ${
 										pathName.includes("our-legacy")
@@ -94,10 +98,10 @@ const Navbar = () => {
 											: ""
 									}`}
 								>
-									Our Legacy
+									{t("ourLegacy")}
 								</div>
 							</Link>
-							<Link href="/products">
+							<Link href={`/${locale}/products`}>
 								<div
 									className={`p-2.5 cursor-pointer hover:text-primary hover:underline hover:underline-offset-8 ${
 										pathName.includes("products")
@@ -105,10 +109,10 @@ const Navbar = () => {
 											: ""
 									}`}
 								>
-									products
+									{t("products")}
 								</div>
 							</Link>
-							<Link href="/facilities">
+							<Link href={`/${locale}/facilities`}>
 								<div
 									className={`p-2.5 cursor-pointer hover:text-primary hover:underline hover:underline-offset-8 ${
 										pathName.includes("facilities")
@@ -116,10 +120,10 @@ const Navbar = () => {
 											: ""
 									}`}
 								>
-									facilities
+									{t("facilities")}
 								</div>
 							</Link>
-							<Link href="/contact-us">
+							<Link href={`/${locale}/contact-us`}>
 								<div
 									className={`p-2.5 cursor-pointer hover:text-primary hover:underline hover:underline-offset-8 ${
 										pathName.includes("contact-us")
@@ -127,7 +131,7 @@ const Navbar = () => {
 											: ""
 									}`}
 								>
-									Contact
+									{t("contact")}
 								</div>
 							</Link>
 						</div>
@@ -219,7 +223,7 @@ const Navbar = () => {
 											strokeLinejoin="round"
 										/>
 									</svg>
-									Global
+									{t("global")}
 								</div>
 							</Link>
 
