@@ -3,8 +3,11 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 function CompanyProfile() {
+	const t = useTranslations("AboutUs");
+
 	const slideInAnimationTop = {
 		hidden: { opacity: 0, y: 400 },
 		visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
@@ -16,8 +19,11 @@ function CompanyProfile() {
 			animate="visible"
 			variants={slideInAnimationTop}
 		>
-			<div className="font-medium text-base text-textPrimary">
-				Drug International Limited was born in 1974, as a Private Limited
+			<div
+				className="font-medium text-base text-textPrimary"
+				dangerouslySetInnerHTML={{ __html: t.raw("companyProfileDescription") }}
+			>
+				{/* Drug International Limited was born in 1974, as a Private Limited
 				Company, etching its journey under the Registrar of Joint Stock
 				Companies. Fast forward to 1983, where innovation took the
 				forefront—inaugurating formulation and production, and pioneering the
@@ -40,7 +46,7 @@ function CompanyProfile() {
 				Our secret weapon? A speedy supply chain that gets the right medicine to
 				the right people, faster than you can say "Prescription!" We are just
 				not a company, we are a healthcare hero, one soft capsule, one
-				suppository, one helpful pill at a time.
+				suppository, one helpful pill at a time. */}
 			</div>
 		</motion.div>
 	);

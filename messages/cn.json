@@ -27,13 +27,43 @@
 		"BABCertificateTitle": "BAB证书",
 		"BABCertificateSubTitle": "在Khwaja Yunus Ali医学院和医院，我们为我们的最新成就-享有盛誉的BAB（孟加拉国认证委员会）证书感到无比自豪。这一认可标志着我们坚定不移地致力于保持医疗保健和医学教育的最高卓越标准。"
 	},
+	"AboutUs": {
+		"companyProfileTitle": "公司简介",
+		"companyProfileDescription": "Drug International Limited成立于1974年，作为一家私人有限公司，开始了其在联合股份公司注册处的征程。快进到1983年，创新成为主导——开创了配方和生产，并率先在孟加拉国建立了最先进的口服固体剂型工厂。从一开始，我们的使命就是超越界限，与全球标准一致。在世界卫生组织的良好制造规范（WHO cGMP）指导下，我们一直在一步一个里程碑地创造卓越的传统。<br /> <br /> 在孟加拉国的药品柜中， Drug International Limited不仅仅是另一家药品公司，它是打开更健康大门的关键。还记得在舌头上消失的软糖维生素吗？我们发起了这个潮流！对于女性，我们用GYNOMIX写了一个全新的篇章，这是其类别中的第一款阴道栓剂。我们编排着一场制药的交响乐，从儿童糖浆到救命的注射剂，每个音符都是为了一个生命量身定制的药物。<br /> <br /> 我们的秘密武器是？一个迅速的供应链，将正确的药物迅速送到正确的人手中，快得你都来不及说 “处方药！” 我们不仅仅是一家公司，更是一个医疗英雄，一次软胶囊，一次栓剂，一颗有益的药片。"
+	},
+	"OurLegacy": {
+		"ourLegacyTitle": "我们的传承 ",
+		"ourLegacyHeading": "永恒的史诗",
+		"ourLegacySubTitle": "我们在几十年间培育卓越",
+		"ourLegacyDescription": "以我们的历史为起点，我们的故事讲述的是坚持追求卓越并不断前行的旅程。我们从小事做起，却取得了巨大的成就，将古老的方式与新梦想融为一体。在许多成功的背后，我们尊重自己的起源，期待突破极限，开创下一个未知的领域。我们的故事不仅仅是回顾过去，更是证明我们依然势不可挡。准备好迎接一段既经典又前瞻的故事吧！",
+		"1974Title": "公司创立",
+		"1974Description": "Drug International Limited成立于1974年，标志着一段致力于制药卓越的旅程的开始。该公司作为一家私人有限公司，依法在联合股份公司注册处注册。",
+		"1980Title": "配方启动",
+		"1980Description": "Drug International Limited于1980年着手进行配方和生产的旅程，为在孟加拉国制药制造业中成为先驱奠定了基础。",
+		"1985Title": "口服固体剂型工厂",
+		"1985Description": "1985年是一个重要的里程碑，公司建立了一家最先进的口服固体剂型工厂，巩固了公司对高质量制药的承诺。",
+		"1990Title": "软胶囊创新",
+		"1990Description": "1990年，Drug International Limited取得了重大突破，成为孟加拉国首家以软胶囊形式配制药物的公司，优化了吸收和保留特性。",
+		"1995Title": "公司介绍",
+		"1995Description": "1995年，该公司推出了GYNOMIX，这是一种软胶囊阴道栓剂，具有抗菌和抗真菌性能，展示了在妇女保健领域的创新。",
+		"2000Title": "配方启动",
+		"2000Description": "Drug International Limited 于1980年着手进行配方和生产的旅程，奠定了在孟加拉国制药制造业中成为先驱的基础。",
+		"2005Title": "药品出口",
+		"2005Description": "2000年，Drug International Limited 通过向众多国家出口制药产品，扩大了其全球业务版图，为公司赢得国际认可做出了贡献。",
+		"2010Title": "供应链管理",
+		"2010Description": "2005年采用独特的供应链管理原则成为Drug International Limited的标志，确保药物的优化版本并实现立即上市。",
+		"2015Title": "专注患者福祉",
+		"2015Description": "2010年，Drug International Limited加强了对患者福祉的承诺，调整配方原则以提高患者和顾客的生活质量。",
+		"2024Title": "持续卓越",
+		"2024Description": "2024年，Drug International Limited延续其卓越的传统，利用精细的生产流程向全球出口制药产品，为全球社区的福祉做出贡献。"
+	},
 	"Footer": {
-		"description": "Drug International Limited, founded in 1974, is a prominent pharmaceutical company in Bangladesh. They're known for innovative soft gel capsules and diverse products. They excel in supply chain management and have diversified into multiple industries",
-		"socialNetworks": "SOCIAL NETWORKS",
-		"quickLinks": "Quick Links",
-		"securityCheck": "Security check",
-		"faq": "FAQ",
-		"privacyPolicy": "Privacy Policy",
-		"contact": "CONTACT"
+		"description": "Drug International Limited，成立于1974年，是孟加拉国一家著名的制药公司。他们以创新的软胶囊和多样化的产品而闻名。在供应链管理方面表现出色，并已多元化到多个行业。",
+		"socialNetworks": "社交网络",
+		"quickLinks": "快速链接",
+		"securityCheck": "安全检查",
+		"faq": "常见问题解答",
+		"privacyPolicy": "隐私政策",
+		"contact": "联系方式"
 	}
 }

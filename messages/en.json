@@ -27,6 +27,36 @@
 		"BABCertificateTitle": "BAB Certificate",
 		"BABCertificateSubTitle": "At Khwaja Yunus Ali Medical College & Hospital, we take immense pride in our latest accomplishment - the prestigious BAB (Bangladesh Accreditation Board) Certificate. This recognition signifies our unwavering commitment to maintaining the highest standards of excellence in healthcare and medical education."
 	},
+	"AboutUs": {
+		"companyProfileTitle": "Company Profile",
+		"companyProfileDescription": "Drug International Limited was born in 1974, as a Private Limited Company, etching its journey under the Registrar of Joint Stock Companies. Fast forward to 1983, where innovation took the forefront—inaugurating formulation and production, and pioneering the landscape with Bangladesh's state-of-the-art oral solid dosage plant. Since day one, our unwavering mission has been to soar beyond boundaries, aligning with global standards. Guided by the World Health Organization's Good Manufacturing Practices (WHO cGMP) guidelines, we've been scripting a legacy of excellence, one milestone at a time. <br /> <br /> In Bangladesh's medicine chest, Drug International Limited isn't just another medicine company, it's the key that unlocks better health. Remember gummy vitamins that vanish on your tongue? We started that! And for women, we wrote a whole new chapter with GYNOMIX, the first vaginal suppository of its kind. We orchestrate a pharmaceutical symphony, from child's-play syrups to life-saving injectables, each note a medicine tailored to a life. <br /> <br /> Our secret weapon? A speedy supply chain that gets the right medicine to the right people, faster than you can say Prescription! We are just not a company, we are a healthcare hero, one soft capsule, one suppository, one helpful pill at a time."
+	},
+	"OurLegacy": {
+		"ourLegacyTitle": "OUR LEGACY",
+		"ourLegacyHeading": "A TIMELESS ODYSSEY",
+		"ourLegacySubTitle": "WE ARE CULTIVATING EXCELLENCE OVER THE DECADES",
+		"ourLegacyDescription": "Starting a journey tied to our history, our story is all about sticking to being excellent and always moving forward. We began small but achieved big things, blending old ways with new dreams. With lots of successes, we respect where we came from and look forward to breaking limits and creating what's next. Our story isn't just a look back; it's proof that we keep going strong. Get ready for a story that's both classic and looking ahead!",
+		"1974Title": "COMPANY INCEPTION",
+		"1974Description": "Drug International Limited was founded in 1974, marking the beginning of a journey dedicated to pharmaceutical excellence. The company was incorporated under the Registrar of Joint Stock Companies as a Private Limited Company.",
+		"1980Title": "FORMULATION INITIATION",
+		"1980Description": "Drug International Limited embarked on the formulation and production journey in 1980, laying the groundwork for becoming a pioneer in pharmaceutical manufacturing in Bangladesh.",
+		"1985Title": "ORAL SOLID DOSAGE PLANT",
+		"1985Description": "The year 1985 witnessed a significant milestone with the establishment of a state-of-the-art oral solid dosage plant, solidifying the company's commitment to quality pharmaceuticals.",
+		"1990Title": "SOFT GELATIN CAP INNOVATION",
+		"1990Description": "Drug International Limited achieved a breakthrough in 1990 by becoming the first company in Bangladesh to formulate medicines in soft gelatin capsule form, optimizing absorption and retention properties.",
+		"1995Title": "COMPANY INC. INTRODUCTION",
+		"1995Description": "In 1995, the company introduced GYNOMIX, a soft gelatin capsule vaginal suppository with anti-bacterial and anti-fungal properties, showcasing innovation in women's healthcare.",
+		"2000Title": "COMPANY INC. INTRODUCTION",
+		"2000Description": "In 1995, the company introduced GYNOMIX, a soft gelatin capsule vaginal suppository with anti-bacterial and anti-fungal properties, showcasing innovation in women's healthcare.",
+		"2005Title": "PHARMACEUTICAL EXPORTSPTION",
+		"2005Description": "Drug International Limited expanded its global footprint in 2000 by exporting pharmaceutical products to numerous countries, contributing to the company's international recognition.",
+		"2010Title": "SUPPLY CHAIN MANAGEMENT",
+		"2010Description": "The adoption of unique supply chain management principles in 2005 became a hallmark for Drug International Limited, ensuring optimized versions of medicines and immediate market release.",
+		"2015Title": "FOCUS ON PATIENT WELFARE",
+		"2015Description": "Drug International Limited reinforced its commitment to patient welfare in 2010, aligning formulating principles to enhance the quality of life for patients and customers.",
+		"2024Title": "CONTINUED EXCELLENCE",
+		"2024Description": "In 2024, Drug International Limited continues its legacy of excellence, utilizing refined production processes to export pharmaceutical products worldwide, contributing to the well-being of communities globally."
+	},
 	"Footer": {
 		"description": "Drug International Limited, founded in 1974, is a prominent pharmaceutical company in Bangladesh. They're known for innovative soft gel capsules and diverse products. They excel in supply chain management and have diversified into multiple industries",
 		"socialNetworks": "SOCIAL NETWORKS",
