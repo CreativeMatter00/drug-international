@@ -9,22 +9,22 @@ import React, { ReactNode } from "react";
 import { Provider } from "react-redux";
 
 function layout({ children }: { children: ReactNode }) {
-	const queryClient = new QueryClient();
+  const queryClient = new QueryClient();
 
-	return (
-		<Provider store={store}>
-			<QueryClientProvider client={queryClient}>
-				<div>
-					<Navbar />
-					<div className="max-lg:hidden">
-						<Sidebar />
-					</div>
-					<div className="mt-20">{children}</div>
-					<Footer />
-				</div>
-			</QueryClientProvider>
-		</Provider>
-	);
+  return (
+    <Provider store={store}>
+      <QueryClientProvider client={queryClient}>
+        <div>
+          <Navbar />
+          <div className="max-lg:hidden">
+            <Sidebar />
+          </div>
+          <div className="mt-20">{children}</div>
+          <Footer />
+        </div>
+      </QueryClientProvider>
+    </Provider>
+  );
 }
 
 export default layout;

@@ -5,9 +5,11 @@ import { useState } from "react";
 import styles from "@/styles/NavSidebar.module.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useLocale } from "next-intl";
 
 const Sidebar = () => {
   const [isSidebarVisible, setSidebarVisible] = useState(true);
+  const locale = useLocale();
 
   const handleSidebarToggle = () => {
     setSidebarVisible(!isSidebarVisible);
@@ -25,7 +27,7 @@ const Sidebar = () => {
     >
       <div className="w-20 h-screen border bg-white relative ">
         <div className="flex h-full text-black justify-center items-center flex-col gap-2">
-          <Link href={"/home"}>
+          <Link href={`/${locale}/home`}>
             <div
               className={`group cursor-pointer flex items-center flex-col uppercase font-bold text-sm text-primary ${
                 pathName.includes("herbal") || pathName.includes("unani")
@@ -53,7 +55,7 @@ const Sidebar = () => {
             </div>
           </Link>
 
-          <Link href={"/herbal"}>
+          <Link href={`/${locale}/herbal`}>
             <div
               className={`group cursor-pointer flex items-center flex-col uppercase font-bold text-sm text-[#CC7A2D] ${
                 pathName.includes("herbal") ? "hidden" : "block"
@@ -79,7 +81,7 @@ const Sidebar = () => {
             </div>
           </Link>
 
-          <Link href={"/unani"}>
+          <Link href={`/${locale}/unani`}>
             <div
               className={`group cursor-pointer flex items-center flex-col uppercase font-bold text-sm text-[#159A48] ${
                 pathName.includes("unani") ? "hidden" : "block"
