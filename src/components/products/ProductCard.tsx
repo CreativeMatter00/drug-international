@@ -19,7 +19,6 @@ function ProductCard(props: IProductCard) {
       )}`}
       as={`/${locale}/products/${encodeURIComponent(props.title)}`}
     >
-      {/* <Link href={`/products/${props.title}`}> */}
       <div className="p-2 md:p-5 mx-auto group border-2 border-white rounded-md hover:border-primary transition-all duration-300">
         <div>
           <Image

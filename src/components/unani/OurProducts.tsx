@@ -9,6 +9,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { FaArrowRightLong } from "react-icons/fa6";
+import { useLocale } from "next-intl";
 
 function OurProducts() {
   const slideInAnimationTop = {
