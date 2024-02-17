@@ -4,6 +4,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 
 const images = [
 	{
@@ -63,6 +64,8 @@ const images = [
 ];
 
 function Achievements() {
+	const t = useTranslations("Home");
+
 	const [modalOpen, setModalOpen] = useState(false);
 	const [selectedImage, setSelectedImage] = useState({
 		name: "",
@@ -92,11 +95,12 @@ function Achievements() {
 		<div className={` mb-8 py-12`}>
 			<div className={`px-4 z-10 relative m-auto`}>
 				<p className="text-center font-semibold text-4xl pb-8 uppercase">
-					Achievements
+					{t("achievementTitle")}
 				</p>
 				<p className="text-center font-semibold text-xl pb-20 uppercase">
-					Drug International has earned certificates for outstanding medicine
-					quality
+					{/* Drug International has earned certificates for outstanding medicine
+					quality */}
+					{t("achievementSubTitle")}
 				</p>
 				<motion.div
 					ref={ref}

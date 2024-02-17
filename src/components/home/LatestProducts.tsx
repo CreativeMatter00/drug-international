@@ -11,8 +11,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import LatestProductsCard from "./LatestProductsCard";
 import Link from "next/link";
+import { useLocale, useTranslations } from "next-intl";
 
 function LatestProducts() {
+	const t = useTranslations("Home");
+	const locale = useLocale();
+
 	const slideInAnimationRight = {
 		hidden: { opacity: 0, x: -300 },
 		visible: { opacity: 1, x: 0, transition: { duration: 1 } },
@@ -47,7 +51,7 @@ function LatestProducts() {
 	return (
 		<div className="min-h-[560px] mb-12">
 			<h1 className="text-3xl font-semibold text-textPrimary uppercase text-center mb-12 ">
-				Latest Products
+				{t("latestProductTitle")}
 			</h1>
 
 			<motion.div
@@ -66,7 +70,7 @@ function LatestProducts() {
 					}}
 				>
 					<SwiperSlide>
-						<Link href={"products/1094"}>
+						<Link href={`/${locale}/products/1094`}>
 							<LatestProductsCard
 								src="https://www.drug-international.com/uploads/product_images/Toposar50mg.jpg"
 								title="Toposar"
@@ -77,7 +81,7 @@ function LatestProducts() {
 					</SwiperSlide>
 
 					<SwiperSlide>
-						<Link href={"products/1154"}>
+						<Link href={`/${locale}/products/1154`}>
 							<LatestProductsCard
 								src="https://www.drug-international.com/uploads/product_images/Dobixin_01.jpg"
 								title="Dobixin"
@@ -88,7 +92,7 @@ function LatestProducts() {
 					</SwiperSlide>
 
 					<SwiperSlide>
-						<Link href={"products/1215"}>
+						<Link href={`/${locale}/products/1215`}>
 							<LatestProductsCard
 								src="https://www.drug-international.com/uploads/product_images/Mylostat.jpg"
 								title="Mylostat Capsule"
@@ -99,7 +103,7 @@ function LatestProducts() {
 					</SwiperSlide>
 
 					<SwiperSlide>
-						<Link href={"products/1311"}>
+						<Link href={`/${locale}/products/1311`}>
 							<LatestProductsCard
 								src="https://www.drug-international.com/uploads/product_images/15699998851522141958Varox.jpg%20(2).jpg"
 								title="Varox"
@@ -110,7 +114,7 @@ function LatestProducts() {
 					</SwiperSlide>
 
 					<SwiperSlide>
-						<Link href={"products/1313"}>
+						<Link href={`/${locale}/products/1313`}>
 							<LatestProductsCard
 								src="https://www.drug-international.com/uploads/product_images/1531116782Sonib%20-c.jpg"
 								title="Sonib"
@@ -121,7 +125,7 @@ function LatestProducts() {
 					</SwiperSlide>
 
 					<SwiperSlide>
-						<Link href={"products/1313"}>
+						<Link href={`/${locale}/products/1318`}>
 							<LatestProductsCard
 								src="https://www.drug-international.com/uploads/product_images/1525760112Depomed_4.jpg"
 								title="Depomed"
@@ -132,7 +136,7 @@ function LatestProducts() {
 					</SwiperSlide>
 
 					<SwiperSlide>
-						<Link href={"products/1319"}>
+						<Link href={`/${locale}/products/1319`}>
 							<LatestProductsCard
 								src="https://www.drug-international.com/uploads/product_images/1525760942Ontaxel_30.jpg"
 								title="Ontaxel-30"
@@ -143,7 +147,7 @@ function LatestProducts() {
 					</SwiperSlide>
 
 					<SwiperSlide>
-						<Link href={"products/1321"}>
+						<Link href={`/${locale}/products/1321`}>
 							<LatestProductsCard
 								src="https://www.drug-international.com/uploads/product_images/1525948609Foly_tab.jpg"
 								title="Foly"
@@ -154,7 +158,7 @@ function LatestProducts() {
 					</SwiperSlide>
 
 					<SwiperSlide>
-						<Link href={"products/1322"}>
+						<Link href={`/${locale}/products/1322`}>
 							<LatestProductsCard
 								src="https://www.drug-international.com/uploads/product_images/1526549123Dezco.jpg"
 								title="Dezco"
@@ -165,7 +169,7 @@ function LatestProducts() {
 					</SwiperSlide>
 
 					<SwiperSlide>
-						<Link href={"products/1324"}>
+						<Link href={`/${locale}/products/1324`}>
 							<LatestProductsCard
 								src="https://www.drug-international.com/uploads/product_images/1528785317Foly%20_%20In.jpg.jpg"
 								title="Foly Injection"
@@ -176,7 +180,7 @@ function LatestProducts() {
 					</SwiperSlide>
 
 					<SwiperSlide>
-						<Link href={"products/1331"}>
+						<Link href={`/${locale}/products/1331`}>
 							<LatestProductsCard
 								src="https://www.drug-international.com/uploads/product_images/1534563816Epiruba_50c.jpg"
 								title="Epiruba-50"
@@ -187,7 +191,7 @@ function LatestProducts() {
 					</SwiperSlide>
 
 					<SwiperSlide>
-						<Link href={"products/1340"}>
+						<Link href={`/${locale}/products/1340`}>
 							<LatestProductsCard
 								src="https://www.drug-international.com/uploads/product_images/1537877176Mes-D-%20Carton%20Pic.jpg"
 								title="Mes-D"

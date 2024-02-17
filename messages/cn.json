@@ -1,6 +1,17 @@
 {
 	"Home": {
 		"heroTitle": "更好的医学让生活更美好",
-		"heroSubtitle": "Drug International Limited 于 1974 年在股份公司注册处注册成立，是一家私人有限公司。该公司于 1983 年开始配制和生产，并成为孟加拉国添加最先进的口服固体制剂工厂的先驱"
+		"heroSubtitle": "Drug International Limited 于 1974 年在股份公司注册处注册成立，是一家私人有限公司。该公司于 1983 年开始配制和生产，并成为孟加拉国添加最先进的口服固体制剂工厂的先驱",
+		"heroButton": "查看我们的产品",
+		"whoWeAreTitle": "我们是谁",
+		"whoWeAreDescription": "我们是孟加拉国第一家以软胶囊形式配制药物的公司，目的是最大化某些特定药物（如维生素）的吸收和保留特性。我们在孟加拉国的软胶囊生产领域继续处于领先地位。我们也是国内首家生产具有抗菌和抗真菌特性的明胶软胶囊阴道栓剂，品牌名称为GYNOMIX。目前，我们使用我们的精细和现代化的生产工艺，向世界许多国家出口医药产品。",
+		"whatWeDoTitle": "我们的工作",
+		"whatWeDoDescription": "我们为所有年龄组和性别制定不同剂型的药物，包括胶囊、片剂、糖浆、混悬剂、注射剂、软胶囊、栓剂、乳膏和软膏。我们坚持独特的供应链管理的两个原则：针对特定患者群体制定优化版本的药品，以及采取生产后立即上市的政策。这些政策使患者和药店都受益，因为药物输送系统延长了产品的生命周期。我们的制定原则始终围绕患者的健康和福利。我们不断努力提高患者和客户的生活质量。",
+		"latestProductTitle": "最新产品",
+		"specializedProductsTitle": "专业产品",
+		"achievementTitle": "成就",
+		"achievementSubTitle": "DRUG International 荣获杰出药品质量证书",
+		"BABCertificateTitle": "BAB证书",
+		"BABCertificateSubTitle": "在Khwaja Yunus Ali医学院和医院，我们为我们的最新成就-享有盛誉的BAB（孟加拉国认证委员会）证书感到无比自豪。这一认可标志着我们坚定不移地致力于保持医疗保健和医学教育的最高卓越标准。"
 	}
 }

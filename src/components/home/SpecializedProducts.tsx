@@ -13,8 +13,11 @@ import SpecializedProductCard from "./SpecializedProductCard";
 import { useQuery } from "@tanstack/react-query";
 import { getSpecializedProducts } from "@/api/api";
 import { DNA } from "react-loader-spinner";
+import { useTranslations } from "next-intl";
 
 function SpecializedProducts() {
+	const t = useTranslations("Home");
+
 	const slideInAnimationRight = {
 		hidden: { opacity: 0, x: -300 },
 		visible: { opacity: 1, x: 0, transition: { duration: 1 } },
@@ -62,7 +65,8 @@ function SpecializedProducts() {
 	return (
 		<div className="py-12">
 			<div className="text-center font-semibold text-4xl pb-12 uppercase">
-				Specialized Products
+				{/* Specialized Products */}
+				{t("specializedProductsTitle")}
 			</div>
 			<div className="bg-[#E4E4E6] py-8 min-h-[300px]">
 				{isLoading ? (

@@ -12,10 +12,11 @@ import { Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import Link from "next/link";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 function Hero() {
 	const t = useTranslations("Home");
+	const locale = useLocale();
 
 	return (
 		<div className="relative container px-4 lg:-mt-4 mx-auto mb-8 overflow-hidden min-h-screen">
@@ -133,8 +134,9 @@ function Hero() {
 							{t("heroSubtitle")}
 						</p>
 						<div className="ml-auto w-fit">
-							<Link href="/products">
-								<ButtonPrimary> SEE OUR PRODUCTS </ButtonPrimary>
+							<Link href={`/${locale}/products`}>
+								{/* <ButtonPrimary> SEE OUR PRODUCTS </ButtonPrimary> */}
+								<ButtonPrimary> {t("heroButton")} </ButtonPrimary>
 							</Link>
 						</div>
 					</motion.div>

@@ -5,8 +5,11 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 function BAB() {
+	const t = useTranslations("Home");
+
 	const revealAnimation = {
 		hidden: { scale: 0 },
 		visible: { scale: 1, transition: { duration: 0.5 } },
@@ -24,7 +27,8 @@ function BAB() {
 	return (
 		<div className="py-8">
 			<div className="text-center font-semibold text-4xl pb-12 uppercase">
-				BAB Certificates
+				{/* BAB Certificates */}
+				{t("BABCertificateTitle")}
 			</div>
 
 			<motion.div
@@ -52,11 +56,12 @@ function BAB() {
 					</div>
 					<div className="container mx-auto text-center">
 						<p className="text-textSecondary text-base font-medium">
-							At Khwaja Yunus Ali Medical College & Hospital, we take immense
+							{/* At Khwaja Yunus Ali Medical College & Hospital, we take immense
 							pride in our latest accomplishment - the prestigious BAB
 							(Bangladesh Accreditation Board) Certificate. This recognition
 							signifies our unwavering commitment to maintaining the highest
-							standards of excellence in healthcare and medical education.
+							standards of excellence in healthcare and medical education. */}
+							{t("BABCertificateSubTitle")}
 						</p>
 					</div>
 				</div>
