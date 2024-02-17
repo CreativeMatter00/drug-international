@@ -1,9 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 function Unit3() {
+	const t = useTranslations("Facilities");
+
 	const slideInAnimationTop = {
 		hidden: { opacity: 0, y: 400 },
 		visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
@@ -15,7 +18,7 @@ function Unit3() {
 			variants={slideInAnimationTop}
 		>
 			<p className="font-medium text-3xl uppercase text-primary mb-10">
-				Unit - 3
+				{t("unit3")}
 			</p>
 
 			<div className="mb-8">

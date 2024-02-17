@@ -2,8 +2,10 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 function Unit1() {
+	const t = useTranslations("Facilities");
 	const slideInAnimationTop = {
 		hidden: { opacity: 0, y: 400 },
 		visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
@@ -15,7 +17,7 @@ function Unit1() {
 			variants={slideInAnimationTop}
 		>
 			<p className="font-medium text-3xl uppercase text-primary mb-10">
-				Unit - 1
+				{t("unit1")}
 			</p>
 
 			<div className="mb-8">
@@ -30,7 +32,7 @@ function Unit1() {
 
 			<div className="font-medium text-base text-textSecondary">
 				<p className="">
-					Drug International Limited (Unit-1) is a leading facility with modern
+					{/* Drug International Limited (Unit-1) is a leading facility with modern
 					capabilities for formulating various medicines. We specialize in solid
 					dosage forms (tablets and hard capsules), dry syrup, liquid dosage
 					forms, semi-solid preparations (creams and ointments), soft gelatin
@@ -39,7 +41,8 @@ function Unit1() {
 					and nasal sprays. Our innovative approach includes formulating select
 					pharmaceuticals in soft capsule form to preserve their original
 					medicinal properties, particularly for vitamins and cardiovascular
-					drugs.
+					drugs. */}
+					{t("unit1Description")}
 				</p>
 			</div>
 		</motion.div>

@@ -1,9 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 function Oncology() {
+	const t = useTranslations("Facilities");
+
 	const slideInAnimationTop = {
 		hidden: { opacity: 0, y: 400 },
 		visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
@@ -16,7 +19,8 @@ function Oncology() {
 			variants={slideInAnimationTop}
 		>
 			<p className="font-medium text-3xl uppercase text-primary mb-10">
-				Oncology
+				{/* Oncology */}
+				{t("oncology")}
 			</p>
 
 			<div className="mb-8 flex flex-wrap">
@@ -46,11 +50,12 @@ function Oncology() {
 
 			<div className="font-medium text-base text-textSecondary">
 				<p className="">
-					Our commitment to advancing cancer care is embodied in our specialized
+					{/* Our commitment to advancing cancer care is embodied in our specialized
 					Oncology division. Explore a space where groundbreaking research,
 					compassionate care, and cutting-edge treatments converge. From
 					development to distribution, our Oncology facilities are dedicated to
-					improving the lives of those affected by cancer.
+					improving the lives of those affected by cancer. */}
+					{t("oncologyDescription")}
 				</p>
 			</div>
 		</motion.div>
