@@ -1,9 +1,12 @@
 import { getOncologyProducts } from "@/api/api";
 import Loader from "@/components/ui/loader/Loader";
 import { useQuery } from "@tanstack/react-query";
+import { useLocale } from "next-intl";
 import Image from "next/image";
+import Link from "next/link";
 
 function Oncology() {
+  const locale = useLocale();
   const { isLoading, error, data } = useQuery({
     queryKey: ["getOncologyProducts"],
     queryFn: getOncologyProducts,
@@ -23,7 +26,8 @@ function Oncology() {
           <Loader />
         ) : (
           data?.oncologyProduct?.map((product: any) => (
-            <div
+            <Link
+              href={`/${locale}/products/${product.MEDICINE_ID}`}
               key={product.MEDICINE_ID}
               className="tooltip flex items-center justify-center border border-[#e4e4e6] primaryShadow rounded-md w-full transition-all cursor-pointer hover:border-primary hover:scale-90"
               data-tip={product.MEDICINE_NAME}
@@ -48,7 +52,7 @@ function Oncology() {
                   />
                 </div>
               )}
-            </div>
+            </Link>
           ))
         )}
       </div>

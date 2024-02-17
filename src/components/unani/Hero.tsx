@@ -6,8 +6,11 @@ import { useEffect } from "react";
 
 import styles from "@/styles/Unani.module.css";
 import { FaArrowRightLong } from "react-icons/fa6";
+import Link from "next/link";
+import { useLocale } from "next-intl";
 
 function Hero() {
+  const locale = useLocale();
   const slideInAnimationRight = {
     hidden: { opacity: 0, x: -300 },
     visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
@@ -56,9 +59,12 @@ function Hero() {
                     Drug International Unani Ltd
                   </p>
 
-                  <button className="flex items-center gap-4 bg-[#159A48] text-base py-3 px-5 text-white rounded-md">
-                    See Our Products <FaArrowRightLong />
-                  </button>
+                  {/* <Link href={`/${locale}/products/all-products`} as={}> */}
+                  <Link href={`/${locale}/products/all-products?id=3`}>
+                    <button className="flex items-center gap-4 bg-[#159A48] text-base py-3 px-5 text-white rounded-md">
+                      See Our Products <FaArrowRightLong />
+                    </button>
+                  </Link>
                 </div>
               </motion.div>
             </div>

@@ -25,6 +25,7 @@ interface visibleProps {
   isOverlayVisible: boolean;
   setIsOverlayVisible: Function;
   therapeuticId: string;
+  medicineTypeId: number;
 }
 
 const AllProducts: React.FC<visibleProps> = ({
@@ -33,8 +34,9 @@ const AllProducts: React.FC<visibleProps> = ({
   isOverlayVisible,
   setIsOverlayVisible,
   therapeuticId,
+  medicineTypeId,
 }) => {
-  const [medicineType, setMedicineType] = useState<number>(0);
+  const [medicineType, setMedicineType] = useState<number>(0 || medicineTypeId);
   const [nameType, setNameType] = useState<number>(0);
   const [letter, setLetter] = useState<string>("a");
   const [letterGeneric, setLetterGeneric] = useState<string>("a");
