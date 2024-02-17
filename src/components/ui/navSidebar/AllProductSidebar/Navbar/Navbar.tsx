@@ -12,6 +12,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { RootState, handleInitialSearch } from "@/redux/Reducer/MainSlice";
 import Search from "../../search/Search";
 import SearchModal from "@/components/share/Modal/SearchModal";
+import LocalSwitcher from "./LocalSwitcher";
 
 const Navbar = () => {
 	const [scrolling, setScrolling] = useState<boolean>(false);
@@ -132,6 +133,7 @@ const Navbar = () => {
 						</div>
 
 						<div className="flex gap-4 items-center ">
+							<LocalSwitcher />
 							<div className="cursor-pointer">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -145,7 +147,7 @@ const Navbar = () => {
 								</svg>
 							</div>
 
-							<div
+							{/* <div
 								className="group cursor-pointer flex justify-center items-center max-lg:hidden"
 								onClick={() => setLanguageOpen(true)}
 							>
@@ -163,7 +165,7 @@ const Navbar = () => {
 									alt="latest products"
 									className=" h-auto hidden group-hover:block"
 								/>
-							</div>
+							</div> */}
 
 							<Link href="/global">
 								<div className="border border-primary rounded-lg py-0.5 px-1 flex justify-center items-center gap-2 text-sm font-bold bg-primary text-white hover:text-primary hover:bg-white group cursor-pointer uppercase max-lg:hidden">
@@ -307,13 +309,13 @@ const Navbar = () => {
 				</div>
 			</nav>
 
-			<Modal
+			{/* <Modal
 				modalHead="Select your preferred language"
 				setModalOpen={setLanguageOpen}
 				addModalOpen={languageModalOpen}
 			>
 				<Language />
-			</Modal>
+			</Modal> */}
 
 			<SearchModal modalHead="">
 				<Search />
