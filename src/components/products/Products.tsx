@@ -10,8 +10,11 @@ import { BsDownload } from "react-icons/bs";
 import Link from "next/link";
 import styles from "@/styles/Products.module.css";
 import Banner from "../ui/Banner";
+import { useLocale } from "next-intl";
 
 function Products() {
+  const locale = useLocale();
+
   const revealAnimation = {
     hidden: { scale: 0 },
     visible: { scale: 1, transition: { duration: 0.5 } },
@@ -40,7 +43,7 @@ function Products() {
 
             <div className="flex items-center justify-center  w-full">
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-                <Link href={"products/latest-products"}>
+                <Link href={`/${locale}/products/latest-products`}>
                   <div
                     className={`border border-[#D9D9D9] py-3 px-2 flex items-center relative group overflow-hidden w-80 h-72 rounded-lg ${styles.productCardShadow}`}
                   >
@@ -68,7 +71,7 @@ function Products() {
                   </div>
                 </Link>
 
-                <Link href={"products/upcoming-products"}>
+                <Link href={`/${locale}/products/upcoming-products`}>
                   <div
                     className={`border border-[#D9D9D9] py-3 px-2 flex items-center relative group overflow-hidden w-80 h-72 rounded-lg ${styles.productCardShadow}`}
                   >
@@ -96,7 +99,7 @@ function Products() {
                   </div>
                 </Link>
 
-                <Link href={"products/all-products"}>
+                <Link href={`/${locale}/products/all-products`}>
                   <div
                     className={`border border-[#D9D9D9] py-3 px-2 flex items-center relative group overflow-hidden w-80 h-72 rounded-lg ${styles.productCardShadow}`}
                   >

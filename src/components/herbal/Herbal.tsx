@@ -4,14 +4,14 @@ import Natural from "./Natural";
 import OurProducts from "./OurProducts";
 
 function Herbal() {
-	return (
-		<div>
-			<Hero />
-			<Natural />
-			<Botanical />
-			<OurProducts />
-		</div>
-	);
+  return (
+    <div>
+      <Hero />
+      <Natural />
+      <Botanical />
+      <OurProducts />
+    </div>
+  );
 }
 
 export default Herbal;

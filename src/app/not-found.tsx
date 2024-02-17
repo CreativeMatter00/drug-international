@@ -3,8 +3,10 @@
 import Link from "next/link";
 import error from "../../public/data.json";
 import Lottie from "lottie-react";
+import { useLocale } from "next-intl";
 
 function NotFoundPage() {
+  const locale = useLocale();
   return (
     <div>
       <div className="w-full h-screen flex flex-col items-center justify-center">
@@ -20,7 +22,7 @@ function NotFoundPage() {
           <Link
             className="flex items-center space-x-2 bg-primary hover:bg-primaryShade text-gray-100 px-4 py-2 mt-12 rounded transition duration-150"
             title="Return Home"
-            href="/home"
+            href={`/${locale}/home`}
           >
             <svg className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
               <path

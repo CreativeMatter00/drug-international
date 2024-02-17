@@ -1,3 +1,4 @@
+import { useLocale } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { FaAngleRight } from "react-icons/fa6";
@@ -10,12 +11,13 @@ type IProductCard = {
 };
 
 function ProductCard(props: IProductCard) {
+  const locale = useLocale();
   return (
     <Link
-      href={`/products/[title]?theraputicName=${encodeURIComponent(
+      href={`/${locale}/products/[title]?theraputicName=${encodeURIComponent(
         props.theraputicName
       )}`}
-      as={`/products/${encodeURIComponent(props.title)}`}
+      as={`/${locale}/products/${encodeURIComponent(props.title)}`}
     >
       {/* <Link href={`/products/${props.title}`}> */}
       <div className="p-2 md:p-5 mx-auto group border-2 border-white rounded-md hover:border-primary transition-all duration-300">
