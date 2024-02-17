@@ -12,9 +12,11 @@ import Unit1 from "./Unit1";
 import Unit2 from "./Unit2";
 import Unit3 from "./Unit3";
 import Banner from "../ui/Banner";
+import { useTranslations } from "next-intl";
 
 function Facilities() {
 	const [activeFacility, setActiveFacility] = useState<number>(0);
+	const t = useTranslations("Facilities");
 
 	return (
 		<div>
@@ -34,7 +36,7 @@ function Facilities() {
 									}`}
 									onClick={() => setActiveFacility(0)}
 								>
-									Facilities
+									{t("facilities")}
 								</p>
 								<p
 									className={`p-3 cursor-pointer flex items-center gap-2 hover:bg-white hover:text-primary ${
@@ -45,7 +47,7 @@ function Facilities() {
 									<span className="text-2xl">
 										<MdOutlineKeyboardArrowRight />{" "}
 									</span>
-									Unit - 1
+									{t("unit1")}
 								</p>
 								<p
 									className={`p-3 cursor-pointer flex items-center gap-2 hover:bg-white hover:text-primary ${
@@ -56,7 +58,7 @@ function Facilities() {
 									<span className="text-2xl">
 										<MdOutlineKeyboardArrowRight />
 									</span>
-									Unit - 2
+									{t("unit2")}
 								</p>
 								<p
 									className={`p-3 cursor-pointer flex items-center gap-2 hover:bg-white hover:text-primary ${
@@ -67,7 +69,7 @@ function Facilities() {
 									<span className="text-2xl">
 										<MdOutlineKeyboardArrowRight />
 									</span>
-									Unit - 3
+									{t("unit3")}
 								</p>
 								<p
 									className={`p-3 cursor-pointer hover:bg-white hover:text-primary ${
@@ -75,7 +77,7 @@ function Facilities() {
 									}`}
 									onClick={() => setActiveFacility(4)}
 								>
-									Research & Development
+									{t("rnd")}
 								</p>
 								<p
 									className={`p-3 cursor-pointer hover:bg-white hover:text-primary ${
@@ -83,7 +85,7 @@ function Facilities() {
 									}`}
 									onClick={() => setActiveFacility(5)}
 								>
-									Oncology
+									{t("oncology")}
 								</p>
 								<p
 									className={`p-3 cursor-pointer hover:bg-white hover:text-primary ${
@@ -91,7 +93,7 @@ function Facilities() {
 									}`}
 									onClick={() => setActiveFacility(6)}
 								>
-									Warehouse
+									{t("warehouse")}
 								</p>
 							</div>
 

@@ -2,9 +2,12 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 function Manufacturing() {
+	const t = useTranslations("Facilities");
+
 	const slideInAnimationTop = {
 		hidden: { opacity: 0, y: 400 },
 		visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
@@ -16,7 +19,8 @@ function Manufacturing() {
 			variants={slideInAnimationTop}
 		>
 			<p className="font-medium text-3xl uppercase text-primary mb-10">
-				Manufacturing Facility
+				{/* Manufacturing Facility */}
+				{t("manufacturingFacility")}
 			</p>
 
 			<div className="mb-8">
@@ -31,7 +35,7 @@ function Manufacturing() {
 
 			<div className="font-medium text-base text-textSecondary">
 				<p className="">
-					Drug International Limited stands as a leading pharmaceutical
+					{/* Drug International Limited stands as a leading pharmaceutical
 					manufacturer in Bangladesh, boasting a state-of-the-art facility
 					designed, built, and validated in alignment with the WHO-cGMP concept
 					and local Drug Administration Regulations. Our expansive plant
@@ -54,7 +58,8 @@ function Manufacturing() {
 					formulating medicines with strict compliance to WHO cGMP guidelines,
 					emphasizing a controlled environment with separate departments and
 					standardized facilities to uphold the highest standards of quality and
-					regulatory compliance.
+					regulatory compliance. */}
+					{t("facilitiesDescription")}
 				</p>
 			</div>
 		</motion.div>

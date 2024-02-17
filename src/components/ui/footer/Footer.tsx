@@ -90,7 +90,10 @@ const Footer = () => {
 								</p>
 							</Link>
 							<Link href={`/${locale}/faq`}>
-								<p className="cursor-pointer hover:ml-0.5 duration-200">faq</p>
+								<p className="cursor-pointer hover:ml-0.5 duration-200">
+									{/* faq */}
+									{t("faq")}
+								</p>
 							</Link>
 							<Link href={`/${locale}/privacy-policy`}>
 								<p className="cursor-pointer hover:ml-0.5 duration-200">
