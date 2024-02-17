@@ -18,6 +18,7 @@ function OurProducts() {
 
   const controls = useAnimation();
   const [ref, inView] = useInView({ triggerOnce: true });
+  const locale = useLocale();
 
   useEffect(() => {
     if (inView) {
@@ -221,7 +222,7 @@ function OurProducts() {
           </div>
         </motion.div>
         <div>
-          <Link href="#">
+          <Link href={`/${locale}/products/all-products?id=3`}>
             <button className="flex items-center justify-center w-full pt-20 gap-4 text-[#04672A]">
               View All <FaArrowRightLong />
             </button>
