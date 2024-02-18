@@ -22,7 +22,7 @@ function GenericProducts(genericData: any) {
         {genericData?.genericData?.map((product: any) => (
           <Link
             href={`/${locale}/products/${product.MEDICINE_ID}`}
-            className="tooltip border border-[#e4e4e6] primaryShadow rounded-md w-full transition-all cursor-pointer hover:border-primary hover:scale-90 flex items-center justify-center"
+            className="tooltip border border-[#e4e4e6] primaryShadow rounded-md w-full transition-all cursor-pointer hover:border-primary hover:scale-90 flex items-center justify-center min-h-[10rem]"
             key={product?.MEDICINE_ID}
             data-tip={product.MEDICINE_NAME}
           >
