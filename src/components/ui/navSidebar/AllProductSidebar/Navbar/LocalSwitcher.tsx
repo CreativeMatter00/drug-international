@@ -10,8 +10,6 @@ export default function LocalSwitcher() {
 	const localActive = useLocale();
 	const pathname = usePathname();
 
-	console.log(pathname);
-
 	const onSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
 		const nextLocale = e.target.value;
 		startTransition(() => {

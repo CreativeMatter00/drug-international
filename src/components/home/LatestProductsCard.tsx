@@ -36,7 +36,7 @@ function LatestProductsCard(props: ILatestProductsCard) {
 				</div>
 			</div>
 
-			<div className="w-full bg-primary text-white text-lg md:text-2xl font-medium text-center uppercase">
+			<div className="w-full bg-primary text-white text-lg md:text-lg py-2 font-medium text-center uppercase">
 				{title}
 			</div>
 
@@ -48,7 +48,7 @@ function LatestProductsCard(props: ILatestProductsCard) {
 						<p className="text-textLight text-base font-medium">
 							Generic Name :
 						</p>
-						<p className="text-textSecondary text-lg font-medium uppercase">
+						<p className="text-textSecondary text-base font-medium uppercase">
 							{genericName}
 						</p>
 					</div>
@@ -57,7 +57,7 @@ function LatestProductsCard(props: ILatestProductsCard) {
 						<p className="text-textLight text-base font-medium">
 							Therapeutic Name:
 						</p>
-						<p className="text-textSecondary text-lg font-medium uppercase">
+						<p className="text-textSecondary text-base font-medium uppercase">
 							{theraputicName}
 						</p>
 					</div>

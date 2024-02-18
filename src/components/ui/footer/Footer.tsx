@@ -178,7 +178,7 @@ const Footer = () => {
 				</div>
 
 				<div className="text-center">
-					© 2001-{currentYear} Creative matter. All rights reserved. <br />
+					© 2001-{currentYear} Creative Matter. All rights reserved. <br />
 					Trade marks are owned by or licensed to the Drug international
 					limited.
 				</div>

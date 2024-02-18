@@ -7,7 +7,7 @@ function CSR() {
 		<div className="py-12">
 			<div className="text-center font-semibold text-4xl pb-12 uppercase">
 				{/* CSR Activities */}
-				{t("specializedProductsTitle")}
+				{t("CSR")}
 			</div>
 			<div className="container mx-auto px-4">
 				<iframe
