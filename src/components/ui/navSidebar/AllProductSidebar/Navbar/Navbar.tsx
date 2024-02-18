@@ -21,7 +21,6 @@ const Navbar = () => {
 
   const [scrolling, setScrolling] = useState<boolean>(false);
   const [mobileNav, setMobileNav] = useState<boolean>(false);
-  const [languageModalOpen, setLanguageOpen] = useState(false);
   const dispatch = useDispatch();
 
   const search = useSelector((state: RootState) => state.Initial.search);
