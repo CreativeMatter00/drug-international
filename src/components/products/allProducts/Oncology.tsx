@@ -12,6 +12,8 @@ function Oncology() {
     queryFn: getOncologyProducts,
   });
 
+  console.log("data", data);
+
   if (error)
     return (
       <div className="text-center text-xl font-md py-8">
@@ -25,11 +27,11 @@ function Oncology() {
         {isLoading ? (
           <Loader />
         ) : (
-          data?.oncologyProduct?.map((product: any) => (
+          data?.map((product: any) => (
             <Link
               href={`/${locale}/products/${product.MEDICINE_ID}`}
               key={product.MEDICINE_ID}
-              className="tooltip flex items-center justify-center border border-[#e4e4e6] primaryShadow rounded-md w-full transition-all cursor-pointer hover:border-primary hover:scale-90"
+              className="tooltip flex items-center justify-center border border-[#e4e4e6] primaryShadow rounded-md w-full transition-all cursor-pointer hover:border-primary hover:scale-90 min-h-[10rem]"
               data-tip={product.MEDICINE_NAME}
             >
               {product.PRODUCT_FET_PHOTO ? (

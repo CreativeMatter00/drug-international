@@ -24,7 +24,7 @@ const Modal: React.FC<ModalProps> = ({
           e.target.checked ? setModalOpen(false) : setModalOpen(true)
         }
       />
-      <div className="modal">
+      <div className="modal z-[10000000000]">
         <div className="modal-box w-10/12 max-w-4xl">
           <button
             onClick={() => setModalOpen(false)}

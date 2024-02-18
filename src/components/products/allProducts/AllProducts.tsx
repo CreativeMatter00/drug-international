@@ -18,6 +18,8 @@ import Loader from "@/components/ui/loader/Loader";
 import Image from "next/image";
 import GenericProducts from "./GenericProducts";
 import TherapeuticDataProducts from "./TherapeuticDataProducts";
+import Link from "next/link";
+import { useLocale } from "next-intl";
 
 interface visibleProps {
   setIsAllSidebarVisible: Function;
@@ -40,6 +42,7 @@ const AllProducts: React.FC<visibleProps> = ({
   const [nameType, setNameType] = useState<number>(0);
   const [letter, setLetter] = useState<string>("a");
   const [letterGeneric, setLetterGeneric] = useState<string>("a");
+  const locale = useLocale();
 
   const handleNameType = (name: number) => {
     if (name === 2) {
@@ -109,7 +112,8 @@ const AllProducts: React.FC<visibleProps> = ({
           }`}
           onClick={() => setMedicineType(0)}
         >
-          Pharmaceutical
+          {/* Pharmaceutical */}
+          <Link href={`/${locale}/products/all-products`}>Pharmaceutical</Link>
         </button>
         <button
           className={`font-medium text-2xl uppercase p-3 rounded-md ${
@@ -119,7 +123,9 @@ const AllProducts: React.FC<visibleProps> = ({
           }`}
           onClick={() => setMedicineType(1)}
         >
+          {/* <Link href={`/${locale}/products/all-products`}> */}
           Oncology Products
+          {/* </Link> */}
         </button>
         <button
           className={`font-medium text-2xl uppercase p-3 rounded-md ${
@@ -130,6 +136,7 @@ const AllProducts: React.FC<visibleProps> = ({
           onClick={() => setMedicineType(2)}
         >
           Herbal
+          {/* <Link href={`/${locale}/products/all-products`}> Herbal</Link> */}
         </button>
         <button
           className={`font-medium text-2xl uppercase p-3 rounded-md ${
@@ -140,6 +147,7 @@ const AllProducts: React.FC<visibleProps> = ({
           onClick={() => setMedicineType(3)}
         >
           Unani
+          {/* <Link href={`/${locale}/products/all-products`}> Unani</Link> */}
         </button>
       </div>
 
