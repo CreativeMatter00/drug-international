@@ -12,16 +12,20 @@ import Unit1 from "./Unit1";
 import Unit2 from "./Unit2";
 import Unit3 from "./Unit3";
 import Banner from "../ui/Banner";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 function Facilities() {
 	const [activeFacility, setActiveFacility] = useState<number>(0);
 	const t = useTranslations("Facilities");
+	const locale = useLocale();
 
 	return (
 		<div>
 			<div className="relative">
-				<Banner src="/assets/images/facilities/banner.jpg" title="facilities" />
+				<Banner
+					src="/assets/images/facilities/banner.jpg"
+					title={locale === "cn" ? "设施" : "Facilities"}
+				/>
 				<div className="relative mt-[-100px] w-full mb-10">
 					<div className="container mx-auto bg-white px-4 md:px-12 rounded-2xl shadow-[0px_-2px_8px_0px_rgba(0,0,0,0.75)] overflow-hidden">
 						<div

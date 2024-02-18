@@ -1,14 +1,21 @@
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import React from "react";
 import Marquee from "react-fast-marquee";
 
 function Botanical() {
+	const t = useTranslations("Herbal");
+
 	return (
 		<div className="font-medium">
 			<div className="text-center uppercase mb-8">
-				<p className="text-herbalPrimary text-2xl mb-6"> Botanical Relief </p>
+				<p className="text-herbalPrimary text-2xl mb-6">
+					{/* Botanical Relief  */}
+					{t("ingridientsTitle")}
+				</p>
 				<p className="text-herbalSecondary text-lg">
-					Step Into the Natural Wonders in Our Herbal Products
+					{/* Step Into the Natural Wonders in Our Herbal Products */}
+					{t("ingridientsSubTitle")}
 				</p>
 			</div>
 

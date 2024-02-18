@@ -8,6 +8,7 @@ import { ImOffice } from "react-icons/im";
 import { GiFactory } from "react-icons/gi";
 import ButtonInverted from "../ui/button/ButtonInverted";
 import Banner from "../ui/Banner";
+import { useLocale, useTranslations } from "next-intl";
 
 function ContactUs() {
 	const revealAnimation = {
@@ -15,10 +16,16 @@ function ContactUs() {
 		visible: { scale: 1, transition: { duration: 0.3 } },
 	};
 
+	const t = useTranslations("Contact");
+	const locale = useLocale();
+
 	return (
 		<div>
 			<div className="relative">
-				<Banner src="/assets/images/contactUs/banner.jpg" title="Contact Us" />
+				<Banner
+					src="/assets/images/contactUs/banner.jpg"
+					title={locale === "cn" ? "联系我们" : "Contact Us"}
+				/>
 
 				<div className="relative mt-[-100px] w-full mb-10">
 					<div className="container mx-auto bg-white rounded-2xl shadow-[0px_-2px_8px_0px_rgba(0,0,0,0.75)]">
@@ -28,7 +35,7 @@ function ContactUs() {
 							variants={revealAnimation}
 						>
 							<p className="p-12  font-medium text-2xl text-textPrimary mb-0 md:mb-16">
-								Our Office Address
+								{t("ourAddress")}
 							</p>
 
 							<div className="mb-24">
@@ -195,9 +202,7 @@ function ContactUs() {
 							</div>
 
 							<div className="w-4/5 mx-auto font-medium text-base text-textSecondary text-center mb-14">
-								Please feel free to let us know if you have any question
-								regarding our products and services by filling and sending the
-								following form
+								{t("formPrompt")}
 							</div>
 
 							<div className="flex flex-col md:flex-row gap-4 font-medium px-4">
