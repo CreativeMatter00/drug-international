@@ -9,6 +9,9 @@ import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
 import OurProductCard from "./OurProductCard";
 import { useLocale, useTranslations } from "next-intl";
+import { getHerbalProducts } from "@/api/api";
+import { useQuery } from "@tanstack/react-query";
+import Loader from "../ui/loader/Loader";
 
 function OurProducts() {
 	const t = useTranslations("Herbal");
@@ -29,6 +32,18 @@ function OurProducts() {
 
 	const locale = useLocale();
 
+	const { isLoading, error, data } = useQuery({
+		queryKey: ["getHerbalProducts"],
+		queryFn: getHerbalProducts,
+	});
+
+	if (error)
+		return (
+			<div className="text-center text-xl font-md py-8">
+				Something went wrong. Please reload
+			</div>
+		);
+
 	return (
 		<div>
 			<p className="font-medium text-2xl text-herbalPrimary uppercase text-center py-16">
@@ -44,46 +59,19 @@ function OurProducts() {
 				>
 					<div className="container mx-auto py-10">
 						<div className="flex flex-wrap flex-col md:flex-row items-center justify-between gap-16 px-4 md:px-0">
-							<OurProductCard
-								src="/assets/images/herbal/products/m1.png"
-								title="Garlicap"
-								description="Garlic Oil"
-							/>
-							<OurProductCard
-								src="/assets/images/herbal/products/m2.png"
-								title="Dalion"
-								description="Dandelion"
-							/>
-							<OurProductCard
-								src="/assets/images/herbal/products/m3.png"
-								title="Anros"
-								description="Andrographis"
-							/>
-							<OurProductCard
-								src="/assets/images/herbal/products/m4.png"
-								title="Biloba"
-								description="Ginkgo Biloba"
-							/>
-							<OurProductCard
-								src="/assets/images/herbal/products/m5.png"
-								title="Biogut"
-								description="Saccharomyces boulardii"
-							/>
-							<OurProductCard
-								src="/assets/images/herbal/products/m6.png"
-								title="Devas"
-								description="Adhatoda Vasica & Other Ingredients"
-							/>
-							<OurProductCard
-								src="/assets/images/herbal/products/m7.png"
-								title="Dort"
-								description="St. John's Wort"
-							/>
-							<OurProductCard
-								src="/assets/images/herbal/products/m8.png"
-								title="Alocap"
-								description="Aloe Vera Extract"
-							/>
+							{isLoading ? (
+								<Loader />
+							) : (
+								data
+									?.slice(0, 8)
+									.map((product: any, index: number) => (
+										<OurProductCard
+											key={index}
+											src={`https://www.drug-international.com/${product?.MEDICINE_IMAGES[0]}`}
+											title={product?.MEDICINE_NAME}
+										/>
+									))
+							)}
 						</div>
 						<div className="pt-16">
 							<Link href={`/${locale}/products`}>

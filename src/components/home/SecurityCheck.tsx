@@ -12,8 +12,11 @@ import { handleAddModalOpen } from "@/redux/Reducer/MainSlice";
 import Image from "next/image";
 import { DNA } from "react-loader-spinner";
 import { securityCheck } from "@/api/api";
+import { useTranslations } from "next-intl";
 
 function SecurityCheck() {
+	const t = useTranslations("Home");
+
 	const dispatch = useDispatch();
 	const revealAnimation = {
 		hidden: { scale: 0 },
@@ -67,7 +70,8 @@ function SecurityCheck() {
 		<div className={`${styles.background} mb-8 md:mb-32`}>
 			<div className={`container px-4 py-10 z-10 relative m-auto text-white`}>
 				<div className="text-center font-semibold text-4xl mb-10 uppercase">
-					Security Check
+					{/* Security Check */}
+					{t("securityCheckTitle")}
 				</div>
 
 				<motion.div
@@ -80,7 +84,8 @@ function SecurityCheck() {
 						<div className="bg-primary opacity-80 rounded-xl">
 							<div className="p-10 text-center">
 								<p className="text-2xl font-medium mb-6">
-									Verify Medicine Security Code
+									{/* Verify Medicine Security Code */}
+									{t("securityCheckSubTitle")}
 								</p>
 								<div className="flex flex-col items-center justify-center gap-8 mx-auto">
 									<input
@@ -88,7 +93,8 @@ function SecurityCheck() {
 										onChange={(e) => setCode(e.target.value)}
 									/>
 									<ButtonSecondary onClick={handleOpenModal}>
-										VERIFY
+										{/* VERIFY */}
+										{t("verifyButton")}
 									</ButtonSecondary>
 								</div>
 							</div>

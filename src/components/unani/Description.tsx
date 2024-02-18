@@ -5,8 +5,11 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 function Description() {
+	const t = useTranslations("Unani");
+
 	const revealAnimation = {
 		hidden: { scale: 0 },
 		visible: { scale: 1, transition: { duration: 0.5 } },
@@ -39,24 +42,28 @@ function Description() {
 					</div>
 					<div className="w-full md:w-2/3">
 						<p className="uppercase text-2xl text-textPrimary pb-6">
-							Traditional Formulations
+							{/* Traditional Formulations */}
+							{t("hero2Title1")}
 						</p>
 						<p className="text-textSecondary text-base">
-							Dive into centuries-old healing traditions with our Unani
+							{/* Dive into centuries-old healing traditions with our Unani
 							products. Our Unani formulations, crafted from a blend of herbs
 							and natural ingredients, are designed to promote overall
-							well-being.
+							well-being. */}
+							{t("hero2SubTitle1")}
 						</p>
 					</div>
 
 					<div className="w-full md:w-2/3 text-right ml-auto">
 						<p className="uppercase text-2xl text-textPrimary pb-6">
-							Balancing Body and Mind
+							{/* Balancing Body and Mind */}
+							{t("hero2Title2")}
 						</p>
 						<p className="text-textSecondary text-base">
-							Disclose the balance of body and mind with our Unani products.
+							{/* Disclose the balance of body and mind with our Unani products.
 							Inspired by ancient wisdom, these remedies aim to restore health
-							naturally.
+							naturally. */}
+							{t("hero2SubTitle2")}
 						</p>
 					</div>
 
@@ -72,24 +79,28 @@ function Description() {
 
 					<div className="w-full md:w-2/3">
 						<p className="uppercase text-2xl text-textPrimary pb-6">
-							Proven Effectiveness Over Time
+							{/* Proven Effectiveness Over Time */}
+							{t("hero2Title3")}
 						</p>
 						<p className="text-textSecondary text-base">
-							Our Unani products, rooted in a rich heritage of healing, harness
+							{/* Our Unani products, rooted in a rich heritage of healing, harness
 							the power of botanicals and herbs known for their therapeutic
 							properties. Experience results that stand the test of centuries of
-							traditional use.
+							traditional use. */}
+							{t("hero2SubTitle3")}
 						</p>
 					</div>
 					<div className="w-full md:w-2/3 text-right ml-auto">
 						<p className="uppercase text-2xl text-textPrimary pb-6">
-							Well-Being with Holistic Solutions
+							{/* Well-Being with Holistic Solutions */}
+							{t("hero2Title4")}
 						</p>
 						<p className="text-textSecondary text-base">
-							Enrich your wellness journey with our holistic Unani solutions.
+							{/* Enrich your wellness journey with our holistic Unani solutions.
 							Beyond relieving symptoms, our range addresses the root causes of
 							health issues, ensuring comprehensive well-being for a healthier,
-							more balanced life.
+							more balanced life. */}
+							{t("hero2SubTitle4")}
 						</p>
 					</div>
 				</div>

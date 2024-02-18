@@ -38,9 +38,11 @@ function Products() {
 								<p className="font-medium text-base text-textSecondary">
 									Download all product list
 								</p>
-								<ButtonPrimary>
-									<BsDownload /> Download
-								</ButtonPrimary>
+								<Link href={"/assets/pdf/Product-list-drug.pdf"}>
+									<ButtonPrimary>
+										<BsDownload /> Download
+									</ButtonPrimary>
+								</Link>
 							</div>
 						</div>
 

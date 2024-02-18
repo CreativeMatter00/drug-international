@@ -18,9 +18,9 @@
 		"whatWeDoTitle": "我们的工作",
 		"whatWeDoDescription": "我们为所有年龄组和性别制定不同剂型的药物，包括胶囊、片剂、糖浆、混悬剂、注射剂、软胶囊、栓剂、乳膏和软膏。我们坚持独特的供应链管理的两个原则：针对特定患者群体制定优化版本的药品，以及采取生产后立即上市的政策。这些政策使患者和药店都受益，因为药物输送系统延长了产品的生命周期。我们的制定原则始终围绕患者的健康和福利。我们不断努力提高患者和客户的生活质量。",
 		"latestProductTitle": "最新产品",
-		"securityCheckTitle": "Security Check",
-		"securityCheckSubTitle": "Verify Medicine Security Code",
-		"verifyButton": "Verify",
+		"securityCheckTitle": "安全检查",
+		"securityCheckSubTitle": "验证药品安全码",
+		"verifyButton": "核实",
 		"specializedProductsTitle": "专业产品",
 		"achievementTitle": "成就",
 		"achievementSubTitle": "DRUG International 荣获杰出药品质量证书",
@@ -89,6 +89,27 @@
 		"ingridientsSubTitle": "走进我们草本产品中的自然奇观",
 		"ourProducts": "我们的产品",
 		"viewAll": "查看全部"
+	},
+	"Unani": {
+		"heroTitle": "优乃尼精华现代健康",
+		"heroSubTitle": "与 DRUG International Ltd. 一起体验和治愈之旅",
+		"heroButton": "查看我们的产品",
+		"hero2Title1": "传统配方",
+		"hero2SubTitle1": "通过我们的优乃尼产品深入探索数百年的治疗传统。我们的优乃尼配方采用一系列草药和天然成分精心制作，旨在促进整体健康。",
+		"hero2Title2": "平衡身体与心灵",
+		"hero2SubTitle2": "通过我们的优乃尼产品揭示身体和心灵的平衡。受到古老智慧的启发，这些疗法旨在自然恢复健康。",
+		"hero2Title3": "随着时间的验证有效性",
+		"hero2SubTitle3": "我们的优乃尼产品扎根于丰富的治疗传统，利用植物和草药的力量，这些植物和草药以其治疗性能而闻名。体验经过几个世纪传统使用考验的成果。",
+		"hero2Title4": "整体解决方案带来福祉",
+		"hero2SubTitle4": "用我们的整体优乃尼解决方案丰富您的健康之旅。超越缓解症状，我们的产品系列着眼于健康问题的根本原因，确保全面的福祉，为更健康、更平衡的生活打下基础。",
+		"ingridientsTitle": "大自然的智慧展现",
+		"ingridientsSubTitle": "我们的Unani食材中的关键成分",
+		"ourProducts": "我们的产品",
+		"viewAll": "查看全部"
+	},
+	"Global": {
+		"title": "全球业务",
+		"description": "今天，Drug International Ltd正在向36个国家出口其世界级的制药成品。在全球化的时代，世界已经没有了边界。为了应对全球化的挑战，该公司于2002年开始了出口业务。目前，Drug International Ltd正在出口不同治疗类别下的各种制药产品。Drug International Ltd拥有包括抗溃疡药、抗生素、非甾体抗炎药、退热药、维生素和矿物质、心血管药、抗糖尿病药、抗组胺药、抗精神病药等在内的产品组合。除了常规的片剂和胶囊外，DIL还拥有技术先进的剂型，如吸入剂、冻干注射剂、预装式注射器和精密的全球级救生肿瘤产品。DIL还向许多国家出口不同类型的草药产品和补充剂。Drug International Ltd始终致力于推出高科技和创新的剂型，以改善我们患者的生活。其先进的设施经过精心规划和设计，旨在满足本地和国际需求。Drug International Ltd的使命一直受到其通过推广“更好的药物实现更好的生活”理念的引领。因此，其改善质量的努力从未停止。它不断制定更高的标准，并有实现这一目标的热情。在生产过程中，严格遵循世界卫生组织批准的cGMP指南。公司的每个成员都在坚持不懈地工作，以维护质量。Drug International Ltd的主要目的是生产受到医学界尊重、认可和参考的优质药品，现在，也包括国外。为了对社会和全球人口的福祉诚实承诺，Drug International Ltd在生产其产品时从不使用任何有害成分。这在其吸入器生产设施中表现得非常明显。它建立了一个超现代化的设施，用于生产完全无氟氯碳的吸入器产品。Drug International Ltd内置的废水处理厂（ETP）确保了环保的制药废物管理实践。为了加快其出口使命，Drug International Ltd对其各种产品进行了生物等效性研究。这些生物等效性报告已被多个国家的监管机构接受，从而有助于出口。Drug International Ltd还对其产品进行了临床试验，例如Gynomix软胶囊（Neomycin Sulphate BP 52mg，Polymyxin B Sulphate BP 5.50mg，Nystatin BP 23mg和Metronidazole BP 200mg）。更多的试验正在进行中。Drug International Ltd正在积极推进，以增加其在运营国家的市场份额，并开拓新市场。一些非洲、中东和中美洲国家正在积极寻找中。"
 	},
 	"Footer": {
 		"description": "Drug International Limited，成立于1974年，是孟加拉国一家著名的制药公司。他们以创新的软胶囊和多样化的产品而闻名。在供应链管理方面表现出色，并已多元化到多个行业。",
