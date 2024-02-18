@@ -7,10 +7,11 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
 import Banner from "../ui/Banner";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 function OurLegacy() {
 	const t = useTranslations("OurLegacy");
+	const locale = useLocale();
 
 	const slideInAnimationTop = {
 		hidden: { opacity: 0, y: 400 },
@@ -29,7 +30,10 @@ function OurLegacy() {
 	return (
 		<div>
 			<div className="relative">
-				<Banner src="/assets/images/ourLegacy/banner.png" title="Our Legacy" />
+				<Banner
+					src="/assets/images/ourLegacy/banner.png"
+					title={locale === "cn" ? "我们的传承" : "Our Legacy"}
+				/>
 
 				<div className="relative mt-[-100px] w-full mb-10">
 					<div className="container mx-auto bg-white py-8 md:py-14 px-4 md:px-12 rounded-2xl shadow-[0px_-2px_8px_0px_rgba(0,0,0,0.75)]">

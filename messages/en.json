@@ -73,6 +73,22 @@
 		"warehouse": "WAREHOUSE",
 		"warehouseDescription": "Efficiency meets precision in our meticulously organized warehouse, the logistical backbone of Drug International Limited. Our warehouse is designed to ensure seamless storage and distribution of pharmaceuticals, maintaining the integrity and quality of our products. Take a glimpse into the hub that ensures our medications reach every corner of the world with the same quality they were crafted with."
 	},
+	"Contact": {
+		"ourAddress": "Our Office Address",
+		"formPrompt": "Please feel free to let us know if you have any question regarding our products and services by filling and sending the following form"
+	},
+	"Herbal": {
+		"heroTitle": "DISCOVER NATURE'S <br /> HEALING TOUCH",
+		"heroSubTitle": "Herbal Innovations for a healthier tomorrow <br /> with Drug International Herbal Ltd",
+		"heroButton": "See Our Products",
+		"hero2Title": "NATURAL HARMONY",
+		"hero2SubTitle": "LIVING IN SYNC WITH THE POWER OF PERFECT BALANCE OF HERBAL WITH DRUG INTERNATIONAL HERBAL LIMITED.",
+		"hero2Description": "Experience the essence of nature's goodness with Drug International Herbal Ltd. Our herbal products are like nature's gifts, promoting wellness in the most relaxed way. From trusted remedies to contemporary herbal innovations, we've got your health covered. Our medicines are carefully crafted to support a comprehensive approach to health. Join us on this well-being journey, where herbs make feeling good super easy and natural. Your wellness adventure begins here!",
+		"ingridientsTitle": "BOTANICAL RELIEF",
+		"ingridientsSubTitle": "STEP INTO THE NATURAL WONDERS IN OUR HERBAL PRODUCTS",
+		"ourProducts": "OUR PRODUCTS",
+		"viewAll": "VIEW ALL"
+	},
 	"Footer": {
 		"description": "Drug International Limited, founded in 1974, is a prominent pharmaceutical company in Bangladesh. They're known for innovative soft gel capsules and diverse products. They excel in supply chain management and have diversified into multiple industries",
 		"socialNetworks": "SOCIAL NETWORKS",

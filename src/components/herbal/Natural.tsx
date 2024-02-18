@@ -7,8 +7,11 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 function Natural() {
+	const t = useTranslations("Herbal");
+
 	const revealAnimation = {
 		hidden: { scale: 0 },
 		visible: { scale: 1, transition: { duration: 0.5 } },
@@ -43,23 +46,26 @@ function Natural() {
 				<div className="container mx-auto p-4 md:p-0">
 					<div className="w-full min-[1620px]:w-1/2">
 						<p className="font-medium text-2xl text-herbalPrimary uppercase mb-4 mt-8 min-[1620px]:mt-0">
-							Natural Harmony
+							{/* Natural Harmony */}
+							{t("hero2Title")}
 						</p>
 
 						<p className="font-medium text-lg text-herbalSecondary uppercase mb-8">
-							Living in sync with the power of perfect balance of herbal with
-							Drug International Herbal Limited.
+							{/* Living in sync with the power of perfect balance of herbal with
+							Drug International Herbal Limited. */}
+							{t("hero2SubTitle")}
 						</p>
 
 						<p className="font-medium text-base text-textSecondary mb-8">
-							Experience the essence of nature's goodness with Drug
+							{/* Experience the essence of nature's goodness with Drug
 							International Herbal Ltd. Our herbal products are like nature's
 							gifts, promoting wellness in the most relaxed way. From trusted
 							remedies to contemporary herbal innovations, we've got your health
 							covered. Our medicines are carefully crafted to support a
 							comprehensive approach to health. Join us on this well-being
 							journey, where herbs make feeling good super easy and natural.
-							Your wellness adventure begins here!
+							Your wellness adventure begins here! */}
+							{t("hero2Description")}
 						</p>
 					</div>
 				</div>
