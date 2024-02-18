@@ -57,7 +57,7 @@ function Page() {
                 <Link
                   href={`/${locale}/products/${product.MEDICINE_ID}`}
                   key={product.MEDICINE_ID}
-                  className="flex items-center justify-center border border-[#e4e4e6] primaryShadow rounded-md w-full transition-all cursor-pointer hover:border-primary hover:scale-90"
+                  className="flex items-center justify-center border border-[#e4e4e6] primaryShadow rounded-md w-full transition-all cursor-pointer hover:border-primary hover:scale-90 min-h-[10rem]"
                 >
                   <Image
                     src={`https://www.drug-international.com/${product.PRODUCT_FET_PHOTO}`}

@@ -1,14 +1,17 @@
 import useDebounce from "@/hooks/useDebounce";
+import { handleInitialSearchStop } from "@/redux/Reducer/MainSlice";
 import { useQuery } from "@tanstack/react-query";
 import { useLocale } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { DNA } from "react-loader-spinner";
+import { useDispatch } from "react-redux";
 
 const Search = () => {
   const [search, setSearch] = useState("");
   const locale = useLocale();
+  const dispatch = useDispatch();
 
   const debouncedSearchTerm = useDebounce(search, 200);
 
@@ -50,7 +53,8 @@ const Search = () => {
               return (
                 <Link
                   href={`/${locale}/products/${product.MEDICINE_ID}`}
-                  className="tooltip border border-[#e4e4e6] primaryShadow rounded-md w-full transition-all cursor-pointer hover:border-primary hover:scale-90 flex items-center justify-center"
+                  className="tooltip border border-[#e4e4e6] primaryShadow rounded-md w-full transition-all cursor-pointer hover:border-primary hover:scale-90 flex items-center justify-center min-h-[10rem]"
+                  onClick={() => dispatch(handleInitialSearchStop())}
                   key={product?.MEDICINE_ID}
                   data-tip={product.MEDICINE_NAME}
                 >

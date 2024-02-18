@@ -27,7 +27,7 @@ const SearchModal: React.FC<ModalProps> = ({ children, modalHead }) => {
         onChange={() => dispatch(handleInitialSearch())}
       />
       <div className="modal z-[10000000000]">
-        <div className="modal-box w-10/12 max-w-7xl h-[70vh] ">
+        <div className="modal-box w-10/12 max-w-7xl h-[70vh]">
           <button
             onClick={() => dispatch(handleInitialSearchStop())}
             className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
