@@ -21,7 +21,7 @@ export default function LocalSwitcher() {
 
 	return (
 		<select
-			className="select select-ghost"
+			className="select-sm select-primary bg-transparent"
 			defaultValue={localActive}
 			onChange={onSelectChange}
 			disabled={isPending}
