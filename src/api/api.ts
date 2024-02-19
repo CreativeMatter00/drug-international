@@ -51,7 +51,7 @@ export const getSpecializedProductDetail = async (id: string) => {
 
 export const getProductDetails = async (id: string) => {
 	try {
-		const response = await axios.get(`${url}/api/GetLatestProductById/${id}`);
+		const response = await axios.get(`${url}/api/GetSingleProduct/${id}`);
 		return response.data;
 	} catch (error) {
 		console.log(error);
