@@ -77,6 +77,11 @@ function Achievements() {
 		setModalOpen(true);
 	};
 
+	const handleClose = () => {
+		setSelectedImage({ name: "", certificate: "" });
+		setModalOpen(false);
+	};
+
 	const revealAnimation = {
 		hidden: { scale: 0 },
 		visible: { scale: 1, transition: { duration: 0.5 } },
@@ -141,7 +146,7 @@ function Achievements() {
 				<div className="modal z-[10000000000]">
 					<div className="modal-box w-10/12 max-w-4xl">
 						<button
-							onClick={() => setModalOpen(false)}
+							onClick={() => handleClose()}
 							className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
 						>
 							✕
@@ -149,17 +154,19 @@ function Achievements() {
 						<h3 className="font-bold text-lg text-center">
 							{selectedImage.name}
 						</h3>
-						<a href={selectedImage.certificate} target="_blank">
-							<div className="py-4 flex justify-center items-center">
-								<Image
-									src={selectedImage.certificate}
-									width={290}
-									height={400}
-									alt="achievement"
-									className="h-full w-auto"
-								/>
-							</div>
-						</a>
+						<div className="min-h-[200]">
+							<a href={selectedImage.certificate} target="_blank">
+								<div className="py-4 flex justify-center items-center">
+									<Image
+										src={selectedImage.certificate}
+										width={290}
+										height={400}
+										alt="achievement"
+										className="h-full w-auto"
+									/>
+								</div>
+							</a>
+						</div>
 					</div>
 					<label
 						className="modal-backdrop"
