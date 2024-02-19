@@ -50,6 +50,7 @@ function Page() {
             </p>
             <p className="text-textSecondary text-base mb-12">
               {data[0].SPECIAL_DESC}
+              hi
             </p>
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-3 gap-y-5 mb-10 md:mb-20">
