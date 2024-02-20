@@ -36,7 +36,7 @@ const Search = () => {
 			</div>
 			<input
 				className="bg-[#F6F6F6] py-4 px-8 w-full rounded-full mt-8"
-				placeholder="Type Something..."
+				placeholder={t("searchPlaceholder")}
 				value={search}
 				onChange={(e) => setSearch(e.target.value)}
 			/>
