@@ -1,3 +1,4 @@
+import { getProductByLetter } from "@/api/api";
 import useDebounce from "@/hooks/useDebounce";
 import { handleInitialSearchStop } from "@/redux/Reducer/MainSlice";
 import { useQuery } from "@tanstack/react-query";
@@ -19,9 +20,7 @@ const Search = () => {
 		queryKey: ["search", debouncedSearchTerm],
 		queryFn: () => {
 			if (debouncedSearchTerm) {
-				return fetch(
-					`http://103.219.160.253:5454/drug-website/api/GetProductByTrade/${debouncedSearchTerm}`
-				).then((res) => res.json());
+				return getProductByLetter(debouncedSearchTerm);
 			}
 		},
 	});

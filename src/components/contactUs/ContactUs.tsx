@@ -220,11 +220,15 @@ function ContactUs() {
 											<option value="volvo" selected disabled>
 												Select Contact
 											</option>
-											<option value="general">General Query</option>
-											<option value="medical">Medical Information</option>
-											<option value="career">Career Information</option>
-											<option value="export">Export Query</option>
-											<option value="safety">
+											<option value="sshimu7@gmail.com">General Query</option>
+											<option value="dpmallick.bd@gmail.com">
+												Medical Information
+											</option>
+											<option value="hr@drug-international.com">
+												Career Information
+											</option>
+											<option value="harun077@yahoo.com">Export Query</option>
+											<option value="sshimu7@gmail.com">
 												Drug Safety (ADES) & Product Complaints
 											</option>
 										</select>
