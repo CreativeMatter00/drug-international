@@ -1,7 +1,7 @@
 "use client";
 
+import { securityCheck } from "@/api/api";
 import ButtonPrimary from "@/components/ui/button/ButtonPrimary";
-import axios from "axios";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -14,9 +14,7 @@ function Page() {
 	const handleVerifyClick = async () => {
 		try {
 			setIsLoading(true);
-			const response = await axios.get(
-				`http://103.219.160.253:5454/drug-website/api/CheckScurityCode/${code}`
-			);
+			const response = await securityCheck(code);
 			setData(response.data[0]);
 		} catch (error) {
 			setIsError(true);
@@ -24,6 +22,14 @@ function Page() {
 			setIsLoading(false);
 		}
 	};
+
+	if (isError) {
+		return (
+			<div className="text-center text-xl font-md py-8">
+				Something went wrong. Please reload
+			</div>
+		);
+	}
 
 	return (
 		<div className="container mx-auto">

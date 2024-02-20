@@ -65,9 +65,6 @@ function LatestProducts() {
 					spaceBetween={120}
 					centeredSlides={true}
 					initialSlide={1}
-					pagination={{
-						clickable: true,
-					}}
 				>
 					<SwiperSlide>
 						<Link href={`/${locale}/products/1094`}>

@@ -154,7 +154,7 @@ function Achievements() {
 						<h3 className="font-bold text-lg text-center">
 							{selectedImage.name}
 						</h3>
-						<div className="min-h-[200]">
+						<div className="min-h-[200px]">
 							<a href={selectedImage.certificate} target="_blank">
 								<div className="py-4 flex justify-center items-center">
 									<Image
