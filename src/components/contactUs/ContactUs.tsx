@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-
 import { MdOutlineFax } from "react-icons/md";
 import { TfiEmail } from "react-icons/tfi";
 import { ImOffice } from "react-icons/im";
@@ -9,58 +8,18 @@ import { GiFactory } from "react-icons/gi";
 import ButtonInverted from "../ui/button/ButtonInverted";
 import Banner from "../ui/Banner";
 import { useLocale, useTranslations } from "next-intl";
-import { useState } from "react";
+import { useForm, SubmitHandler } from "react-hook-form";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+interface IFormInput {
+  fullName: string;
+  email: string;
+  message: string;
+  optionsRadios: string;
+}
 
 function ContactUs() {
-  const [contact, setContact] = useState("");
-  const [fullName, setFullName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
-  console.log("email", email);
-
-  const handleContactChange = (e: any) => {
-    setContact(e.target.value);
-  };
-
-  const handleFullNameChange = (e: any) => {
-    setFullName(e.target.value);
-  };
-
-  const handleEmailChange = (e: any) => {
-    setEmail(e.target.value);
-  };
-
-  const handleMessageChange = (e: any) => {
-    setMessage(e.target.value);
-  };
-
-  const handleSubmit = () => {
-    // const queryParams = new URLSearchParams({
-    //   name: fullName,
-    //   email: email,
-    //   message: message,
-    //   optionsRadios: contact,
-    // }).toString();
-
-    // console.log("queryParams", queryParams);
-
-    fetch(
-      `http://103.219.160.253:5454/drug-website/api/GetcontactUs?name=${fullName}&email=${email}&message=${message}&optionsRadios=${contact}`
-    )
-      .then((response) => {
-        console.log("response", response);
-
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        console.log("Data sent successfully");
-      })
-      .catch((error) => {
-        console.error("There was a problem with your fetch operation:", error);
-      });
-  };
-
   const revealAnimation = {
     hidden: { scale: 0 },
     visible: { scale: 1, transition: { duration: 0.3 } },
@@ -68,6 +27,49 @@ function ContactUs() {
 
   const t = useTranslations("Contact");
   const locale = useLocale();
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm<IFormInput>();
+
+  const onSubmit: SubmitHandler<IFormInput> = (data) => {
+    fetch(
+      `http://103.219.160.253:5454/drug-website/api/GetcontactUs?name=${data.fullName}&email=${data.email}&message=${data.message}&optionsRadios=${data.optionsRadios}`
+    )
+      .then((response) => {
+        if (response.ok) {
+          toast.success("Message send successfully!", {
+            position: "bottom-left",
+            autoClose: 3001,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+          });
+        }
+        if (!response.ok) {
+          toast.error("🦄 Message not send . please try again!", {
+            position: "bottom-left",
+            autoClose: 3001,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+          });
+        }
+        reset();
+      })
+      .catch((error) => {
+        alert("Message not send . please try again.....");
+      });
+  };
 
   return (
     <div>
@@ -253,73 +255,116 @@ function ContactUs() {
 
               {/* contact part */}
 
-              {/* <div className="w-4/5 mx-auto font-medium text-base text-textSecondary text-center mb-14">
+              <div className="w-4/5 mx-auto font-medium text-base text-textSecondary text-center mb-14">
                 {t("formPrompt")}
               </div>
 
-              <div className="flex flex-col md:flex-row gap-4 font-medium px-4">
-                <div className="w-full md:w-1/3 flex flex-col items-center gap-4">
-                  <p className="text-textLight text-xs">
-                    You must have to select contact first
-                  </p>
+              <form onSubmit={handleSubmit(onSubmit)}>
+                <div className="flex flex-col md:flex-row gap-4 font-medium px-4">
+                  <div className="w-full md:w-1/3 flex flex-col items-center gap-4">
+                    <p className="text-textLight text-xs">
+                      You must have to select contact first
+                    </p>
 
-                  <div className="text-xl text-textPrimary">
-                    <select
-                      name="cars"
-                      id="cars"
-                      className="w-full border border-textPrimary rounded-md p-2"
-                      value={contact}
-                      onChange={handleContactChange}
-                    >
-                      <option value="volvo" selected disabled>
-                        Select Contact
-                      </option>
-                      <option value="sshimu7@gmail.com">General Query</option>
-                      <option value="dpmallick.bd@gmail.com">
-                        Medical Information
-                      </option>
-                      <option value="hr@drug-international.com">
-                        Career Information
-                      </option>
-                      <option value="harun077@yahoo.com">Export Query</option>
-                      <option value="sshimu7@gmail.com">
-                        Drug Safety (ADES) & Product Complaints
-                      </option>
-                    </select>
+                    <div className="text-xl text-textPrimary">
+                      <select
+                        className="w-full border border-textPrimary rounded-md p-2"
+                        {...register("optionsRadios", { required: true })}
+                      >
+                        <option value="" selected disabled>
+                          Select Contact
+                        </option>
+                        <option value="sshimu7@gmail.com">General Query</option>
+                        <option value="dpmallick.bd@gmail.com">
+                          Medical Information
+                        </option>
+                        <option value="hr@drug-international.com">
+                          Career Information
+                        </option>
+                        <option value="harun077@yahoo.com">Export Query</option>
+                        <option value="sshimu7@gmail.com">
+                          Drug Safety (ADES) & Product Complaints
+                        </option>
+                      </select>
+                      {errors?.optionsRadios?.type === "required" && (
+                        <p className="text-xs text-red-700 pb-4">
+                          Category is required
+                        </p>
+                      )}
+                    </div>
+                  </div>
+
+                  <div className="w-full md:w-2/3">
+                    <input
+                      type="text"
+                      placeholder="FULL NAME"
+                      className="bg-[#EFEFF0] p-4 w-full border-b-2 border-black mb-4"
+                      {...register("fullName", {
+                        required: true,
+                        minLength: 3,
+                      })}
+                    />
+                    {errors?.fullName?.type === "required" && (
+                      <p className="text-xs text-red-700 pb-4">
+                        Full name is required
+                      </p>
+                    )}
+                    {errors?.fullName?.type === "minLength" && (
+                      <p className="text-xs text-red-700 pb-4">
+                        Full name must be at least 3 characters long
+                      </p>
+                    )}
+
+                    <input
+                      type="text"
+                      placeholder="Email"
+                      className="bg-[#EFEFF0] p-4 w-full border-b-2 border-black mb-4"
+                      {...register("email", {
+                        required: true,
+                        pattern:
+                          /^[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+                      })}
+                    />
+                    {errors?.email?.type === "required" && (
+                      <p className="text-xs text-red-700 pb-4">
+                        Email is required
+                      </p>
+                    )}
+                    {errors?.email?.type === "pattern" && (
+                      <p className="text-xs text-red-700 pb-4">
+                        Invalid email address
+                      </p>
+                    )}
+
+                    <textarea
+                      rows={7}
+                      placeholder="TYPE"
+                      className="bg-[#EFEFF0] p-4 w-full border-b-2 border-black mb-4"
+                      {...register("message", {
+                        required: true,
+                        minLength: 5,
+                      })}
+                    />
+
+                    {errors?.message?.type === "required" && (
+                      <p className="text-xs text-red-700 pb-4">
+                        Message is required
+                      </p>
+                    )}
+                    {errors?.message?.type === "minLength" && (
+                      <p className="text-xs text-red-700 pb-4">
+                        Message must be at least 5 characters long
+                      </p>
+                    )}
+
+                    <div className="flex justify-center mb-8">
+                      <ButtonInverted> SEND </ButtonInverted>
+                    </div>
+
+                    <ToastContainer />
                   </div>
                 </div>
-
-                <div className="w-full md:w-2/3">
-                  <input
-                    type="text"
-                    placeholder="FULL NAME"
-                    className="bg-[#EFEFF0] p-4 w-full border-b-2 border-black mb-4"
-                    value={fullName}
-                    onChange={handleFullNameChange}
-                  />
-                  <input
-                    type="text"
-                    placeholder="EMAIL"
-                    className="bg-[#EFEFF0] p-4 w-full border-b-2 border-black mb-4"
-                    value={email}
-                    onChange={handleEmailChange}
-                  />
-                  <textarea
-                    rows={7}
-                    placeholder="TYPE"
-                    className="bg-[#EFEFF0] p-4 w-full border-b-2 border-black mb-4"
-                    value={message}
-                    onChange={handleMessageChange}
-                  />
-
-                  <div
-                    className="flex justify-center mb-8"
-                    onClick={handleSubmit}
-                  >
-                    <ButtonInverted> SEND </ButtonInverted>
-                  </div>
-                </div>
-              </div> */}
+              </form>
             </motion.div>
           </div>
         </div>
