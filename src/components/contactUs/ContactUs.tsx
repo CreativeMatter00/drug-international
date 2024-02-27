@@ -287,7 +287,7 @@ function ContactUs() {
                         </option>
                       </select>
                       {errors?.optionsRadios?.type === "required" && (
-                        <p className="text-xs text-red-700 pb-4">
+                        <p className="text-xs text-red-700 py-4 ">
                           Category is required
                         </p>
                       )}
