@@ -2,7 +2,9 @@ import axios from "axios";
 
 //? Environment Check
 
-let url = "http://103.219.160.253:5454/drug-website";
+// let url = "http://103.219.160.253:5454/drug-website";
+
+let url = "https://www.drug-international.com";
 
 // if (process.env.NODE_ENV === "development") {
 // 	url = "http://103.219.160.253:5454/drug-website";
@@ -14,9 +16,7 @@ let url = "http://103.219.160.253:5454/drug-website";
 
 export const securityCheck = async (code: string) => {
 	try {
-		const response = await axios.get(
-			`http://103.219.160.253:5454/drug-website/api/CheckScurityCode/${code}`
-		);
+		const response = await axios.get(`${url}/api/CheckScurityCode/${code}`);
 		return response.data;
 	} catch (error) {
 		console.log(error);
