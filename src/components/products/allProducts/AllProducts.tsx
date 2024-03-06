@@ -19,7 +19,7 @@ import Image from "next/image";
 import GenericProducts from "./GenericProducts";
 import TherapeuticDataProducts from "./TherapeuticDataProducts";
 import Link from "next/link";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 interface visibleProps {
   setIsAllSidebarVisible: Function;
@@ -43,6 +43,7 @@ const AllProducts: React.FC<visibleProps> = ({
   const [letter, setLetter] = useState<string>("a");
   const [letterGeneric, setLetterGeneric] = useState<string>("a");
   const locale = useLocale();
+  const t = useTranslations("AllProducts");
 
   const handleNameType = (name: number) => {
     if (name === 2) {
@@ -95,8 +96,6 @@ const AllProducts: React.FC<visibleProps> = ({
     queryFn: ({ queryKey }) => getTherapeuticProducts(queryKey[1]),
   });
 
-  console.log("genericData", genericData);
-
   return (
     <div className="container mx-auto">
       {isOverlayVisible && (
@@ -115,8 +114,11 @@ const AllProducts: React.FC<visibleProps> = ({
           onClick={() => setMedicineType(0)}
         >
           {/* Pharmaceutical */}
-          <Link href={`/${locale}/products/all-products`}>Pharmaceutical</Link>
+          <Link href={`/${locale}/products/all-products`}>
+            {t("pharmaceutical")}
+          </Link>
         </button>
+
         <button
           className={`font-medium text-2xl uppercase p-3 rounded-md ${
             medicineType === 1
@@ -126,7 +128,7 @@ const AllProducts: React.FC<visibleProps> = ({
           onClick={() => setMedicineType(1)}
         >
           {/* <Link href={`/${locale}/products/all-products`}> */}
-          Oncology Products
+          {t("oncologyProducts")}
           {/* </Link> */}
         </button>
         <button
@@ -137,7 +139,7 @@ const AllProducts: React.FC<visibleProps> = ({
           }`}
           onClick={() => setMedicineType(2)}
         >
-          Herbal
+          {t("herbal")}
           {/* <Link href={`/${locale}/products/all-products`}> Herbal</Link> */}
         </button>
         <button
@@ -148,7 +150,7 @@ const AllProducts: React.FC<visibleProps> = ({
           }`}
           onClick={() => setMedicineType(3)}
         >
-          Unani
+          {t("unani")}
           {/* <Link href={`/${locale}/products/all-products`}> Unani</Link> */}
         </button>
       </div>
@@ -167,7 +169,7 @@ const AllProducts: React.FC<visibleProps> = ({
               ) : (
                 <PiRadioButtonDuotone />
               )}
-              Product by brand name
+              {t("productByBrandName")}
             </button>
 
             <button
@@ -181,7 +183,7 @@ const AllProducts: React.FC<visibleProps> = ({
               ) : (
                 <PiRadioButtonDuotone />
               )}
-              Product by generic name
+              {t("productByGenericName")}
             </button>
 
             <button
@@ -195,7 +197,7 @@ const AllProducts: React.FC<visibleProps> = ({
               ) : (
                 <PiRadioButtonDuotone />
               )}
-              Product by therapeutic class
+              {t("productByTherapeuticClass")}
             </button>
           </div>
 

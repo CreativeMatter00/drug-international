@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { IoMdHome } from "react-icons/io";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 interface BreadCrumbProps {
   title: string;
@@ -9,6 +9,7 @@ interface BreadCrumbProps {
 
 const BreadCrumb: React.FC<BreadCrumbProps> = ({ title }) => {
   const locale = useLocale();
+  const t = useTranslations("AllProducts");
   return (
     <div className="pt-20 mb-4">
       <div className="pb-6 border-b-2 border-[#E4E4E6]">
@@ -21,7 +22,7 @@ const BreadCrumb: React.FC<BreadCrumbProps> = ({ title }) => {
             href={`/${locale}/products`}
             className="hover:text-primary hover:underline hover:underline-offset-4"
           >
-            <p> Products </p>
+            <p> {t("products")} </p>
           </Link>
           /<p className="text-primary"> {title} </p>
         </div>
