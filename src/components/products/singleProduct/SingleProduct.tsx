@@ -77,7 +77,7 @@ function SingleProduct(props: ISingleProduct) {
 												(image: any, index: number) => {
 													return (
 														<SwiperSlide key={index}>
-															<Image
+															<img
 																//   src={`https://www.drug-international.com/uploads/product_images/SERAVENT.jpg`}
 																src={`https://www.drug-international.com/${image}`}
 																width={500}
@@ -95,13 +95,15 @@ function SingleProduct(props: ISingleProduct) {
 							</div>
 
 							<div className="my-8">
-								<a
-									href={`https://www.drug-international.com/${data[0]?.INSERT_FILE}`}
-									rel="noopener noreferrer"
-									target="_blank"
-								>
-									<ButtonPrimary>PRESCRIBING DESCRIPTION</ButtonPrimary>
-								</a>
+								{data[0]?.INSERT_FILE !== "" && (
+									<a
+										href={`https://www.drug-international.com/${data[0]?.INSERT_FILE}`}
+										rel="noopener noreferrer"
+										target="_blank"
+									>
+										<ButtonPrimary>PRESCRIBING DESCRIPTION</ButtonPrimary>
+									</a>
+								)}
 							</div>
 						</div>
 					</div>

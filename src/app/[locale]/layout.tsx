@@ -3,26 +3,26 @@ import "../globals.css";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 
 export const metadata: Metadata = {
-  title: "Drug International Ltd",
-  description: "Drug International Ltd",
+	title: "Drug International Ltd",
+	description: "Drug International Ltd",
 };
 
 export default function LocaleLayout({
-  children,
-  params: { locale },
+	children,
+	params: { locale },
 }: {
-  children: React.ReactNode;
-  params: { locale: string };
+	children: React.ReactNode;
+	params: { locale: string };
 }) {
-  const messages = useMessages();
+	const messages = useMessages();
 
-  return (
-    <html lang={locale}>
-      <body className="max-w-screen overflow-x-hidden">
-        <NextIntlClientProvider messages={messages}>
-          {children}
-        </NextIntlClientProvider>
-      </body>
-    </html>
-  );
+	return (
+		<html lang={locale}>
+			<body className="max-w-screen overflow-x-hidden">
+				<NextIntlClientProvider messages={messages}>
+					{children}
+				</NextIntlClientProvider>
+			</body>
+		</html>
+	);
 }

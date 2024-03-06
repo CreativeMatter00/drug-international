@@ -22,9 +22,9 @@ function OurLegacy() {
 	const [ref, inView] = useInView({ triggerOnce: true });
 
 	useEffect(() => {
-		if (inView) {
-			controls.start("visible");
-		}
+		// if (inView) {
+		controls.start("visible");
+		// }
 	}, [controls, inView]);
 
 	return (

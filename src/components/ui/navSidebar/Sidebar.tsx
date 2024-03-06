@@ -41,7 +41,7 @@ const Sidebar = () => {
 								src={`/assets/icons/sidebar/drug.png`}
 								width={44}
 								height={44}
-								priority={true}
+								priority
 								alt="Drug International"
 								className="h-auto group-hover:hidden"
 							/>
@@ -49,7 +49,7 @@ const Sidebar = () => {
 								src={`/assets/icons/sidebar/drug-inverted.png`}
 								width={44}
 								height={44}
-								priority={true}
+								priority
 								alt="Drug International"
 								className="h-auto hidden group-hover:block"
 							/>
@@ -67,7 +67,7 @@ const Sidebar = () => {
 								src={`/assets/icons/sidebar/herbal.png`}
 								width={44}
 								height={44}
-								priority={true}
+								priority
 								alt="Drug International"
 								className="h-auto group-hover:hidden"
 							/>
@@ -75,7 +75,7 @@ const Sidebar = () => {
 								src={`/assets/icons/sidebar/herbal-inverted.png`}
 								width={44}
 								height={44}
-								priority={true}
+								priority
 								alt="Drug International"
 								className="h-auto hidden group-hover:block"
 							/>
@@ -93,7 +93,7 @@ const Sidebar = () => {
 								src={`/assets/icons/sidebar/unani-1.png`}
 								width={44}
 								height={44}
-								priority={true}
+								priority
 								alt="Drug International"
 								className="h-auto group-hover:hidden"
 							/>
@@ -101,7 +101,7 @@ const Sidebar = () => {
 								src={`/assets/icons/sidebar/unani-inverted.png`}
 								width={44}
 								height={44}
-								priority={true}
+								priority
 								alt="Drug International"
 								className="h-auto hidden group-hover:block"
 							/>

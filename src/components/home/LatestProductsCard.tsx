@@ -19,7 +19,7 @@ function LatestProductsCard(props: ILatestProductsCard) {
 			<div className={`h-20  block group-hover:h-0 duration-500`}></div>
 			<div className="relative overflow-hidden p-2">
 				<div className="flex items-center justify-center h-[300px]">
-					<Image
+					<img
 						src={src}
 						width={408}
 						height={362}

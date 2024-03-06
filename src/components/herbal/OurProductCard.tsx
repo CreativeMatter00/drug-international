@@ -1,34 +1,34 @@
 import Image from "next/image";
 
 type IOurProductCard = {
-  src: string;
-  title: string;
-  // description: string;
-  key: number;
+	src: string;
+	title: string;
+	// description: string;
+	key: number;
 };
 
 function OurProductCard(props: IOurProductCard) {
-  return (
-    <div
-      className="w-fit rounded-md bg-herbalSecondary flex flex-col items-center p-2 cursor-pointer group"
-      key={props.key}
-    >
-      <div className="h-[300px] w-[300px] overflow-hidden bg-white flex items-center justify-center">
-        <Image
-          // src="/assets/images/herbal/products/03.png"
-          src={props.src}
-          width={500}
-          height={500}
-          alt="herbal products"
-          className="w-full h-auto group-hover:scale-110 transition-all"
-        />
-      </div>
-      <div className="text-center font-medium text-white py-2">
-        <p className="text-2xl uppercase"> {props.title} </p>
-        {/* <p className="text-xs">{props.description}</p> */}
-      </div>
-    </div>
-  );
+	return (
+		<div
+			className="w-fit rounded-md bg-herbalSecondary flex flex-col items-center p-2 cursor-pointer group"
+			key={props.key}
+		>
+			<div className="h-[300px] w-[300px] overflow-hidden bg-white flex items-center justify-center">
+				<img
+					// src="/assets/images/herbal/products/03.png"
+					src={props.src}
+					width={500}
+					height={500}
+					alt="herbal products"
+					className="w-full h-auto group-hover:scale-110 transition-all"
+				/>
+			</div>
+			<div className="text-center font-medium text-white py-2">
+				<p className="text-2xl uppercase"> {props.title} </p>
+				{/* <p className="text-xs">{props.description}</p> */}
+			</div>
+		</div>
+	);
 }
 
 export default OurProductCard;
