@@ -6,8 +6,6 @@ import styles from "@/styles/NavSidebar.module.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import NavSidebar from "./NavSidebar";
-import Modal from "@/components/share/Modal/Modal";
-import Language from "@/components/ui/navSidebar/language/Language";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState, handleInitialSearch } from "@/redux/Reducer/MainSlice";
 import Search from "../../search/Search";
@@ -149,26 +147,6 @@ const Navbar = () => {
                   <path d="M18.6659 17.7231L23.8047 22.8619C24.0651 23.1223 24.0651 23.5444 23.8047 23.8047C23.5444 24.0651 23.1223 24.0651 22.8619 23.8047L17.7231 18.6659C15.8426 20.326 13.3723 21.3333 10.6667 21.3333C4.77563 21.3333 0 16.5577 0 10.6667C0 4.77563 4.77563 0 10.6667 0C16.5577 0 21.3333 4.77563 21.3333 10.6667C21.3333 13.3723 20.326 15.8426 18.6659 17.7231ZM10.6667 20C15.8213 20 20 15.8213 20 10.6667C20 5.51201 15.8213 1.33333 10.6667 1.33333C5.51201 1.33333 1.33333 5.51201 1.33333 10.6667C1.33333 15.8213 5.51201 20 10.6667 20Z" />
                 </svg>
               </div>
-
-              {/* <div
-								className="group cursor-pointer flex justify-center items-center max-lg:hidden"
-								onClick={() => setLanguageOpen(true)}
-							>
-								<Image
-									src={`/assets/icons/navbar/Language Icon.svg`}
-									width={32}
-									height={32}
-									alt="latest products"
-									className="h-auto  block group-hover:hidden"
-								/>
-								<Image
-									src={`/assets/icons/navbar/Language Icon hover.svg`}
-									width={32}
-									height={32}
-									alt="latest products"
-									className=" h-auto hidden group-hover:block"
-								/>
-							</div> */}
 
               <Link href={`/${locale}/global`}>
                 <div className="border border-primary rounded-lg py-0.5 px-1 flex justify-center items-center gap-2 text-sm font-bold bg-primary text-white hover:text-primary hover:bg-white group cursor-pointer uppercase max-lg:hidden">

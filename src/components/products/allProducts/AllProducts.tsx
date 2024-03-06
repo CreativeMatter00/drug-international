@@ -95,6 +95,8 @@ const AllProducts: React.FC<visibleProps> = ({
     queryFn: ({ queryKey }) => getTherapeuticProducts(queryKey[1]),
   });
 
+  console.log("genericData", genericData);
+
   return (
     <div className="container mx-auto">
       {isOverlayVisible && (
