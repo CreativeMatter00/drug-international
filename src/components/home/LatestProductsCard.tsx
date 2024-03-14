@@ -21,8 +21,8 @@ function LatestProductsCard(props: ILatestProductsCard) {
 				<div className="flex items-center justify-center h-[300px]">
 					<img
 						src={src}
-						width={408}
-						height={362}
+						// width={408}
+						// height={362}
 						alt={src}
 						className="w-auto group-hover:transition-all duration-500"
 						priority
