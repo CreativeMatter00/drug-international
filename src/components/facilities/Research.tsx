@@ -25,7 +25,7 @@ function Research() {
 
 			<div className="mb-8">
 				<Image
-					src="/assets/images/facilities/research.jpg"
+					src="/assets/images/facilities/researchFacility.jpg"
 					width={720}
 					height={405}
 					alt="product"

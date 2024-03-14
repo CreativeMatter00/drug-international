@@ -25,7 +25,6 @@ function LatestProductsCard(props: ILatestProductsCard) {
 						// height={362}
 						alt={src}
 						className="w-auto group-hover:transition-all duration-500"
-						priority
 						// loader={myLoader}
 					/>
 				</div>
