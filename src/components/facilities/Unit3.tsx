@@ -38,8 +38,9 @@ function Unit3() {
         />
         <img
           className="w-full rounded-lg h-96"
-          src="/assets/images/facilities/unit-3/unint_3-3.jpg"
+          src="/assets/images/facilities/unit-3/unint_3_3.jpg"
         />
+
         <img
           className="w-full rounded-lg h-96"
           src="/assets/images/facilities/unit-3/unint_3_4.jpg"
