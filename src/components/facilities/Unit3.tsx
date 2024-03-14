@@ -21,13 +21,20 @@ function Unit3() {
 				{t("unit3")}
 			</p>
 
-			<div className="mb-8">
+			<div className=" grid grid-cols-2 mb-8">
 				<Image
-					src="/assets/images/facilities/manufacture.jpg"
+					src="/assets/images/facilities/unit3.jpg"
 					width={720}
 					height={405}
 					alt="product"
-					className="w-full h-auto rounded-md"
+					className="max-h-[700px] w-auto mx-auto rounded-md"
+				/>
+				<Image
+					src="/assets/images/facilities/unit3-2.jpg"
+					width={720}
+					height={405}
+					alt="product"
+					className="max-h-[700px] w-auto mx-auto rounded-md"
 				/>
 			</div>
 

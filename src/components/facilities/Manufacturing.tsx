@@ -23,9 +23,9 @@ function Manufacturing() {
 				{t("manufacturingFacility")}
 			</p>
 
-			<div className="mb-8">
+			<div className="mb-8 min-h-[200px]">
 				<Image
-					src="/assets/images/facilities/manufacture.jpg"
+					src="/assets/images/facilities/manufacture-unit.jpg"
 					width={720}
 					height={405}
 					alt="product"

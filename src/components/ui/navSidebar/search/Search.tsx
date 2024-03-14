@@ -1,4 +1,4 @@
-import { getProductByLetter } from "@/api/api";
+import { getSearchedProducts } from "@/api/api";
 import useDebounce from "@/hooks/useDebounce";
 import { handleInitialSearchStop } from "@/redux/Reducer/MainSlice";
 import { useQuery } from "@tanstack/react-query";
@@ -20,7 +20,7 @@ const Search = () => {
 		queryKey: ["search", debouncedSearchTerm],
 		queryFn: () => {
 			if (debouncedSearchTerm) {
-				return getProductByLetter(debouncedSearchTerm);
+				return getSearchedProducts(debouncedSearchTerm);
 			}
 		},
 	});
