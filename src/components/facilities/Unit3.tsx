@@ -26,42 +26,6 @@ function Unit3() {
         {t("unit3")}
       </p>
 
-      {/* <div className=" grid grid-cols-2 mb-8">
-        <Image
-          src="/assets/images/facilities/unit3.jpg"
-          width={720}
-          height={405}
-          alt="product"
-          className="max-h-[700px] w-auto mx-auto rounded-md"
-        />
-        <Image
-          src="/assets/images/facilities/unit3-2.jpg"
-          width={720}
-          height={405}
-          alt="product"
-          className="max-h-[700px] w-auto mx-auto rounded-md"
-        />
-      </div> */}
-
-      {/* <SlideshowLightbox className=" " showThumbnails={true} theme="lightbox"> */}
-      {/* <div className="bg-white rounded-lg overflow-hidden shadow-md transform transition-transform hover:scale-105 cursor-pointer"></div> */}
-      {/* <img className='w-full rounded' src={image} alt="Gallery" /> */}
-      {/* <Image
-        src="/assets/images/facilities/unit3-2.jpg"
-        width={720}
-        height={405}
-        alt="product"
-        className="max-h-[700px] w-auto mx-auto rounded-md"
-      />
-      <Image
-        src="/assets/images/facilities/unit3.jpg"
-        width={720}
-        height={405}
-        alt="product"
-        className="max-h-[700px] w-auto mx-auto rounded-md"
-      /> */}
-      {/* </SlideshowLightbox> */}
-
       <SlideshowLightbox className="container grid grid-cols-1 lg:grid-cols-2 gap-8 mx-auto">
         <img
           className="w-full rounded-lg h-96"
