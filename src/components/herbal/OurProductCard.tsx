@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 type IOurProductCard = {
 	src: string;
 	title: string;
@@ -19,7 +17,7 @@ function OurProductCard(props: IOurProductCard) {
 					src={props.src}
 					width={500}
 					height={500}
-					alt="herbal products"
+					alt={props.title}
 					className="w-full h-auto group-hover:scale-110 transition-all"
 				/>
 			</div>

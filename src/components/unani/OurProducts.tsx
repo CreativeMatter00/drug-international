@@ -73,7 +73,7 @@ function OurProducts() {
 											src={`https://www.drug-international.com/${product?.MEDICINE_IMAGES[0]}`}
 											width={300}
 											height={300}
-											alt="D-Aloevera"
+											alt={product.MEDICINE_NAME}
 											className="mx-auto h-full max-h-[260px] w-auto group-hover:scale-105 transition-all"
 										/>
 									</div>
