@@ -119,12 +119,11 @@ function Hero() {
 							duration: 1,
 						}}
 					>
-						<h1 className="text-5xl uppercase text-textPrimary mb-10">
-							{/* Better life through
-							<br />
-							Better <span className="text-primary"> Medicine </span> */}
-							{t("heroTitle")}
-						</h1>
+						<p
+							className="text-5xl uppercase text-textPrimary mb-10"
+							dangerouslySetInnerHTML={{ __html: t.raw("heroTitle") }}
+						></p>
+
 						<p className="text-textPrimary text-sm mb-20">
 							{/* Drug International Limited was incorporated under the Registrar of
 							Joint Stock Companies in 1974 as a Private Limited Company. The

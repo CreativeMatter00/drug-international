@@ -5,8 +5,8 @@ function CSR() {
 
 	return (
 		<div className="py-12">
-			<div className="text-center font-semibold text-4xl pb-12 uppercase">
-				{/* CSR Activities */}
+			<div className="text-center font-semibold text-3xl md:text-4xl pb-12 uppercase">
+				{/* Virtual Tour */}
 				{t("CSR")}
 			</div>
 			<div className="container mx-auto px-4">

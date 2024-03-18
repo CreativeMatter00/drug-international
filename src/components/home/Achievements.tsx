@@ -99,10 +99,10 @@ function Achievements() {
 	return (
 		<div className={` mb-8 py-12`}>
 			<div className={`px-4 z-10 relative m-auto`}>
-				<p className="text-center font-semibold text-4xl pb-8 uppercase">
+				<p className="text-center font-semibold text-3xl md:text-4xl pb-8 uppercase">
 					{t("achievementTitle")}
 				</p>
-				<p className="text-center font-semibold text-xl pb-20 uppercase">
+				<p className="text-center font-semibold text-lg md:text-xl pb-20 uppercase">
 					{/* Drug International has earned certificates for outstanding medicine
 					quality */}
 					{t("achievementSubTitle")}
@@ -120,12 +120,12 @@ function Achievements() {
 								onClick={() => handleImageClick(image.name, image.certificate)}
 								key={image.sl}
 							>
-								<Image
+								<img
 									src={image.logo}
-									width={365}
-									height={365}
+									// width={365}
+									// height={365}
 									alt="achievement"
-									className="h-[200px] w-auto"
+									className="h-[150px] md:h-[200px] w-auto"
 								/>
 							</div>
 						))}

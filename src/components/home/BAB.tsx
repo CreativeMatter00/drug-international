@@ -26,7 +26,7 @@ function BAB() {
 
 	return (
 		<div className="py-8">
-			<div className="text-center font-semibold text-4xl pb-12 uppercase">
+			<div className="text-center font-semibold text-3xl md:text-4xl pb-12 uppercase">
 				{/* BAB Certificates */}
 				{t("BABCertificateTitle")}
 			</div>

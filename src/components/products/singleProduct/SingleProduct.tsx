@@ -44,7 +44,7 @@ function SingleProduct(props: ISingleProduct) {
 				<div>
 					<BreadCrumb title={data[0].MEDICINE_NAME} />
 					<div className="py-16">
-						<div className="container mx-auto font-medium">
+						<div className="container mx-auto font-medium px-4 md:px-0">
 							<div className="mb-12">
 								<p className="text-3xl text-textPrimary uppercase mb-6">
 									{data[0].MEDICINE_NAME}
@@ -77,14 +77,16 @@ function SingleProduct(props: ISingleProduct) {
 												(image: any, index: number) => {
 													return (
 														<SwiperSlide key={index}>
-															<img
-																//   src={`https://www.drug-international.com/uploads/product_images/SERAVENT.jpg`}
-																src={`https://www.drug-international.com/${image}`}
-																width={500}
-																height={500}
-																alt={data[0].MEDICINE_NAME}
-																className="mx-auto"
-															/>
+															<div className="mx-auto h-[600px] w-auto flex items-center justify-center">
+																<img
+																	//   src={`https://www.drug-international.com/uploads/product_images/SERAVENT.jpg`}
+																	src={`https://www.drug-international.com/${image}`}
+																	width={500}
+																	height={500}
+																	alt={data[0].MEDICINE_NAME}
+																	className="mx-auto max-h-[600px] w-auto"
+																/>
+															</div>
 														</SwiperSlide>
 													);
 												}

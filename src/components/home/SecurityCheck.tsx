@@ -69,7 +69,7 @@ function SecurityCheck() {
 	return (
 		<div className={`${styles.background} mb-8 md:mb-32`}>
 			<div className={`container px-4 py-10 z-10 relative m-auto text-white`}>
-				<div className="text-center font-semibold text-4xl mb-10 uppercase">
+				<div className="text-center font-semibold text-3xl md:text-4xl mb-10 uppercase">
 					{/* Security Check */}
 					{t("securityCheckTitle")}
 				</div>
@@ -83,13 +83,13 @@ function SecurityCheck() {
 					<div className="">
 						<div className="bg-primary opacity-80 rounded-xl">
 							<div className="p-10 text-center">
-								<p className="text-2xl font-medium mb-6">
+								<p className="text-xl md:text-2xl font-medium mb-6">
 									{/* Verify Medicine Security Code */}
 									{t("securityCheckSubTitle")}
 								</p>
 								<div className="flex flex-col items-center justify-center gap-8 mx-auto">
 									<input
-										className="h-12 w-[40%] min-w-[260px] text-black p-2 rounded-md"
+										className="h-12 w-[40%] min-w-[280px] text-black p-2 rounded-md"
 										onChange={(e) => setCode(e.target.value)}
 									/>
 									<ButtonSecondary onClick={handleOpenModal}>
