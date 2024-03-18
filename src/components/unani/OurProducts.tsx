@@ -44,7 +44,7 @@ function OurProducts() {
       </div>
     );
 
-  console.log(data);
+  // console.log(data);
 
   return (
     <div className="font-medium">
