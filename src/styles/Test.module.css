@@ -16,3 +16,15 @@
     drop-shadow(0px 19px 8px rgba(0, 0, 0, 0.01))
     drop-shadow(0px 30px 8px rgba(0, 0, 0, 0));
 }
+
+.gridContainer {
+  background-image: linear-gradient(
+      to right,
+      rgb(184, 167, 167) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgb(179, 167, 167) 1px, transparent 1px);
+  background-size: 200px 200px;
+
+  /* z-index: 100; */
+}
