@@ -8,11 +8,11 @@ const Footer = () => {
   const locale = useLocale();
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="rounded-t-xl w-full py-16 max-lg:py-8 flex justify-center bottom-0 bg-[#272727]">
+    <footer className="rounded-t-xl w-full py-16 max-lg:py-8 flex justify-center bottom-0 bg-[#6F0000]">
       <div className="container mx-auto flex items-center justify-center h-full flex-col text-white px-4 max-w-[1024px]">
         <div className="">
           <Image
-            src={`/assets/logo/drug-logo.png`}
+            src={`/assets/logo/Drug-Logo-footer.png`}
             width={166}
             height={130}
             alt="Drug Logo"
@@ -178,7 +178,15 @@ const Footer = () => {
         </div>
 
         <div className="text-center">
-          © 2001-{currentYear} Creative Matter. All rights reserved. <br />
+          © {currentYear} &nbsp;
+          <Link
+            href="https://www.creativematter.agency/"
+            target="_blank"
+            className=" hover:underline cursor-pointer"
+          >
+            Creative Matter
+          </Link>
+          . All rights reserved. <br />
           Trade marks are owned by or licensed to the Drug international
           limited.
         </div>
