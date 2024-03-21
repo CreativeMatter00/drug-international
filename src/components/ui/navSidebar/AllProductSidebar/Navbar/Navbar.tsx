@@ -280,10 +280,8 @@ const Navbar = () => {
         </div>
 
         <div
-          className={`absolute top-0  h-screen bg-white lg:hidden z-[99999] duration-500 ${
-            mobileNav
-              ? "ml-0 w-full"
-              : "max-md:ml-[780px] max-lg:ml-[1024px] w-0"
+          className={`absolute top-0  h-screen bg-white lg:hidden z-[99999] duration-500 w-full ${
+            mobileNav ? "left-0" : "max-md:left-[780px] max-lg:left-[1024px]"
           }`}
         >
           <NavSidebar />
