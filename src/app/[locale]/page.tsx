@@ -43,11 +43,10 @@ const Page = () => {
                     duration: 1,
                   }}
                 >
-                  <p className="text-white font-bold text-[5vh] leading-[4.5vh] mt-[0.5vh]  text-shadow lg:text-primary">
-                    First ever <br /> company <br />
+                  <p className="text-white font-bold text-[4vh] leading-[4vh] mt-[0.5vh]  text-shadow lg:text-primary">
+                    First ever <br /> company <br /> in <br /> Bangladesh <br />
                     to formulate <br />
-                    medicines <br />
-                    in
+                    medicines in
                     <br />
                     soft capsule
                     <br />
