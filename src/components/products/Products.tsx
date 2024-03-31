@@ -38,7 +38,10 @@ function Products() {
 								<p className="font-medium text-base text-textSecondary">
 									Download all product list
 								</p>
-								<Link href={"/assets/pdf/Product-list-drug.pdf"}>
+								<Link
+									href={"/assets/pdf/Product-list-drug.pdf"}
+									target="_blank"
+								>
 									<ButtonPrimary>
 										<BsDownload /> Download
 									</ButtonPrimary>

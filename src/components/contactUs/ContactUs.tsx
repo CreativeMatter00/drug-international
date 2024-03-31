@@ -53,7 +53,7 @@ function ContactUs() {
 					});
 				}
 				if (!response.ok) {
-					toast.error("🦄 Message not send . please try again!", {
+					toast.error("Message not send . please try again!", {
 						position: "bottom-left",
 						autoClose: 3001,
 						hideProgressBar: false,
@@ -114,7 +114,7 @@ function ContactUs() {
 											<p className="font-medium text-xs uppercase text-textLight text-center mb-2">
 												Email
 											</p>
-											<p className="font-medium text-sm uppercase text-textSecondary text-center">
+											<p className="font-medium text-sm text-textSecondary text-center">
 												info@drug-international.com
 											</p>
 										</div>

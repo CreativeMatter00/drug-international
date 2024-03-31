@@ -3,18 +3,18 @@ import Loader from "@/components/ui/loader/Loader";
 import dynamic from "next/dynamic";
 
 function page() {
-  const DynamicUpcomingProducts = dynamic(
-    () => import("@/components/products/upcomingProducts/UpcomingProducts"),
-    {
-      loading: () => <Loader />,
-    }
-  );
-  return (
-    <div>
-      <BreadCrumb title="upcoming products" />
-      <DynamicUpcomingProducts />
-    </div>
-  );
+	const DynamicUpcomingProducts = dynamic(
+		() => import("@/components/products/upcomingProducts/UpcomingProducts"),
+		{
+			loading: () => <Loader />,
+		}
+	);
+	return (
+		<div className="pt-8">
+			{/* <BreadCrumb title="upcoming products" /> */}
+			<DynamicUpcomingProducts />
+		</div>
+	);
 }
 
 export default page;

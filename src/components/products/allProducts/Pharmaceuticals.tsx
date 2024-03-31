@@ -34,7 +34,7 @@ function Pharmaceuticals(pharmaceuticalData: any) {
 									width={245}
 									height={165}
 									alt={product.MEDICINE_NAME}
-									className="mx-auto h-auto w-auto"
+									className="mx-auto h-auto w-auto p-2"
 								/>
 							) : (
 								<div key={product.MEDICINE_ID} className="">

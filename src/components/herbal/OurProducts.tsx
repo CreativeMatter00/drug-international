@@ -11,7 +11,6 @@ import OurProductCard from "./OurProductCard";
 import { useLocale, useTranslations } from "next-intl";
 import { getHerbalProducts } from "@/api/api";
 import { useQuery } from "@tanstack/react-query";
-import Loader from "../ui/loader/Loader";
 import ProductLoader from "../ui/loader/ProductLoader";
 
 function OurProducts() {

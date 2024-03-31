@@ -5,7 +5,6 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
 import styles from "@/styles/Unani.module.css";
-import Image from "next/image";
 import Link from "next/link";
 
 import { FaArrowRightLong } from "react-icons/fa6";
@@ -69,10 +68,10 @@ function OurProducts() {
 									key={index}
 								>
 									<div className="bg-white rounded-md mb-4 h-[300px] w-[300px] flex items-center justify-center">
-										<Image
+										<img
 											src={`https://www.drug-international.com/${product?.MEDICINE_IMAGES[0]}`}
-											width={300}
-											height={300}
+											// width={300}
+											// height={300}
 											alt={product.MEDICINE_NAME}
 											className="mx-auto h-full max-h-[260px] w-auto group-hover:scale-105 transition-all"
 										/>

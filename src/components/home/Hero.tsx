@@ -19,24 +19,8 @@ function Hero() {
 	const locale = useLocale();
 
 	return (
-		<div className="relative container px-4 lg:-mt-4 mx-auto mb-8 overflow-hidden min-h-screen">
+		<div className="relative container px-4 lg:-mt-4 mx-auto mb-8 overflow-hidden h-screen max-h-[1200px]">
 			<div className="flex flex-col min-h-screen gap-4 md:flex-row">
-				{/* <div className="flex items-center justify-center">
-          <motion.div
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{
-              duration: 1,
-            }}
-          >
-            <Image
-              src="/assets/images/home/cap.jpg"
-              height={468}
-              width={624}
-              alt="hero"
-            />
-          </motion.div>
-        </div> */}
 				<div className="flex items-center justify-center w-full md:w-1/2 px-4 md:px-0">
 					<Swiper
 						spaceBetween={30}
