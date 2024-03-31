@@ -4,8 +4,18 @@ import ProductCard from "../ProductCard";
 function UpcomingProducts() {
   return (
     <div className="container mx-auto px-2">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-x-2 gap-y-4 mb-16 md:gap-x-4 md:gap-y-14">
-        <ProductCard
+      <div className="">
+        {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-x-2 gap-y-4 mb-16 md:gap-x-4 md:gap-y-14"> */}
+        <div className="flex text-xl font-medium  text-justify py-20">
+          Drug Int. Ltd represents a promising frontier in healthcare, offering
+          innovative treatments for various diseases and conditions. Our
+          imminent medicines represent diverse therapeutic modalities poised to
+          revolutionize healthcare and improve patient outcomes. Through ongoing
+          research and collaboration, we are advancing the development and
+          delivery of these innovative treatments to patients.
+        </div>
+
+        {/* <ProductCard
           src="/assets/images/products/latest/1.png"
           title="toposar"
           genericName="etoposide"
@@ -100,11 +110,11 @@ function UpcomingProducts() {
           title="menoher-40"
           genericName="etoposide"
           theraputicName="oncology"
-        />
+        /> */}
       </div>
-      <div className="flex justify-center mb-20">
+      {/* <div className="flex justify-center mb-20">
         <ButtonInverted> More Products </ButtonInverted>
-      </div>
+      </div> */}
     </div>
   );
 }
