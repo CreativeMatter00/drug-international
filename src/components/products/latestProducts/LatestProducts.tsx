@@ -26,78 +26,78 @@ function LatestProducts() {
 			</div>
 			<div className="grid grid-cols-2 md:grid-cols-4 gap-x-2 gap-y-4 mb-16 md:gap-x-4 md:gap-y-14">
 				<ProductCard
-					src="/assets/images/products/latest/1.png"
-					title="toposar"
-					genericName="etoposide"
-					theraputicName="oncology"
+					src="https://www.drug-international.com/uploads/product_images/Toposar50mg.jpg"
+					title="Toposar"
+					genericName="Etoposide"
+					theraputicName="Oncology"
 				/>
 				<ProductCard
-					src="/assets/images/products/latest/2.png"
-					title="dobixin-10"
-					genericName="etoposide"
-					theraputicName="oncology"
+					src="https://www.drug-international.com/uploads/product_images/Dobixin_01.jpg"
+					title="Dobixin"
+					genericName="Doxorubicin"
+					theraputicName="Oncology"
 				/>
 				<ProductCard
-					src="/assets/images/products/latest/3.png"
-					title="Ocuberry-160"
-					genericName="etoposide"
-					theraputicName="oncology"
+					src="https://www.drug-international.com/uploads/product_images/Mylostat.jpg"
+					title="Mylostat Capsule"
+					genericName="Hydroxyurea"
+					theraputicName="Oncology"
 				/>
 				<ProductCard
-					src="/assets/images/products/latest/4.png"
-					title="Momodol extra"
-					genericName="etoposide"
-					theraputicName="oncology"
+					src="https://www.drug-international.com/uploads/product_images/15699998851522141958Varox.jpg%20(2).jpg"
+					title="Varox"
+					genericName="Rivaroxaban"
+					theraputicName="Cardiovascular"
 				/>
 				<ProductCard
-					src="/assets/images/products/latest/5.png"
-					title="ivtin-6"
-					genericName="etoposide"
-					theraputicName="oncology"
+					src="https://www.drug-international.com/uploads/product_images/1531116782Sonib%20-c.jpg"
+					title="Sonib"
+					genericName="Sorafenib"
+					theraputicName="Oncology"
 				/>
 				<ProductCard
-					src="/assets/images/products/latest/6.png"
-					title="charm-50"
-					genericName="etoposide"
-					theraputicName="oncology"
+					src="https://www.drug-international.com/uploads/product_images/1525760112Depomed_4.jpg"
+					title="Depomed"
+					genericName="Methylprednisolone"
+					theraputicName="Steroid"
 				/>
 				<ProductCard
-					src="/assets/images/products/latest/7.png"
-					title="dilavir"
-					genericName="etoposide"
-					theraputicName="oncology"
+					src="https://www.drug-international.com/uploads/product_images/1525760942Ontaxel_30.jpg"
+					title="Ontaxel-30"
+					genericName="Paclitaxel"
+					theraputicName="Oncology"
 				/>
 				<ProductCard
-					src="/assets/images/products/latest/8.png"
-					title="solina-5"
-					genericName="etoposide"
-					theraputicName="oncology"
+					src="https://www.drug-international.com/uploads/product_images/1525948609Foly_tab.jpg"
+					title="Foly"
+					genericName="Folinic"
+					theraputicName="Vitamin"
 				/>
 				<ProductCard
-					src="/assets/images/products/latest/9.png"
-					title="fenat"
-					genericName="etoposide"
-					theraputicName="oncology"
+					src="https://www.drug-international.com/uploads/product_images/1526549123Dezco.jpg"
+					title="Dezco"
+					genericName="Deflazacort"
+					theraputicName="Steroid"
 				/>
 				<ProductCard
-					src="/assets/images/products/latest/10.png"
-					title="dorubin"
-					genericName="etoposide"
-					theraputicName="oncology"
+					src="https://www.drug-international.com/uploads/product_images/1528785317Foly%20_%20In.jpg.jpg"
+					title="Foly Injection"
+					genericName="Folinic"
+					theraputicName="Steroid"
 				/>
 				<ProductCard
-					src="/assets/images/products/latest/11.png"
-					title="famtoid"
-					genericName="etoposide"
-					theraputicName="oncology"
+					src="https://www.drug-international.com/uploads/product_images/1534563816Epiruba_50c.jpg"
+					title="Epiruba-50"
+					genericName="Epirubicin"
+					theraputicName="Oncology"
 				/>
 				<ProductCard
-					src="/assets/images/products/latest/12.png"
-					title="favira"
-					genericName="etoposide"
-					theraputicName="oncology"
+					src="https://www.drug-international.com/uploads/product_images/1537877176Mes-D-%20Carton%20Pic.jpg"
+					title="Mes-D"
+					genericName="Mesna"
+					theraputicName="Oncology"
 				/>
-				<ProductCard
+				{/* <ProductCard
 					src="/assets/images/products/latest/13.png"
 					title="Mypart mix"
 					genericName="etoposide"
@@ -120,7 +120,7 @@ function LatestProducts() {
 					title="menoher-40"
 					genericName="etoposide"
 					theraputicName="oncology"
-				/>
+				/> */}
 			</div>
 			{/* <div className="flex justify-center mb-20">
 				<ButtonInverted> More Products </ButtonInverted>

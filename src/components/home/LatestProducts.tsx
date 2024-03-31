@@ -192,7 +192,7 @@ function LatestProducts() {
 							<LatestProductsCard
 								src="https://www.drug-international.com/uploads/product_images/1537877176Mes-D-%20Carton%20Pic.jpg"
 								title="Mes-D"
-								genericName="mesna"
+								genericName="Mesna"
 								theraputicName="Oncology"
 							/>
 						</Link>
