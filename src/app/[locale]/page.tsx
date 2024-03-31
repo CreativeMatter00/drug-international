@@ -27,7 +27,8 @@ const Page = () => {
             >
               <source src="/1974.mp4" type="video/mp4" />
             </video>
-            <div className="absolute border-4 border-[#E4E4E4] h-full"></div>
+            <div className="absolute border-[1vh] border-[#E4E4E4] h-full"></div>
+            {/* <div className="absolute border-4 border-[#E4E4E4] h-full"></div> */}
           </div>
 
           {/* <div className="h-full w-3/6 max-lg:w-5/6 max-md:w-full"> */}
