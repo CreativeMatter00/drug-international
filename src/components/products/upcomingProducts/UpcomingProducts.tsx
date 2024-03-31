@@ -1,120 +1,39 @@
-import ButtonInverted from "@/components/ui/button/ButtonInverted";
-import ProductCard from "../ProductCard";
+"use client";
+
+import { FaArrowLeft } from "react-icons/fa6";
+import { useRouter } from "next/navigation";
 
 function UpcomingProducts() {
+  const router = useRouter();
+
+  const handleBack = () => {
+    router.back();
+  };
+
   return (
     <div className="container mx-auto px-2">
       <div className="">
-        {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-x-2 gap-y-4 mb-16 md:gap-x-4 md:gap-y-14"> */}
-        <div className="flex text-xl font-medium  text-justify py-20">
-          Drug Int. Ltd represents a promising frontier in healthcare, offering
-          innovative treatments for various diseases and conditions. Our
-          imminent medicines represent diverse therapeutic modalities poised to
-          revolutionize healthcare and improve patient outcomes. Through ongoing
-          research and collaboration, we are advancing the development and
-          delivery of these innovative treatments to patients.
+        <div className="pb-6 border-b-2 border-[#E4E4E6] mb-4">
+          <div className="container mx-auto">
+            <button
+              className="text-textPrimary font-medium flex items-center gap-4 px-4 hover:text-primary"
+              onClick={handleBack}
+            >
+              <FaArrowLeft /> Back
+            </button>
+          </div>
         </div>
-
-        {/* <ProductCard
-          src="/assets/images/products/latest/1.png"
-          title="toposar"
-          genericName="etoposide"
-          theraputicName="oncology"
-        />
-        <ProductCard
-          src="/assets/images/products/latest/2.png"
-          title="dobixin-10"
-          genericName="etoposide"
-          theraputicName="oncology"
-        />
-        <ProductCard
-          src="/assets/images/products/latest/3.png"
-          title="Ocuberry-160"
-          genericName="etoposide"
-          theraputicName="oncology"
-        />
-        <ProductCard
-          src="/assets/images/products/latest/4.png"
-          title="Momodol extra"
-          genericName="etoposide"
-          theraputicName="oncology"
-        />
-        <ProductCard
-          src="/assets/images/products/latest/5.png"
-          title="ivtin-6"
-          genericName="etoposide"
-          theraputicName="oncology"
-        />
-        <ProductCard
-          src="/assets/images/products/latest/6.png"
-          title="charm-50"
-          genericName="etoposide"
-          theraputicName="oncology"
-        />
-        <ProductCard
-          src="/assets/images/products/latest/7.png"
-          title="dilavir"
-          genericName="etoposide"
-          theraputicName="oncology"
-        />
-        <ProductCard
-          src="/assets/images/products/latest/8.png"
-          title="solina-5"
-          genericName="etoposide"
-          theraputicName="oncology"
-        />
-        <ProductCard
-          src="/assets/images/products/latest/9.png"
-          title="fenat"
-          genericName="etoposide"
-          theraputicName="oncology"
-        />
-        <ProductCard
-          src="/assets/images/products/latest/10.png"
-          title="dorubin"
-          genericName="etoposide"
-          theraputicName="oncology"
-        />
-        <ProductCard
-          src="/assets/images/products/latest/11.png"
-          title="famtoid"
-          genericName="etoposide"
-          theraputicName="oncology"
-        />
-        <ProductCard
-          src="/assets/images/products/latest/12.png"
-          title="favira"
-          genericName="etoposide"
-          theraputicName="oncology"
-        />
-        <ProductCard
-          src="/assets/images/products/latest/13.png"
-          title="Mypart mix"
-          genericName="etoposide"
-          theraputicName="oncology"
-        />
-        <ProductCard
-          src="/assets/images/products/latest/14.png"
-          title="Geludrox hs"
-          genericName="etoposide"
-          theraputicName="oncology"
-        />
-        <ProductCard
-          src="/assets/images/products/latest/15.png"
-          title="eyebrom"
-          genericName="etoposide"
-          theraputicName="oncology"
-        />
-        <ProductCard
-          src="/assets/images/products/latest/16.png"
-          title="menoher-40"
-          genericName="etoposide"
-          theraputicName="oncology"
-        /> */}
+        <div className="w-full flex justify-center items-center">
+          <div className=" text-xl font-medium  md:text-justify py-20 max-w-[1024px] p-4 max-md:py-10">
+            Drug Int. Ltd represents a promising frontier in healthcare,
+            offering innovative treatments for various diseases and conditions.
+            Our imminent medicines represent diverse therapeutic modalities
+            poised to revolutionize healthcare and improve patient outcomes.
+            Through ongoing research and collaboration, we are advancing the
+            development and delivery of these innovative treatments to patients.
+          </div>
+        </div>
       </div>
-      {/* <div className="flex justify-center mb-20">
-        <ButtonInverted> More Products </ButtonInverted>
-      </div> */}
     </div>
   );
 }
