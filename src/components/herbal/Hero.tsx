@@ -120,7 +120,7 @@ function Hero() {
               Healing Touch */}
 						</p>
 						<p
-							className="text-base md:text-lg mb-16"
+							className="text-base md:text-lg mb-16 uppercase"
 							dangerouslySetInnerHTML={{ __html: t.raw("heroSubTitle") }}
 						>
 							{/* Herbal Innovations for a healthier tomorrow with <br /> Drug

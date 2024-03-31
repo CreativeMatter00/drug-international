@@ -35,7 +35,7 @@ function Products() {
 					>
 						<div className="mt-8 mb-24 ">
 							<div className="flex flex-col items-center gap-6 w-fit mx-auto">
-								<p className="font-medium text-base text-textSecondary">
+								<p className="font-medium text-base text-textSecondary capitalize">
 									Download all product list
 								</p>
 								<Link
