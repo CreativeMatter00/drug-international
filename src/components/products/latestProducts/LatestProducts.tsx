@@ -1,6 +1,5 @@
 "use client";
 
-import ButtonInverted from "@/components/ui/button/ButtonInverted";
 import ProductCard from "../ProductCard";
 import { FaArrowLeft } from "react-icons/fa6";
 import { useRouter } from "next/navigation";
@@ -11,7 +10,6 @@ function LatestProducts() {
 	const handleBack = () => {
 		router.back();
 	};
-
 	return (
 		<div className="container mx-auto px-2">
 			<div className="pb-6 border-b-2 border-[#E4E4E6] mb-16">
@@ -97,34 +95,7 @@ function LatestProducts() {
 					genericName="Mesna"
 					theraputicName="Oncology"
 				/>
-				{/* <ProductCard
-					src="/assets/images/products/latest/13.png"
-					title="Mypart mix"
-					genericName="etoposide"
-					theraputicName="oncology"
-				/>
-				<ProductCard
-					src="/assets/images/products/latest/14.png"
-					title="Geludrox hs"
-					genericName="etoposide"
-					theraputicName="oncology"
-				/>
-				<ProductCard
-					src="/assets/images/products/latest/15.png"
-					title="eyebrom"
-					genericName="etoposide"
-					theraputicName="oncology"
-				/>
-				<ProductCard
-					src="/assets/images/products/latest/16.png"
-					title="menoher-40"
-					genericName="etoposide"
-					theraputicName="oncology"
-				/> */}
 			</div>
-			{/* <div className="flex justify-center mb-20">
-				<ButtonInverted> More Products </ButtonInverted>
-			</div> */}
 		</div>
 	);
 }
