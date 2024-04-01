@@ -39,7 +39,7 @@ function Hero() {
 
 	return (
 		<div
-			className={`relative min-h-screen flex items-center justify-center ${styles.background1}`}
+			className={`relative h-screen max-h-[1200px] flex items-center justify-center ${styles.background1}`}
 		>
 			<div className="absolute w-[300px] top-0 right-0 hidden lg:block">
 				<Lottie animationData={animation} loop={true} />

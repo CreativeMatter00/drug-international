@@ -15,6 +15,7 @@ function Banner(props: IBanner) {
 				width={1920}
 				alt="banner"
 				className="w-screen h-[300px] md:h-[400px]"
+				sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 			/>
 			<div className="flex items-center justify-center absolute inset-0 bg-gradient-to-tr from-primary to-#C4161C00">
 				<div className="container mx-2 font-medium text-2xl md:text-6xl uppercase py-4 px-8 text-white border-l-4 md:border-l-8 border-white">
