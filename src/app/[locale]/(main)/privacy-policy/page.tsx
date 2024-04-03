@@ -481,7 +481,7 @@ function Page() {
 					If you have any questions about this Privacy Policy, You can contact
 					us by sending an email at:
 					<br />
-					info@https://www.drug-international.com
+					info@drug-international.com
 				</p>
 			</div>
 		</div>
