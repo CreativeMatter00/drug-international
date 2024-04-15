@@ -9,7 +9,7 @@ function Botanical() {
 	return (
 		<div className="font-medium">
 			<div className="text-center uppercase mb-8">
-				<p className="text-herbalPrimary text-2xl mb-6">
+				<p className="text-herbalPrimary text-xl md:text-2xl mb-6">
 					{/* Botanical Relief  */}
 					{t("ingridientsTitle")}
 				</p>
@@ -30,7 +30,7 @@ function Botanical() {
 							className="h-[100px] w-auto md:h-[200px] mx-auto"
 						/>
 						<div className="flex flex-col items-center gap-3">
-							<p className="text-herbalPrimary font-semibold text-2xl text-center">
+							<p className="text-herbalPrimary font-semibold text-xl md:text-2xl text-center">
 								Turmeric
 							</p>
 							<p className="text-herbalSecondary font-medium text-base text-center">
@@ -48,7 +48,7 @@ function Botanical() {
 							className="h-[100px] w-auto md:h-[200px] mx-auto"
 						/>
 						<div className="flex flex-col items-center gap-3">
-							<p className="text-herbalPrimary font-semibold text-2xl text-center">
+							<p className="text-herbalPrimary font-semibold text-xl md:text-2xl text-center">
 								Ginger
 							</p>
 							<p className="text-herbalSecondary font-medium text-base text-center">
@@ -65,7 +65,7 @@ function Botanical() {
 							className="h-[100px] w-auto md:h-[200px] mx-auto"
 						/>
 						<div className="flex flex-col items-center gap-3">
-							<p className="text-herbalPrimary font-semibold text-2xl text-center">
+							<p className="text-herbalPrimary font-semibold text-xl md:text-2xl text-center">
 								Ginseng
 							</p>
 							<p className="text-herbalSecondary font-medium text-base text-center">
@@ -82,7 +82,7 @@ function Botanical() {
 							className="h-[100px] w-auto md:h-[200px] mx-auto"
 						/>
 						<div className="flex flex-col items-center gap-3">
-							<p className="text-herbalPrimary font-semibold text-2xl text-center">
+							<p className="text-herbalPrimary font-semibold text-xl md:text-2xl text-center">
 								Aloe Vera
 							</p>
 							<p className="text-herbalSecondary font-medium text-base text-center">
@@ -99,7 +99,7 @@ function Botanical() {
 							className="h-[100px] w-auto md:h-[200px] mx-auto"
 						/>
 						<div className="flex flex-col items-center gap-3">
-							<p className="text-herbalPrimary font-semibold text-2xl text-center">
+							<p className="text-herbalPrimary font-semibold text-xl md:text-2xl text-center">
 								Lavender
 							</p>
 							<p className="text-herbalSecondary font-medium text-base text-center">
@@ -116,7 +116,7 @@ function Botanical() {
 							className="h-[100px] w-auto md:h-[200px] mx-auto"
 						/>
 						<div className="flex flex-col items-center gap-3">
-							<p className="text-herbalPrimary font-semibold text-2xl text-center">
+							<p className="text-herbalPrimary font-semibold text-xl md:text-2xl text-center">
 								Chamomile
 							</p>
 							<p className="text-herbalSecondary font-medium text-base text-center">
@@ -133,7 +133,7 @@ function Botanical() {
 							className="h-[100px] w-auto md:h-[200px] mx-auto"
 						/>
 						<div className="flex flex-col items-center gap-3">
-							<p className="text-herbalPrimary font-semibold text-2xl text-center">
+							<p className="text-herbalPrimary font-semibold text-xl md:text-2xl text-center">
 								Echinacea
 							</p>
 							<p className="text-herbalSecondary font-medium text-base text-center">
@@ -150,7 +150,7 @@ function Botanical() {
 							className="h-[100px] w-auto md:h-[200px] mx-auto"
 						/>
 						<div className="flex flex-col items-center gap-3">
-							<p className="text-herbalPrimary font-semibold text-2xl text-center">
+							<p className="text-herbalPrimary font-semibold text-xl md:text-2xl text-center">
 								Peppermint
 							</p>
 							<p className="text-herbalSecondary font-medium text-base text-center">

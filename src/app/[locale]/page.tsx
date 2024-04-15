@@ -25,7 +25,7 @@ const Page = () => {
 							playsInline={true}
 							className="w-[75vh] max-lg:w-[100vh]"
 						>
-							<source src="/1974.mp4" type="video/mp4" />
+							<source src="/assets/videoes/1974.mp4" type="video/mp4" />
 						</video>
 						<div className="absolute border-[1vh] border-[#E4E4E4] h-full"></div>
 						{/* <div className="absolute border-4 border-[#E4E4E4] h-full"></div> */}
