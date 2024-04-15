@@ -185,7 +185,7 @@ const Footer = () => {
 				</div>
 
 				<div className="text-center">
-					© {currentYear} &nbsp;
+					© {currentYear}&nbsp;
 					<Link
 						href="https://www.creativematter.agency/"
 						target="_blank"
