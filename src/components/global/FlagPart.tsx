@@ -49,7 +49,7 @@ const FlagPart = () => {
     },
     {
       slNo: 6,
-      name: "Sierra-Leone",
+      name: "Sierra Leone",
       path: "/assets/images/global/Flags/Sierra-Leone.png",
       mapImage: "/assets/images/global/Map/sierra-Leone-6.png",
     },
