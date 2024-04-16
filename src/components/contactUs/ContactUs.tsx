@@ -126,10 +126,7 @@ function ContactUs() {
 										<div className="text-4xl">
 											<ImOffice />
 										</div>
-										<p className="uppercase font-medium text-lg">
-											{" "}
-											Head Office{" "}
-										</p>
+										<p className="uppercase font-medium text-lg">Head Office</p>
 									</div>
 									<div className="px-9 py-10 border-b-2 border-[#E4E4E6]">
 										<p className="text-textLight uppercase mb-2 text-xs">
@@ -169,10 +166,7 @@ function ContactUs() {
 									</div>
 
 									<div className="px-9 py-10 border-0 md:border-b-2 md:border-[#E4E4E6]">
-										<p className="text-textLight uppercase mb-2 text-xs">
-											{" "}
-											Tel{" "}
-										</p>
+										<p className="text-textLight uppercase mb-2 text-xs">Tel</p>
 										<p className="text-textSecondary text-sm">
 											(+880) 2 9810659
 										</p>
@@ -199,10 +193,7 @@ function ContactUs() {
 									</div>
 
 									<div className="px-9 py-10 border-0 md:border-b-2 md:border-[#E4E4E6]">
-										<p className="text-textLight uppercase mb-2 text-xs">
-											{" "}
-											Tel{" "}
-										</p>
+										<p className="text-textLight uppercase mb-2 text-xs">Tel</p>
 										<p className="text-textSecondary text-sm">
 											(+880) 2 9801884
 										</p>
@@ -360,7 +351,6 @@ function ContactUs() {
 										<div className="flex justify-center mb-8">
 											<ButtonInverted> SEND </ButtonInverted>
 										</div>
-
 										<ToastContainer />
 									</div>
 								</div>
