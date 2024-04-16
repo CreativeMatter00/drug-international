@@ -29,14 +29,15 @@ function MissionVision() {
 					<ul className="flex flex-col gap-3">
 						<li> Adherence to the cGMP regulations </li>
 						<li>
-							Quality Assurance medicines throughout manufacturing operations
+							Quality Assurance of medicines throughout manufacturing operations
 						</li>
 						<li>
 							To Have strict SOP for assurance of the identity, strength,
 							quality, and purity of drug products
 						</li>
 						<li>
-							To deliver medicine to patients in best form of dose and efficacy
+							To deliver medicine to the patients in best form of dose and
+							efficacy
 						</li>
 					</ul>
 				</div>

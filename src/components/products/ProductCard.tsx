@@ -20,7 +20,7 @@ function ProductCard(props: IProductCard) {
 					height={191}
 					width={229}
 					alt="latest product"
-					className="mx-auto w-full h-auto scale-95 group-hover:scale-105 group-hover:transition-all group-hover:delay-100"
+					className="mx-auto w-full h-auto scale-95 group-hover:scale-105 group-hover:transition-all group-hover:delay-100 p-4"
 				/>
 			</div>
 			<p className="font-medium text-lg md:text-2xl text-center uppercase text-primaryShade py-4 mb-4">
