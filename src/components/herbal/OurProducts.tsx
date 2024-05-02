@@ -5,7 +5,6 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import styles from "@/styles/Herbal.module.css";
 import Link from "next/link";
-
 import { FaArrowRightLong } from "react-icons/fa6";
 import OurProductCard from "./OurProductCard";
 import { useLocale, useTranslations } from "next-intl";

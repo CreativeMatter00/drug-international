@@ -86,7 +86,7 @@ function ContactUs() {
 							animate="visible"
 							variants={revealAnimation}
 						>
-							<p className="p-12  font-medium text-2xl text-textPrimary mb-0 md:mb-16">
+							<p className="p-12 font-medium text-2xl text-textPrimary mb-0 md:mb-16">
 								{t("ourAddress")}
 							</p>
 
@@ -288,7 +288,7 @@ function ContactUs() {
 									<div className="w-full md:w-2/3">
 										<input
 											type="text"
-											placeholder="FULL NAME"
+											placeholder="Full Name"
 											className="bg-[#EFEFF0] p-4 w-full border-b-2 border-black mb-4"
 											{...register("fullName", {
 												required: true,

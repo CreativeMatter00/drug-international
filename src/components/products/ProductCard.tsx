@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 type IProductCard = {
 	src: string;
 	title: string;
@@ -17,9 +18,9 @@ function ProductCard(props: IProductCard) {
 			<div className="h-[250px] flex items-center justify-center py-4 overflow-hidden">
 				<img
 					src={props.src}
-					height={191}
-					width={229}
-					alt="latest product"
+					// height={191}
+					// width={229}
+					alt="product"
 					className="mx-auto w-full h-auto scale-95 group-hover:scale-105 group-hover:transition-all group-hover:delay-100 p-4"
 				/>
 			</div>

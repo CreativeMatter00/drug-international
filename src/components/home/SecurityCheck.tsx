@@ -3,7 +3,6 @@
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";
-
 import styles from "@/styles/Security.module.css";
 import ButtonSecondary from "../ui/button/ButtonSecondary";
 import AddModal from "../share/Modal/AddModal";

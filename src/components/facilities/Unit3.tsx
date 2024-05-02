@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { motion } from "framer-motion";
@@ -13,9 +14,6 @@ function Unit3() {
 		visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 	};
 
-	const handleContextMenu = (event: any) => {
-		event.preventDefault();
-	};
 	return (
 		<motion.div
 			initial="hidden"
@@ -29,25 +27,29 @@ function Unit3() {
 			<SlideshowLightbox className="container grid grid-cols-1 lg:grid-cols-2 gap-8 mx-auto">
 				<img
 					className="w-full rounded-lg h-80"
-					//   src="https://source.unsplash.com/pAKCx4y2H6Q/1400x1200"
 					src="/assets/images/facilities/unit-3/1.jpg"
+					alt="unit-3"
 				/>
 				<img
 					className="w-full rounded-lg h-80"
 					src="/assets/images/facilities/unit-3/2.jpg"
+					alt="unit-3"
 				/>
 				<img
 					className="w-full rounded-lg h-80"
 					src="/assets/images/facilities/unit-3/3.jpg"
+					alt="unit-3"
 				/>
 
 				<img
 					className="w-full rounded-lg h-80"
 					src="/assets/images/facilities/unit-3/4.jpg"
+					alt="unit-3"
 				/>
 				<img
 					className="w-full rounded-lg h-80"
 					src="/assets/images/facilities/unit-3/5.jpg"
+					alt="unit-3"
 				/>
 			</SlideshowLightbox>
 

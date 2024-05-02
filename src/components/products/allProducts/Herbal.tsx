@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { getHerbalProducts } from "@/api/api";
 import ProductLoader from "@/components/ui/loader/ProductLoader";
 import { useQuery } from "@tanstack/react-query";
@@ -57,18 +58,6 @@ function Herbal() {
 						))}
 					</div>
 				)}
-
-				{/* 
-<div className="border border-[#e4e4e6] primaryShadow rounded-md w-full transition-all cursor-pointer hover:border-primary hover￼cale-90">
-<Image
-src="/assets/images/products/all/herbal/1.png"
-width={245}
-height={165}
-alt="product"
-className="mx-auto"
-/>
-</div>
- */}
 			</div>
 		</div>
 	);

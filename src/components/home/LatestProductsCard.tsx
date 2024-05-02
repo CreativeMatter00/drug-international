@@ -1,4 +1,4 @@
-import Image from "next/image";
+/* eslint-disable @next/next/no-img-element */
 
 type ILatestProductsCard = {
 	src: string;
@@ -15,7 +15,7 @@ function LatestProductsCard(props: ILatestProductsCard) {
 	// };
 
 	return (
-		<div className="relative rounded-lg  cursor-pointer overflow-hidden group h-[35.25rem] ">
+		<div className="relative rounded-lg  cursor-pointer overflow-hidden group h-[35.25rem]">
 			<div className={`h-20  block group-hover:h-0 duration-500`}></div>
 			<div className="relative overflow-hidden p-2">
 				<div className="flex items-center justify-center h-[300px]">

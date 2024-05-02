@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-
 import styles from "@/styles/Products.module.css";
 import { useLocale } from "next-intl";
 import Image from "next/image";

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { useLocale } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";

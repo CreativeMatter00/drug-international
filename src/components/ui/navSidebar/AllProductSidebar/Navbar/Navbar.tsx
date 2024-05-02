@@ -52,9 +52,9 @@ const Navbar = () => {
 	return (
 		<div>
 			<nav
-				className={`top-0  flex justify-center bg-white fixed w-full z-[100000]  ${
+				className={`top-0  flex justify-center bg-white fixed w-full z-[100000] ${
 					scrolling
-						? `bg-opacity-75 shadow-lg ${styles.navShadow}  ${styles.blurLg}`
+						? `bg-opacity-75 shadow-lg ${styles.navShadow} ${styles.blurLg}`
 						: ``
 				}`}
 			>
@@ -65,7 +65,7 @@ const Navbar = () => {
 								<Image
 									src={`/assets/logo/drug-logo.png`}
 									width={170}
-									height={61}
+									height={67}
 									alt="Logo"
 									className="h-auto"
 									priority

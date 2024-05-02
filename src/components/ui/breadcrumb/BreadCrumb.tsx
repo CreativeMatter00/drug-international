@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 import { IoMdHome } from "react-icons/io";
 import { useLocale, useTranslations } from "next-intl";
@@ -15,7 +14,7 @@ const BreadCrumb: React.FC<BreadCrumbProps> = ({ title }) => {
 			<div className="pb-6 border-b-2 border-[#E4E4E6]">
 				<div className="container mx-auto flex items-center gap-2 text-textPrimary font-medium text-sm uppercase">
 					<Link href={`/${locale}/home`} className="text-xl hover:text-primary">
-						<IoMdHome />{" "}
+						<IoMdHome />
 					</Link>
 					/
 					<Link
