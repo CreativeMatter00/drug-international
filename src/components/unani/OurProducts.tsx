@@ -44,8 +44,6 @@ function OurProducts() {
 			</div>
 		);
 
-	// console.log(data);
-
 	return (
 		<div className="font-medium">
 			<p className="bg-[#159A48] text-white py-12 text-3xl text-center uppercase">
@@ -68,7 +66,7 @@ function OurProducts() {
 									className="flex flex-col justify-center items-center mx-auto group"
 									key={index}
 								>
-									<div className="bg-white rounded-md mb-4 h-[300px] w-[300px] flex items-center justify-center">
+									<div className="bg-white rounded-md mb-4 h-[300px] w-[300px] flex items-center justify-center overflow-hidden">
 										<img
 											src={`https://www.drug-international.com/${product?.MEDICINE_IMAGES[0]}`}
 											// width={300}

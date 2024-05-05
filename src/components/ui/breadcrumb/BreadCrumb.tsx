@@ -11,7 +11,7 @@ const BreadCrumb: React.FC<BreadCrumbProps> = ({ title }) => {
 	const t = useTranslations("AllProducts");
 	return (
 		<div className="pt-20 mb-4">
-			<div className="pb-6 border-b-2 border-[#E4E4E6]">
+			<div className="pb-6 border-b-2 border-[#E4E4E6] mx-4 md:mx-auto">
 				<div className="container mx-auto flex items-center gap-2 text-textPrimary font-medium text-sm uppercase">
 					<Link href={`/${locale}/home`} className="text-xl hover:text-primary">
 						<IoMdHome />

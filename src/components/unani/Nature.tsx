@@ -62,10 +62,7 @@ function Nature() {
 									alt="Ingredient-aloeVera"
 									className="mx-auto mb-4 w-[200px] h-auto"
 								/>
-								<p className="text-center mb-2 text-2xl uppercase">
-									{" "}
-									Aloe Vera{" "}
-								</p>
+								<p className="text-center mb-2 text-2xl uppercase">Aloe Vera</p>
 								<p className="text-center text-base capitalize">
 									Aloe barbadensis miller
 								</p>
@@ -81,8 +78,7 @@ function Nature() {
 								/>
 								<p className="text-center mb-2 text-2xl uppercase"> Fennel </p>
 								<p className="text-center text-base capitalize">
-									{" "}
-									Foeniculum vulgare{" "}
+									Foeniculum vulgare
 								</p>
 							</div>
 							<div>
@@ -109,8 +105,7 @@ function Nature() {
 								/>
 								<p className="text-center mb-2 text-2xl uppercase"> Myrrh </p>
 								<p className="text-center text-base capitalize">
-									{" "}
-									Commiphora wightii{" "}
+									Commiphora wightii
 								</p>
 							</div>
 
@@ -140,8 +135,7 @@ function Nature() {
 									Frankincense
 								</p>
 								<p className="text-center text-base capitalize">
-									{" "}
-									Boswellia serrata{" "}
+									Boswellia serrata
 								</p>
 							</div>
 
@@ -155,8 +149,7 @@ function Nature() {
 								/>
 								<p className="text-center mb-2 text-2xl uppercase">licorice</p>
 								<p className="text-center text-base capitalize">
-									{" "}
-									Glycyrrhiza glabra{" "}
+									Glycyrrhiza glabra
 								</p>
 							</div>
 
@@ -170,8 +163,7 @@ function Nature() {
 								/>
 								<p className="text-center mb-2 text-2xl uppercase">Guggul</p>
 								<p className="text-center text-base capitalize">
-									{" "}
-									Commiphora wightii{" "}
+									Commiphora wightii
 								</p>
 							</div>
 						</div>
