@@ -1,18 +1,17 @@
 "use client";
 
+import styles from "@/styles/Facilities.module.css";
+import { useLocale, useTranslations } from "next-intl";
 import { useState } from "react";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import Banner from "../ui/Banner";
 import Manufacturing from "./Manufacturing";
 import Oncology from "./Oncology";
 import Research from "./Research";
-import Warehouse from "./Warehouse";
-
-import styles from "@/styles/Facilities.module.css";
-import { useLocale, useTranslations } from "next-intl";
-import Banner from "../ui/Banner";
 import Unit1 from "./Unit1";
 import Unit2 from "./Unit2";
 import Unit3 from "./Unit3";
+import Warehouse from "./Warehouse";
 
 function Facilities() {
 	const [activeFacility, setActiveFacility] = useState<number>(0);

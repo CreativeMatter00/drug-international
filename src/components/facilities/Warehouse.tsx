@@ -26,17 +26,17 @@ function Warehouse() {
 
 			<SlideshowLightbox className="container grid grid-cols-1 lg:grid-cols-3 gap-8 mx-auto ">
 				<img
-					className="w-full rounded-lg h-48"
+					className="w-auto rounded-lg h-48 mx-auto"
 					src="/assets/images/facilities/warehouse1.jpg"
 					alt="warehouse"
 				/>
 				<img
-					className="w-full rounded-lg h-48"
+					className="w-auto rounded-lg h-48 mx-auto"
 					src="/assets/images/facilities/warehouse2.jpg"
 					alt="warehouse"
 				/>
 				<img
-					className="w-full rounded-lg h-48"
+					className="w-auto rounded-lg h-48 mx-auto"
 					src="/assets/images/facilities/warehouse3.jpg"
 					alt="warehouse"
 				/>

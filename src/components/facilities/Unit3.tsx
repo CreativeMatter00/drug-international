@@ -52,10 +52,6 @@ function Unit3() {
 					alt="unit-3"
 				/>
 			</SlideshowLightbox>
-
-			<div className="font-medium text-base text-textSecondary">
-				<p className=""></p>
-			</div>
 		</motion.div>
 	);
 }

@@ -4,7 +4,7 @@ import axios from "axios";
 
 // let url = "http://103.219.160.253:5454/drug-website";
 
-let url = "https://www.drug-international.com";
+const url = process.env.NEXT_PUBLIC_API_URL;
 
 // if (process.env.NODE_ENV === "development") {
 // 	url = "http://103.219.160.253:5454/drug-website";
@@ -90,6 +90,7 @@ export const getUnaniProducts = async () => {
 		console.log(error);
 	}
 };
+
 //? Get Oncology product
 
 export const getOncologyProducts = async () => {
@@ -100,6 +101,7 @@ export const getOncologyProducts = async () => {
 		console.log(error);
 	}
 };
+
 //? Get Generic product
 
 export const getGenericProducts = async (letter: any) => {

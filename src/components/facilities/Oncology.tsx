@@ -25,141 +25,141 @@ function Oncology() {
 				{t("oncology")}
 			</p>
 
-			<SlideshowLightbox className="container grid grid-cols-1 lg:grid-cols-3 gap-8 mx-auto ">
+			<SlideshowLightbox className="container grid grid-cols-1 lg:grid-cols-3 gap-8 mx-auto">
 				<img
-					className="w-full rounded-lg h-48"
+					className="w-auto rounded-lg h-48 mx-auto"
 					//   src="https://source.unsplash.com/pAKCx4y2H6Q/1400x1200"
 					src="/assets/images/facilities/oncology/oncology_1.jpg"
 					alt="oncology"
 				/>
 				<img
-					className="w-full rounded-lg h-48"
+					className="w-auto rounded-lg h-48 mx-auto"
 					//   src="https://source.unsplash.com/pAKCx4y2H6Q/1400x1200"
 					src="/assets/images/facilities/oncology/oncology_7.jpg"
 					alt="oncology"
 				/>
 				<img
-					className="w-full rounded-lg h-48"
+					className="w-auto rounded-lg h-48 mx-auto"
 					//   src="https://source.unsplash.com/pAKCx4y2H6Q/1400x1200"
 					src="/assets/images/facilities/oncology/oncology_9.jpg"
 					alt="oncology"
 				/>
 				<img
-					className="w-full rounded-lg h-48"
+					className="w-auto rounded-lg h-48 mx-auto"
 					//   src="https://source.unsplash.com/pAKCx4y2H6Q/1400x1200"
 					src="/assets/images/facilities/oncology/oncology_12.jpg"
 					alt="oncology"
 				/>
 				<img
-					className="w-full rounded-lg h-48"
+					className="w-auto rounded-lg h-48 mx-auto"
 					//   src="https://source.unsplash.com/pAKCx4y2H6Q/1400x1200"
 					src="/assets/images/facilities/oncology/oncology_13.jpg"
 					alt="oncology"
 				/>
 				<img
-					className="w-full rounded-lg h-48"
+					className="w-auto rounded-lg h-48 mx-auto"
 					//   src="https://source.unsplash.com/pAKCx4y2H6Q/1400x1200"
 					src="/assets/images/facilities/oncology/oncology_14.jpg"
 					alt="oncology"
 				/>
 				<img
-					className="w-full rounded-lg h-48"
+					className="w-auto rounded-lg h-48 mx-auto"
 					//   src="https://source.unsplash.com/pAKCx4y2H6Q/1400x1200"
 					src="/assets/images/facilities/oncology/oncology_15.jpg"
 					alt="oncology"
 				/>
 				<img
-					className="w-full rounded-lg h-48"
+					className="w-auto rounded-lg h-48 mx-auto"
 					//   src="https://source.unsplash.com/pAKCx4y2H6Q/1400x1200"
 					src="/assets/images/facilities/oncology/oncology_16.jpg"
 					alt="oncology"
 				/>
 				<img
-					className="w-full rounded-lg h-48"
+					className="w-auto rounded-lg h-48 mx-auto"
 					//   src="https://source.unsplash.com/pAKCx4y2H6Q/1400x1200"
 					src="/assets/images/facilities/oncology/oncology_17.jpg"
 					alt="oncology"
 				/>
 				<img
-					className="w-full rounded-lg h-48"
+					className="w-auto rounded-lg h-48 mx-auto"
 					//   src="https://source.unsplash.com/pAKCx4y2H6Q/1400x1200"
 					src="/assets/images/facilities/oncology/oncology_18.jpg"
 					alt="oncology"
 				/>
 				<img
-					className="w-full rounded-lg h-48"
+					className="w-auto rounded-lg h-48 mx-auto"
 					//   src="https://source.unsplash.com/pAKCx4y2H6Q/1400x1200"
 					src="/assets/images/facilities/oncology/oncology_20.jpg"
 					alt="oncology"
 				/>
 				<img
-					className="w-full rounded-lg h-48"
+					className="w-auto rounded-lg h-48 mx-auto"
 					//   src="https://source.unsplash.com/pAKCx4y2H6Q/1400x1200"
 					src="/assets/images/facilities/oncology/oncology_21.jpg"
 					alt="oncology"
 				/>
 				<img
-					className="w-full rounded-lg h-48"
+					className="w-auto rounded-lg h-48 mx-auto"
 					//   src="https://source.unsplash.com/pAKCx4y2H6Q/1400x1200"
 					src="/assets/images/facilities/oncology/oncology_22.jpg"
 					alt="oncology"
 				/>
 				<img
-					className="w-full rounded-lg h-48"
+					className="w-auto rounded-lg h-48 mx-auto"
 					//   src="https://source.unsplash.com/pAKCx4y2H6Q/1400x1200"
 					src="/assets/images/facilities/oncology/oncology_23.jpg"
 					alt="oncology"
 				/>
 				<img
-					className="w-full rounded-lg h-48"
+					className="w-auto rounded-lg h-48 mx-auto"
 					//   src="https://source.unsplash.com/pAKCx4y2H6Q/1400x1200"
 					src="/assets/images/facilities/oncology/oncology_33.jpg"
 					alt="oncology"
 				/>
 				<img
-					className="w-full rounded-lg h-48"
+					className="w-auto rounded-lg h-48 mx-auto"
 					//   src="https://source.unsplash.com/pAKCx4y2H6Q/1400x1200"
 					src="/assets/images/facilities/oncology/oncology_34.jpg"
 					alt="oncology"
 				/>
 				<img
-					className="w-full rounded-lg h-48"
+					className="w-auto rounded-lg h-48 mx-auto"
 					//   src="https://source.unsplash.com/pAKCx4y2H6Q/1400x1200"
 					src="/assets/images/facilities/oncology/oncology_35.jpg"
 					alt="oncology"
 				/>
 				<img
-					className="w-full rounded-lg h-48"
+					className="w-auto rounded-lg h-48 mx-auto"
 					//   src="https://source.unsplash.com/pAKCx4y2H6Q/1400x1200"
 					src="/assets/images/facilities/oncology/oncology_36.jpg"
 					alt="oncology"
 				/>
 				<img
-					className="w-full rounded-lg h-48"
+					className="w-auto rounded-lg h-48 mx-auto"
 					//   src="https://source.unsplash.com/pAKCx4y2H6Q/1400x1200"
 					src="/assets/images/facilities/oncology/oncology-01.jpg"
 					alt="oncology"
 				/>
 				<img
-					className="w-full rounded-lg h-48"
+					className="w-auto rounded-lg h-48 mx-auto"
 					//   src="https://source.unsplash.com/pAKCx4y2H6Q/1400x1200"
 					src="/assets/images/facilities/oncology/oncology-03.jpg"
 					alt="oncology"
 				/>
 				<img
-					className="w-full rounded-lg h-48"
+					className="w-auto rounded-lg h-48 mx-auto"
 					//   src="https://source.unsplash.com/pAKCx4y2H6Q/1400x1200"
 					src="/assets/images/facilities/oncology/oncology-04.jpg"
 					alt="oncology"
 				/>
 				<img
-					className="w-full rounded-lg h-48"
+					className="w-auto rounded-lg h-48 mx-auto"
 					//   src="https://source.unsplash.com/pAKCx4y2H6Q/1400x1200"
 					src="/assets/images/facilities/oncology/oncology-05.jpg"
 					alt="oncology"
 				/>
 				<img
-					className="w-full rounded-lg h-48"
+					className="w-auto rounded-lg h-48 mx-auto"
 					//   src="https://source.unsplash.com/pAKCx4y2H6Q/1400x1200"
 					src="/assets/images/facilities/oncology/oncology_box.jpg"
 					alt="oncology"
