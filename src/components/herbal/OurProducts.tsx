@@ -67,7 +67,6 @@ function OurProducts() {
 										key={index}
 									>
 										<OurProductCard
-											key={index}
 											src={`https://www.drug-international.com/${product?.MEDICINE_IMAGES[0]}`}
 											title={product?.MEDICINE_NAME}
 										/>

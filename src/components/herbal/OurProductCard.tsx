@@ -3,16 +3,11 @@
 type IOurProductCard = {
 	src: string;
 	title: string;
-	// description: string;
-	key: number;
 };
 
 function OurProductCard(props: IOurProductCard) {
 	return (
-		<div
-			className="w-fit rounded-md bg-herbalSecondary flex flex-col items-center p-2 cursor-pointer group"
-			key={props.key}
-		>
+		<div className="w-fit rounded-md bg-herbalSecondary flex flex-col items-center p-2 cursor-pointer group">
 			<div className="h-[300px] w-[300px] overflow-hidden bg-white flex items-center justify-center">
 				<img
 					// src="/assets/images/herbal/products/03.png"
