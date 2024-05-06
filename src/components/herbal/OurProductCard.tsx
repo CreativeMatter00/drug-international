@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+
 type IOurProductCard = {
 	src: string;
 	title: string;
@@ -18,7 +20,7 @@ function OurProductCard(props: IOurProductCard) {
 					width={500}
 					height={500}
 					alt={props.title}
-					className="w-full h-auto group-hover:scale-110 transition-all"
+					className="w-full h-auto group-hover:scale-110 transition-all p-4"
 				/>
 			</div>
 			<div className="text-center font-medium text-white py-2">

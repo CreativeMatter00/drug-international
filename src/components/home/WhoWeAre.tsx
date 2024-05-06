@@ -3,7 +3,7 @@
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 
 function WhoWeAre() {
 	const t = useTranslations("Home");
@@ -38,8 +38,7 @@ function WhoWeAre() {
 				<div className="w-full md:max-w-[512px] lg:max-w-[640px] ml-auto">
 					{/* <h1 className="text-3xl underline mb-5 md:mb-28"> WHO WE ARE </h1> */}
 					<h1 className="text-3xl underline mb-5 md:mb-28">
-						{" "}
-						{t("whoWeAreTitle")}{" "}
+						{t("whoWeAreTitle")}
 					</h1>
 					<p className="text-base">
 						{/* We were the first company in Bangladesh to formulate medicines in
@@ -65,8 +64,7 @@ function WhoWeAre() {
 				<div className="w-full md:max-w-[512px] lg:max-w-[640px] mr-auto">
 					{/* <h1 className="text-3xl underline mb-5 md:mb-28"> WHAT WE DO </h1> */}
 					<h1 className="text-3xl underline mb-5 md:mb-28">
-						{" "}
-						{t("whatWeDoTitle")}{" "}
+						{t("whatWeDoTitle")}
 					</h1>
 					<p className="text-base">
 						{/* We formulate drugs for all age groups and genders in different

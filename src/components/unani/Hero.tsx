@@ -1,13 +1,12 @@
 "use client";
 
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
-
 import styles from "@/styles/Unani.module.css";
-import { FaArrowRightLong } from "react-icons/fa6";
-import Link from "next/link";
+import { motion, useAnimation } from "framer-motion";
 import { useLocale, useTranslations } from "next-intl";
+import Link from "next/link";
+import { useEffect } from "react";
+import { FaArrowRightLong } from "react-icons/fa6";
+import { useInView } from "react-intersection-observer";
 
 function Hero() {
 	const t = useTranslations("Unani");
@@ -39,7 +38,7 @@ function Hero() {
 			</video>
 
 			<div className="h-[800px] flex">
-				<div className={`${styles.background1} w-[90%] lg:w-1/2 rounded-r-xl`}>
+				<div className={`${styles.background1} w-[100%] lg:w-1/2 rounded-r-xl`}>
 					<div className="h-full flex items-center">
 						<div className="bg-[#01511F] p-8 w-full ">
 							<motion.div
@@ -48,7 +47,7 @@ function Hero() {
 								animate={controls}
 								variants={slideInAnimationRight}
 							>
-								<div className="w-3/4 ml-auto">
+								<div className="w-full md:w-3/4 ml-auto">
 									<p
 										className="text-5xl uppercase mb-6"
 										dangerouslySetInnerHTML={{ __html: t.raw("heroTitle") }}
@@ -68,7 +67,7 @@ function Hero() {
 
 									{/* <Link href={`/${locale}/products/all-products`} as={}> */}
 									<Link href={`/${locale}/products/all-products?id=3`}>
-										<button className="flex items-center gap-4 bg-[#159A48] text-base py-3 px-5 text-white rounded-md">
+										<button className="flex items-center gap-4 bg-[#159A48] text-base py-3 px-5 text-white uppercase rounded-md">
 											{/* See Our Products <FaArrowRightLong /> */}
 											{t("heroButton")} <FaArrowRightLong />
 										</button>

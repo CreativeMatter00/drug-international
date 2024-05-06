@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { motion, useAnimation } from "framer-motion";
@@ -43,8 +44,6 @@ function OurProducts() {
 			</div>
 		);
 
-	// console.log(data);
-
 	return (
 		<div className="font-medium">
 			<p className="bg-[#159A48] text-white py-12 text-3xl text-center uppercase">
@@ -67,7 +66,7 @@ function OurProducts() {
 									className="flex flex-col justify-center items-center mx-auto group"
 									key={index}
 								>
-									<div className="bg-white rounded-md mb-4 h-[300px] w-[300px] flex items-center justify-center">
+									<div className="bg-white rounded-md mb-4 h-[300px] w-[300px] flex items-center justify-center overflow-hidden">
 										<img
 											src={`https://www.drug-international.com/${product?.MEDICINE_IMAGES[0]}`}
 											// width={300}
@@ -89,27 +88,6 @@ function OurProducts() {
 								</div>
 							))
 						)}
-
-						{/* <div className="flex flex-col justify-center items-center mx-auto group">
-							<div className="bg-[#BDE9CE] rounded-md mb-4 h-[300px] w-[300px]">
-								<Image
-									src="/assets/images/unani/products/1.png"
-									width={300}
-									height={300}
-									alt="D-Aloevera"
-									className="mx-auto group-hover:scale-105 transition-all"
-								/>
-							</div>
-							<div className="mb-6 text-center">
-								<p className="text-2xl text-[#04672A] uppercase"> D-ALOVERA </p>
-								<p className="text-base text-[#49CF7C] capitalize">
-									Sharbat Gheekowar
-								</p>
-							</div>
-							<button className="mx-auto bg-[#159A48] text-base py-3 px-5 text-white rounded-md">
-								View Product
-							</button>
-						</div> */}
 					</div>
 				</motion.div>
 				<div>

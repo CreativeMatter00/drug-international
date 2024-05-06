@@ -1,16 +1,13 @@
 "use client";
 
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
-
-import Image from "next/image";
-import ButtonPrimary from "../ui/button/ButtonPrimary";
-import { BsDownload } from "react-icons/bs";
-import Link from "next/link";
+import { motion } from "framer-motion";
 import styles from "@/styles/Products.module.css";
-import Banner from "../ui/Banner";
 import { useLocale } from "next-intl";
+import Image from "next/image";
+import Link from "next/link";
+import { BsDownload } from "react-icons/bs";
+import Banner from "../ui/Banner";
+import ButtonPrimary from "../ui/button/ButtonPrimary";
 
 function Products() {
 	const locale = useLocale();
@@ -26,7 +23,7 @@ function Products() {
 				src="/assets/images/products/banner.jpg"
 				title={locale === "cn" ? "产品" : "Products"}
 			/>
-			<div className="relative mt-[-100px] w-full mb-10 ">
+			<div className="relative mt-[-100px] w-full mb-10">
 				<div className="container mx-auto bg-white py-8 md:py-14 px-4 rounded-2xl shadow-[0px_-2px_8px_0px_rgba(0,0,0,0.75)]">
 					<motion.div
 						initial="hidden"
@@ -85,7 +82,7 @@ function Products() {
 									>
 										<div className="flex items-center gap-1 text-primary font-medium text-3xl uppercase z-20 duration-500 transition-all">
 											<p className="mb-0 group-hover:mt-32 duration-500 group-hover:text-white">
-												<span className="font-semibold  "> Upcoming</span>{" "}
+												<span className="font-semibold"> Upcoming</span>
 												<br /> Products
 											</p>
 											<Image
@@ -101,8 +98,8 @@ function Products() {
 											<div className="h-40 w-40 group-hover:h-56 group-hover:w-56 bg-primaryShade rounded-full duration-500  transition-all"></div>
 										</div>
 
-										<div className="absolute top-48 group-hover:-top-20  left-48 group-hover:-left-20 z-0 duration-500 transition-all ">
-											<div className="h-16 w-16 bg-[#EE676C] rounded-full group-hover:h-[27rem] group-hover:w-[29rem] duration-500 "></div>
+										<div className="absolute top-48 group-hover:-top-20  left-48 group-hover:-left-20 z-0 duration-500 transition-all">
+											<div className="h-16 w-16 bg-[#EE676C] rounded-full group-hover:h-[27rem] group-hover:w-[29rem] duration-500"></div>
 										</div>
 									</div>
 								</Link>
@@ -113,7 +110,7 @@ function Products() {
 									>
 										<div className="flex items-center gap-1 text-primary font-medium text-3xl uppercase z-20 duration-500 transition-all">
 											<p className="mb-0 group-hover:mt-32 duration-500 group-hover:text-white">
-												<span className="font-semibold  ">All</span> <br />{" "}
+												<span className="font-semibold">All</span> <br />{" "}
 												Products
 											</p>
 											<Image

@@ -1,11 +1,10 @@
 "use client";
 
 import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
-
-import Image from "next/image";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 
 function Description() {
 	const t = useTranslations("Unani");

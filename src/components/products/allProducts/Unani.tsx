@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { getUnaniProducts } from "@/api/api";
 import ProductLoader from "@/components/ui/loader/ProductLoader";
 import { useQuery } from "@tanstack/react-query";

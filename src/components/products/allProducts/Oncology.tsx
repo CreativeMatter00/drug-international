@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { getOncologyProducts } from "@/api/api";
 import ProductLoader from "@/components/ui/loader/ProductLoader";
 import { useQuery } from "@tanstack/react-query";
