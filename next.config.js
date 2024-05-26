@@ -4,6 +4,7 @@ const withNextIntl = createNextIntlPlugin();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+	distDir: ".next",
 	images: {
 		remotePatterns: [
 			{
@@ -14,6 +15,7 @@ const nextConfig = {
 			},
 		],
 		domains: ["www.drug-international.com"],
+		unoptimized: true,
 	},
 };
 
