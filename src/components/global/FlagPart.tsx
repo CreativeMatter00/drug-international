@@ -368,7 +368,7 @@ const FlagPart = () => {
                   />
                 ))}
               </div> */}
-              <div className="flex flex-wrap justify-center gap-4">
+              <div className="flex flex-wrap justify-center gap-6">
                 {imageArray.map(({ name, path, mapImage }, index) => (
                   <Image
                     key={index}
