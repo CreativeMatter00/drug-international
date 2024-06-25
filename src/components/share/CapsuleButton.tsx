@@ -1,7 +1,7 @@
 "use client";
 
 import styles from "@/styles/Test.module.css";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 interface CapsuleButtonProps {
   buttonName: string;
@@ -13,14 +13,38 @@ const CapsuleButton: React.FC<CapsuleButtonProps> = ({ buttonName }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowCapsule(true);
-    }, 2100);
+    }, 800);
 
     return () => clearTimeout(timer);
   }, []);
 
+  const buttonRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    const handleKeyPress = (event: KeyboardEvent) => {
+      if (event.key === "Enter" && buttonRef.current) {
+        // Change 'Enter' to whatever key you want to trigger the button click
+        buttonRef.current.click();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyPress);
+
+    // Clean up event listener on component unmount
+    return () => {
+      window.removeEventListener("keydown", handleKeyPress);
+    };
+  }, []);
+
+  // const handleClick = () => {
+  //   alert("Button clicked!");
+  // };
+
   return (
     <button
       className={`flex group rounded-full text-center justify-center items-center relative z-30 ${styles.boxShadow}`}
+      ref={buttonRef}
+      // onClick={handleClick}
     >
       <div
         className={`bg-primary  rounded-l-full  z-30 w-[7vh] h-[5vh] `}
