@@ -12,8 +12,10 @@ const NavSidebar = () => {
   const pathName = usePathname().toString();
   return (
     <div className="flex justify-center items-center">
-      <div className="h-screen p-4 bg-[#FFFFFF] flex flex-col justify-between border-t w-full">
-        <div className="h-full overflow-auto p-4 uppercase">
+      <div
+        className={`h-[calc(100vh-10vh)] p-4 bg-[#FFFFFF] flex flex-col justify-between border-t w-full `}
+      >
+        <div className="h-[calc(100vh-30vh)] overflow-auto p-4 uppercase ">
           <div className="flex flex-col gap-3 text-base font-medium justify-center items-center">
             <Link href={`/${locale}/about-us`}>
               <div
@@ -38,6 +40,7 @@ const NavSidebar = () => {
                 {t("ourLegacy")}
               </div>
             </Link>
+
             <Link href={`/${locale}/products`}>
               <div
                 className={`p-2.5 cursor-pointer hover:text-primary hover:underline hover:underline-offset-8 ${
@@ -49,6 +52,7 @@ const NavSidebar = () => {
                 {t("products")}
               </div>
             </Link>
+
             <Link href={`/${locale}/facilities`}>
               <div
                 className={`p-2.5 cursor-pointer hover:text-primary hover:underline hover:underline-offset-8 ${
@@ -60,6 +64,7 @@ const NavSidebar = () => {
                 {t("facilities")}
               </div>
             </Link>
+
             <Link href={`/${locale}/contact-us`}>
               <div
                 className={`p-2.5 cursor-pointer hover:text-primary hover:underline hover:underline-offset-8 ${

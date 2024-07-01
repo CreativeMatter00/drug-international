@@ -261,14 +261,14 @@ const FlagPart = () => {
   }, [loadTime]);
 
   return (
-    <div>
+    <div className="">
       <div className={`flex justify-center items-center bg-[#014F70] `}>
         <div className="container p-8 flex justify-center items-center flex-col">
           <div className="uppercase text-2xl flex justify-center text-white font-medium w-full items-center">
-            {/* Global Operation */}
             {t("title")}
           </div>
-          <div className="h-[550px] w-[1000px] max-lg:h-[360px] max-md:h-[200px] relative">
+          {/* <div className="h-[550px] w-[1000px] max-lg:h-[360px] max-md:h-[200px] relative"> */}
+          <div className="h-[550px] lg:w-[1000px] max-lg:h-[360px] max-md:h-[200px] relative">
             <Image
               src={
                 loadStatus
