@@ -47,9 +47,9 @@ const AllProductSidebar: React.FC<visibleProps> = ({
     <div
       className={`${
         isAllSidebarVisible
-          ? `ease-in-out duration-700 right-0 `
-          : "ease-in-out duration-700 -right-[529px]"
-      } text-[#272727] h-screen fixed w-[529px] z-[999999] overflow-hidden top-0 rounded-l-xl max-md:w-full ${
+          ? `ease-in-out duration-700 right-0`
+          : "ease-in-out duration-700 -right-[540px] max-lg:-right-[1030px] max-md:-right-[780px]"
+      } text-[#272727] h-screen fixed w-[529px] z-[999999] overflow-hidden top-0 rounded-l-xl max-md:w-full  ${
         styles.allProductShadow
       }`}
     >
