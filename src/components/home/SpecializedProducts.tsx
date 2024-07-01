@@ -6,14 +6,17 @@ import { useEffect } from "react";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
+import "swiper/css/navigation";
 import SpecializedProductCard from "./SpecializedProductCard";
 import { useQuery } from "@tanstack/react-query";
 import { getSpecializedProducts } from "@/api/api";
 import { DNA } from "react-loader-spinner";
 import { useTranslations } from "next-intl";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 function SpecializedProducts() {
 	const t = useTranslations("Home");
@@ -87,27 +90,30 @@ function SpecializedProducts() {
 						animate={controls}
 						variants={slideInAnimationRight}
 					>
-						<Swiper
-							breakpoints={breakpoints}
-							spaceBetween={30}
-							centeredSlides={true}
-							initialSlide={1}
-							pagination={{
-								clickable: true,
-							}}
-						>
-							{data?.map((product: any) => (
-								<SwiperSlide key={product.SPECIAL_ID}>
-									<SpecializedProductCard
-										src={product.INSERT_FILES}
-										title={product.SPECIAL_NAME}
-										id={product.SPECIAL_ID}
-										// description={product.description}
-										// link={product.link}
-									/>
-								</SwiperSlide>
-							))}
-							{/* <SwiperSlide>
+						<div className="container mx-auto">
+							<Swiper
+								breakpoints={breakpoints}
+								spaceBetween={30}
+								// centeredSlides={true}
+								modules={[Navigation]}
+								loop={true}
+								navigation={{
+									nextEl: ".navigation-next-el",
+									prevEl: ".navigation-prev-el",
+								}}
+							>
+								{data?.map((product: any) => (
+									<SwiperSlide key={product.SPECIAL_ID}>
+										<SpecializedProductCard
+											src={product.INSERT_FILES}
+											title={product.SPECIAL_NAME}
+											id={product.SPECIAL_ID}
+											// description={product.description}
+											// link={product.link}
+										/>
+									</SwiperSlide>
+								))}
+								{/* <SwiperSlide>
 								<Link href="/product-category/soft-capsule">
 									<SpecializedProductCard
 										src="/assets/images/home/specialized/capsule.png"
@@ -116,7 +122,15 @@ function SpecializedProducts() {
 								</Link>
 							</SwiperSlide>
 							 */}
-						</Swiper>
+								<button className="navigation-prev-el absolute left-4 top-1/2 z-10 cursor-pointer bg-primary hover:bg-hoverPrimary text-white text-2xl rounded-full p-2">
+									<IoIosArrowBack />
+								</button>
+
+								<button className="navigation-next-el absolute right-4 top-1/2 z-10 cursor-pointer bg-primary hover:bg-hoverPrimary text-white text-2xl rounded-full p-2">
+									<IoIosArrowForward />
+								</button>
+							</Swiper>
+						</div>
 					</motion.div>
 				)}
 			</div>
