@@ -12,6 +12,7 @@ const GlobalPresence = () => {
 					className={`border-[0.5px] border-[#7B7B7B55]  uppercase mb-12 mt-4 py-6 rounded-md flex items-center justify-center gap-4 w-full ${styles.globalPresenceShadow}`}
 				>
 					{/* <div className="border border-[#7B7B7B55] shadow-[0px_2px_5px_0px_rgba(0,0,0,0.3)] uppercase mb-16 py-6 rounded-md flex items-center justify-center gap-4 w-full"> */}
+
 					<div className="border border-t-primaryShade w-[20%]" />
 					<div className="text-base font-medium text-center">
 						{/* GLOBAL PRESENCE */}
