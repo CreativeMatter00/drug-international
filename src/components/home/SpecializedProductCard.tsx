@@ -12,7 +12,7 @@ function SpecializedProductCard(props: ISpecializedProductCard) {
 	const locale = useLocale();
 	return (
 		<Link href={`/${locale}/product-category/${props.id}`}>
-			<div className="p-5 min-h-[324px] border border-[#272727] bg-white rounded-md group hover:cursor-pointer">
+			<div className="p-5 min-h-[410px] border border-[#272727] bg-white rounded-md group hover:cursor-pointer">
 				<div className="relative flex items-center justify-center overflow-hidden">
 					<Image
 						// src={`/assets/images/home/specialized/capsule.png`}
