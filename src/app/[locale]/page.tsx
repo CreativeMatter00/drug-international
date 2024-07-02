@@ -68,24 +68,24 @@ const Page = () => {
         </div>
       </div>
 
-      <div className="absolute inset-y-0 right-0 w-[14vh] h-screen overflow-hidden flex items-end">
+      <div className="absolute inset-y-0 right-0 w-[14vh] h-screen overflow-hidden flex items-end max-lg:hidden">
         <div className="flex flex-col items-end mb-[10vh] gap-[5vh] pl-[2vh] max-md:mb-[15vh]">
           <Link href="https://www.facebook.com/drugintltd" target="_blank">
-            <SlSocialFacebook className="h-[3vh] w-[3vh] hover:scale-150 duration-300 cursor-pointer text-primary   max-lg:h-[5vh] max-lg:w-[5vh] shadow-2xl" />
+            <SlSocialFacebook className="h-[3vh] w-[3vh] hover:scale-150 duration-300 cursor-pointer text-primary max-lg:h-[5vh] max-lg:w-[5vh] bg-transparent" />
           </Link>
 
           <Link
             href="https://www.linkedin.com/company/drug-int-ltd/posts/?feedView=all"
             target="_blank"
           >
-            <SlSocialLinkedin className="h-[3vh] w-[3vh] hover:scale-125 duration-300 cursor-pointer z-10 overflow-visible text-primary   max-lg:h-[4vh] max-lg:w-[4vh]" />
+            <SlSocialLinkedin className="h-[3vh] w-[3vh] hover:scale-125 duration-300 cursor-pointer z-10 overflow-visible text-primary max-lg:h-[4vh] max-lg:w-[4vh]" />
           </Link>
 
           <Link
             href="https://www.youtube.com/@druginternationalltd.6126"
             target="_blank"
           >
-            <SlSocialYoutube className="h-[3vh] w-[3vh] hover:scale-125 duration-300 cursor-pointer text-primary  max-lg:h-[4vh] max-lg:w-[4vh]" />
+            <SlSocialYoutube className="h-[3vh] w-[3vh] hover:scale-125 duration-300 cursor-pointer text-primary max-lg:h-[4vh] max-lg:w-[4vh]" />
           </Link>
         </div>
       </div>
