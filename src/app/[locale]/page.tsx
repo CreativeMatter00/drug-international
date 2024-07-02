@@ -23,7 +23,7 @@ const Page = () => {
               loop={true}
               muted={true}
               playsInline={true}
-              className="w-[75vh] max-lg:w-[100vh]"
+              className="w-[75vh] max-lg:w-[100vh] max-md:absolute max-md:top-[1vh]"
             >
               <source src="/assets/videoes/1974.mp4" type="video/mp4" />
             </video>
@@ -33,9 +33,9 @@ const Page = () => {
 
           {/* <div className="h-full w-3/6 max-lg:w-5/6 max-md:w-full"> */}
           <div className="h-full w-5/12 max-lg:absolute max-lg:w-5/6">
-            <div className="h-[51vh]"></div>
-            <div className="h-[49vh]">
-              <div className="h-[30vh] overflow-hidden -ml-[6vh] max-lg:ml-[2vh] max-lg:h-[36vh]">
+            <div className="h-[51vh] max-md:h-[43vh]"></div>
+            <div className="h-[49vh] max-md:h-[57vh]">
+              <div className="h-[30vh] overflow-hidden -ml-[6vh] max-lg:ml-[2vh] max-lg:h-[36vh] ">
                 {/* <div className="h-[30vh] overflow-hidden ml-[5vh]  max-lg:h-[36vh]"> */}
                 <motion.div
                   initial={{ x: x }}
@@ -44,7 +44,7 @@ const Page = () => {
                     duration: 1,
                   }}
                 >
-                  <p className="text-white font-bold text-[4vh] leading-[4vh] mt-[0.5vh]  text-shadow lg:text-primary">
+                  <p className="text-white font-bold text-[4vh] leading-[4vh] mt-[0.5vh] text-shadow lg:text-primary">
                     First ever <br /> company <br /> in <br /> Bangladesh <br />
                     to formulate <br />
                     medicines in
@@ -54,7 +54,7 @@ const Page = () => {
                   </p>
                 </motion.div>
               </div>
-              <div className="h-[29vh] ml-[17vh] mt-[5vh] max-lg:mt-[2vh]">
+              <div className="h-[29vh] ml-[17vh] mt-[5vh] max-lg:mt-[2vh]  max-md:ml-[5vh]  max-md:mt-[1vh]">
                 <Link href={`/${locale}/home`}>
                   <CapsuleButton
                     buttonName="Enter"
@@ -69,23 +69,23 @@ const Page = () => {
       </div>
 
       <div className="absolute inset-y-0 right-0 w-[14vh] h-screen overflow-hidden flex items-end">
-        <div className="flex flex-col items-end mb-[10vh] gap-[5vh] pl-[2vh]">
+        <div className="flex flex-col items-end mb-[10vh] gap-[5vh] pl-[2vh] max-md:mb-[15vh]">
           <Link href="https://www.facebook.com/drugintltd" target="_blank">
-            <SlSocialFacebook className="h-[3vh] w-[3vh] hover:scale-150 duration-300 cursor-pointer text-primary max-lg:text-white text-shadow max-lg:h-[5vh] max-lg:w-[5vh]" />
+            <SlSocialFacebook className="h-[3vh] w-[3vh] hover:scale-150 duration-300 cursor-pointer text-primary   max-lg:h-[5vh] max-lg:w-[5vh] shadow-2xl" />
           </Link>
 
           <Link
-            href="https://bd.linkedin.com/company/drug-international-limited"
+            href="https://www.linkedin.com/company/drug-int-ltd/posts/?feedView=all"
             target="_blank"
           >
-            <SlSocialLinkedin className="h-[3vh] w-[3vh] hover:scale-125 duration-300 cursor-pointer z-10 overflow-visible text-primary max-lg:text-white text-shadow max-lg:h-[4vh] max-lg:w-[4vh]" />
+            <SlSocialLinkedin className="h-[3vh] w-[3vh] hover:scale-125 duration-300 cursor-pointer z-10 overflow-visible text-primary   max-lg:h-[4vh] max-lg:w-[4vh]" />
           </Link>
 
           <Link
             href="https://www.youtube.com/@druginternationalltd.6126"
             target="_blank"
           >
-            <SlSocialYoutube className="h-[3vh] w-[3vh] hover:scale-125 duration-300 cursor-pointer text-primary max-lg:text-white text-shadow max-lg:h-[4vh] max-lg:w-[4vh]" />
+            <SlSocialYoutube className="h-[3vh] w-[3vh] hover:scale-125 duration-300 cursor-pointer text-primary  max-lg:h-[4vh] max-lg:w-[4vh]" />
           </Link>
         </div>
       </div>

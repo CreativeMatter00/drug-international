@@ -60,11 +60,14 @@ ul {
 }
 
 .text-shadow {
-  text-shadow: 0 2px 2px #000;
+  text-shadow: 0 3px 3px #000;
 }
+/* .text-shadow {
+  text-shadow: 0 2px 2px #000;
+} */
 
 @media screen and (min-width: 1024px) {
-	.text-shadow {
-		text-shadow: none;
-	}
+  .text-shadow {
+    text-shadow: none;
+  }
 }
